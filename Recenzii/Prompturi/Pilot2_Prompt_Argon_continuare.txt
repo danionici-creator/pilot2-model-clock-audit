@@ -1,0 +1,11 @@
+This is a continuation of your earlier review of the attached PDF ("Pilot 2 — Technical Protocol, Draft for External Review", v0.1). Your previous output was cut off. It ended in the middle of your answer to Appendix Q12 (Stage C), at item 8: "Unspecified confirmatory decision unit across Stage C model sizes and optimizer arms (§13 & §15 Row 9) ... if full fine-tuning and LoRA produce".
+
+You already covered §§0–12 in full and answered Appendix Q1–Q11 and Q12 items 1–7. Do NOT repeat any of that material.
+
+Complete ONLY the following, with the same rules as before (specific and technical; concrete replacement for every change; no invented references; verifiable DOI or arXiv ID for any citation; FATAL / MAJOR / MINOR classification with section, problem, why it matters, fix):
+
+1. Finish Q12 item 8, then give the concrete replacement for all of Q12 (items 1–8): what must change now in the protocol so that Stage C transfer is clean, and what the confirmatory decision unit for Stage C should be.
+2. Answer Q13: any flaw that would make a positive H1 uninterpretable that you have not already raised.
+3. Check (g): the feasibility of the compute estimates in §14 on an 8-core laptop CPU. For reference, a measured training step of the §3 agent (0.93 M parameters, untied embeddings, AdamW, 8 threads) takes 87.5 ms at batch 32×64 tokens and 17.3 ms at batch 32×4 tokens; with 1 thread, 206.5 ms and 19.9 ms. Include probe-evaluation and D3 costs.
+4. Review §15 (interpretation table), §16 (threats to validity), and §17 (deliverables) for problems not yet raised.
+5. End with the prioritised list of the five changes you would make first, across the whole review.

@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite the closure report, and this archive when you use its code or data."
+type: software
+title: "Pilot 2: An Audit of a Model-Centred Clock Against Optimizer Telemetry — Code, Preregistrations, Logs, and Results"
+version: "1.0"
+doi: "10.5281/zenodo.24188372"
+date-released: "2026-11-13"
+authors:
+  - family-names: Ionici
+    given-names: Ioan Daniel
+    affiliation: "Independent Researcher, Oradea, Romania"
+    orcid: "https://orcid.org/0009-0009-8183-3656"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/danionici-creator/pilot2-model-clock-audit"
+keywords:
+  - continual learning
+  - experience replay
+  - replay scheduling
+  - optimizer telemetry
+  - Adam
+  - identifiability
+  - reproducibility
+  - preregistration
+  - LoRA
+  - FOREVER
+preferred-citation:
+  type: report
+  title: "Does a Model-Centred Clock Carry Information Beyond Optimizer Telemetry? Closure Report of Pilot 2"
+  authors:
+    - family-names: Ionici
+      given-names: Ioan Daniel
+      affiliation: "Independent Researcher, Oradea, Romania"
+      orcid: "https://orcid.org/0009-0009-8183-3656"
+  publisher:
+    name: Zenodo
+  year: 2026
+  version: "1.0"
+  doi: "10.5281/zenodo.24188374"

@@ -1,0 +1,54 @@
+NOAPTE start 2026-11-06 23:08:55
+TA start seed 7301 clock tau 23:08:55
+TB start tb_F6_n03 23:08:55
+done: 2600 steps, 1789s; steps sha256 83a5f9d7e24050da; factors sha256 a662d365aeee170c
+TA start seed 7301 clock eta_m 23:38:49
+TB end tb_F6_n03 rc=0 23:57:48
+TB start tb_F6_n00 23:57:48
+done: 2600 steps, 1137s; steps sha256 fa54b39bbf5e15c0; factors sha256 e9839197c8c767c2
+TA start seed 7301 clock eta 23:57:54
+done: 2650 steps, 1765s; steps sha256 94a70aa01199d280; factors sha256 e424b50c6dc35b77
+TA start seed 7301 clock steps 00:27:28
+TB end tb_F6_n00 rc=0 00:43:47
+TB start tb_F6_n05 00:43:47
+done: 2600 steps, 1144s; steps sha256 57f340333f745853; factors sha256 4cfa10d1d6d13541
+TA start seed 7302 clock tau 00:46:40
+done: 2600 steps, 1742s; steps sha256 914ab24a20d152d4; factors sha256 e2ce91cf610b8522
+TA start seed 7302 clock eta_m 01:15:51
+TB end tb_F6_n05 rc=0 01:29:31
+TB start tb_F6_n01 01:29:31
+done: 2600 steps, 1124s; steps sha256 f5f324911b187efc; factors sha256 4082a5d2a7fd7076
+TA start seed 7302 clock eta 01:34:43
+done: 2650 steps, 1749s; steps sha256 1343097801854977; factors sha256 bc13b6d20434ebb9
+TA start seed 7302 clock steps 02:04:00
+TB end tb_F6_n01 rc=0 02:15:33
+TB start tb_F1 02:15:33
+done: 2600 steps, 1140s; steps sha256 072f1fbe655fce25; factors sha256 99132dc508bbdd85
+TA start seed 7303 clock tau 02:23:04
+done: 2600 steps, 1567s; steps sha256 79e7ed082f915699; factors sha256 665d583c6ed7c5b1
+TA start seed 7303 clock eta_m 02:49:20
+TB end tb_F1 rc=0 02:56:23
+TB TERMINAT 02:56:23
+done: 2600 steps, 973s; steps sha256 fd41d450ee5c8dc7; factors sha256 1fc066aa6c484b34
+TA start seed 7303 clock eta 03:05:38
+done: 2650 steps, 1002s; steps sha256 605b42154e43ad5e; factors sha256 c2efbe442c72eb3f
+TA start seed 7303 clock steps 03:22:23
+done: 2600 steps, 960s; steps sha256 315047106dd3ed4f; factors sha256 5c0822909681dd9f
+TA start seed 7304 clock tau 03:38:26
+done: 2600 steps, 961s; steps sha256 3ecf914f20b7a2f3; factors sha256 ff2dfe55d9c233a4
+TA start seed 7304 clock eta_m 03:54:31
+done: 2600 steps, 961s; steps sha256 69b9339405f40512; factors sha256 a3e3f52f421601e1
+TA start seed 7304 clock eta 04:10:36
+done: 2650 steps, 974s; steps sha256 6704a6bf7df0bf1f; factors sha256 4470b5586a813466
+TA start seed 7304 clock steps 04:26:53
+done: 2600 steps, 962s; steps sha256 e0bf7c5013040daf; factors sha256 dca49ff06361e61d
+TA start seed 7305 clock tau 04:42:59
+done: 2600 steps, 961s; steps sha256 de6edb68d464f201; factors sha256 7bff05ab98721610
+TA start seed 7305 clock eta_m 04:59:04
+done: 2600 steps, 992s; steps sha256 8735510eb9e9f64b; factors sha256 922ed4072a95255a
+TA start seed 7305 clock eta 05:15:48
+done: 2650 steps, 984s; steps sha256 1ebdbdb6bad04a5a; factors sha256 d69a95718e6597bf
+TA start seed 7305 clock steps 05:32:16
+done: 2600 steps, 973s; steps sha256 621fbd0eee85a32d; factors sha256 17d0adeca2a5ea4f
+TA TERMINAT 05:48:32
+NOAPTE TERMINAT 2026-11-07 05:48:32

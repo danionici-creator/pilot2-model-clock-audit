@@ -1,0 +1,34 @@
+You are asked for an independent, critical evaluation. Two PDF documents are attached:
+
+(1) "Does a model-centred clock carry information beyond optimizer telemetry? Closure report of Pilot 2" (draft for review): a study that tested, with preregistered rules, whether an agent's accumulated internal change (an "experiential index") carries information beyond optimizer telemetry, including a reproduction of the FOREVER replay method with its authors' code.
+
+(2) "A Time of Their Own", draft of version 1.4 (for review): a conceptual Perspective paper that proposes the experiential index among other things, and that integrates the results of document (1).
+
+Rules for your answer:
+- Be critical and specific. Do not praise. Point to the section or page of each issue.
+- Separate errors of fact (a number, a statement, a reference that is wrong) from questions of interpretation, scope or wording.
+- Mark each finding as FATAL (the document should not be published as it stands), MAJOR, or MINOR.
+- Cite a publication only if you have actually opened it; give its arXiv identifier or DOI. Say when you rely on memory.
+- If you cannot verify something, say so instead of guessing.
+- Answer in English. Keep it to about 2,500 words.
+
+Part A. The results of Pilot 2 (document 1)
+A1. Do the verdicts follow from the data shown and from the rules fixed before the runs? Name any verdict that is not supported.
+A2. Is there an alternative explanation of the main results that the report does not consider (for the reconstruction of the clocks, for the scheduling comparisons, for the repeated runs with the authors' code)?
+A3. Are the limitations complete? Is anything claimed beyond the evidence?
+A4. Prior work: has published work already shown that path-length or update-norm clocks, or accumulated-change quantities, reduce to optimizer statistics? Is there a known counterexample to the report's conclusions?
+A5. Internal consistency: do numbers and claims agree across sections?
+
+Part B. The integration of these results in the Perspective (document 2)
+B1. The Perspective reports Level 2 as "not identifiable for the candidates tested", not as "closed" under its own closure rule. Is this distinction correct and consistently applied?
+B2. Version 1.4 adds to the closure rule (§5) an exit for candidates that are not identifiable, and says that it was added after the second study met it. Is this legitimate, or is it moving the goalposts? Under what conditions would it be either?
+B3. Are the statements about generality (other hardware, larger models) and the new direction on agents that change through memory rather than weights (§4) within the evidence?
+B4. Do the abstract and the conclusion state exactly what was found, without overstatement or understatement?
+B5. Does the Perspective remain a conceptual map, or is it overloaded with empirical detail?
+B6. Do the two documents contradict each other anywhere?
+B7. Your opinion on three open choices: (a) the abstract of the Perspective is now about 420 words; should it be shortened? (b) should the amendment of B2 be kept? (c) should the per-parameter importance precedent (Synaptic Intelligence; Benzing 2022) and the direction on agents that change through memory be kept?
+
+Format:
+1. Numbered findings: severity, location, the problem, why it matters, the fix you suggest.
+2. Short answers to A1-A5 and B1-B7.
+3. Your five highest priorities, in order.

@@ -1,0 +1,119 @@
+# Pilot 2, Stage 0: provisional configuration.
+# Source of every fixed value: technical protocol v0.3 (02_Pilot2/Pilot2_Protocol_EN_draft.md).
+# Values marked "provisional" are generator or optimizer parameters that the protocol leaves to
+# Stage 0 ("Generator parameters for each family are frozen with the protocol", section 4.4).
+# Nothing here is frozen; the frozen configuration is written at the end of Stage 0.
+
+meta:
+  protocol: "Pilot 2 technical protocol v0.4 draft + verified Deep Review code corrections, 6 November 2026 (v0.5 pending; not frozen)"
+  stage: 0
+
+agent:                       # section 3
+  n_layer: 4
+  d_model: 128
+  n_head: 4
+  d_ff: 512
+  max_ctx: 4                  # Deep Review D2 (6 Nov 2026): inputs have 4 tokens; positions 4-7 got no gradient
+  vocab: 512
+  init_std: 0.02             # provisional (GPT-2 style normal init; biases 0, LayerNorm 1)
+
+optim:                       # section 3
+  kind: adamw                # adamw (primary) | sgd (robustness arm, exploratory)
+  lr: 3.0e-4                 # decision 4 Nov 2026 (tech3 rule, Stage 0 notes 5c); base learning rate of childhood and of constant-LR families
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  weight_decay: 0.01
+  wd_embeddings: false       # Deep Review D3 (6 Nov 2026): token and position embeddings out of weight decay; PROVISIONAL, author decision (c) pending (recommended)
+  clip: 1.0
+  sgd_momentum: 0.9
+  passive_v_beta: 0.999      # SGD arm only: passive EMA of g~^2 so that D2 is defined
+
+world:                       # section 4.1
+  n_target: 40
+  items_per_task: 256
+  rule_inputs: 1024          # x in [0, 1023], two base-32 digit tokens
+  rule_form: affine          # unused under variant A; affine: y = (a x + b) mod m (protocol 4.1); unary: y = (a d1 + b) mod m (Stage 0 alternative)
+  key_pool_size: 1024        # provisional: shared pool of V_target key pairs used by pi_overlap
+  target_moduli: [16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64]  # provisional
+  ref_moduli: [11, 13, 15, 17]   # provisional; never used by a target task
+  n_ref_fact: 8              # decision 4 Nov 2026 (variant A): no rule tasks, neither target nor reference
+  n_ref_rule: 0
+  n_distractor: 8
+  battery_per_ref_task: 32   # 8 reference tasks x 32 = 256 items for R, and 256 disjoint items for B_beh
+
+run:                         # sections 4.3, 4.5, 5
+  q0: 64                     # step quantum
+  childhood_steps: 3072
+  childhood_batch: 32
+  childhood_gate: 0.95       # reference accuracy at the end of childhood
+  life_steps_per_task: 512   # provisional: life = n_target x 512 = 20,480 optimizer steps
+  eval_grid: 256
+  probe_chunk: 2048          # items per forward pass during evaluation (speed only)
+  d2_lag: 256
+  d2_lag_mode: blocked       # blocked: v_hat at d2_block*floor((tau-256)/d2_block); both: also the exact lag (about 1 GB of RAM)
+  d2_block: 16               # Deep Review D9 (6 Nov 2026): lag in [256, 271] (was 64: [256, 319]); ~18 copies of v_hat per process
+  d3_strides:                # chunk strides m_ch for D3, D4 and C10b; [stride, start, end) in life steps, end null = end of life
+    - [8, 0, null]
+  chunked_param_D: false     # chunking control: chunked D1, D1_rel, D2 at the same strides (calibration runs)
+  snapshot_D: [D1, D1_rel, D2, D3, D4, T2]   # displacement snapshots kept per task exposure
+
+families:                    # section 4.4; all generator parameters provisional
+  F1:
+    structure: cycle         # new task, then round-robin rehearsal of earlier tasks
+    new_steps: 256
+    reh_steps: 128
+    reh_per_cycle: 2
+    batch: [32]
+    rule_frac: 0.0             # variant A (4 Nov 2026); protocol v0.3 had rule tasks
+    pi_overlap: 0.25
+    lr: {kind: constant}
+  F2:
+    structure: novelty       # new tasks interleaved with re-exposure in random amounts
+    new_steps: 256
+    reexp_units: [1, 2, 4]   # lengths of one re-exposure segment, in units of q0
+    batch: [16, 32, 64]
+    rule_frac: 0.0             # variant A (4 Nov 2026); protocol v0.3 had rule tasks
+    pi_overlap: 0.25
+    lr: {kind: constant}
+  F3:
+    structure: cycle
+    new_steps: 256
+    reh_steps: 128
+    reh_per_cycle: 2
+    batch: [32]
+    rule_frac: 0.0             # variant A (4 Nov 2026); protocol v0.3 had rule tasks
+    pi_overlap: 0.25
+    lr: {kind: cosine_restarts, max_mult: 2.0, min_mult: 0.05, period: [512, 4096]}
+  F4:
+    structure: cycle
+    new_steps: 256
+    reh_steps: 128
+    reh_per_cycle: 2
+    batch: [32]
+    rule_frac: 0.0             # variant A (4 Nov 2026); protocol v0.3 had rule tasks
+    pi_overlap: 0.25
+    lr: {kind: constant}
+    idle: {p: 0.25, units: [1, 8]}
+  F5:
+    structure: novelty
+    new_steps: 256
+    reexp_units: [1, 2, 4]
+    batch: [16, 32, 64]
+    rule_frac: 0.0             # variant A; F5 still differs by pi_overlap, idle intervals and LR restarts
+    pi_overlap: 0.5
+    lr: {kind: cosine_restarts, max_mult: 2.0, min_mult: 0.05, period: [512, 4096]}
+    idle: {p: 0.15, units: [1, 8]}
+  F6:
+    structure: distractor    # regular target exposures, variable-length distractor segments
+    new_steps: 256
+    reh_steps: 128
+    reh_per_cycle: 1
+    distractor_units: [1, 2, 4]
+    label_noise: 0.3
+    batch: [16, 32, 64]
+    rule_frac: 0.0             # variant A (4 Nov 2026); protocol v0.3 had rule tasks
+    pi_overlap: 0.25
+    lr: {kind: constant}
+
+analysis:                    # read by p2/triplets.py only; not part of a run (excluded from the run's resolved-config hash)
+  t1_max_dN: 1280            # decision 4 Nov 2026: T1 triplets need dN < 1280 (onset of saturation, tech3; Stage 0 notes 5c); null = no cap

@@ -1,0 +1,29 @@
+re-evaluation modes found: ['seed1', 'seed2', 'greedy']
+
+tau: 3 sampled evaluations (original + seeded), greedy
+  dbpedia  original  93.21 | seed1  93.21 (0 answers differ) | seed2  93.21 (0 answers differ) | greedy  93.26 (4 answers differ) | SD sampled 0.000
+  amazon   original  47.52 | seed1  47.52 (0 answers differ) | seed2  47.52 (0 answers differ) | greedy  47.52 (3 answers differ) | SD sampled 0.000
+  yahoo    original  60.34 | seed1  60.34 (0 answers differ) | seed2  60.34 (0 answers differ) | greedy  60.38 (5 answers differ) | SD sampled 0.000
+  agnews   original  88.40 | seed1  88.40 (0 answers differ) | seed2  88.40 (0 answers differ) | greedy  88.40 (0 answers differ) | SD sampled 0.000
+
+eta_m: 3 sampled evaluations (original + seeded), greedy
+  dbpedia  original  87.89 | seed1  87.89 (0 answers differ) | seed2  87.89 (0 answers differ) | greedy  87.86 (4 answers differ) | SD sampled 0.000
+  amazon   original  48.92 | seed1  48.92 (0 answers differ) | seed2  48.92 (0 answers differ) | greedy  49.04 (6 answers differ) | SD sampled 0.000
+  yahoo    original  61.66 | seed1  61.66 (0 answers differ) | seed2  61.66 (0 answers differ) | greedy  61.62 (2 answers differ) | SD sampled 0.000
+  agnews   original  87.65 | seed1  87.65 (0 answers differ) | seed2  87.65 (0 answers differ) | greedy  87.65 (0 answers differ) | SD sampled 0.000
+
+eta_m_A1: 3 sampled evaluations (original + seeded), greedy
+  dbpedia  original  93.73 | seed1  93.73 (0 answers differ) | seed2  93.73 (0 answers differ) | greedy  93.73 (1 answers differ) | SD sampled 0.000
+  amazon   original  49.36 | seed1  49.36 (0 answers differ) | seed2  49.36 (0 answers differ) | greedy  49.36 (2 answers differ) | SD sampled 0.000
+  yahoo    original  61.86 | seed1  61.86 (0 answers differ) | seed2  61.86 (0 answers differ) | greedy  61.88 (5 answers differ) | SD sampled 0.000
+  agnews   original  87.20 | seed1  87.20 (0 answers differ) | seed2  87.20 (0 answers differ) | greedy  87.20 (0 answers differ) | SD sampled 0.000
+
+tau_B1: 3 sampled evaluations (original + seeded), greedy
+  dbpedia  original  91.17 | seed1  91.17 (0 answers differ) | seed2  91.17 (0 answers differ) | greedy  91.19 (1 answers differ) | SD sampled 0.000
+  amazon   original  49.84 | seed1  49.84 (0 answers differ) | seed2  49.84 (0 answers differ) | greedy  49.80 (1 answers differ) | SD sampled 0.000
+  yahoo    original  61.76 | seed1  61.76 (0 answers differ) | seed2  61.76 (0 answers differ) | greedy  61.74 (11 answers differ) | SD sampled 0.000
+  agnews   original  87.45 | seed1  87.45 (0 answers differ) | seed2  87.45 (0 answers differ) | greedy  87.40 (1 answers differ) | SD sampled 0.000
+
+pooled within-cell SD of the sampled evaluations (points): dbpedia 0.000, amazon 0.000, yahoo 0.000, agnews 0.000
+D_A1 = -0.514 (tau - eta_m on dbpedia); evaluation SD of the difference 0.000; |D| exceeds it: True; by mode: seed1 -0.514, seed2 -0.514, greedy -0.471
+D_B1 = +3.286 (tau - eta_m on dbpedia); evaluation SD of the difference 0.000; |D| exceeds it: True; by mode: seed1 +3.286, seed2 +3.286, greedy +3.329

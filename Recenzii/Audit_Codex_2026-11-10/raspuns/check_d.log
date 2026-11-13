@@ -1,0 +1,4 @@
+D01 reconstruction R2: 0.9900990099009901
+Residual predicts outcome perfectly: True
+D02 crash after hardware increment but before state+seal commit: {'live_N': 5, 'sealed_N': 4, 'classifier': 'restoration', 'event': 'crash'}
+D03 information: if raw=(time,N,sealed time,sealed N), a local monitor can transmit the full same tuple; a binary flag is lossy by design.

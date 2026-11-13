@@ -1,0 +1,6 @@
+[STRICT OK] r2_reconstruction.py -> runs/forever_repro_r2_reconstruction.json
+[STRICT OK] r2_reconstruction_arm.py eta_m -> runs/forever_repetari_r2_eta_m.json
+[STRICT OK] r2_reconstruction_arm.py eta_m_A1 -> runs/forever_repetari_r2_eta_m_A1.json
+[STRICT OK] d_same_trajectory.py -> runs/forever_d_same_trajectory.json
+[STRICT OK] rep_verdict.py -> runs/forever_repetari_verdict.json
+[STRICT OK] eval_noise_summary.py -> runs/forever_eval_noise_posthoc.json

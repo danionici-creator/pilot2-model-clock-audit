@@ -1,0 +1,96 @@
+[Stanford Agentic Reviewer (paperreview.ai), review of Perspective_v1.4_review_draft.pdf (first 15 pages analysed), target venue "Other: Perspective paper (conceptual proposal), preprint". Text copied from the "View Review" page on 9 Nov 2026 (get_page_text), from the title to the end of "Overall Assessment"; the feedback form below it is omitted. Unchanged.]
+
+A Time of Their Own: Agent-Held Temporal Evidence for Persistent AI Agents
+Perspective paper (conceptual proposal), preprint
+Submitted: November 9, 2026
+CONTENTS
+Summary
+Strengths
+Weaknesses
+Detailed Comments
+Questions
+Overall Assessment
+Summary
+
+This perspective advances a clear, testable program for “agent-held temporal evidence” in persistent AI agents. It distinguishes platform-enforced continuity from evidence that an agent’s self-model can read and interpret, proposes a two-part mechanism (a non-restorable continuity anchor plus an experiential index of accumulated change), classifies evidence sources under explicit threat models, and pairs each proposed capability with a conventional competitor and closure rule. The paper also reports a negative identifiability result for the cheapest experiential-index candidates (e.g., update-norm clocks under Adam), sharpening the evaluation agenda and narrowing claims.
+
+Strengths
+Technical novelty and innovation
+Separates three arrangements (platform-only continuity, adjudicated claims, raw agent-bound evidence) and argues that arrangement (b) is the strongest competitor to (c); this framing is crisp and actionable.
+Introduces a useful classification of temporal evidence sources (order, duration, sequential computation, continuity, self-change) by who can write/reset/forge/copy them and whether the self-model can read them, under explicit threat models.
+Formalizes a minimal “continuity anchor” (non-restorable time reference c_a and state-bound operation counter N) for suspension/restoration/fork detection, and separates it from an “experiential index” c_e for modelling adaptation—a conceptually clean decomposition.
+Presents an operational closure rule with non-inferiority margins, information-matched controls, reset criteria, and a principled “not identifiable” exit when a candidate can be reconstructed from free telemetry.
+Experimental rigor and validation
+Candidly reports a negative result: cheap experiential-index candidates (including update-norm clocks used in continual learning) are reconstructed from optimizer telemetry and confer no identifiable value in the regimes tested.
+Proposes concrete evaluation levels and primary metrics, each with a strong conventional competitor that could close the level (e.g., a trusted continuity flag from a local monitor), increasing the falsifiability of the program.
+Emphasizes competence audits, decoding ceilings, reset criteria, and equivalence testing—sound methodological gates even for a conceptual piece.
+Clarity of presentation
+Threat models (A/B/C), trust boundaries, and the role of a trusted reference monitor are clearly delineated; rollback indistinguishability is precisely stated and situated relative to known protocols.
+Risks and dual-use concerns are explicitly discussed, along with a sensible design principle: access to restoration evidence confers no control over restoration.
+The writing is careful about scope, avoids over-claiming, and integrates adjacent literatures without overstating novelty.
+Significance of contributions
+Targets a central, under-specified problem for persistent agents: what an agent can justifiably know about elapsed time, continuity, and its own change when its state is checkpointable and restorable.
+Bridges systems security (roots of trust, state continuity), cryptography (VDFs, puzzles), neuroscience (time/drift), and agent self-modelling, proposing a unifying evaluation agenda that could guide both research and practice.
+Aligns with emerging governance work on rollback, provenance, migration, and execution continuity, offering a principled way to compare platform guarantees with agent-held signals.
+Weaknesses
+Technical limitations or concerns
+Heavy reliance on trusted hardware/monitors and manufacturer trust; threat model C (physical adversary) is largely acknowledged but unresolved, limiting applicability in hostile environments.
+Fork detection and per-instance uniqueness depend on counters and attestation or PUF-like mechanisms that face well-known modelling and deployment challenges; clone/fork nuances (e.g., same-host clones, interleaved counter use) merit deeper treatment.
+The experiential index remains mostly a definition; cheap proxies are shown unidentifiable and costly candidates (competence change, counterfactual influence) are untested and potentially expensive or brittle.
+Calibration, crash-consistency, and race conditions (multi-threaded agents, distributed components, partial commits, out-of-band side effects) are mentioned but not fully specified in the anchor protocol.
+Experimental gaps or methodological issues
+No empirical demonstration of Levels 1 and 4–6; in particular, it remains unshown that raw graded evidence improves downstream self-predictions or decision quality beyond an adjudicated continuity flag.
+No prototype demonstrating the trusted path from evidence to a self-model within a TEE while preserving privilege separation (epistemic vs policy access).
+Cost analyses (latency, energy, storage, recomputation, administrative complexity) and operational trade-offs are discussed abstractly but not quantified.
+Clarity or presentation issues
+The choice of distance D for c_e and concrete algorithms for integrating evidence into a predictive self-model are under-specified; more worked examples or diagrams would help.
+Some repetition and dense referencing make it harder to track which components are claims vs. evaluation scaffolding.
+Missing related work or comparisons
+While many adjacent works are cited, the paper could more deeply engage with:
+Execution continuity failures in checkpoint/rollback agent systems and how the proposed anchor would integrate with OS/VM boundaries and idempotent effect protocols (2608.29381).
+Authorized rollback/continuity frameworks like REBOUND (2511.13641) and CRISP (2408.06822) as concrete instantiations of arrangement (a)/(b), with sharper comparisons and migration of their guarantees to the proposed agent-held path.
+Same-host cloning countermeasures (2601.09273), highlighting practical fork-detection limits and how contention on counters or local clone detection interacts with the anchor.
+Dependency-guided rollback repair (2608.10502) as a strong conventional competitor for Level 5 revocation and selective replay tasks.
+Runtime-independent persistent-agent architectures (2609.00546) and how “re-anchoring” semantics map onto authority epochs and provider contracts.
+The FOREVER framework (2601.03938) beyond the negative identifiability result, to propose alternative experiential measures that are both predictive and not reducible to free telemetry.
+Physical time-lock puzzles grounded in PUF latency (2607.17328) as concrete Level-1/4 building blocks, with a fuller accounting of modelling/environmental risks.
+Detailed Comments
+Technical soundness evaluation
+The rollback indistinguishability proposition is elementary but central and correctly scoped; it anchors the argument that some evidence must lie outside the restorable state.
+The sufficiency of (c_a, N) for classifying suspension vs restoration is sound under the assumed ordering, sealing, and crash-consistency; however, multi-threaded agents, distributed services, and partial side effects to the outside world will require stronger coupling with transactional or idempotent external protocols and broader recovery boundaries.
+The trusted-path requirement (self-model executes in a TEE or reads through the monitor) is appropriate under threat model B, but the paper could further elaborate freshness guarantees against host replay (e.g., counter-based anti-replay semantics for evidence reads).
+The separation of epistemic vs policy/lifecycle authority is a valuable safety insight; the observation that conditioning the policy on continuity evidence can itself break “behavioral rollback” is important and underlines the need for virtualization/gating during governance recovery.
+Experimental evaluation assessment
+As a perspective, the paper is upfront about the lack of new data. The inclusion of a negative, out-of-sample reconstruction result for Level 2 candidates (from the companion study) is constructive—tightening claims and reinforcing the identifiability gate.
+That said, a minimal working prototype at Level 4 (anchor + adjudicated flag vs raw readings) on simple tasks (e.g., stale-knowledge re-verification under delayed flags) would materially strengthen the case that raw graded evidence is useful or confirm equivalence with the flag.
+Cost-model quantification (e.g., latency/energy/storage trade-offs for trusted timers, counter increments, decay cells, and TEE bridges) would make the non-inferiority comparisons at each level concrete.
+Comparison with related work (using the summaries provided)
+Runtime-independent agents (2609.00546) define migration semantics, fencing, and authority epochs that closely match the paper’s “re-anchoring” notion; deeper mapping of (c_a, N) into those authority/manifest constructs could yield immediate implementation guidance.
+Execution continuity failures in agent C/R (2608.29381) strengthen the paper’s motivation: even “correct” checkpoint restoration can be security-invalid; the proposed anchor should be evaluated alongside OS/VM boundary controls, idempotent tool effects, and post-resume revalidation.
+REBOUND (2511.13641) and CRISP (2408.06822) provide concrete designs for authorized rollback with hardware-anchored continuity and verifiable lineage; they are natural baselines for Levels 3–5 (history, discontinuity, closed-loop use).
+CLONEBUSTER (2601.09273) shows monotonic counters do not solve clone attacks on SGX broadly, and same-host clones are subtle; the paper should explicitly discuss clone threats and per-instance uniqueness/fork contention in the anchor design.
+FOREVER (2601.03938) illustrates a model-time scheduling approach that the companion study effectively “closes” via identifiability; pointing toward next-generation experiential indices that align with competence deltas or counterfactual influences (and are not reconstructable from optimizer states) would clarify the research path.
+Dependency-guided rollback repair (2608.10502) is an especially strong conventional competitor at Level 5 for revocation/replay decisions under provenance, warranting explicit integration in the proposed task suite.
+Physical time-lock puzzles via PUFs (2607.17328) are relevant Level-1/4 candidates with known fragilities (modelling, environmental manipulation); the paper should elaborate test regimes and acceptance criteria under threat model C.
+Discussion of broader impact and significance
+The paper thoughtfully addresses dual-use concerns (situational awareness as an eval-detector), proposes strict separation between access to evidence and control over restoration, and suggests virtualization for governance recovery, aligning with interruptibility/corrigibility literature.
+If realized, agent-held temporal evidence could improve calibration of knowledge age, rollback/fork awareness, and revocation/anticipation under absent or delayed logs—valuable for long-lived, partially offline or distrustful deployments.
+Conversely, dependence on trusted hardware shifts risk to supply chains and manufacturer trust, which the paper acknowledges; a research path that reduces or audits this trust would increase deployability.
+Questions for Authors
+Can you formalize the calibration/error budget for c_a and specify the exact decision thresholds for classifying suspension vs restoration under clock drift, reading jitter, and batching of N increments?
+How do you guarantee freshness of evidence reads to the self-model under a compromised host that may replay prior authenticated readings (e.g., exact anti-replay semantics and sequence-binding for evidence channels)?
+What concrete TEE/hardware choices and attestation chains do you envision for the trusted path, and how would you bound the TCB while enabling the self-model to read raw evidence without gaining policy-level control?
+How would the continuity anchor generalize to multi-process/distributed agents where multiple local counters and clocks must be reconciled across machines and recovery boundaries?
+For clone/fork detection: how does your design address same-host cloning and interleaved counter increments (as surfaced by 2601.09273), and do you anticipate needing centralized epochs or ledgers to enforce uniqueness?
+Which specific “costly but valid” c_e distances will you test next (e.g., competence delta vectors on a probe battery, counterfactual influence measures), and how will you constrain their collection/storage cost to pass the non-inferiority gate?
+For Level 5 revocation, how will you compare against dependency-guided rollback repair (2608.10502) and provenance-guided replay (71), and what metrics will adjudicate recovery quality vs recomputation cost?
+Can you detail a minimal Level-4 prototype (hardware, APIs, TEE layout, evidence serialization) and the associated evaluation contract, including delayed/withheld-flag regimes and cost metrics?
+How will you virtualize or gate continuity evidence during governance recovery without enabling a host adversary to mask genuine discontinuities (authorization/audit for virtualization operations)?
+Given the risks of PUF modelling and environmental manipulation, what acceptance criteria and test harnesses would you adopt for decay clocks or P-TLP-like anchors under threat model C?
+Beyond Adam/LoRA, do you have evidence or hypotheses for when experiential indices become identifiable (e.g., full fine-tuning with SGD or optimizers without moment state), and how will you rule out free telemetry confounds there?
+Could AOEP-style lifecycle evaluations (2606.30306) be adapted to score temporal-evidence obligations (e.g., continuity detection latency, rollback traceability, knowledge-age calibration) as part of a standardized benchmark?
+Overall Assessment
+
+This is a careful and ambitious perspective that reframes a timely question—what temporal and continuity evidence an agent can legitimately hold and use—into a falsifiable program with explicit threat models, trust boundaries, and non-inferiority closure rules. The separation between a continuity anchor and an experiential index is conceptually clean, and the proposed evaluation levels each have strong conventional competitors, preventing unfalsifiable or gilded claims. The paper’s candor about negative identifiability results and its safety design principle (read-only access to restoration evidence) further strengthen its credibility.
+
+The primary shortcoming is empirical: beyond the reported negative result for cheap experiential indices, there is no demonstration that raw agent-held evidence yields benefits over adjudicated flags or trusted logs in realistic tasks, nor a minimal prototype integrating the trusted path and self-model. Several practical complexities (multi-process systems, clone attacks, cost trade-offs) remain open. Nonetheless, as a perspective, it makes a substantive, original contribution by defining the problem precisely, proposing concrete mechanisms and protocols consistent with systems security practice, and laying out an evaluation contract that the community can pursue. I recommend acceptance as a perspective with minor revisions: deepen engagement with execution-continuity, authorized rollback, and cloning literature (as above); specify a minimal Level-4 prototype plan; and sharpen the cost/TCB discussion for trusted paths.

@@ -1,0 +1,69 @@
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4610: RuntimeWarning: invalid value encountered in multiply
+  subtract(b, diff_b_a * (1 - t), out=lerp_interpolation, where=t >= 0.5,
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4610: RuntimeWarning: invalid value encountered in multiply
+  subtract(b, diff_b_a * (1 - t), out=lerp_interpolation, where=t >= 0.5,
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4608: RuntimeWarning: invalid value encountered in subtract
+  diff_b_a = b - a
+<Python 3.14>\Lib\site-packages\numpy\lib\_function_base_impl.py:4610: RuntimeWarning: invalid value encountered in multiply
+  subtract(b, diff_b_a * (1 - t), out=lerp_interpolation, where=t >= 0.5,
+runs: ['s7101', 's7102', 's7103']; windows: 873; D3 intervals: 819; phases: 114
+
+Rata lui τ pe ferestre de 8 pași (factori), R² în afara rulării:
+                          R2 mediu  R2 minim
+Ση (C3)                      0.686     0.677
+Ση‖g̃‖ (C5b)                 0.879     0.874
+Ση‖m̂‖ (C5d)                 0.941     0.938
+câmp mediu C5d/√v̄           0.941     0.939
+Ση + Ση‖m̂‖                  0.956     0.954
+GBDT telemetrie completă     0.988     0.984
+
+Rata lui τ pe ΔW = 2·B·A (secundar):
+                          R2 mediu  R2 minim
+Ση (C3)                      0.661     0.648
+Ση‖g̃‖ (C5b)                 0.869     0.864
+Ση‖m̂‖ (C5d)                 0.922     0.914
+câmp mediu C5d/√v̄           0.922     0.914
+Ση + Ση‖m̂‖                  0.934     0.927
+GBDT telemetrie completă     0.992     0.991
+
+D3 (schimbarea funcțională pe sonde), R² în afara rulării:
+                          R2 mediu  R2 minim
+Ση (C3)                      0.460     0.445
+Ση‖g̃‖ (C5b)                 0.672     0.639
+Ση‖m̂‖ (C5d)                 0.661     0.624
+câmp mediu C5d/√v̄           0.662     0.624
+Ση + Ση‖m̂‖                  0.666     0.629
+GBDT telemetrie completă     0.941     0.926
+
+Reziduul lui 'y ~ Ση' (relativ la rata medie), după fereastra din fază și tipul fazei:
+                           n  eroare_abs   bias
+faza      fereastra                            
+calibrare 1 (pașii 1-8)   30       0.463  0.463
+          2               30       0.802  0.802
+          3-4             30       0.288  0.288
+curentă   1 (pașii 1-8)   84       0.479  0.479
+          2               84       0.309  0.305
+          3-4            114       0.110 -0.102
+          >=5            501       0.289 -0.201
+
+La nivel de fază: R² (în afara rulării) al lui τ_fază din Ση_fază și din Ση‖m̂‖_fază:
+  S_eta: mediu 0.991, minim 0.988
+  S_eta_m: mediu 0.995, minim 0.995
+
+Pași săriți de GradScaler: 304 din 6984 pași în ferestre

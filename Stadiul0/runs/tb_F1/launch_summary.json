@@ -1,0 +1,55 @@
+{
+ "workers": 4,
+ "overrides": [],
+ "total_wall_s": 2448.6,
+ "runs": [
+  {
+   "family": "F1",
+   "seed": 9104,
+   "returncode": 0,
+   "wall_s": 882.2
+  },
+  {
+   "family": "F1",
+   "seed": 9102,
+   "returncode": 0,
+   "wall_s": 886.2
+  },
+  {
+   "family": "F1",
+   "seed": 9103,
+   "returncode": 0,
+   "wall_s": 888.2
+  },
+  {
+   "family": "F1",
+   "seed": 9101,
+   "returncode": 0,
+   "wall_s": 1408.4
+  },
+  {
+   "family": "F1",
+   "seed": 9105,
+   "returncode": 0,
+   "wall_s": 886.2
+  },
+  {
+   "family": "F1",
+   "seed": 9106,
+   "returncode": 0,
+   "wall_s": 884.2
+  },
+  {
+   "family": "F1",
+   "seed": 9107,
+   "returncode": 0,
+   "wall_s": 888.2
+  },
+  {
+   "family": "F1",
+   "seed": 9108,
+   "returncode": 0,
+   "wall_s": 1040.2
+  }
+ ]
+}

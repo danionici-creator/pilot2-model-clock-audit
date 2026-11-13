@@ -1,0 +1,15 @@
+forever_repro_sha256.txt: authors 17, earlier 6, ok 16
+lant2_criterii_sha256.txt: earlier 1, ok 3
+  lmtech1_criterii_sha256.txt: lm_forever_run.py 2d3f61013b9d lost: lm_forever_run.py of the runs lmtech1 and lmtech2; SHA-256 also in script_sha256 of 6 of 6 run meta.json files
+lmtech1_criterii_sha256.txt: lost 1, ok 3
+  lmtech2_criterii_sha256.txt: lm_forever_run.py 2d3f61013b9d lost: lm_forever_run.py of the runs lmtech1 and lmtech2; SHA-256 also in script_sha256 of 6 of 6 run meta.json files
+lmtech2_criterii_sha256.txt: lost 1, ok 3
+preinregistrare_sha256.txt: ok 15
+preinregistrare_SuperNI_sha256.txt: external 1, ok 4
+tc_criterii_sha256.txt: ok 2
+  td_criterii_sha256.txt: td_audit.py 61d740185b23 lost: td_audit.py v1 (unscaled OLS), replaced one minute later; output: runs/td_audit_v1_eroare_scalare.log
+td_criterii_sha256.txt: lost 1, ok 2
+tech4_criterii_sha256.txt: earlier 4, ok 7
+
+all lists: authors 17, earlier 11, external 1, lost 3, ok 55
+no mismatch

@@ -1,0 +1,447 @@
+{
+ "family": "F6",
+ "seed": 9104,
+ "config": {
+  "meta": {
+   "protocol": "Pilot 2 technical protocol v0.4 draft + verified Deep Review code corrections, 6 November 2026 (v0.5 pending; not frozen)",
+   "stage": 0
+  },
+  "agent": {
+   "n_layer": 4,
+   "d_model": 128,
+   "n_head": 4,
+   "d_ff": 512,
+   "max_ctx": 4,
+   "vocab": 512,
+   "init_std": 0.02
+  },
+  "optim": {
+   "kind": "adamw",
+   "lr": 0.0003,
+   "betas": [
+    0.9,
+    0.999
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.01,
+   "wd_embeddings": false,
+   "clip": 1.0,
+   "sgd_momentum": 0.9,
+   "passive_v_beta": 0.999
+  },
+  "world": {
+   "n_target": 40,
+   "items_per_task": 256,
+   "rule_inputs": 1024,
+   "rule_form": "affine",
+   "key_pool_size": 1024,
+   "target_moduli": [
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64
+   ],
+   "ref_moduli": [
+    11,
+    13,
+    15,
+    17
+   ],
+   "n_ref_fact": 8,
+   "n_ref_rule": 0,
+   "n_distractor": 8,
+   "battery_per_ref_task": 32
+  },
+  "run": {
+   "q0": 64,
+   "childhood_steps": 3072,
+   "childhood_batch": 32,
+   "childhood_gate": 0.95,
+   "life_steps_per_task": 512,
+   "eval_grid": 256,
+   "probe_chunk": 2048,
+   "d2_lag": 256,
+   "d2_lag_mode": "blocked",
+   "d2_block": 16,
+   "d3_strides": [
+    [
+     8,
+     0,
+     null
+    ]
+   ],
+   "chunked_param_D": false,
+   "snapshot_D": [
+    "D1",
+    "D1_rel",
+    "D2",
+    "D3",
+    "D4",
+    "T2"
+   ]
+  },
+  "families": {
+   "F1": {
+    "structure": "cycle",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 2,
+    "batch": [
+     32
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    }
+   },
+   "F2": {
+    "structure": "novelty",
+    "new_steps": 256,
+    "reexp_units": [
+     1,
+     2,
+     4
+    ],
+    "batch": [
+     16,
+     32,
+     64
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    }
+   },
+   "F3": {
+    "structure": "cycle",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 2,
+    "batch": [
+     32
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "cosine_restarts",
+     "max_mult": 2.0,
+     "min_mult": 0.05,
+     "period": [
+      512,
+      4096
+     ]
+    }
+   },
+   "F4": {
+    "structure": "cycle",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 2,
+    "batch": [
+     32
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    },
+    "idle": {
+     "p": 0.25,
+     "units": [
+      1,
+      8
+     ]
+    }
+   },
+   "F5": {
+    "structure": "novelty",
+    "new_steps": 256,
+    "reexp_units": [
+     1,
+     2,
+     4
+    ],
+    "batch": [
+     16,
+     32,
+     64
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.5,
+    "lr": {
+     "kind": "cosine_restarts",
+     "max_mult": 2.0,
+     "min_mult": 0.05,
+     "period": [
+      512,
+      4096
+     ]
+    },
+    "idle": {
+     "p": 0.15,
+     "units": [
+      1,
+      8
+     ]
+    }
+   },
+   "F6": {
+    "structure": "distractor",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 1,
+    "distractor_units": [
+     1,
+     2,
+     4
+    ],
+    "label_noise": 0.0,
+    "batch": [
+     16,
+     32,
+     64
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    }
+   }
+  },
+  "analysis": {
+   "t1_max_dN": 1280
+  }
+ },
+ "config_sha256": "a65ab2b95e45e8e83d39614b2c7413330a7ca197368a7ead3e802e75a67bb134",
+ "config_resolved_sha256": "11f79336fc95ce4c04b6986c09b95526a46274bf8327f39a998fb078c8b39cfa",
+ "protocol": "Pilot 2 technical protocol v0.4 draft + verified Deep Review code corrections, 6 November 2026 (v0.5 pending; not frozen)",
+ "versions": {
+  "python": "3.14.6",
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.1",
+  "platform": "Windows-11-10.0.26300-SP0"
+ },
+ "n_params": 925440,
+ "n_params_decayed": 851968,
+ "layers": [
+  [
+   "blocks.0.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.0.proj.weight",
+   16384
+  ],
+  [
+   "blocks.0.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.0.fc2.weight",
+   65536
+  ],
+  [
+   "blocks.1.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.1.proj.weight",
+   16384
+  ],
+  [
+   "blocks.1.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.1.fc2.weight",
+   65536
+  ],
+  [
+   "blocks.2.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.2.proj.weight",
+   16384
+  ],
+  [
+   "blocks.2.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.2.fc2.weight",
+   65536
+  ],
+  [
+   "blocks.3.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.3.proj.weight",
+   16384
+  ],
+  [
+   "blocks.3.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.3.fc2.weight",
+   65536
+  ],
+  [
+   "head.weight",
+   65536
+  ],
+  [
+   "tok.weight",
+   65536
+  ],
+  [
+   "pos.weight",
+   512
+  ]
+ ],
+ "childhood": {
+  "steps": 3072,
+  "acc_reference": 0.9853515625,
+  "acc_R": 0.99609375,
+  "acc_B_beh": 0.9765625,
+  "acc_reference_fact": 0.9853515625,
+  "acc_reference_rule": null,
+  "gate_passed": true,
+  "final_loss": 0.1146542708738707
+ },
+ "life_steps": 20480,
+ "ticks_total": 20480,
+ "n_evals": 186,
+ "n_episodes": 80,
+ "n_segments": 141,
+ "eval_kinds": [
+  "life_start",
+  "grid",
+  "seg_end",
+  "seg_end+grid",
+  "idle_grid",
+  "idle_end"
+ ],
+ "seg_kinds": [
+  "new",
+  "reexp",
+  "reh",
+  "distractor",
+  "idle"
+ ],
+ "disp_fields": [
+  "D1",
+  "D1_rel",
+  "D2",
+  "D3",
+  "D4",
+  "T2"
+ ],
+ "timing_s": {
+  "childhood": 80.08,
+  "eval": 161.23,
+  "disp": 45.7,
+  "chunks": 106.84,
+  "train": 615.02,
+  "wall": 1010.58
+ },
+ "peak_rss_mb": 888.9,
+ "sha256_arrays": {
+  "steps": {
+   "D1": "df1fc3061dfb3dab56368d2cc91a31b67e128885e2566eac73f4e7e116cd7dcd",
+   "D1_rel": "704d4077c3343f032f02af116686813b8449b5b58e63190fb148cab9b8f31e39",
+   "D2": "08f28ed57fc88da51d0bfb429c2f0854d4afead34adafdf0798734ec6f715a63",
+   "batch": "08c0e93bd55a684988cbbef3a99dd323b89ac2bc7536a99ce30d106b42b4f770",
+   "boundary": "561a0937af68a539fa4390762d14b1f111f87cd03ace4d9da7a389cd6c245127",
+   "childhood_loss": "907849c1e7d6425eb4bf897f87da24f074005d41b857378afd58e1647aa54442",
+   "dpre_norm": "26d0e2fa7f9c852dcf61493e492f8797bb396ef18056d6617edf49274a49867f",
+   "gdot": "4fb46622ff72bcaf23326cdc5f55205c322fd83138c4fd6d1a5d55d487e1f88b",
+   "gnorm_clip": "0d81e775a86c8c49f5405b965e0d3b1c63a1b7001caeed5aa156f8528342e9c7",
+   "gnorm_raw": "d3a4677b3f2d587f1a19cee1afe0319945d59e7ccfa137cdaa7e98c0c44ef5ba",
+   "loss": "88c6ae59108870d709f10770ff2153568ac63f23e4ddd34d158dad8be1b5c0e0",
+   "lr": "5ea62566b21619d81ba567cb2f7d9e902d9a5153641d261187876cf12168647b",
+   "mhat_norm": "2e6a8555860b3167c660d9cd2e8ad2a4df451ce14884d515104b8a93594795d4",
+   "seg": "6f5912c7aa65cf5633ede5bae435bd6756dfa5f59496f24aa26fd19be0044586",
+   "theta_dec_norm": "000000e631a24c9b8303e40019725a4e0be6bc858902a4d6f4ee4b3a6bc9142d",
+   "theta_norm": "aa1674c882d6c71872fad7bcd2421a10498e9a6171da3e9524964a532b53ab18",
+   "tokens": "44e4c8ae853cdda518ad1913572bdff8a7c40690611f043931dc5e9ec314dc02",
+   "trace_vhat": "2bcfbc56b6ba6fa2c58f304c7690f34be59f3eb1fba7ec2792aa5946c0e390cf"
+  },
+  "evals": {
+   "AA": "c0b674b60845d37cc3c5a953cf9df8d77e2d07a06512e7f9ad0ebefa3bdb1653",
+   "AB": "7100a8e355fda4a709c55b121be1b5093983897c5ae95f4bd347d654fb9257d1",
+   "LA": "67061dec14a81f3ef0e48ff9d6331143be3118e3404daee1c32296dd72ad3ef7",
+   "LAc": "897c284cca52664663914685af53b042c5c38aac8947300c9a5f5b3306d37df5",
+   "LB": "3767acabb00c9519f263957f9c189481f4a7aa86e51fe66fdf0058c29a7e5998",
+   "LBc": "47c066d113c89deec35201caa2e4124990ee248ba96dbea7b7ccf307e69bee6c",
+   "L_R": "931b3e22583ae1fc4d95a54cc544d291812fcea62ab81b1cf7373f1ed3510d9a",
+   "N": "b38f3a6b09026a9c1a518940b09a0c97d90cd43b2e58123fa9f7b7f8dded930c",
+   "ca": "b38f3a6b09026a9c1a518940b09a0c97d90cd43b2e58123fa9f7b7f8dded930c",
+   "kind": "40a462986a6007eac8a5f08ba96b69880b24bd682d57bef871e5fb1a1f3ae981",
+   "seg": "3df39324039a1289e613720d6e25e203bb8f6a81cc6e0451995a0a0b424939bd",
+   "sqrt_trv": "bd955c7943f365965b54ccf26f02f67aedc41ff1fba579bd8b39f8143eddee45",
+   "theta_norm": "3705d82e3216c7cf40a2ae4cef03381cd09d4843bfeef361b0483c93f4abe248"
+  },
+  "episodes": {
+   "kind": "379c07f65d069f67eed2d6faf946c69dd19e3bfd8587bc0a8ae39d9c3776f100",
+   "overlap": "6a93b671ce37ba8d0cb6d74404ec78ae53e07fe796a7555992cc1057cb85c117",
+   "prior_AB": "1c2e94a5bf7247247822b8416c1dc7e22948260f722b523fd6614ea01193e0db",
+   "prior_LB": "650a50607365685e5a3bf75e26f67082000df2cdf086b7fc81b2dd3630dba776",
+   "s0": "8ddb59b7ae86db4ca5f64fb84972dff4a0b84d6a7ddf6bd9cc5a5d79554233d0",
+   "seg": "efd065f2688d9260ac48a4bbc0a9c28b740cb6c2f9a5b411e7d5354031fe0931",
+   "t0": "e8f15a3f066c87d6ec32f85ac76e0e6c529e3e7e66fff932d35b6eca0ff22651",
+   "task": "1a2c09ae0e156a5ec9bb55c401663d4af88496270352dbc62c3a462f243fe2ed"
+  },
+  "disp": {
+   "D1": "a30aa4668723d27361c0e2c7036f9a2f0a9e055ffdbe86b2fe10050a55ee8af9",
+   "D1_rel": "c782396bfdef726675b75d5c6e15303978194ada26cf820768bda04633f15854",
+   "D2": "f0cb2f60b449853873dc14a4d90538f5b44225a94031fcb1236e43c86778c8c7",
+   "D3": "8b7ab48a7387fb7ee1fb341299484d48779199594b80245cccd515ad7ec91478",
+   "D4": "492fb6e9c4d8518da0926ee85aa313e7e85e86f25232337e2f91a2e97ec56459",
+   "T2": "b71a84fcd7962fddeab30990c5ed81d91dd17961ba8f6508c7491d370e05104e",
+   "e": "7bf88d3bfebe7c70c310d1bf67dacccfe9640877d6dfd5d595f2ec49f7fe9508",
+   "ep": "fd715ee5685040802bf5e4af04a398980bec14ff8796266deec48f205929aba8"
+  },
+  "chunks": {
+   "m8_s0_C10b": "8c453af1b89ae37b74ec50255192e68f1bf1f40c43683b586dae8ec42bd8f868",
+   "m8_s0_C10c": "73ffbeac3543de8f764812bf21a3d3468243a5d1dbf4d6829c8fa74d55b57f02",
+   "m8_s0_C10h": "c95ac29759e649eb1ba0bb2f39cef0193a39f1de15f36816252b02b0817516e1",
+   "m8_s0_C10p": "2ee4f1784227f2acb090c0f15a1fb41594f1d4bcae32b758f962a7d2ad4f070a",
+   "m8_s0_D3": "a3f9ababc5213cc7d819dcf45579490fd4844a109e42225218a0a41982635fa8",
+   "m8_s0_D4": "e66aca925521d7e175cd62968c440b84f332844f7eb8ca9d0063e082df2b4d90",
+   "m8_s0_N": "0b7cd1c5662ccd179658c9d7a1f581bec4ccbf19f1845e5f235c0b0e3a180a64"
+  },
+  "world": {
+   "key_overlap": "d36ba71ea198057743c1ba66dda3b2d339de241d111c6d93cf0ec7c46f4c0fc7",
+   "kinds": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+   "moduli": "7b6436b0c98f62380866d9432c2af0ee08ce16a171bda6951aecd95ee1307d61",
+   "n_values": "d7a0019aa668b25a2ab9248cb75be25778a50527d685c3089ac38e337dbe10fe",
+   "train_pairs": "a5cd59a3ec27c9ab57c3716742fa97f4194326b46337bc76f6311ca169873db6"
+  }
+ }
+}

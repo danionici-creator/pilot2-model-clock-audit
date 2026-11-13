@@ -1,0 +1,30 @@
+You are reviewing a draft research protocol (attached PDF: "Pilot 2 — Technical Protocol", draft v0.2). Act as a rigorous, adversarial methodological reviewer in machine learning (continual learning, forgetting, Transformer training dynamics) and in statistics (prediction evaluation, equivalence testing, multiplicity, hierarchical data). Your aim is to find what would make the results uninterpretable, biased, or non-transferable, before the protocol is frozen and preregistered.
+
+CONTEXT
+- An earlier review of v0.1 covered §§0–12 and most of its appendix questions, but was cut off in the middle of the question on Stage C (item 8 of Q12). §19 records how each of its points was handled. If its text is pasted below this prompt, do not repeat it; in any case, do not raise again a point that v0.2 already addresses.
+- v0.2 was written after that review. §19 lists every change, its source, and every suggestion that was rejected or modified, with the reason. The appendix of v0.1 has been removed; the remaining questions are stated below.
+- Section 0 summarises two published works by the same author for context; they are not under review. Do not evaluate the broader research programme, and do not suggest changing the research question.
+- Stages 0, A and B run on a single laptop CPU (16 logical CPUs, single-threaded workers). Stage C is outside this preregistration (§13) and will get its own adaptation document.
+- The software versions in §3 (Python 3.14, PyTorch 2.13.0, NumPy 2.5.1, scikit-learn 1.9.0) are installed and were used for the measurements in §14. Do not question their existence.
+
+WHAT TO DO
+1. Revision check (§19). For each accepted change, verify that the sections it cites implement it correctly and completely, and that it does not conflict with any other section. For each rejected or modified suggestion, say whether the stated reason holds. Report only problems; do not confirm items that are fine.
+2. Stage 0 (§12a). Are the go/no-go criteria sufficient and consistent with §11 and §12? Is any criterion missing that would let a design proceed that cannot deliver an interpretable H1?
+3. Stage C (§13). State what the separate adaptation document must contain so that the transfer is clean, and what the confirmatory decision unit for Stage C should be (model size, full fine-tuning versus LoRA, and how disagreement between them is resolved).
+4. Interpretability of H1. Identify any flaw that would make a positive H1, or an equivalent H1, uninterpretable, that the design in v0.2 does not already address.
+5. Compute (§14, §12a). Check the feasibility of the estimates on the stated laptop, including probe evaluation, D3, displacement snapshots, the placebo and positive-control runs, and Stage B. Say whether the limits in §12a (≤ 40 min per run single-threaded; projected Stage A ≤ 150 CPU-hours) are consistent with §14.
+6. Review §15 (interpretation table), §16 (threats to validity), and §17 (deliverables): missing outcomes, rows that overlap or contradict each other, threats without mitigation.
+7. End with a prioritised list: the five changes you would make first, before freeze.
+
+For every problem, classify it as:
+- FATAL: a positive or negative H1 would be uninterpretable;
+- MAJOR: a bias or validity threat that changes conclusions;
+- MINOR: clarity, efficiency, or reporting.
+For each, give the section number, the problem, why it matters, and the fix as a concrete replacement: a value, a formula, a design, or a test.
+
+RULES
+- Be specific and technical. No general praise, no summary of the protocol back to the author.
+- Do not invent facts or references. If you cite a paper, give a verifiable identifier (DOI or arXiv ID). If you are unsure whether a claim is established, say so.
+- If something in the protocol is ambiguous, state the two readings and which one you assume.
+- If you need information that the PDF does not contain, say so instead of assuming it.
+- If you think a hypothesis cannot be tested as designed, say so plainly and propose the smallest design change that makes it testable.

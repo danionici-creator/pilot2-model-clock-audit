@@ -1,0 +1,26 @@
+{
+ "family": "F6",
+ "seed": 9107,
+ "n_params": 925440,
+ "childhood": {
+  "steps": 3072,
+  "acc_reference": 0.9873046875,
+  "acc_R": 0.98828125,
+  "acc_B_beh": 0.96875,
+  "acc_reference_fact": 0.9873046875,
+  "acc_reference_rule": null,
+  "gate_passed": true,
+  "final_loss": 0.11863543937215582
+ },
+ "n_evals": 181,
+ "n_episodes": 80,
+ "timing_s": {
+  "childhood": 81.54,
+  "eval": 156.06,
+  "disp": 43.01,
+  "chunks": 110.4,
+  "train": 622.78,
+  "wall": 1015.52
+ },
+ "peak_rss_mb": 875.8
+}

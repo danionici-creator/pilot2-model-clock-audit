@@ -1,0 +1,4 @@
+Python 3.14.6, numpy 2.5.1, pandas 3.0.3, scikit-learn 1.9.0, scipy 1.18.0, torch 2.13.0+cpu
+
+[OK] T-A: rc 0, 2 s; output = runs/ta_analysis.log (17 lines); ta_verdict.json: identical
+[OK] T-B: rc 0, 86 s; output = runs/tb_part1_g2.log (41 lines); tb_part1_verdict.json: identical

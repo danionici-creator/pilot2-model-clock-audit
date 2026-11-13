@@ -1,0 +1,28 @@
+You are reviewing a draft research protocol (attached PDF: "Pilot 2 — Technical Protocol, Draft for External Review"). Act as a rigorous, adversarial methodological reviewer in machine learning (continual learning, forgetting, Transformer training dynamics) and in statistics (prediction evaluation, equivalence testing, multiplicity, hierarchical data). Your aim is to find what would make the results uninterpretable, biased, or non-transferable, before the protocol is frozen and preregistered.
+
+SCOPE
+- Review only the protocol. Section 0 summarises two published works by the same author for context; they are not under review. Do not evaluate the merit of the broader research programme, and do not suggest changing the research question.
+- The study must run on a single laptop CPU (Stages 0, A, B, and a C-mini check), and must transfer unchanged, except for its configuration file, to pretrained language models on GPU (Stage C).
+
+WHAT TO DO
+1. Answer each of the 13 questions in the Appendix, numbered. For every recommended change, state the concrete replacement: a value, a formula, a design, or a test.
+2. Then list every additional problem you find. Classify each as:
+   - FATAL: a positive or negative H1 would be uninterpretable;
+   - MAJOR: a bias or validity threat that changes conclusions;
+   - MINOR: clarity, efficiency, or reporting.
+   For each, give: the section number, the problem, why it matters, and the fix.
+3. Check specifically:
+   (a) Leakage paths between predictors and targets: probes, the reference battery R, covariates, evaluation timing, and the use of L̄(t₀) as a covariate.
+   (b) Whether the identification note in §2 is correct, and whether any hypothesis or scheduler silently violates it.
+   (c) Whether the baseline B_cheap is competent, and whether any cheap, agent-available competitor is missing.
+   (d) Whether the stream families favour c_e by construction, and a concrete adversarial family that favours the competitors.
+   (e) The statistics: within-run R², bootstrap over runs, the minimal-effect test plus TOST, Holm across H1–H4, the sample-size rule, and the H2 ratio estimator.
+   (f) Internal consistency: every quantity, threshold, and gate used anywhere is defined, and the definitions do not conflict.
+   (g) Feasibility of the compute estimates on an 8-core laptop CPU, and anything that would make Stage C transfer unclean (pretrained LMs, LoRA, tokenisation, evaluation cost).
+4. End with a short, prioritised list: the five changes you would make first.
+
+RULES
+- Be specific and technical. No general praise, no summary of the protocol back to the author.
+- Do not invent facts or references. If you cite a paper, give a verifiable identifier (DOI or arXiv ID). If you are unsure whether a claim is established, say so.
+- If something in the protocol is ambiguous, state the two readings and which one you assume.
+- If you think a hypothesis cannot be tested as designed, say so plainly and propose the smallest design change that makes it testable.

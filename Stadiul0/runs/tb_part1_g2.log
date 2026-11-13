@@ -1,0 +1,41 @@
+F6_z0.0: 8 rulări, 4997 tripleți
+F6_z0.1: 8 rulări, 4997 tripleți
+F6_z0.3: 8 rulări, 4997 tripleți
+F6_z0.5: 8 rulări, 4997 tripleți
+F1: 8 rulări, 3600 tripleți
+
+R² în afara sămânței (o sămânță lăsată deoparte, în interiorul condiției): medie / min / max
+  F6_z0.0  D3      (i) dN + C10c                    0.949 / 0.934 / 0.957
+  F6_z0.0  D3      (ii) dN + C10c + C10p + C10h     0.997 / 0.995 / 0.997
+  F6_z0.0  D3      (iii) GBDT pe B+                 0.997 / 0.995 / 0.998
+  F6_z0.0  D1_rel  (i) dN + C10c                    0.736 / 0.690 / 0.777
+  F6_z0.0  D1_rel  (ii) dN + C10c + C10p + C10h     0.973 / 0.967 / 0.981
+  F6_z0.0  D1_rel  (iii) GBDT pe B+                 0.993 / 0.990 / 0.995
+  F6_z0.1  D3      (i) dN + C10c                    0.983 / 0.979 / 0.988
+  F6_z0.1  D3      (ii) dN + C10c + C10p + C10h     0.991 / 0.989 / 0.993
+  F6_z0.1  D3      (iii) GBDT pe B+                 0.996 / 0.995 / 0.997
+  F6_z0.1  D1_rel  (i) dN + C10c                    0.833 / 0.808 / 0.860
+  F6_z0.1  D1_rel  (ii) dN + C10c + C10p + C10h     0.934 / 0.922 / 0.946
+  F6_z0.1  D1_rel  (iii) GBDT pe B+                 0.993 / 0.989 / 0.995
+  F6_z0.3  D3      (i) dN + C10c                    0.958 / 0.921 / 0.972
+  F6_z0.3  D3      (ii) dN + C10c + C10p + C10h     0.962 / 0.933 / 0.971
+  F6_z0.3  D3      (iii) GBDT pe B+                 0.991 / 0.968 / 0.996
+  F6_z0.3  D1_rel  (i) dN + C10c                    0.721 / 0.669 / 0.780
+  F6_z0.3  D1_rel  (ii) dN + C10c + C10p + C10h     0.785 / 0.728 / 0.847
+  F6_z0.3  D1_rel  (iii) GBDT pe B+                 0.993 / 0.989 / 0.995
+  F6_z0.5  D3      (i) dN + C10c                    0.923 / 0.909 / 0.959
+  F6_z0.5  D3      (ii) dN + C10c + C10p + C10h     0.936 / 0.921 / 0.959
+  F6_z0.5  D3      (iii) GBDT pe B+                 0.990 / 0.986 / 0.993
+  F6_z0.5  D1_rel  (i) dN + C10c                    0.537 / 0.474 / 0.602
+  F6_z0.5  D1_rel  (ii) dN + C10c + C10p + C10h     0.621 / 0.556 / 0.732
+  F6_z0.5  D1_rel  (iii) GBDT pe B+                 0.993 / 0.991 / 0.995
+  F1       D3      (i) dN + C10c                    0.871 / 0.837 / 0.891
+  F1       D3      (ii) dN + C10c + C10p + C10h     0.993 / 0.991 / 0.994
+  F1       D3      (iii) GBDT pe B+                 0.992 / 0.989 / 0.993
+  F1       D1_rel  (i) dN + C10c                    0.524 / 0.371 / 0.614
+  F1       D1_rel  (ii) dN + C10c + C10p + C10h     0.960 / 0.951 / 0.967
+  F1       D1_rel  (iii) GBDT pe B+                 0.994 / 0.992 / 0.995
+
+G2-F6 (z = 0,3, GBDT pe B+ < 0,90 în ≥ 6/8 semințe): PICĂ (0/8)
+Doza–răspuns: u = {'0.0': 0.003, '0.1': 0.004, '0.3': 0.009, '0.5': 0.01}; monoton True; Spearman 1.00; u(0,3) ≥ 2·u(0): True -> TRECE
+Partea 2 (H1): NU SE RULEAZĂ (D3 se închide ca indice experiențial în acest cadru)

@@ -1,0 +1,3 @@
+calibration-to-rest ratio of sum|dtheta| / sum eta-increment (post hoc)
+  eta_m (R2, adapter B)  amazon 0.967  yahoo 0.861  agnews 0.705
+  eta_m_A1 (adapter A)   amazon 0.966  yahoo 0.903  agnews 0.810

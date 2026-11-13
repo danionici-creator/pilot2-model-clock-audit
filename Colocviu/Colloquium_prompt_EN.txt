@@ -1,0 +1,34 @@
+ROLE: You are a senior researcher in optimisation and continual learning of neural networks, and a research methodologist, acting as an adversarial adviser on the direction of a study. Be direct, concrete and critical; no praise. Do not invent facts or references: give an arXiv ID or DOI for every citation, or mark it "unverified"; if you search the web, cite only what you actually opened. Separate facts from your opinions, and say how confident you are.
+
+The attached dossier ("Colloquium dossier: Pilot 2 after the technical rounds of 4-6 November 2026") reports technical results of a study on whether an AI agent's accumulated internal change (an "experiential index", one candidate of which is the "model-centric time" of FOREVER, arXiv:2601.03938) carries information beyond cheap optimizer telemetry. Several AI systems receive the same dossier and the same questions, independently. Your answer will be verified claim by claim, and the direction will follow a decision rule fixed in advance (dossier, section 8). The author is a non-specialist; write for a technical reader, but make your final recommendation unambiguous.
+
+Your mandate: find what is wrong, trivial or unsupported, and name the tests that would settle the open questions for good, either by establishing something new and documented or by closing the line of work. Tests must run on the author's laptop (CPU: about 12 synthetic-world runs per hour; GPU RTX 3050 4 GB: about 15 minutes per 10-task Qwen3-0.6B LoRA run).
+
+QUESTIONS
+
+Q1. Reconstruction. Do results R1-R3 and R5-R6 show that the parameter-distance clocks (D1, D1_rel, D2, and FOREVER's tau) carry no information beyond optimizer telemetry, or could the reconstruction be an artefact (for example, a competitor that is a near-duplicate of the clock, leakage between training and test runs, the window length, the choice of rate rather than cumulative value, the synthetic tasks)? For each artefact you consider plausible, name the check that would rule it out.
+
+Q2. Is a confirmatory test of H1 (the clock predicts forgetting better than telemetry) still worth running for these candidates, given that the protocol's own identifiability gate G2 fails? If not, what scientific content is left, and how should it be reported?
+
+Q3. The open case: the functional clock D3 against its same-cost competitor C10c, and family F6 (distractors with label noise), where no cheap scalar reconstructs D3. Is this a real scientific question or an artefact of the synthetic design? Propose the decisive, preregisterable test, with its pass/fail criterion and cost in laptop hours.
+
+Q4. FOREVER. What exactly can be claimed, fairly, from R5-R8 about the FOREVER clock? What additional experiment would make the claim incontestable (for example, running the FOREVER replay scheduler driven by tau, by sum(eta*|m_hat|), and by the schedule-only clock, and comparing forgetting on the language-model arm)? Is a short descriptive note justified now, given that it would precede the preregistration of the main study?
+
+Q5. The Perspective paper's Level 2 (the experiential index c_e). Do these results weaken it? What should be revised or withdrawn in its next version?
+
+Q6. Red team. Give the strongest case that these results are wrong or trivial, and the single most important missing control.
+
+Q7. Direction. Choose exactly one option and justify it in at most 200 words:
+  A - continue with the restructured Stage A ("R" in dossier section 7, decision 1) as framed;
+  B - continue with a modification (state it precisely);
+  C - close the parameter-clock line now (a closure report on reconstruction, plus a FOREVER note) and keep only the D3/F6 question as a small confirmatory test;
+  D - a different direction (state it precisely, with its first decisive test).
+
+FINAL ANSWER BLOCK (required, exactly this format, at the end):
+DIRECTION: <A|B|C|D> - <one line>
+DECISIONS: 1: <B|C|R|other: ...>; 2: <yes|no>; 3: <now|postpone>; 4: <fully|unused rows only|not at all>; 5: <before|after final replay>; 6: <fp16|bf16>; 7: <yes|no>; 8: <now|after Stage A|never>
+DECISIVE TESTS: <numbered list; each with: hypothesis, pass/fail criterion fixed in advance, cost in laptop hours>
+MISSING CONTROL: <one line>
+CONFIDENCE: <low|medium|high> - <main uncertainty>
+
+Length: 1,500 to 3,000 words before the final block.

@@ -1,0 +1,12 @@
+evaluate services from 0 to 3
+task name: dbpedia
+任务 dbpedia 的 accuracy：0.9117142857142857
+task name: amazon
+任务 amazon 的 accuracy：0.4984
+task name: yahoo
+任务 yahoo 的 accuracy：0.6176
+task name: agnews
+任务 agnews 的 accuracy：0.8745
+average Performance (mean accuracy) is 0.72555
+[0.9117, 0.4984, 0.6176, 0.8745]
+0.72555

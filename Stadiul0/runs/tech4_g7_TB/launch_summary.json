@@ -1,0 +1,13 @@
+{
+ "workers": 1,
+ "overrides": [],
+ "total_wall_s": 682.2,
+ "runs": [
+  {
+   "family": "F6",
+   "seed": 9005,
+   "returncode": 0,
+   "wall_s": 682.1
+  }
+ ]
+}

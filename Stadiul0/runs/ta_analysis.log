@@ -1,0 +1,17 @@
+semințe complete: ['s7301', 's7302', 's7303', 's7304', 's7305']
+  tau    E1 0.2421  E2 -0.8310  E3 0.2445  repetiții medii 27.0
+  eta_m  E1 0.2458  E2 -0.8296  E3 0.2370  repetiții medii 27.0
+  eta    E1 0.2399  E2 -0.8264  E3 0.2355  repetiții medii 36.0
+  steps  E1 0.2440  E2 -0.8302  E3 0.2382  repetiții medii 27.0
+
+τ față de eta_m: E1(τ) − E1(eta_m) = -0.0037, IC 95% [-0.0147; +0.0074] -> ECHIVALENȚĂ PRACTICĂ
+  separarea declanșărilor (mediana |Δ pas|, pe indicele pragului): {'d_index_0': 0.0, 'd_index_1': 0.0, 'd_index_2': 1.0} -> ECHIVALENTE ca planificare (≤ 2 pași)
+  ΔE2 (BWT) -0.0014; ΔE3 (vechi, înainte de repetiția finală) +0.0074
+
+τ față de eta: E1(τ) − E1(eta) = +0.0023, IC 95% [-0.0041; +0.0086] -> ECHIVALENȚĂ PRACTICĂ
+  separarea declanșărilor (mediana |Δ pas|, pe indicele pragului): {'d_index_0': 0.0, 'd_index_1': 1.0, 'd_index_2': 9.0} -> separate
+  ΔE2 (BWT) -0.0046; ΔE3 (vechi, înainte de repetiția finală) +0.0089
+
+τ față de steps: E1(τ) − E1(steps) = -0.0018, IC 95% [-0.0106; +0.0070] -> ECHIVALENȚĂ PRACTICĂ
+  separarea declanșărilor (mediana |Δ pas|, pe indicele pragului): {'d_index_0': 0.0, 'd_index_1': 5.0, 'd_index_2': 13.0} -> separate
+  ΔE2 (BWT) -0.0009; ΔE3 (vechi, înainte de repetiția finală) +0.0062

@@ -1,0 +1,8 @@
+T-A eta_m -0.0036718750000000024 [np.float64(-0.014728689820048102), np.float64(0.007384939820048096)]
+T-A eta 0.0022656250000000046 [np.float64(-0.004059722119667578), np.float64(0.008590972119667587)]
+T-A steps -0.0018359375000000012 [np.float64(-0.010631154075670791), np.float64(0.00695927907567079)]
+S2 -0.006011539543072811 [np.float64(-0.019092547696662656), np.float64(0.007069468610517034)]
+Counterexample reconstruction R2 0.9900990099009901
+Outcome z recovered from residual True
+Floating update: ideal -1.0 actual stored parameter difference 0.0
+Skipped step with nonzero old moments: actual update 0; algebra without skip flag remains nonzero

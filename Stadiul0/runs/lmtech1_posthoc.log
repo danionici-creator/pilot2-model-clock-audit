@@ -1,0 +1,19 @@
+(1) Ferestre de 8 pași, R² în afara rulării (mediu, minim):
+  Ση (toți pașii)                  0.669  0.656
+  Ση aplicat (fără pașii săriți)   0.655  0.640
+  Ση aplicat + nr. pași săriți     0.718  0.706
+  Ση‖m̂‖                           0.944  0.940
+  ferestre cu cel puțin un pas sărit: 18.9%
+
+(2) La nivel de fază (fazele curente și de calibrare), R² în afara rulării:
+  pași (n)         0.987  0.984
+  Ση               0.991  0.989
+  Ση aplicat       0.991  0.988
+  n + Ση aplicat   0.991  0.988
+  rata pe fază (τ/n) din (Ση aplicat/n): 0.178  0.173   <- durata scoasă
+
+(3) Declanșarea repetițiilor (sarcinile 1-9): pasul la care τ atinge d·zi față de pasul ceasului doar din program
+   praguri_tau  atinse_si_de_program  pas_tau_median  dif_mediana  dif_abs_medie
+d                                                                               
+2           27                    27            44.0         -1.0            0.9
+4           27                    27            85.0         -9.0            9.9

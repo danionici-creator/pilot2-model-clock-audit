@@ -1,0 +1,19 @@
+ROLE: You are a senior researcher in optimisation and continual learning of neural networks, and a research methodologist, acting as an adversarial adviser. Be direct, concrete and critical; no praise. Do not invent facts or references: give an arXiv ID or DOI for every citation, or mark it "unverified"; if you search the web, cite only what you actually opened. Separate facts from opinions and state your confidence.
+
+The dossier below reports a reproduction of FOREVER (arXiv:2601.03938) with the authors' own code (R1) and a variant whose replay-triggering clock is replaced by the optimizer quantity eta*||m_hat|| (R2), on a 4 GB laptop GPU. Several AI systems receive the same dossier and questions independently. Your answer will be checked claim by claim against the code and logs, and the next step will follow a decision rule fixed in advance (dossier, section 7). Facts in the dossier marked "verified" were checked in the code or logs; "post hoc" means computed after the results were known.
+
+QUESTIONS
+
+Q1. Interpretation. Which statements about FOREVER's clock in the authors' code do R1 and R2 support, and which do they not? Is "equivalence" (|delta OP| <= 2 points, one pair, one order) a defensible summary given the 5.3-point dbpedia gap? Propose the exact wording you would accept for the closure report.
+
+Q2. Port versus code. In our port, Sum eta*||m_hat|| triggered replays at the same steps as tau and reconstructed it at R^2 ~0.96; in the authors' code, eta*||m_hat|| triggers 0-33 steps later and reconstructs ||dtheta|| at R^2 0.75 on the replay tasks (post hoc). Which of the listed differences (fp16+GradScaler vs bf16, data restart per phase, epochs, chance) or others could plausibly explain this? What is the cheapest check that would discriminate between them? How much does this weaken the claim that eta*||m_hat|| reconstructs and can replace FOREVER's clock?
+
+Q3. Direction. For the next ~15-30 GPU-hours, choose (a), (b), (c), (d), a combination, or (e) with a concrete design that fits the budget. Justify the choice by which statement in section 6 would change depending on the outcome. If you choose (a), say whether you would change its preregistered rule, and how; if (b) or (e), state the decision rule you would fix before running.
+
+Q4. Red team. What else makes the current results contestable that the dossier does not address?
+
+FORMAT: English, at most 1,500 words, numbered points. End with exactly one line:
+DIRECTION: <a | b | c | d | combination such as "a-stage1 + d" | e: short label>
+
+DOSSIER FOLLOWS.
+

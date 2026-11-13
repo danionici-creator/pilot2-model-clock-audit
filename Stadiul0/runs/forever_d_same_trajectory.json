@@ -1,0 +1,159 @@
+{
+ "1-amazon": {
+  "validation_eta_triggers_recomputed": [
+   24,
+   50,
+   104,
+   192
+  ],
+  "eta_triggers_actual_R2": [
+   24,
+   50,
+   104,
+   192
+  ],
+  "validation_ok": true,
+  "counterfactual_tau_triggers_same_trajectory": [
+   24,
+   48,
+   99,
+   182
+  ],
+  "first_differing_index": 1,
+  "clean_part": [
+   24,
+   48
+  ],
+  "R1_tau_triggers_other_trajectory": [
+   24,
+   48,
+   100,
+   185
+  ],
+  "ratio_dtheta_over_eta_inc_by_position_rel_median": {
+   "0": null,
+   "1": 0.8656270486329674,
+   "2": 0.8699688512778533,
+   "3-4": 0.9367117041602696,
+   "5-9": 0.9844998356185489,
+   "10+": 1.0048203220559948
+  },
+  "n_by_position": {
+   "0": 0,
+   "1": 5,
+   "2": 5,
+   "3-4": 10,
+   "5-9": 25,
+   "10+": 263
+  },
+  "R2_all_windows": 0.9858167124472553,
+  "R2_without_phase_start_windows": 0.994951059155933,
+  "windows_with_start": 5,
+  "windows_total": 39
+ },
+ "2-yahoo": {
+  "validation_eta_triggers_recomputed": [
+   24,
+   48,
+   96,
+   178
+  ],
+  "eta_triggers_actual_R2": [
+   24,
+   48,
+   96,
+   178
+  ],
+  "validation_ok": true,
+  "counterfactual_tau_triggers_same_trajectory": [
+   24,
+   46,
+   90,
+   161
+  ],
+  "first_differing_index": 1,
+  "clean_part": [
+   24,
+   46
+  ],
+  "R1_tau_triggers_other_trajectory": [
+   24,
+   46,
+   87,
+   160
+  ],
+  "ratio_dtheta_over_eta_inc_by_position_rel_median": {
+   "0": null,
+   "1": 0.8792833801315032,
+   "2": 0.9092738770426528,
+   "3-4": 0.9180186447367498,
+   "5-9": 0.9485839850092644,
+   "10+": 1.0242091509197127
+  },
+  "n_by_position": {
+   "0": 0,
+   "1": 5,
+   "2": 5,
+   "3-4": 10,
+   "5-9": 25,
+   "10+": 263
+  },
+  "R2_all_windows": 0.9339180045101563,
+  "R2_without_phase_start_windows": 0.9429291093868999,
+  "windows_with_start": 5,
+  "windows_total": 39
+ },
+ "3-agnews": {
+  "validation_eta_triggers_recomputed": [
+   24,
+   47,
+   96,
+   193
+  ],
+  "eta_triggers_actual_R2": [
+   24,
+   47,
+   96,
+   193
+  ],
+  "validation_ok": true,
+  "counterfactual_tau_triggers_same_trajectory": [
+   24,
+   47,
+   89,
+   155
+  ],
+  "first_differing_index": 2,
+  "clean_part": [
+   24,
+   47,
+   89
+  ],
+  "R1_tau_triggers_other_trajectory": [
+   24,
+   47,
+   93,
+   160
+  ],
+  "ratio_dtheta_over_eta_inc_by_position_rel_median": {
+   "0": null,
+   "1": 0.784902821756539,
+   "2": 0.8267288388387547,
+   "3-4": 0.8636972121913976,
+   "5-9": 0.8816446693909743,
+   "10+": 1.0100412089825823
+  },
+  "n_by_position": {
+   "0": 0,
+   "1": 5,
+   "2": 5,
+   "3-4": 10,
+   "5-9": 25,
+   "10+": 263
+  },
+  "R2_all_windows": 0.5783260938535141,
+  "R2_without_phase_start_windows": 0.5940821508954832,
+  "windows_with_start": 5,
+  "windows_total": 39
+ }
+}

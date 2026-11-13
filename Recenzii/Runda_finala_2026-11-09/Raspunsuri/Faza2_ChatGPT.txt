@@ -1,0 +1,464 @@
+[ChatGPT (chatgpt.com), 9 Nov 2026, prompt sent 13:20; the interface shows "A procesat timp de 6m 27s" and, under the answer, "Efort de gândire: Ridicată". Final answer copied from the page text (get_page_text). The interface text and the prompt are omitted. Two normalizations of the extraction only: (1) the formulas, which the page text gives twice (TeX source and rendered glyphs, one per line), are written once inline, e.g. "c_a", "N", "N > N(t_0)"; (2) the source chips under some paragraphs are kept as "[source chip: ...]". Nothing else is changed.]
+
+Independent critical review of Pilot 2 and A Time of Their Own, v1.4
+
+Recommendation: Major revision of both documents before publication.
+
+The principal problem is not the reported measurements. It is the interpretation of what the measurements establish.
+
+Pilot 2 supports abandoning the tested clock candidates as a research direction under the specified protocol. It does not demonstrate that they contain no additional information about forgetting. That hypothesis was never tested.
+
+The Perspective generally preserves this distinction, but contradicts it in several consequential passages. It also contains a separate logical problem concerning the claimed sufficiency of its continuity anchor.
+
+My assessment is based on both complete PDFs and selected primary publications. I have not received the Pilot 2 archive, executable code, raw logs, or original preregistration files. Consequently, I can audit the reported calculations and logical implications, but cannot independently certify the experimental execution or preregistration chronology.
+
+1. Numbered findings
+I. Errors of fact and internal consistency
+
+1. MAJOR — Reversed forgetting values
+
+Location: Pilot 2, §5.2, p. 7.
+
+The report states that the 5.33-point advantage on dbpedia favoured the τ clock, but attributes forgetting of approximately −9.9 to τ and −4.8 to its competitor.
+
+The numbers are reversed.
+
+From the reported task-0 and final accuracies:
+
+τ: 98.04 → 93.21; forgetting approximately −4.83.
+
+Ση‖m̂‖: 97.86 → 87.89; forgetting approximately −9.97.
+
+Fix: Reverse the forgetting values. Check the same quantities against the archived evaluation scripts. The error is particularly conspicuous because it reverses the direction of the report's largest task-level difference.
+
+2. MAJOR — The Perspective misidentifies the information used to reconstruct every candidate
+
+Location: Perspective, Abstract, p. 2; §4, p. 10. Pilot 2, §5.1, pp. 5–6.
+
+The Perspective's abstract says that every candidate was reconstructed from free optimizer telemetry.
+
+That is not accurate for D3, the functional-distance candidate. Its strongest reconstruction used changes in loss on the same reference probes, a same-cost functional competitor, not simply optimizer telemetry.
+
+This distinction matters: information derived from additional forward passes is not automatically contained in an optimizer's existing statistics.
+
+Fix: Say that candidates were reconstructed from inexpensive optimizer telemetry or from competitors using the same probe evaluations. The detailed formulation in Perspective §4 is closer to correct.
+
+3. MAJOR — Reproduction of FOREVER is described too strongly
+
+Location: Pilot 2, §5.2, p. 7.
+
+The reproduced overall performance is 72.37 versus the published 72.9. The arithmetic is correct, and the reported difference satisfies the declared ±5-point criterion.
+
+However, the paper's 72.9 is averaged across task orders, whereas the reproduction is one run on one order. FOREVER also reports results over multiple runs.
+
+The original paper confirms the 72.9 figure and its experimental reporting conventions. Feng et al. (2026), DOI: 10.18653/v1/2026.acl-long.1144.
+[source chip: aclanthology.org]
+
+Agreement within 0.53 points is therefore not an exact like-for-like reproduction.
+
+Fix: State that the original implementation produced a score within the predefined tolerance of the published aggregate, while noting the unmatched task-order and replication structure. Avoid presenting numerical proximity as independent validation of the entire method.
+
+II. Interpretation, methodology and scope
+
+4. FATAL — The principal closure claim exceeds the experimental verdict
+
+Locations: Pilot 2, Abstract and §1, pp. 1–2; §6, pp. 8–9. Perspective, §4, p. 10; §8, p. 16.
+
+The confirmatory hypothesis H1 — whether accumulated internal change predicts forgetting beyond telemetry — was never tested.
+
+The reported reconstruction results triggered G2, preventing that test.
+
+Nevertheless, the report concludes that the research line is closed as a documented negative result, while the Perspective states that the question has been answered negatively for the candidates tested.
+
+These are stronger claims than the evidence permits.
+
+Three outcomes must remain distinct:
+
+A candidate cannot be sufficiently distinguished from the controls under the chosen protocol.
+
+The candidate fails to improve prediction in a valid confirmatory comparison.
+
+The candidate is equivalent to, or inferior to, a competitor.
+
+Pilot 2 establishes the first for its main hypothesis, not the second or third.
+
+Fix: Report that the candidate line was discontinued following a preregistered identifiability failure. Separately report the negative scheduling comparisons.
+
+Abandoning an unproductive research direction is defensible. Claiming that its untested predictive hypothesis has been falsified is not.
+
+5. FATAL — The continuity-anchor sufficiency claim is logically unsupported
+
+Location: Perspective, §4, pp. 8–9.
+
+The Perspective claims that a non-restorable time reference c_a and committed-operation counter N are necessary and sufficient to distinguish suspension from restoration.
+
+Its classification has two difficulties.
+
+First, unchanged N with advancing c_a cannot, by itself, distinguish suspension from a powered-on agent that simply makes no committed changes.
+
+Second, the text says that N > N(t_0) signals restoration, but also that both quantities advancing together signals uninterrupted operation. These classifications require different assumptions about which state is being compared; the distinction is not made sufficiently explicit.
+
+A pause followed by resumed operation may also leave both quantities advanced.
+
+The cited state-continuity literature establishes rollback-resistant execution under specified protocols, not this complete classification of an agent's temporal experience. Memoir, for example, uses protected request-history information to ensure state continuity. Parno et al. (2011), DOI: 10.1109/SP.2011.38.
+[source chip: andrew.cmu.edu]
+
+Fix: Remove "necessary and sufficient." Define the observable events, checkpoint semantics, comparison points and idle state. Then provide a formal argument for each event the architecture claims to identify.
+
+Until corrected, this is a publication-blocking issue because the continuity anchor is central to the Perspective.
+
+6. MAJOR — High reconstruction R² does not establish absence of useful residual information
+
+Location: Pilot 2, §5.1, pp. 5–6; §6, p. 8. Perspective, §5, p. 11.
+
+An R² of 0.90 means that 10% of the candidate's variance remains unexplained under the evaluated model and distribution.
+
+That residual could still be highly informative about forgetting.
+
+For example, suppose optimizer telemetry explains 99% of a clock's variance, but the remaining 1% predicts which previously learned information will be lost. The clock could still have substantial incremental predictive value.
+
+Consequently, G2 is a legitimate conservative stopping rule, but not a proof of informational redundancy.
+
+Fix: Describe G2 as an operational identifiability threshold, not a sufficient-information theorem. A future study could test whether residuals predict forgetting, with controls for leakage and estimator uncertainty.
+
+7. MAJOR — The out-of-distribution reconstruction failures are not resolved
+
+Location: Pilot 2, §5.1, pp. 5–6.
+
+Under leave-one-schedule-family-out evaluation, reported R² includes:
+
+D1_rel: 0.74 in F3 and 0.82 in F6.
+
+D3: 0.80 in F6.
+
+The later T-B experiment obtained approximately 0.99 for D3 using new seeds within the tested family.
+
+That establishes strong within-family reconstruction. It does not demonstrate successful prediction when the family itself is absent from training.
+
+The distinction matters because extrapolation across changing learning regimes is scientifically relevant to continual learning.
+
+Fix: Retain the out-of-family failures as unresolved limits on transportability. Describe T-B as resolving the possibility that ordinary within-family variation produces a stable exception, not as disproving the distribution-shift failure.
+
+8. MAJOR — The scheduling results have insufficient precision for a general equivalence claim
+
+Location: Pilot 2, §5.2, pp. 6–8.
+
+T-A reports paired intervals within its ±2-point margin. S2 similarly reports practical equivalence on test loss under its specified margin.
+
+Those verdicts appear consistent with the figures shown.
+
+The authors'-code comparison is different. It uses a descriptive ±2-point criterion without a statistical equivalence test. The crossed repetition has one run per cell.
+
+Furthermore:
+
+The original dbpedia difference is 5.33 points.
+
+One subsequent contrast is approximately −0.51.
+
+Another is approximately +3.29.
+
+Opposite signs defeat the preregistered robustness criterion, but do not establish equivalence or a negligible effect.
+
+In T-A, some clocks also cause different numbers of replay events, so timing and replay budget are not fully isolated.
+
+Fix: Preserve the formal T-A and S2 verdicts, but describe the authors'-code results as inconclusive at task level and within the descriptive aggregate margin. Do not aggregate these into a general claim of scheduler equivalence.
+
+9. MAJOR — Alternative explanations for the repeated runs remain insufficiently tested
+
+Location: Pilot 2, §§5.1–5.2 and §8, pp. 6–8, 10–11.
+
+The report discusses calibration drift and GPU nondeterminism, but several mechanisms remain entangled:
+
+Optimizer and learning-rate schedules restart between phases.
+
+The first update of a phase reportedly has zero measured parameter change.
+
+Mixed-precision skipped steps are possible.
+
+The proxy clock and τ have different calibration-to-remainder ratios.
+
+Evaluation decoding is stochastic and unseeded.
+
+In particular, a mismatch between the moment used to accumulate the proxy and the actual successfully applied parameter update could produce systematic timing differences. That mechanism is plausible but unverified.
+
+The strong pooled R² also conceals substantial heterogeneity: the first authors'-code comparison reports 0.922 pooled but only 0.578 on agnews, and 0.749 across replay tasks. A later replay-task result of 0.969 does not explain the initial failure.
+
+Fix: Identify these as competing explanations. Measure successful optimizer steps, phase boundaries, clock increments and deterministic evaluation separately before attributing delay to a particular clock mechanism.
+
+10. MAJOR — Mechanistic reconstructibility is confused with cheap scalar reconstructibility
+
+Location: Pilot 2, §§2, 5.3 and 6; Perspective, §4.
+
+Under AdamW, an applied update depends on coordinate-wise first and second moments, learning rate, weight decay and numerical execution.
+
+The optimizer state can, in principle, determine the nominal update. But a few scalar summaries need not determine its norm.
+
+A simple counterexample is two update states with identical ‖m̂‖ and identical total second-moment magnitude, but different alignment between the first-moment vector and coordinate-wise preconditioner. Their preconditioned update norms can differ substantially.
+
+Thus the report's successful scalar reconstruction is empirical, not an optimizer identity.
+
+The proxy also requires a norm reduction over optimizer state. It may avoid a weight copy, but its additional computation was not benchmarked.
+
+Fix: Distinguish reconstruction from the full optimizer state, reconstruction from inexpensive summaries, and measured computational savings. Qualify predictions for larger models and other hardware accordingly.
+
+11. MAJOR — The version-1.4 amendment needs an explicit prospective status
+
+Location: Perspective, §5, p. 11.
+
+The added "not identifiable" exit is scientifically reasonable. It also describes why Pilot 2 stopped.
+
+However, the Perspective acknowledges that this general closure-rule amendment was introduced after Pilot 2 met the condition.
+
+That makes it a post-result refinement of the conceptual framework, even though Pilot 2's own G2 was reportedly fixed beforehand.
+
+It is not automatically improper. It becomes moving the goalposts if the new rule is represented as having governed an earlier outcome, or if it is used retroactively to declare equivalence or closure that the earlier rule did not permit.
+
+Fix: Retain the amendment, explicitly label it prospective for future evaluations, and state separately that Pilot 2's internal G2 governed its own stopping decision.
+
+12. MAJOR — The Level 4 competitor is not yet operationally coherent
+
+Location: Perspective, §5, pp. 12–13.
+
+The Perspective compares raw trusted evidence against a trusted monitor supplying an authenticated continuity flag.
+
+It then proposes testing conditions where the flag is delayed, incomplete or withheld, while raw evidence remains available.
+
+Under threat model B, both may depend on the same trusted monitor and protected communication path. Why would one remain accessible while the other does not?
+
+Without an explicit architectural reason, the proposed comparison risks handicapping the conventional competitor.
+
+Fix: Specify which channel or capability fails in each test condition. Give the authenticated-flag competitor equivalent access and latency wherever technically possible.
+
+13. MAJOR — The new memory-based direction needs stronger competitors
+
+Location: Perspective, §4, p. 10; Table 2, p. 12.
+
+The proposal to study agents that change through external memory rather than weights is outside Pilot 2's evidence, as the text acknowledges.
+
+However, counting memory writes and measuring their size are insufficient controls.
+
+A conventional memory-management system can also log content hashes, versions, source provenance, retrieval events, deletion and revocation histories, and dependency relations.
+
+An experiential index would need to improve prediction beyond competent alternatives of this kind.
+
+Fix: Keep the direction explicitly exploratory and compare it against content-aware memory telemetry, not only write counts.
+
+14. MAJOR — Independent verification of the preregistered verdicts is presently unavailable
+
+Location: Pilot 2, §§3, 7 and 10.
+
+The reported preregistrations were locally hashed but not publicly deposited before execution. Some code versions were not preserved, while others were reconstructed from hashes.
+
+The report states that 19 analyses reproduced from the archive, but that archive was not among the materials supplied for this review.
+
+I therefore cannot verify:
+
+Whether all gates preceded their relevant observations.
+
+Whether every reported value matches the underlying logs.
+
+Whether the code reproduces the declared comparisons.
+
+Whether the original-code adaptation changed only the intended scheduler behaviour.
+
+Fix: Release the complete audit archive alongside publication, with explicit provenance for reconstructed files and an independent reproduction procedure. Until then, the verdict audit is conditional on the report's own account.
+
+15. MINOR — The Perspective contains more empirical detail than its article type requires
+
+Locations: Abstract, pp. 1–2; §§4 and 6; Conclusion, p. 16.
+
+The approximately 420-word abstract attempts to present the conceptual framework, threat models, previous studies, numerical results, methodological gates and safety limits simultaneously.
+
+Some repetition between the abstract, §4, §6 and conclusion makes the argument harder to locate.
+
+Fix: Reduce the abstract to approximately 200–250 words. Keep the empirical result to a short qualified statement; direct readers to Pilot 2 for numerical detail.
+
+2. Answers to the specific questions
+Part A — Pilot 2
+
+A1. Do the verdicts follow?
+
+Conditionally, most operational verdicts follow the reported figures:
+
+G2 failure: Supported for the specified within-distribution reconstruction tests and threshold.
+
+T-A practical equivalence: Supported by the reported paired intervals.
+
+S2 practical equivalence: Supported by the reported interval under its loss margin.
+
+R1 reproduction criterion: Numerically satisfied, with the comparison limitation noted above.
+
+R2 aggregate margin: Satisfied descriptively.
+
+Repeated dbpedia difference not robustly reproduced: Supported by the opposite-signed contrasts.
+
+The unsupported verdict is that H1 has been answered negatively or falsified. H1 was not run.
+
+Similarly, statistical equivalence cannot be claimed for the authors'-code aggregate results.
+
+A2. Alternative explanations?
+
+Yes.
+
+Reconstruction may largely reflect a shared learning-rate schedule and optimizer dynamics, rather than a general absence of history-dependent information.
+
+Scheduling comparisons may have limited sensitivity because clocks trigger at nearly identical steps, retention is poor in T-A, and replay budgets sometimes differ.
+
+The authors'-code runs additionally involve phase resets, mixed-precision behaviour, starting-adapter dependence, and stochastic evaluation.
+
+The systematic replay delay is real in the reported runs. Its mechanism and effect on retention remain unresolved.
+
+A3. Are the limitations complete?
+
+No. They should explicitly include:
+
+Reconstruction R² does not exclude predictive information in residuals.
+
+In-family validation does not establish out-of-family transportability.
+
+The authors'-code results lack statistical equivalence evidence.
+
+The clock swap leaves FOREVER's update-dependent replay regularization intact.
+
+Scheduler comparisons do not always hold the replay budget fixed.
+
+Claims about other hardware and larger models should be labelled theoretical expectations, not empirical generalisations.
+
+A4. What has prior work already established?
+
+There is relevant precedent, but I did not verify a published proof that FOREVER's accumulated update-norm clock reduces to a small set of optimizer statistics.
+
+Zenke, Poole and Ganguli (2017), arXiv:1703.04200: Synaptic Intelligence accumulates parameter-specific trajectory contributions. This is genuine accumulated-change precedent.
+[source chip: proceedings.mlr.press]
+
+Benzing (2022), arXiv:2006.06357: SI and MAS approximate a quantity related to the square root of Fisher information; SI's relation is substantially explained by a bias. This supports the general warning that ostensibly historical quantities may reflect more conventional gradient statistics. It is not a proof about Euclidean path-length clocks.
+[source chip: proceedings.mlr.press]
+
+Atamna et al. (2025), arXiv:2508.05408: Path-based adaptation under Adam requires accounting for preconditioning. This supports the importance of update geometry, not universal scalar reconstructibility.
+[source chip: arxiv.org]
+
+Feng et al. (2026), DOI: 10.18653/v1/2026.acl-long.1144: FOREVER itself uses accumulated parameter updates and reports an advantage over step-based calibration in its ablation. It does not establish the independent informational value of τ beyond optimizer telemetry.
+[source chip: aclanthology.org]
+
+No known published result from the sources I opened directly contradicts Pilot 2's narrow empirical findings.
+
+A mathematical counterexample to universal scalar sufficiency exists, as explained in Finding 10, but that does not contradict the observed R² values.
+
+The literature search was targeted, not exhaustive. I cannot verify the report's claim that no other published audit exists.
+
+A5. Internal consistency?
+
+The main tables and aggregate arithmetic appear coherent. The definite numerical error is the reversed forgetting comparison in §5.2.
+
+The larger inconsistency is semantic: the report alternates between an identifiability failure, negative evidence on scheduling, and closure of the informational hypothesis.
+
+These are not interchangeable conclusions.
+
+Part B — Perspective v1.4
+
+B1. Is "not identifiable," rather than "closed," correct?
+
+Yes.
+
+Under the Perspective's closure rule, closure requires a competitor to be non-inferior on the primary metric and no worse on declared cost dimensions.
+
+Pilot 2 did not complete the Level 2 predictive comparison.
+
+Therefore Level 2 is not identifiable for the tested candidates and regimes, not closed. The distinction is correct in §5 and Table 2 but inconsistently expressed in §4 and the conclusion.
+
+B2. Is the amendment legitimate?
+
+Yes, if presented as a transparent, post-result methodological amendment for future tests.
+
+It would be improper if used to imply that the amended rule was preregistered for Pilot 2 or to transform a stopped test into evidence of equivalence.
+
+The wording should explicitly separate the original Pilot 2 gate from the later general framework amendment.
+
+B3. Are the generality statements justified?
+
+Only as hypotheses.
+
+Other hardware may alter numerical behaviour and verdicts. The tested GPU configuration provides no empirical guarantee of transportability.
+
+For larger Adam-trained models, the full optimizer state constrains updates mechanically, but the usefulness of a cheap scalar reconstruction remains open.
+
+Agents changing through external memory constitute a distinct, untested regime. Introducing them as a future direction is legitimate; treating them as evidence for the experiential-index hypothesis would not be.
+
+B4. Are the abstract and conclusion accurate?
+
+Not fully.
+
+The abstract overstates the reconstruction source by describing all candidates as reconstructed from free optimizer telemetry.
+
+The conclusion's assertion that optimizer statistics "proved sufficient" is also too strong unless explicitly restricted to the tested reconstruction tasks.
+
+A defensible replacement would be:
+
+Pilot 2 found that the tested accumulated-change indices could be reconstructed to the preregistered threshold from optimizer telemetry or same-cost competitors. The planned test of incremental predictive information was therefore not conducted. Scheduling comparisons provided no robust evidence of an advantage for the update-norm clock in the tested regimes.
+
+B5. Is it still a conceptual Perspective?
+
+Yes, but it is approaching an undesirable level of empirical and methodological detail.
+
+The architecture, threat models, conceptual distinctions and test hierarchy belong in the Perspective. Most individual reconstruction statistics belong in Pilot 2.
+
+Shorten rather than remove the empirical integration.
+
+B6. Do the documents contradict each other?
+
+Yes, principally in their interpretation of Level 2.
+
+Pilot 2 describes its informational research line as closed and negatively answered. The Perspective's formal rule says that reconstruction produces non-identifiability, not closure or equivalence.
+
+The factual accounts of the experiments are broadly compatible once the D3 telemetry misdescription is corrected.
+
+B7. My recommendations on the three choices
+
+Choice | Recommendation | Reason
+
+(a) Abstract length | Shorten to 200–250 words | The present abstract obscures the conceptual contribution with qualifications and empirical detail.
+
+(b) Identifiability amendment | Keep, with explicit prospective status | A protocol needs a principled way to terminate an unidentifiable test. Transparency about when the rule was introduced is essential.
+
+(c) SI/Benzing and memory-based agents | Keep both, with narrower claims | SI/Benzing supplies an instructive but non-identical precedent. Memory-based agents provide an untested alternative research direction, provided the conventional memory-telemetry controls are strengthened.
+
+3. Five highest priorities
+1
+
+Correct the Level 2 verdict in both documents.
+
+Separate stopping because of non-identifiability from actual evidence against incremental predictive information. This is the most important correction.
+
+2
+
+Repair the continuity-anchor argument.
+
+Replace the unsupported necessity-and-sufficiency statement with precise operational conditions and a defensible event-classification argument.
+
+3
+
+Resolve the reconstruction and generalisation boundaries.
+
+Preserve the out-of-family failures, distinguish optimizer-state determinacy from scalar predictability, and qualify larger-model and hardware predictions.
+
+4
+
+Make the Pilot 2 evidence independently auditable.
+
+Release the archive and provenance records, correct the dbpedia forgetting reversal, and separate descriptive thresholds from statistical equivalence.
+
+5
+
+Reduce and sharpen the Perspective.
+
+Shorten the abstract, preserve the prospective identifiability amendment, limit the Pilot 2 discussion, and retain memory-based agents only as a new testable hypothesis.
+
+Final judgement
+
+Pilot 2: The reported data justify stopping the tested parameter-clock research line under the specified decision procedure. They do not justify claiming that the incremental-information hypothesis has been disproved. The report is potentially publishable as a bounded methodological negative result after substantial correction and independent audit of its archive.
+
+Perspective v1.4: The Level 2 integration can be corrected without restructuring the paper. The continuity-anchor argument is a more fundamental problem: its central necessity-and-sufficiency claim requires reformulation before publication.
+
+I would not recommend further experiments merely to strengthen a preferred narrative. The immediate need is to make the conclusions logically coextensive with the evidence already obtained.
+
+Confidence: High for the logical inconsistencies and numerical reversal; moderate for methodological interpretation and relevance of prior work; limited for reproducibility and preregistration claims because the underlying archive was unavailable.

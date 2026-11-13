@@ -1,0 +1,20 @@
+3ac9b81ca1e07a4d08872f430b99c6046dfd3c3c4b4fbd457a7dd149cc789d4d *preinregistrare_TA_TB_2026-11-06.md
+c2b340bcce7afb48c64deecab1a1b0e99936d3a02f1d06430e42d5cfdf5cb7a9 *launch_noapte_TA_TB.sh
+daf9c326d4152c1495dd045128a31d5f43166fefbb4e85285ac6280da93aa82e *lm/lm_forever_run.py
+051f45070b3f84ecf50142c21974e5f484a2ac88b9557b06a06c5ebd1aba4ad5 *p2/run.py
+5ebe5bfceff853afc73ca9a7b6b115e36da86e599eea111da7c52e86532217eb *p2/triplets.py
+77555023f9f0f1630d6ed1351cf18dd18c05caf07de551ecd731ae6fac542a8e *p2/agent.py
+a65ab2b95e45e8e83d39614b2c7413330a7ca197368a7ead3e802e75a67bb134 *config_stage0.yaml
+431b2782abb0b23cbfdd64e8afbe957395c7568c9ce65122fbc4607e17ce8de3 *launch.py
+cb503ee8b001d19ada64a56e2e7506e87e7e3d1847ab3f7f7776cc87ecc5e7f0 *td_criterii.md
+a16015a88e0f75991557967a40bf0e8765696a0504afbbd508c9c04534d22310 *td_audit.py
+df23b777948aee79c8267221070471f0534af5c7a0fcfa79dfd75910461823b0 *lm/tc_criterii.md
+3a142c90a563399c8e59891ab1d7deee933144df6a493ff64ff39315d9d54ca6 *lm/lm_d3_competitors.py
+inainte de lansare 2026-11-06 23:08:47
+
+# scripturile de analiză T-B, scrise înainte de orice analiză pe datele T-B (6/7 nov.):
+1dc10afcc89884172e37826e2bb8dc405d96f063640cde612133ab2b40ce7cb1 *tb_part1_g2.py
+7a91a2fee7f391e9b1bcb65bc7c8a5abf86b5c60685111cc7269f002afa134bd *tb_part2_h1.py
+2026-11-07 00:01:27
+ad6401bd1b160bfff5938481016295d1f6299c88117b444ddebe7fa543e0bcb0 *ta_analysis.py
+2026-11-07 00:02:01

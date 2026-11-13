@@ -1,0 +1,27 @@
+task 0: 480 steps, model_day 2.8345, tau 13.650, phases 2, step 480, acc_new 1.000, 159s, max VRAM 1718 MiB
+task 1: 80 steps, model_day 1.3353, tau 4.377, phases 6, step 566, acc_new 1.000, 29s, max VRAM 1718 MiB
+task 2: 80 steps, model_day 1.3404, tau 4.327, phases 6, step 652, acc_new 1.000, 31s, max VRAM 1718 MiB
+task 3: 80 steps, model_day 1.3245, tau 4.309, phases 6, step 744, acc_new 1.000, 32s, max VRAM 1720 MiB
+task 4: 80 steps, model_day 1.2973, tau 4.310, phases 6, step 836, acc_new 1.000, 33s, max VRAM 1722 MiB
+task 5: 80 steps, model_day 1.3106, tau 4.292, phases 6, step 934, acc_new 0.996, 34s, max VRAM 1722 MiB
+task 6: 80 steps, model_day 1.2882, tau 4.281, phases 6, step 1032, acc_new 0.996, 35s, max VRAM 1722 MiB
+task 7: 80 steps, model_day 1.2981, tau 4.386, phases 6, step 1136, acc_new 0.988, 37s, max VRAM 1722 MiB
+task 8: 80 steps, model_day 1.3041, tau 4.321, phases 6, step 1240, acc_new 0.852, 38s, max VRAM 1722 MiB
+task 9: 80 steps, model_day 1.2978, tau 4.356, phases 6, step 1350, acc_new 0.887, 40s, max VRAM 1722 MiB
+done: 1350 steps, 472s; steps sha256 24db253d24c6b6b9; factors sha256 9aae27ac5d85b183
+antrenare identica: True | factori identici: True
+acuratete inainte de repetitia finala: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+task 0: 960 steps, model_day 2.8342, tau 28.141, phases 2, step 960, acc_new 1.000, 291s, max VRAM 1718 MiB
+task 1: 160 steps, model_day 1.3946, tau 8.824, phases 8, step 1128, acc_new 1.000, 55s, max VRAM 1718 MiB
+task 2: 160 steps, model_day 1.3643, tau 8.523, phases 8, step 1296, acc_new 1.000, 57s, max VRAM 1722 MiB
+task 3: 160 steps, model_day 1.3685, tau 8.493, phases 8, step 1472, acc_new 1.000, 59s, max VRAM 1722 MiB
+task 4: 160 steps, model_day 1.3139, tau 8.381, phases 8, step 1648, acc_new 1.000, 62s, max VRAM 1722 MiB
+task 5: 160 steps, model_day 1.2898, tau 8.347, phases 8, step 1832, acc_new 0.998, 65s, max VRAM 1722 MiB
+task 6: 160 steps, model_day 1.3180, tau 8.454, phases 8, step 2016, acc_new 1.000, 67s, max VRAM 1722 MiB
+task 7: 160 steps, model_day 1.2858, tau 8.289, phases 8, step 2208, acc_new 0.994, 70s, max VRAM 1722 MiB
+task 8: 160 steps, model_day 1.2936, tau 8.401, phases 8, step 2400, acc_new 0.961, 72s, max VRAM 1722 MiB
+task 9: 160 steps, model_day 1.3109, tau 8.464, phases 8, step 2600, acc_new 0.920, 76s, max VRAM 1722 MiB
+done: 2600 steps, 880s; steps sha256 34f970780a428e6d; factors sha256 e40cca631e1d3ab7
+antrenare identica: True | factori identici: True
+acuratete inainte de repetitia finala: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+LMDIAG TERMINAT

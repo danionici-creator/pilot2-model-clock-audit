@@ -1,0 +1,2 @@
+# Store and check out every file byte for byte (no line-ending conversion), so that SHA256SUMS.txt verifies on any platform.
+* -text

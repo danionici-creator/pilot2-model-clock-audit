@@ -1,0 +1,58 @@
+triplets: 2639; runs: 5; B_strong features: 58
+
+(a) G2 with F3 left out of training entirely (train: tech3_F2, tech2_F1, tech2_F2)
+     D     test  OLS_Bstrong  GBDT_Bstrong     dN  dN+C3  dN+C5d  dN+C3+C5d+C5e
+    D1 tech3_F3       -9.642         0.938 -0.102 -0.102   0.960          0.616
+    D1 tech2_F3      -15.109         0.919 -0.024 -0.024   0.954          0.649
+D1_rel tech3_F3      -19.071         0.845 -0.176 -0.176   0.945          0.682
+D1_rel tech2_F3      -14.415         0.845 -0.044 -0.044   0.827          0.644
+    D2 tech3_F3       -1.493         0.926 -0.094 -0.094   0.988          0.663
+    D2 tech2_F3       -1.514         0.854 -0.017 -0.017   0.980          0.669
+    D3 tech3_F3      -41.256         0.786 -0.309 -0.309   0.872          0.629
+    D3 tech2_F3      -52.330         0.684 -0.263 -0.263   0.305          0.284
+
+(b) residual of OLS 'dN + rate C5d', leave-one-run-out; relative error |y-p|/mean(y) and bias (y-p)/mean(y)
+
+  D1: overall R2 = 0.933
+  N0 on a segment boundary in 100% of intervals
+  by interval length dN (short = dominated by the transient after the boundary):
+               n  weight_%  abs_err_rel  bias_rel
+bin_dN                                           
+64-127     122.0     4.771        0.227    -0.036
+128-255    322.0    13.076        0.139    -0.018
+256-511    655.0    38.977        0.085    -0.005
+512-1279  1540.0    43.176        0.084    -0.005
+  by number of further segment boundaries inside the interval:
+             n  weight_%  abs_err_rel  bias_rel
+bin_bnd                                        
+0        498.0    38.594        0.112    -0.019
+1-2      770.0    26.479        0.100     0.000
+3-5      909.0    25.190        0.086    -0.004
+>=6      462.0     9.736        0.072    -0.001
+  by learning-rate restart inside the interval (F3 only has restarts):
+                     n  weight_%  abs_err_rel  bias_rel
+rst                                                    
+no restart      2502.0    93.264        0.098    -0.005
+restart inside   137.0     6.736        0.102    -0.052
+
+  D3: overall R2 = 0.799
+  N0 on a segment boundary in 100% of intervals
+  by interval length dN (short = dominated by the transient after the boundary):
+               n  weight_%  abs_err_rel  bias_rel
+bin_dN                                           
+64-127     122.0     4.771        0.222     0.027
+128-255    322.0    13.076        0.208    -0.046
+256-511    655.0    38.977        0.161    -0.077
+512-1279  1540.0    43.176        0.144    -0.047
+  by number of further segment boundaries inside the interval:
+             n  weight_%  abs_err_rel  bias_rel
+bin_bnd                                        
+0        498.0    38.594        0.177    -0.097
+1-2      770.0    26.479        0.167    -0.035
+3-5      909.0    25.190        0.146    -0.036
+>=6      462.0     9.736        0.135     0.008
+  by learning-rate restart inside the interval (F3 only has restarts):
+                     n  weight_%  abs_err_rel  bias_rel
+rst                                                    
+no restart      2502.0    93.264        0.160    -0.044
+restart inside   137.0     6.736        0.205    -0.205

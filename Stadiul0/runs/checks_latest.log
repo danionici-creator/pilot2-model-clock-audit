@@ -1,0 +1,29 @@
+[PASS] world F1: partition and disjointness: 40 target tasks (0 rule), |R| = 256, |B_beh| = 256
+[PASS] world F1: fact-task pair overlap is positive: mean pairwise 0.0155
+[PASS] world F5: partition and disjointness: 40 target tasks (0 rule), |R| = 256, |B_beh| = 256
+[PASS] world F5: fact-task pair overlap is positive: mean pairwise 0.0626
+[PASS] schedule F1: 20480 steps, {'new': 40, 'reexp': 0, 'reh': 80, 'distractor': 0, 'idle': 0}, lr [3.00e-04, 3.00e-04], 1 restart(s)
+[PASS] schedule F2: 20480 steps, {'new': 40, 'reexp': 92, 'reh': 0, 'distractor': 0, 'idle': 0}, lr [3.00e-04, 3.00e-04], 1 restart(s)
+[PASS] schedule F3: 20480 steps, {'new': 40, 'reexp': 0, 'reh': 80, 'distractor': 0, 'idle': 0}, lr [1.50e-05, 6.00e-04], 11 restart(s)
+[PASS] schedule F4: 20480 steps, {'new': 40, 'reexp': 0, 'reh': 80, 'distractor': 0, 'idle': 26}, lr [3.00e-04, 3.00e-04], 1 restart(s)
+[PASS] schedule F5: 20480 steps, {'new': 40, 'reexp': 92, 'reh': 0, 'distractor': 0, 'idle': 17}, lr [1.50e-05, 6.00e-04], 11 restart(s)
+[PASS] schedule F6: 20480 steps, {'new': 40, 'reexp': 0, 'reh': 40, 'distractor': 57, 'idle': 0}, lr [3.00e-04, 3.00e-04], 1 restart(s)
+[PASS] explicit AdamW is bit-identical to torch.optim.AdamW (30 steps): max |diff| = 0.00e+00
+[PASS] max_ctx equals the input width (Deep Review D2): max_ctx 4, input width 4
+[PASS] unused embedding rows: unchanged iff embeddings are out of weight decay (Deep Review D3): wd_embeddings=False, rows unchanged=True, decayed matrices 17 of 19
+[PASS] same-step D2 identity (section 5.1): 6.840017e-05 vs 6.840053e-05
+[PASS] determinism F4: bit-identical reruns: 19 evals, 12 episodes, wall 80.29 s
+[PASS] D2 blocked vs exact lag F4: median rel. diff 4.61e-03, max 4.31e-02
+[PASS] C10c present, finite and >= C10b F4 (Deep Review D5): 256 chunks, median C10c / C10b 4.1
+[PASS] clipped losses L_A,clip <= L_A and <= ln 64 F4 (Deep Review A3): max L_A,clip 3.812
+[PASS] q_hist before the segment: first exposure has no history F4 (Deep Review D4): overlap[0] = nan, then [1.    1.    0.002]
+[PASS] chunked D1 at m_ch = 1 equals per-step D1 F4: max rel 1.7e-06
+[PASS] determinism F6: bit-identical reruns: 18 evals, 8 episodes, wall 79.18 s
+[PASS] D2 blocked vs exact lag F6: median rel. diff 2.00e-03, max 7.82e-02
+[PASS] C10c present, finite and >= C10b F6 (Deep Review D5): 256 chunks, median C10c / C10b 4.4
+[PASS] clipped losses L_A,clip <= L_A and <= ln 64 F6 (Deep Review A3): max L_A,clip 3.872
+[PASS] q_hist before the segment: first exposure has no history F6 (Deep Review D4): overlap[0] = nan, then [0.61  0.007 0.435]
+[PASS] chunked D1 at m_ch = 1 equals per-step D1 F6: max rel 1.6e-06
+[PASS] different families give different runs
+
+27/27 checks passed

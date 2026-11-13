@@ -1,0 +1,33 @@
+REPRO start 2026-11-07 11:54:47
+tau train task 0 start 11:54:47
+tau train task 0 rc=0 15:45:22
+tau bwt-gen task 0 rc=0 16:04:23
+tau train task 1 start 16:04:23
+fail-watcher start 2026-11-07 16:22:11
+tau train task 1 rc=1 18:12:18
+fail-watcher: rc!=0 seen, _HW_STOP written 18:12:21
+tau bwt-gen task 1 rc=127 18:14:25
+oprit de paznic 18:14
+REPRO RESUME start 2026-11-07 18:24:12
+tau train task 1 start 18:24:12 (no_cache=1)
+tau train task 1 rc=0 20:08:00
+tau bwt-gen task 1 rc=0 20:14:08
+tau train task 2 start 20:14:08 (no_cache=1)
+tau train task 2 rc=0 23:35:14
+tau bwt-gen task 2 rc=0 23:55:32
+tau train task 3 start 23:55:32 (no_cache=1)
+tau train task 3 rc=0 00:58:30
+tau avgPerf-gen rc=0 01:48:26
+eta_m train task 0 start 01:48:26 (no_cache=0)
+eta_m train task 0 rc=0 05:44:45
+eta_m bwt-gen task 0 rc=0 06:11:12
+eta_m train task 1 start 06:11:12 (no_cache=1)
+eta_m train task 1 rc=0 07:55:44
+eta_m bwt-gen task 1 rc=0 08:01:41
+eta_m train task 2 start 08:01:41 (no_cache=1)
+eta_m train task 2 rc=0 11:22:50
+eta_m bwt-gen task 2 rc=0 11:43:24
+eta_m train task 3 start 11:43:24 (no_cache=1)
+eta_m train task 3 rc=0 12:45:39
+eta_m avgPerf-gen rc=0 13:35:01
+REPRO TERMINAT 2026-11-08 13:35:01

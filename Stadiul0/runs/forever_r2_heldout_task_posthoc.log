@@ -1,0 +1,18 @@
+R² of the rate of ||dtheta|| from the eta*|m_hat| clock, 8-step windows: in-sample (fitted on the task itself, as
+r2_reconstruction*.py) and leave one task out (fitted on the other tasks of the same run). Post hoc, 12 Nov 2026.
+
+eta_m, tasks 0-3:
+  0-dbpedia  windows 234  in-sample R² 0.937  leave-task-out R² 0.724  slope in/out 1206.3 / 967.7
+  1-amazon   windows  39  in-sample R² 0.986  leave-task-out R² 0.950  slope in/out 1150.1 / 1161.6
+  2-yahoo    windows  39  in-sample R² 0.934  leave-task-out R² 0.892  slope in/out 1039.1 / 1172.7
+  3-agnews   windows  39  in-sample R² 0.578  leave-task-out R² 0.373  slope in/out 894.4 / 1125.7
+
+eta_m, tasks 1-3:
+  1-amazon   windows  39  in-sample R² 0.986  leave-task-out R² 0.878  slope in/out 1150.1 / 923.3
+  2-yahoo    windows  39  in-sample R² 0.934  leave-task-out R² 0.885  slope in/out 1039.1 / 944.3
+  3-agnews   windows  39  in-sample R² 0.578  leave-task-out R² 0.361  slope in/out 894.4 / 1083.4
+
+eta_m_A1, tasks 1-3:
+  1-amazon   windows  39  in-sample R² 0.986  leave-task-out R² 0.981  slope in/out 1146.3 / 1091.0
+  2-yahoo    windows  39  in-sample R² 0.975  leave-task-out R² 0.966  slope in/out 1065.0 / 1124.0
+  3-agnews   windows  39  in-sample R² 0.963  leave-task-out R² 0.955  slope in/out 1136.6 / 1096.7

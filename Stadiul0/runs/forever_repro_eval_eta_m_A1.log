@@ -1,0 +1,47 @@
+=== eval eta_m_A1 2026-11-08 22:23:57
+--- OP (eval_avgPerf_longsequence.py, exact match)
+evaluate services from 0 to 3
+task name: dbpedia
+任务 dbpedia 的 accuracy：0.9372857142857143
+task name: amazon
+任务 amazon 的 accuracy：0.4936
+task name: yahoo
+任务 yahoo 的 accuracy：0.6186
+task name: agnews
+任务 agnews 的 accuracy：0.872
+average Performance (mean accuracy) is 0.730375
+[0.9373, 0.4936, 0.6186, 0.872]
+0.730375
+--- BWT (eval_bwt_longsequence.py, lenient label extraction)
+dataset_order: ['dbpedia', 'amazon', 'yahoo', 'agnews']
+common service ids used for BWT: [0, 1, 2]
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt\0-dbpedia_result.txt
+[ACC] task dbpedia accuracy = 0.9804
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt\1-amazon_result.txt
+[ACC] task amazon accuracy = 0.5672
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt\2-yahoo_result.txt
+[ACC] task yahoo accuracy = 0.6456
+avgPerf_list1 (bwt side): [0.9804285714285714, 0.5672, 0.6456]
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\0-dbpedia_result.txt
+[ACC] task dbpedia accuracy = 0.9373
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\1-amazon_result.txt
+[ACC] task amazon accuracy = 0.4936
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\2-yahoo_result.txt
+[ACC] task yahoo accuracy = 0.6186
+avgPerf_list2 (avgPerf side): [0.9372857142857143, 0.4936, 0.6186]
+BWT diff list: [-0.04314285714285715, -0.07360000000000005, -0.026999999999999913]
+
+BWT is -0.04791428571428571
+
+Final BWT: -0.04791428571428571
+--- OP with the lenient extraction of their BWT script (all 4 tasks)
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\0-dbpedia_result.txt
+[ACC] task dbpedia accuracy = 0.9373
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\1-amazon_result.txt
+[ACC] task amazon accuracy = 0.4936
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\2-yahoo_result.txt
+[ACC] task yahoo accuracy = 0.6186
+scoring ../output\eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf\3-agnews_result.txt
+[ACC] task agnews accuracy = 0.8720
+lenient per-task acc: [0.9373, 0.4936, 0.6186, 0.872]
+lenient OP: 0.7303714285714286

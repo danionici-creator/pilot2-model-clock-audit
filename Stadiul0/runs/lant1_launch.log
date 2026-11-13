@@ -1,0 +1,42 @@
+seed 7201; trainable 1146880; words 31; config {"seed": 7201, "tasks": 10, "per_task": 256, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa"}
+task 0: 480 steps, model_day 2.8345, tau 13.650, phases 2, step 480, acc_new 1.000, 145s, max VRAM 1718 MiB
+task 1: 80 steps, model_day 1.3353, tau 4.377, phases 6, step 566, acc_new 1.000, 27s, max VRAM 1718 MiB
+task 2: 80 steps, model_day 1.3404, tau 4.327, phases 6, step 652, acc_new 1.000, 28s, max VRAM 1718 MiB
+task 3: 80 steps, model_day 1.3245, tau 4.309, phases 6, step 744, acc_new 1.000, 30s, max VRAM 1720 MiB
+task 4: 80 steps, model_day 1.2973, tau 4.310, phases 6, step 836, acc_new 1.000, 32s, max VRAM 1722 MiB
+task 5: 80 steps, model_day 1.3106, tau 4.292, phases 6, step 934, acc_new 0.996, 33s, max VRAM 1722 MiB
+task 6: 80 steps, model_day 1.2882, tau 4.281, phases 6, step 1032, acc_new 0.996, 34s, max VRAM 1722 MiB
+task 7: 80 steps, model_day 1.2981, tau 4.386, phases 6, step 1136, acc_new 0.988, 36s, max VRAM 1722 MiB
+task 8: 80 steps, model_day 1.3041, tau 4.321, phases 6, step 1240, acc_new 0.852, 37s, max VRAM 1722 MiB
+task 9: 80 steps, model_day 1.2978, tau 4.356, phases 6, step 1350, acc_new 0.887, 39s, max VRAM 1722 MiB
+done: 1350 steps, 443s; steps sha256 24db253d24c6b6b9; factors sha256 9aae27ac5d85b183
+seed 7202; trainable 1146880; words 31; config {"seed": 7202, "tasks": 10, "per_task": 256, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa"}
+task 0: 480 steps, model_day 2.8292, tau 14.233, phases 2, step 480, acc_new 1.000, 143s, max VRAM 1718 MiB
+task 1: 80 steps, model_day 1.3572, tau 4.350, phases 6, step 566, acc_new 1.000, 27s, max VRAM 1718 MiB
+task 2: 80 steps, model_day 1.3183, tau 4.306, phases 6, step 652, acc_new 1.000, 28s, max VRAM 1718 MiB
+task 3: 80 steps, model_day 1.3114, tau 4.256, phases 6, step 744, acc_new 1.000, 30s, max VRAM 1718 MiB
+task 4: 80 steps, model_day 1.2878, tau 4.249, phases 6, step 836, acc_new 1.000, 31s, max VRAM 1722 MiB
+task 5: 80 steps, model_day 1.2956, tau 4.304, phases 6, step 934, acc_new 0.992, 33s, max VRAM 1722 MiB
+task 6: 80 steps, model_day 1.2824, tau 4.304, phases 6, step 1032, acc_new 0.992, 34s, max VRAM 1722 MiB
+task 7: 80 steps, model_day 1.3089, tau 4.278, phases 6, step 1136, acc_new 0.945, 36s, max VRAM 1722 MiB
+task 8: 80 steps, model_day 1.2909, tau 4.306, phases 6, step 1240, acc_new 0.848, 38s, max VRAM 1722 MiB
+task 9: 80 steps, model_day 1.2951, tau 4.316, phases 6, step 1350, acc_new 0.879, 40s, max VRAM 1722 MiB
+done: 1350 steps, 444s; steps sha256 0f4fa3d11c934aee; factors sha256 71dc63b1048cbf35
+seed 7203; trainable 1146880; words 31; config {"seed": 7203, "tasks": 10, "per_task": 256, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa"}
+task 0: 480 steps, model_day 2.8306, tau 14.210, phases 2, step 480, acc_new 1.000, 145s, max VRAM 1718 MiB
+task 1: 80 steps, model_day 1.3876, tau 4.401, phases 6, step 566, acc_new 1.000, 27s, max VRAM 1718 MiB
+task 2: 80 steps, model_day 1.3351, tau 4.322, phases 6, step 652, acc_new 1.000, 29s, max VRAM 1718 MiB
+task 3: 80 steps, model_day 1.3188, tau 4.263, phases 6, step 744, acc_new 1.000, 31s, max VRAM 1718 MiB
+task 4: 80 steps, model_day 1.3052, tau 4.252, phases 6, step 836, acc_new 1.000, 31s, max VRAM 1722 MiB
+task 5: 80 steps, model_day 1.3136, tau 4.256, phases 6, step 934, acc_new 0.992, 33s, max VRAM 1722 MiB
+task 6: 80 steps, model_day 1.2974, tau 4.233, phases 6, step 1032, acc_new 1.000, 34s, max VRAM 1722 MiB
+task 7: 80 steps, model_day 1.2912, tau 4.335, phases 6, step 1136, acc_new 0.949, 36s, max VRAM 1722 MiB
+task 8: 80 steps, model_day 1.2838, tau 4.289, phases 6, step 1240, acc_new 0.957, 37s, max VRAM 1722 MiB
+task 9: 80 steps, model_day 1.3068, tau 4.351, phases 6, step 1350, acc_new 0.934, 40s, max VRAM 1722 MiB
+done: 1350 steps, 447s; steps sha256 5c1e311454fac0c5; factors sha256 04a36bf25cae4e26
+lmtech2 TERMINAT
+tech4 start 2026-11-06 18:00:30
+Traceback (most recent call last):
+ModuleNotFoundError: No module named 'p2'
+tech4 end 2026-11-06 18:00:30
+LANT 1 TERMINAT

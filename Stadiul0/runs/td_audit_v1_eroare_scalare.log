@@ -1,0 +1,55 @@
+(1) R1 (tech2/tech3): 2639 tripleți; C6 = 8 trăsături; test pe fiecare rulare tech3, antrenare pe celelalte 4
+     D     test  OLS, B_strong complet  GBDT, B_strong complet  OLS, B_strong fără C6  GBDT, B_strong fără C6
+    D1 tech3_F2                  0.984                   0.981                  0.983                   0.980
+    D1 tech3_F3                  0.992                   0.990                  0.994                   0.989
+D1_rel tech3_F2                  0.956                   0.973                  0.956                   0.971
+D1_rel tech3_F3                  0.981                   0.971                  0.981                   0.970
+    D2 tech3_F2                  0.987                   0.989                  0.987                   0.988
+    D2 tech3_F3                  0.993                   0.988                  0.993                   0.988
+    D3 tech3_F2                  0.919                   0.907                  0.916                   0.909
+    D3 tech3_F3                  0.960                   0.950                  0.961                   0.953
+
+(2) tech4, mecanismul lăsat deoparte (pentru F2, F3, F4 antrenarea exclude și F5); R² ponderat
+     D test exclus  dN + C5d (Ση‖m̂‖)  dN + C10c  GBDT tot
+    D1   F1      -             -3.888      0.231     0.968
+    D1   F2     F5              0.380      0.653     0.971
+    D1   F3     F5             -0.082      0.846     0.947
+    D1   F4     F5             -4.400     -0.489     0.961
+    D1   F6      -              0.009     -0.394     0.936
+D1_rel   F1      -             -0.634      0.533     0.982
+D1_rel   F2     F5              0.340      0.476     0.937
+D1_rel   F3     F5             -0.138      0.753     0.735
+D1_rel   F4     F5             -0.862      0.293     0.978
+D1_rel   F6      -             -0.094     -0.257     0.815
+    D2   F1      -             -7.283     -1.883     0.993
+    D2   F2     F5              0.216      0.132     0.961
+    D2   F3     F5             -0.041      0.795     0.932
+    D2   F4     F5             -7.098     -3.110     0.996
+    D2   F6      -             -0.390     -0.943     0.984
+    D3   F1      -             -1.298      0.785     0.984
+    D3   F2     F5              0.075      0.964     0.899
+    D3   F3     F5             -0.137      0.947     0.912
+    D3   F4     F5             -1.584      0.638     0.982
+    D3   F6      -              0.330      0.590     0.778
+
+(3) tech4, o familie lăsată deoparte, dN + C5d: R² și eroarea relativă medie pe benzi de dN
+ D    banda    n     R2  eroare_rel
+D1   64-127  169 -0.173       0.346
+D1  128-255  577 -0.130       0.471
+D1  256-639 1790 -0.120       0.368
+D1 640-1279 2086 -0.044       0.243
+D2   64-127  169 -0.078       0.378
+D2  128-255  577 -0.169       0.601
+D2  256-639 1790 -0.192       0.537
+D2 640-1279 2086 -0.122       0.368
+D3   64-127  169 -0.184       0.329
+D3  128-255  577 -0.113       0.432
+D3  256-639 1790 -0.152       0.385
+D3 640-1279 2086 -0.067       0.251
+
+(4) brațul LM, rata lui τ (ferestre de 8 pași): antrenare pe lmtech1, test pe celelalte configurații
+       test  ferestre  OLS Ση + Ση‖m̂‖  GBDT telemetrie
+    lmtech2       423            0.971            0.970
+lmsens_bf16       869            0.967            0.975
+ lmsens_a32       873            0.956            0.986
+lmtech1, o sămânță lăsată deoparte, OLS Ση + Ση‖m̂‖ pe semințe: [0.963 0.961 0.956]

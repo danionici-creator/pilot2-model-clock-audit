@@ -1,0 +1,27 @@
+pin start 18:56:30
+liber {"wall_total_s": 98.8, "wall_each_s": [94.6, 94.3, 94.8, 94.6], "acc_reference": [0.9878, 0.9863, 0.978, 0.9858]}
+nuclee_P {"wall_total_s": 86.3, "wall_each_s": [82.3, 78.8, 76.8, 77.8], "acc_reference": [0.9878, 0.9863, 0.978, 0.9858]}
+nuclee_E {"wall_total_s": 157.1, "wall_each_s": [151.8, 151.1, 150.8, 150.2], "acc_reference": [0.9878, 0.9863, 0.978, 0.9858]}
+acuratetea identica in toate conditiile (determinism, independent de nuclee): True
+pin end 19:02:13
+g7 start 19:02:13
+{"family": "F6", "seed": 9005, "returncode": 0, "wall_s": 638.1}
+ "total_wall_s": 638.1,
+   "returncode": 0,
+G7 tech4 F6: TRECE: identic bit cu bit {'steps': True, 'evals': True, 'episodes': True, 'disp': True, 'chunks': True, 'world': True}
+g7 end 19:12:53
+seed 7101; trainable 1146880; words 31; config {"seed": 7101, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "bf16", "diag_pre_final": true}
+done: 2600 steps, 871s; steps sha256 8823ab74b499f186; factors sha256 0deb450ac76c643f
+seed 7102; trainable 1146880; words 31; config {"seed": 7102, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "bf16", "diag_pre_final": true}
+done: 2600 steps, 884s; steps sha256 d064f68eda9800fb; factors sha256 4b01e906f34b1ec2
+seed 7103; trainable 1146880; words 31; config {"seed": 7103, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "bf16", "diag_pre_final": true}
+done: 2600 steps, 885s; steps sha256 6812b93969c9ced9; factors sha256 f2124326200ca1f8
+lmsens_bf16 end 19:57:04
+seed 7101; trainable 1146880; words 31; config {"seed": 7101, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 32.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "fp16", "diag_pre_final": true}
+done: 2600 steps, 886s; steps sha256 7e901c8357f9a17a; factors sha256 b5a96ca764b73452
+seed 7102; trainable 1146880; words 31; config {"seed": 7102, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 32.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "fp16", "diag_pre_final": true}
+done: 2600 steps, 888s; steps sha256 f71e438bf5688eb5; factors sha256 574867927bb9909d
+seed 7103; trainable 1146880; words 31; config {"seed": 7103, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 32.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "fp16", "diag_pre_final": true}
+done: 2600 steps, 886s; steps sha256 97413a8ad83b13aa; factors sha256 9c156e44502c00bf
+lmsens_a32 end 20:41:34
+LANT 2 TERMINAT

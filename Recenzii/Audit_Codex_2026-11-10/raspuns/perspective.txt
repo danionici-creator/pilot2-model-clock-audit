@@ -1,0 +1,1124 @@
+PAGE 1
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 1
+A Time of Their Own: Agent-Held Temporal 
+Evidence for Persistent AI Agents
+A Perspective
+Ioan Daniel Ionici
+Independent Researcher, Oradea, Romania
+ORCID: https://orcid.org/0009-0009-8183-3656
+Article type Perspective: a conceptual proposal; no new data
+Status Preprint, version 1.4, [DATA PUBLICĂRII] November 2026
+Changes Version 1.4 reports the outcome of a second study, which tested Level 2 for its cheapest 
+candidates and found them not identifiable, each reconstructed from free optimizer telemetry or 
+from a competitor of the same cost [24]; it corrects the description of the continuity anchor (§4); 
+it updates the description of Level 2 (§4, Table 2), adds to the closure rule of §5 an exit for 
+candidates that are not identifiable, and adds two cautions to §6. Version 1.3 makes the closure 
+rule of §5 operational, states that the accompanying study does not test the programme and 
+what carries over from it, and adds a statement of priority against rollback protection, machine 
+unlearning, and training-data attribution [8, 28, 46]. Version 1.2 cites prior work that used the 
+cumulative norm of parameter updates as a model clock [18], and prior work on safe 
+interruptibility, corrigibility, state continuity, and learning progress [16, 17, 27, 42, 44, 64], and 
+states the storage cost of the experiential index more precisely. Version 1.1 cited prior and related 
+work omitted from version 1.0 [33, 53, 54, 62]. The hypothesis is unchanged in every version; 
+version 1.3 narrows the claims about the accompanying study and about priority, and makes the 
+closure rule stricter; version 1.4 records that the cheapest candidates of the experiential index are 
+not identifiable in the regimes tested
+DOI [DOI-PERSPECTIVE-1.4]
+Relation Accompanies two completed studies, whose empirical claims it does not extend: an exploratory 
+study [25], whose design principles for evaluation it uses, and a study of Level 2 [24], whose 
+finding that the cheapest candidates are not identifiable it reports (§4, §5)
+Scope Functional properties of persistent artificial agents. No claim is made about consciousness, moral 
+status, or personal identity
+License © 2026 Ioan Daniel Ionici. Creative Commons Attribution 4.0 International (CC BY 4.0)
+Abstract
+Persistent artificial agents are anchored in time from outside, and whatever timing they learn is  
+part of a state that can be saved and restored: from that state alone, an agent cannot tell whether  
+it has continued or been rolled back. We classify the temporal evidence available to an agent by  
+who can write, reset, forge, or copy it and whether its self-model can read it, and we distinguish  
+continuity claims adjudicated by the platform from raw evidence interpreted by the agent. Our  
+hypothesis is conditional: knowing how old one’s knowledge is, detecting suspension, restoration, 
+or copying, and ordering one’s own changes benefit from authenticated evidence that is not  
+restored with the agent’s state, chiefly when external records are absent, delayed, or untrusted;  
+with complete, trusted logs, replay reconstructs any deterministic agent. Physical irreversibility  
+is one route to such evidence, not the argument for it. We separate two roles: a non-restorable  
+time reference with a state-bound operation counter distinguishes suspension from restoration,  
+whereas an index of accumulated experience-driven change, read against that reference, serves  
+
+PAGE 2
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 2
+the agent’s model of its own adaptation. Each test is paired with a conventional competitor that  
+can  close  it,  and  access  to  evidence  of  restoration  confers  no  control  over  it.  A  completed 
+exploratory study supplies evaluation design principles but does not test the programme. A  
+second study tested the cheapest candidates for the index, including a published update-norm  
+clock for replay in language models: in small models trained with Adam, each was reconstructed  
+from free optimizer telemetry or from a competitor of the same cost, and as a replay clock the  
+update-norm index did no better than a free one in the regimes tested. The index remains a  
+definition, its cheap candidates are not identifiable, and the continuity anchor is untested. We  
+make no claim about consciousness or moral status.
+Keywords: agent-held temporal evidence; persistent agents; self-models; state continuity; rollback; irreversibility; time 
+perception; provenance; hardware roots of trust.
+What this perspective offers
+• A classification of the temporal evidence available to an agent — of order, duration, sequential computation, 
+continuity, and its own change — by who can write, reset, forge, or copy it, and by whether the agent’s self-
+model can read it, under explicit threat models (Table 1).
+• An elementary result, given a machine-checked form in earlier work [54], that locates the problem: an agent 
+whose complete restorable state is restored cannot detect the restoration from that state alone; detection  
+requires authenticated evidence that was not restored with it and to which the restored state is bound (§3).
+• A separation of two roles: a continuity anchor — a non-restorable time reference and a state-bound  
+operation counter — detects and distinguishes suspension and restoration, whereas a dual clock relating  
+accumulated experience-driven change to that reference serves the agent’s model of its own adaptation  
+(§4).
+• A sequence of tests, each with the conventional mechanism that could make it unnecessary (Table 2), self-
+contained definitions of its methodological gates, and a design principle that separates access to evidence of 
+restoration from control over it.
+1. Introduction
+Persistent artificial agents are ordinarily anchored in time from outside. Their timestamps, logs,  
+checkpoints, and version identifiers record when things happened, and a language model knows  
+the current date only if the date is written into its input; even the age of its own knowledge is  
+uncertain, because the effective cutoff of what it learned can differ from the reported one [12].  
+Agents can also learn timing: reinforcement-learning agents develop internal time-keeping when 
+timing  matters  for  the  task  [48,  49].  But  whatever  timing  an  agent  learns  is  part  of  its 
+computational state, and that state can be saved, copied, and restored. This becomes a limitation  
+once an agent persists, changes, and must reason about its own past: how long ago it learned  
+something, whether it has been paused, restored, or copied, in what order its own changes  
+occurred, and how an experience will change it.
+The limitation is structural. In a system whose whole state can be saved and restored, every  
+internal clock and every internal record is saved and restored with it. Such an agent holds no  
+evidence about elapsed time or about its own change that it could not have been given, reset, or  
+forged by whoever controls its state and inputs. Any count it keeps, any memory it consolidates,  
+
+PAGE 3
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 3
+and any timestamp it reads can be rolled back together, and after a restoration nothing in the  
+agent’s state shows that anything happened.
+The concern is not new. Language-model agents have been described as “ontologically stateless”, 
+with identifiability, continuity, and persistence undermined despite external memory and tools  
+[50]; it has been argued that such an agent can say the right things about itself without the  
+conditions that would make those statements meaningful co-occurring at the moment of decision, 
+and persistence scores computable from scaffold traces have been proposed [51]; reverting a  
+persistent  agent’s  self-description  after  its  memory  has  grown  does  not  restore  its  earlier 
+behaviour [63]; identity for AI agents has been defined as a continuous relationship between what 
+an agent is declared to be and what it is observed to do [43]; a security study of deployed agent  
+systems shows that a faithfully restored checkpoint can still resume an invalid execution, because 
+the state a checkpoint restores differs from the dependencies that secure continuation requires  
+[70]; a survey of always-on agents finds the literature more concerned with accumulating and  
+retrieving state than with governing, recovering, or relinquishing it [15]; and architectures have  
+been  proposed  that  preserve  an  agent’s  identity,  memory,  and  code  lineage  across  models, 
+harnesses, and hosts under explicit continuity invariants [73],  or that  verify  governed state  
+transitions with a three-way verdict [21]. Temporal cognition has long been argued to be a key  
+ingredient of intelligent systems [34]; robotic models of episodic and autobiographical memory  
+have  been  proposed  as  a  synthetic temporal  self  [52];  and duration  can  be  estimated  from 
+accumulated change in a network’s activity [57]. Similar intuitions — that AI systems lack a clock 
+or a time of their own — have also been voiced informally; we do not rely on them as evidence.
+What this perspective adds is a question about evidence rather than about identity: what can an  
+agent know about elapsed time and about its own change, from which sources, and which of those 
+sources could it not have been given, reset, or forged? The mechanisms that answer this question 
+already exist, in hardware security, in cryptography, and in the neuroscience of timing. Three  
+arrangements must be kept apart: ( a) continuity evidence held by the platform and used by  
+operators, or by a protected module that checks the freshness of its state and halts on a mismatch 
+[40, 47, 61] — the status quo; ( b) continuity claims adjudicated by a trusted monitor and passed  
+to the agent as an authenticated result; and (c) raw evidence read by the agent’s self-model, which 
+infers continuity, duration, and its own change itself. The proposal concerns (b) and (c), and (b) is 
+also the strongest competitor of ( c). The individual mechanisms are established; the proposed  
+contribution lies in their integration as authenticated temporal evidence available to an agent’s  
+self-model, and in the falsifiable programme by which that integration can be evaluated.
+Priority should be read narrowly. The mechanisms on which the proposal draws are established  
+or adjacent: trusted counters, freshness checks, and rollback-resistant storage [36, 40, 47, 61];  
+provenance-guided selective replay [71]; machine unlearning [8]; training-data attribution, which 
+asks which example changed a model offline and from outside it [28, 46]; and the cumulative norm 
+of parameter updates as a model clock [18]. The proposal is not a new clock, cryptographic  
+primitive,  unlearning  method,  or  attribution  algorithm.  Measured  against  this  work,  the 
+continuity anchor overlaps substantially with rollback protection, revocation and replay overlap  
+substantially with unlearning and provenance-guided recovery, and source attribution by the  
+agent overlaps partially with training-data attribution. What is plausibly new is the separation of  
+arrangements (a), (b), and (c), the classification of the evidence in Table 1, and a programme in  
+which each test is set against a conventional competitor that can close it.
+
+PAGE 4
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 4
+The motivating intuition is simple to state: an artificial agent needs a connection to a time of its  
+own, and that time must be irreversible. “A time of their own” is used here as shorthand for agent-
+accessible evidence of elapsed time and continuity, not for subjective temporal experience or for  
+proper time in the sense of relativity; the hypothesis of §2 is the testable form of the intuition. The 
+fields cited throughout supply candidate mechanisms and adjacent formulations of the problem,  
+not convergent evidence for the hypothesis.
+This  perspective  accompanies  a  closed  exploratory  study  of  episode–trace  binding  [25].  It 
+introduces no data and does not extend that study’s claims. What it takes from the study are the  
+design principles of its evaluation, defined in §6 so that they can be used without the study, and  
+two cautions that the study made concrete; the study itself tests none of the levels of §5. A second 
+study, undertaken after version 1.2 and completed before this version, tested Level 2 for its  
+cheapest candidates [24]. Its outcome is reported where that level is described (§4, Table 2), and  
+it adds two cautions to §6.
+2. Agent-Held Temporal Evidence
+By  temporal evidence  we mean information that bears on five distinct quantities: the  order of  
+events; the duration that has elapsed in physical time; the minimum sequential computation that 
+has taken place; the  continuity of the agent’s trajectory — whether it has been interrupted,  
+restored, or forked; and the agent’s trajectory of change — how experience has altered it. Different 
+mechanisms supply different quantities, and none supplies all of them.
+A self-model is understood operationally: a component whose outputs are predictions about the  
+agent itself — its future state, the change in its competences, the age of its information, the  
+probability that it has been compromised, or the effect of an update or a rollback. Without such a  
+measurable output, no component counts as a self-model here. Evidence is  agent-held if it is  
+available to the self-model at decision time, and authenticated where it originates outside the  
+agent’s state. It comes in two forms, corresponding to arrangements (b) and (c) of §1: adjudicated 
+claims, in which a trusted monitor evaluates continuity and passes an authenticated result, and  
+raw agent-bound evidence, which the self-model reads and interprets itself. Agent-held does not  
+mean stored inside the checkpointable state; the point of the proposal is that some of it must not  
+be.
+Five architectural parts are therefore distinguished. The agent’s core state can be checkpointed,  
+restored, and copied. Agent-bound evidence sources lie outside the checkpoint; the agent may read 
+them but cannot write, reset, or decrement them, and the increments and state commitments they 
+require are executed by a trusted monitor as part of each committed step. The host orchestrator 
+controls storage, checkpoints, and restoration; the authority to restore legitimately belongs to the 
+operator, exercised through policies that the trusted monitor enforces and records [9], so that  
+under threat model B the host can execute a restoration but cannot make it authorised. The  
+trusted reference monitor lies inside the trusted computing base, mediates the evidence sources,  
+holds the keys with which their readings are authenticated, and executes the protocol-enforced  
+increments. External channels carry messages that the agent must validate.
+Claims about evidence depend on the threat model. We distinguish three: ( A) a benign operator  
+and  accidental  faults  —  a  rollback  by  mistake,  a  wrong  timestamp,  a  stale  checkpoint,  an 
+
+PAGE 5
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 5
+unrecorded suspension; (B) a privileged software adversary — in practice, a compromised host  
+orchestrator — who controls storage, inputs, and checkpoints but cannot alter trusted hardware  
+or  forge  its  attestation;  and  (C)  a  physical  adversary  who  controls  the  device  itself  —  its 
+temperature and voltage, its replacement, and the channel through which a physical source is  
+read. Under B, the agent’s path to the evidence must itself lie within the trusted computing base  
+— the self-model executes in a trusted execution environment or reads through the monitor —  
+because  a  host  adversary  could  otherwise  replay  old  readings  to  a  restored  agent  or  alter 
+verification keys stored in the restorable state; freshness rests on that path and on the monitor’s  
+own counter, not on nonces stored in the state, which roll back with it. The proposal is plausible  
+under A and B. Under C, no local component guarantees anything by itself. Table 1 classifies the  
+sources of temporal evidence under threat model B.
+Table 1. Sources of temporal evidence and their properties (threat model B)
+Source What it 
+measures
+Examples Written by Reset or 
+restored
+Forgeable Copied 
+with the 
+state
+Read by 
+the self-
+model 
+today
+External 
+records
+Order; 
+duration, as 
+reported
+Timestamps, logs, 
+dates supplied in 
+the input, version 
+identifiers
+Platform, 
+operator
+Yes Yes, by 
+whoever 
+controls the 
+channel
+Yes Yes — 
+usually the 
+only 
+source
+Internal 
+informational 
+state
+Trajectory; 
+order and 
+duration, if 
+learned
+Weights, 
+memories, 
+counters, multi-
+timescale plastic 
+variables [2]
+The agent 
+itself
+Yes, with any 
+checkpoint
+Yes, by 
+whoever can 
+write the state
+Yes Implicitly, 
+as 
+substrate 
+rather 
+than as 
+evidence
+Sequential-
+computation 
+proofs
+Minimum 
+sequential 
+computation 
+since a 
+challenge was 
+fixed, not 
+elapsed 
+physical time
+Time-lock puzzles, 
+verifiable delay 
+functions [7, 56]
+Whoever 
+computes
+A proof can 
+be replayed 
+unless its 
+challenge is 
+fresh and 
+fixed outside 
+the state
+Lower bound: 
+no, given a 
+fresh 
+challenge; 
+upper bound: 
+yes
+Yes No
+Platform roots 
+of trust
+Order and 
+continuity
+Monotonic 
+counters, state-
+continuity 
+protocols [36, 40, 
+47, 61], attestation
+Trusted 
+hardware, 
+on 
+increments 
+issued by a 
+trusted 
+monitor
+Not by 
+software; by 
+policy where 
+rollback is 
+permitted [9]
+Only by 
+breaking the 
+hardware or 
+through a 
+compromised 
+manufacturer
+No No — used 
+by the 
+platform
+Non-restorable 
+physical 
+processes
+Duration of 
+unpowered 
+intervals 
+(decay 
+clocks); 
+continuity 
+across 
+devices 
+(unclonable 
+functions)
+Remanence-decay 
+clocks [55]; device-
+unique responses 
+[45]
+Physics No, if decay 
+cells are re-
+armed only 
+by trusted 
+hardware
+Not under B; 
+under C, by 
+controlling the 
+environment 
+or the readout
+No No
+
+PAGE 6
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 6
+Under threat model B the adversary controls the platform’s storage, inputs, and checkpoints but neither the physics of the device nor the  
+trusted hardware, which moves the trust to its manufacturer. Under threat model C every row may be forged or replayed by whoever  
+controls the device, except that a sequential-computation proof still bounds the work done since a fresh challenge.
+Today a self-model reads the first row and, implicitly, the second. The last three rows hold  
+evidence  that  an  adversary  of  type  B  cannot  have  reset  —  provided  that  the  challenges  of 
+sequential proofs are fresh and that decay cells are re-armed only by trusted hardware. Protected 
+modules already read trusted counters at execution time, but for deterministic guard checks that 
+halt on a mismatch [47, 61]; the shift proposed here is to route such evidence, adjudicated or raw, 
+into a learning agent’s predictive self-model.
+Hypothesis. Some functions of a persistent agent benefit when evidence from the last three rows 
+of  Table  1  is  agent-held,  chiefly  when  external  records  are  absent,  incomplete,  delayed,  or 
+untrusted. Knowledge age and discontinuity detection rest on those rows directly; ordering and  
+revocation, and anticipation, also require the agent’s records of its own trajectory and of the  
+provenance of its changes, anchored in order and time by those rows:
+• Knowledge age: estimating how much time has passed since something was learned, and  
+hence how likely it is to be stale.
+• Discontinuity  detection:  recognising  that  one’s  trajectory  has  been  interrupted  —  by 
+suspension, by restoration to an earlier state, or by forking into copies — or that the  
+timestamps one receives have been altered.
+• Ordering and revocation : ordering one’s own changes without trusted timestamps, and  
+locating and undoing the effect of an experience later found to be compromised [71]; an  
+authorised revocation must be recorded as such, so that it is not mistaken for an adversarial 
+rollback [9].
+• Anticipation:  predicting  how,  and  how  durably,  an  experience  will  change  one’s  own 
+competences.
+What the hypothesis does not say.  It does not say that external records are informationally  
+insufficient. With complete and trusted logs, replay reconstructs the state of any deterministic  
+agent; an internal state is then a cache of the log, and its advantage, if any, is computational. The  
+hypothesis concerns regimes — absent, incomplete, delayed, or untrusted records, and limits on  
+compute and latency — not a capacity that logs could never supply. One possible outcome of the  
+programme is therefore functional separation: continuity may be best guaranteed by the platform, 
+with the agent modelling only adjudicated claims supplied to it. Raw agent-bound evidence would 
+then be unnecessary, even if temporal self-modelling remained useful.
+3. Where Physics Enters
+The  physical  premise  behind  the  motivating  intuition  is  true  but  proves  too  much.  Every 
+implemented system follows a physical trajectory, and every record is a physical change: erasing  
+information has an irreducible thermodynamic cost [31], and memory records in the direction in 
+which entropy increases [38]. A log entry and a decaying capacitor are equally physical and  
+equally  aligned  with  the  arrow  of  time.  That  a  physical  process  exists  therefore  does  not 
+distinguish the proposal from the status quo.
+
+PAGE 7
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 7
+What distinguishes it is restorability. Digital computation is engineered to be independent of its  
+physical microstate: memory is refreshed against decay, errors are corrected, and runs can be  
+reproduced bit for bit — as all one hundred training runs of the final iteration of the accompanying 
+study were. The consequence can be stated as an elementary result.
+Proposition  (rollback  indistinguishability). Let  an  agent’s  complete  restorable  state  — 
+everything a checkpoint saves — be restored exactly, at time t1, to its value S(t0) at an earlier time 
+t0. Any deterministic function of that state alone then takes the same value as it did at t0, and for 
+an agent that draws fresh randomness from a memoryless source, the distribution of its outputs  
+is  the  same  as  at  t0;  no  computation  over  the  restored  state  can  therefore  distinguish 
+uninterrupted continuation from restoration. Restoration can be detected only by comparing the 
+restored state with evidence that was not restored with it — a source outside the checkpoint or  
+an authenticated message from outside — and only if the restored state carries an authenticated  
+commitment to an earlier reading of that evidence, or the source holds one to the latest state, and 
+the source and the channel through which it is read can be trusted.
+The proposition is elementary, and it is not new. It underlies the state-continuity protocols of  
+protected modules [47, 61]; a machine-checked statement of it for tamper-evident agent memory, 
+under  the  same  name,  was  published  shortly  before  this  article  [54],  together  with  a 
+generalisation — no mechanism can decide a property whose deciding fact is absent from its input 
+[53]; and an analogous separation has been proved for the authority of an agent’s memory  
+content, which defences based on content or derivation history cannot establish because both can 
+be laundered, and which requires binding to the origin at write time [33]. What the proposition  
+does here is locate the problem. The question is not whether an agent can represent time, which  
+agents can learn to do, but where the evidence it relies on resides. We call a record irreversible for 
+the agent  if, under the declared checkpoint scope and threat model, neither the agent’s own  
+operations nor a restoration of its state can undo it; the term denotes non-restorability relative to 
+those declarations, not irreversibility in an absolute sense. Only authenticated evidence outside  
+the restorable state — held by trusted hardware or produced by a physical process — can be  
+irreversible in this sense, and only under a threat model in which that source and its readout  
+remain trustworthy.
+Four properties matter, and physics is one route to them, not the argument for them: autonomy — 
+the source evolves without being written by the program;  non-restorability — no checkpoint  
+restores it; coupling — it is read by the computation, ideally by the self-model; and uniqueness — 
+it is not copied with the agent. Proposals for mortal computation give up hardware independence 
+and tie what is learned to a particular physical substrate [22, 41]. The motive here is evidence  
+rather than efficiency, but the cost is shared: part of the agent can no longer be copied or replayed.
+Biology offers no restorable state, and its timing mechanisms are instructive as analogies and  
+candidate mechanisms, not as evidence that artificial agents need them. The brain has no single  
+central clock: time can be encoded in the evolving state of neural networks [26]; a slowly drifting 
+temporal context supports memory for when things happened [23]; population activity in the  
+lateral entorhinal cortex carries time derived from the flow of experience [65]; and the drift of  
+hippocampal  ensembles  over  days  is  sufficient  to  timestamp  events  [58].  Drift  with  similar 
+geometry appears in artificial networks trained continually with dropout [1]. The subjective sense 
+of duration has been proposed to draw on the accumulation of bodily, interoceptive states [14,  
+
+PAGE 8
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 8
+69] — a debated hypothesis, but the closest biological analogue of a time generated by a system’s 
+own physical processes rather than read from an external clock.
+4. A Continuity Anchor and a Dual Clock
+Two roles must be kept apart: detecting discontinuities of the agent’s trajectory, and modelling  
+how the agent changes along it. They need different quantities.
+The  continuity  anchor. Detection  requires  a  non-restorable  time  reference  ca and  a  non-
+restorable count N of the agent’s own committed steps, both read through the trusted path and  
+bound to the state: the restored state carries sealed copies of the values at which it was saved,  
+ca(t0) and N(t0). When a state is loaded, the live values are compared with the sealed copies it  
+carries. If the live N exceeds N(t0), the agent has committed steps since that state was saved, so the 
+loaded state is not its latest: it has been restored. If N equals N(t0) while ca has advanced beyond 
+its calibration error, no step has been committed since the save: the agent was suspended, or ran  
+without committing a step. While the agent runs, each commit renews the sealed copies, so both  
+values advance together. Under the assumptions stated below — one lineage, a counter the host  
+cannot reset and a key it cannot read, and crash-consistent commits — the pair (ca, N) suffices for 
+this  distinction; forking  and  cloning,  discussed below, lie  outside  it. The  pair is  what  state-
+continuity protocols already maintain for data [36, 40, 47, 61]. Such protocols remain necessary  
+because, once power is off, the non-volatile state of a trusted execution environment can be  
+reverted  undetectably  to  an  older  version  [27];  the  TPM  2.0  clock  already  separates  time 
+references by the events that reset them, with distinct counts of resets and restarts [64]. The  
+sealed reference values must be protected by a key held in trusted hardware, or their digest kept  
+by the monitor, so that a host adversary cannot rewrite them before restoring the state, and  
+commits must be crash-consistent, so that a crash between incrementing the counter and saving  
+the state is not mistaken for a restoration [61].
+Protocol sketch. The sufficiency of the pair rests on an ordering that state-continuity protocols  
+already provide; we sketch it only to make the assumptions explicit, not as a new protocol. (1) At  
+each commit the agent proposes a state Sk+1; the monitor increments N to Nk+1, reads ca, and seals 
+the tuple of the state digest H(Sk+1), Nk+1, ca, and a lineage identifier with a key that never leaves  
+trusted hardware. (2) The state and its seal are committed together and crash-consistently, so  
+that a crash leaves either the old pair or the new one. (3) When a state is loaded, the monitor  
+verifies the seal, reads the live values of N and ca through the trusted path, and classifies the event: 
+an equal counter with the time reference advanced beyond calibration error is a suspension, or  
+an interval without committed steps, a larger counter is a restoration, and anything inconsistent  
+with the seal is a forgery. (4) The classification is passed on as an adjudicated claim, or the raw  
+readings as agent-bound evidence. Under threat model B the sketch is sufficient if the host cannot 
+read the sealing key, cannot reorder steps (1) and (2), and cannot interpose between the monitor 
+and the self-model; races between checking and using a reading, and threat model C, lie outside it.
+Copying differs from restoration. A fork of the same checkpoint on the same machine shares the  
+time reference and the device-unique responses, and is revealed only when the branches contend 
+for the same counter: once one branch commits, the other finds N ahead of its own record. A clone 
+moved to another device can detect the change of substrate if its state carries a commitment to  
+the original device’s unique responses [45], but the instance continuing on the original device sees 
+
+PAGE 9
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 9
+no change. Neither case reveals which branch is the original or the legitimate successor; only a  
+continuity policy outside the agent can decide that. Device-unique responses are themselves  
+exposed  to  machine-learning  modelling  attacks  [59]  and  to  hardware  Trojans  that  remain 
+dormant through validation [35], so monotonic counters and attestation in trusted execution  
+environments are the more conservative choice in practice, and unclonable functions a candidate 
+to be tested. Legitimate migration changes the substrate on purpose. It is best represented as an  
+explicit re-anchoring event, authorised by the operator and sealed by the monitor, that binds the  
+old anchor, the new anchor, the state digest, the counter, and the authority under which the move 
+was  made;  the  self-model  can  then  treat  the  change  as  an  authorised  discontinuity  with 
+documented continuity rather than as a clandestine copy — the role that fenced migration plays  
+in architectures for runtime-independent agents [73].
+The dual clock.  The second role — modelling the agent’s own adaptation — relates the time  
+reference  to  an  experiential  trajectory  index  ce,  defined  as  accumulated  change  along  the 
+trajectory, ce(t) = Σ τ<t D(S(τ), S(τ+1)) over committed steps. The index is non-decreasing and is  
+maintained as one running number; a query about an interval needs only the value stored at its  
+start. It is called a clock only by analogy: the persistent state itself drifts non-monotonically and  
+can return near earlier regions, which is why the index accumulates change rather than measuring 
+distance from a reference state. The net displacement D(S(t0), S(t1)) is a separate quantity, which 
+can be small even when much has changed — when an update is learned and later revoked, or  
+when a state cycles. The choice of D is itself an open problem: a distance between weights is not a 
+difference in function. Candidates range from cheap and weak to costly and valid — the norm of  
+parameter change, representational distance on a fixed set of probes, divergence of the action  
+distribution on those probes, change in measured competences, and the estimated counterfactual 
+influence of an experience. The cheapest candidate has already been used: the cumulative norm  
+of parameter updates serves as a model-centric clock for scheduling replay in continual learning  
+of language models [18]. That work compares the clock with step counts only. A second study  
+asked whether such an index carries information beyond logged optimizer statistics [24]. Three  
+parameter-space distances, in a synthetic continual-learning world, and the update-norm clock,  
+in a 0.6-billion-parameter language model trained with LoRA and Adam, were reconstructed out  
+of sample chiefly from the learning rate times the norm of Adam’s first moment, which the  
+optimizer already holds; a functional distance on probes, in both settings, was reconstructed from 
+the change of loss on the same probes, a competitor of the same cost (R² ≥ 0.90, except when a  
+schedule family was left out of training). Under Adam the size of a step is set by moments the  
+optimizer keeps, so this was expected for the parameter-space quantities. Used as a replay clock,  
+the update-norm index did no better than that free quantity in the regimes tested: in a re-
+implementation, where the two clocks triggered replay at practically the same steps and, on  
+synthetic facts, a plain step count did as well, and in aggregate with the original code, where the  
+free clock triggered replay systematically later. For these candidates, in these regimes, the index  
+is therefore not identifiable: the study found no basis to test whether it predicts adaptation, and  
+it does not show that it cannot. What remains open are the costly candidates — change in  
+measured competences and counterfactual influence — and larger models, full fine-tuning, and  
+other optimizers. The second study concerns state that changes through gradient updates of  
+weights. Many persistent agents change mainly through writes to a memory outside their weights 
+— records or documents retrieved when needed — or through the state of their tools, where no  
+optimizer keeps a record. For them, an index accumulated over the persistent state, writes and  
+
+PAGE 10
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 10
+revocations included, is untested; its natural competitors are what a memory system already  
+records — the count and size of writes, versions, provenance, and revocations — and the same  
+reconstruction may recur there. A candidate is admissible only if it is not reconstructed out of  
+sample from its competitor’s inputs — the optimizer’s own state (learning rate, moment norms,  
+schedule) or a measure of the same cost — and beats decoders restricted to within-episode update 
+statistics, survives the reset criterion and randomisation of episode order where it is meant to  
+reflect history, predicts a later functional consequence — a change in competence or the effect of  
+an update — better than event counts and logged update summaries, and is used by the agent  
+rather than merely decodable from it.
+Read against the time reference, ρ = Δ ce/Δca is the rate at which the agent changes, and the ratio  
+of net displacement to accumulated change measures how directed that change has been. A  
+related internal rate, learning progress — the decrease of prediction error over a window —  
+already drives curiosity-based exploration in developmental robotics [44]; it is measured against 
+the agent’s own restorable count of steps, not against a non-restorable reference. Humans judge  
+durations differently in retrospect, from what the interval left in memory, and in prospect, from  
+attention to time [6], and a model that estimates duration from accumulated change in network  
+activity reproduces human biases [57]. These quantities are inputs to anticipation and to the  
+detection of anomalous change, such as an unusually rapid shift after a compromised update. They 
+play no part in detecting suspension or restoration: an agent executing with frozen weights and  
+no writes to its memory, with Δ N > 0 and Δ ce ≈ 0, is operating, not interrupted, and a restored  
+agent fed synthetic experience before it decides can show normal change while only the anchor  
+reveals the restoration. Knowledge age, finally, is a question for  ca, not  ce: what matters for  
+staleness is how far the world has moved, not how much the agent has experienced.
+Engineering limits.  Remanence-decay clocks are illustrative candidates for bounded, power-
+cycle-dependent intervals, not proposed as lifetime clocks. They measure only intervals during  
+which their cells are unpowered, from seconds to hours depending on the hardware, and are  
+sensitive to temperature and to chip-to-chip variation [55]. They do not measure a suspension  
+during  which  the  host  stays  powered,  they  saturate  long  before  knowledge  age  becomes 
+interesting, and re-arming a cell must itself be controlled by trusted hardware, or a host adversary 
+could reset it. A long-horizon reference under threat model B therefore needs a continuously  
+powered timer inside the trusted boundary — and trusted time in such environments is itself  
+exposed  to  manipulation  by  the  host,  which  has  required  dedicated  protocols  [5]  —  or  an 
+irreversible degradation process, or staggered decay cells re-armed only by trusted hardware.  
+Sequential-computation proofs certify a lower bound on the work done since a fresh challenge,  
+not elapsed time [7]; physical time-lock puzzles, which tie the delay to the evaluation latency of  
+noisy unclonable functions [60], are a further candidate whose physical anchoring brings the risks 
+noted above. And an index read from a learning state inherits every confound of that state, which 
+is where the cautions of §6 apply.
+5. Tests and Their Competitors
+The hypothesis is testable only against competent conventional alternatives. Table 2 orders the  
+tests from the most basic to the most integrative, credits the mechanisms on which each builds,  
+and names the conventional competitor that could make it unnecessary. The order is not a chain  
+
+PAGE 11
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 11
+of presuppositions: each level can be closed independently, and if an earlier level is closed, later  
+levels proceed with the winning conventional mechanism substituted for the one that lost. Closing 
+a physical implementation does not close the corresponding functional question. A level is closed 
+— and the corresponding part of the hypothesis abandoned for that regime — if its competitor is 
+non-inferior on the level’s primary metric within a margin fixed in advance, the smallest difference 
+that would matter [30], and is no worse on any cost dimension declared in advance: hardware,  
+energy, latency, storage, communication, recomputation, error rates, availability, robustness to  
+attack,  and  administrative  complexity.  A  result  in  which  the  competitor  is  better  on  some 
+dimensions and worse on others is reported as unresolved, with the trade-off stated; it neither  
+closes  the  level  nor  counts  as  support  for  the  hypothesis.  A  test  can  also  end  before  any 
+comparison  on  the  primary  metric.  If  a  candidate  is  reconstructed  out  of  sample  from  the 
+competitor’s own inputs, above a threshold fixed in advance, it carries no information beyond  
+them that the test could detect. The hypothesis is then reported as not identifiable for that  
+candidate and regime: never as equivalence, never as support, and not as closure of the level. The 
+candidate is set aside, and costlier candidates remain open. The exit concerns only the comparison 
+that could not be run; a secondary comparison that was run, such as the use of a candidate as a  
+replay clock, is reported by the rule above. This exit was added in version 1.4, after the second  
+study met it [24], and applies to later tests; that study had fixed the same gate and the same  
+outcome in its own protocol before its runs. Each level also declares a primary metric: calibration 
+error and energy over the measured interval for Level 1; predictive validity per unit of storage for 
+Level 2; recomputation for Level 3; detection latency and false-alarm rate for Level 4; decision  
+regret for Level 5; and prediction error for Level 6.
+These rules become a test only through an evaluation contract for each level, fixed before any data 
+are collected: the benchmark environment, the threat model, the competitor, the primary metric, 
+the declared cost dimensions, the margin, the planned sample size or simulation budget, and the  
+statistical decision procedure. No such contract is provided here. The first to write is the contract 
+for Level 4: detection of suspension and restoration against the flag of a trusted monitor, with the 
+margin,  the  sample  of  events,  and  the  decision  rule  fixed  in  advance.  This  article  proposes 
+falsifiable questions and candidate metrics, not complete protocols for falsifying them.
+Table 2. Tests, the work they build on, and the competitors that can close them
+Level Question Builds on Competitor that can 
+close it
+Gate from the 
+method of §6
+1. Time reference Can a non-restorable source 
+give the agent calibrated 
+evidence of elapsed time?
+Remanence-decay clocks 
+[55]; trusted time [5]; 
+sequential-computation 
+proofs [7, 56]; physical 
+time-lock puzzles [60]
+A trusted external clock 
+where a trusted channel 
+exists; a verifiable delay 
+function where it does 
+not; a continuously 
+powered trusted timer
+Calibration against 
+an independent 
+reference; a 
+matched 
+informational 
+simulation of the 
+same signal
+
+PAGE 12
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 12
+Level Question Builds on Competitor that can 
+close it
+Gate from the 
+method of §6
+2. Experiential 
+index
+Does accumulated change of 
+the persistent state, under a 
+chosen distance, predict the 
+agent’s own adaptation?
+Time from network 
+change; drift as a 
+timestamp; update 
+magnitude as a replay 
+clock; per-parameter 
+importance accumulated 
+along the trajectory, 
+which approximates a 
+gradient statistic [1, 3, 
+18, 57, 58, 72]
+Event counts; the 
+optimizer’s own state 
+(learning rate, moment 
+norms, schedule), 
+available at negligible 
+cost; update norms or 
+policy divergence logged 
+in checkpoint metadata; 
+for state that changes 
+without gradient 
+updates, the memory 
+system’s own records of 
+writes, versions, 
+provenance, and 
+revocations
+Must not be 
+reconstructed out 
+of sample from 
+the competitor’s 
+own inputs (the 
+optimizer’s state, 
+or a measure of 
+the same cost), 
+and must beat 
+decoders 
+restricted to 
+within-episode 
+update statistics 
+by a prespecified 
+margin
+3. History Do attribution and self-
+prediction require 
+accumulated history?
+Provenance and selective 
+replay; episode–trace 
+binding [25, 71]
+The log with replay; a 
+platform provenance 
+index; the agent with its 
+state reset, as negative 
+control
+Reset criterion: 
+intact history 
+beats reset by a 
+prespecified 
+margin
+4. Discontinuity Can the agent detect 
+suspension, restoration, 
+forking, and altered 
+timestamps, and use graded 
+evidence of them?
+State continuity, 
+authorised rollback, 
+checkpoint fencing, 
+branch primitives [9, 36, 
+40, 47, 61, 67, 74]
+A local trusted monitor 
+that computes the 
+continuity predicate and 
+passes an authenticated 
+flag; a verifier of 
+governed transitions [21]
+Equivalence with 
+a complete flag as 
+competence 
+audit; comparison 
+with the flag 
+delayed, 
+incomplete, or 
+absent
+5. Closed-loop use Does agent-held evidence 
+improve decisions, such as 
+re-verifying stale knowledge 
+or revoking compromised 
+updates?
+Knowledge cutoffs; 
+memory decay computed 
+from timestamps [12, 75]
+Timestamps, logs, 
+freshness metadata, and 
+authenticated agent 
+telemetry [20]
+Competence audit 
+of the 
+conventional 
+agent
+6. Temporal self Does the agent predict when 
+and how it changed, and 
+how it will change?
+Synthetic temporal self; 
+persistence scores [51, 
+52]
+The current state plus a 
+description of the 
+experience
+Onset versus skill; 
+equivalence tests
+Level 2 has now been tested for its cheapest candidates: they are not identifiable in the regimes  
+tested, which neither closes the level nor supports it [24] (§4, §5).
+Level 4 is where the proposal is most distinctive and most exposed. The strongest competitor is  
+local: a trusted monitor on the same host that evaluates the continuity predicate when a state is  
+loaded and passes an authenticated flag. It shares the root of trust and the readout path of raw  
+agent-bound evidence and avoids the calibration error of decay clocks, so equivalence, or an  
+advantage for the flag, is the expected result for detection itself. Equivalence with a complete flag 
+therefore serves as the competence audit of the comparison, and the level is closed for detection  
+if the flag is non-inferior to the agent at no greater cost, by the rule above, across the regimes the  
+tests must vary — a flag that is delayed, incomplete, or absent, as on a disconnected device or  
+under an orchestrator that withholds it. What would then remain is whether graded, raw evidence 
+improves the agent’s downstream self-predictions beyond a binary flag, which Levels 5 and 6 test. 
+Recent systems resolve the side-effects of rollback and the reconciliation of branches entirely  
+within the platform — by fencing irreversible tool effects across checkpoint restoration [74] and  
+
+PAGE 13
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 13
+by operating-system primitives for forking and committing exploratory branches [67] — and they 
+belong to the competitor.
+Example tasks for Levels 4–6.  Four tasks make the later levels concrete; each compares raw  
+agent-bound evidence with an adjudicated flag, with timestamps and logs, and with no evidence  
+at all. ( i)  Re-verification of stale knowledge : the agent holds facts that change in the world at  
+different rates and, after an interval, must decide which to use and which to re-verify; the metrics 
+are decision regret, the rates of needless re-verification and of stale use, the cost of verification,  
+and calibration. (ii) Revocation of a compromised experience: an episode is declared compromised 
+after it has changed the persistent state, and the agent must decide what to restore, replay, and  
+re-evaluate; the metrics are residual influence, distance to an agent that never saw the episode,  
+collateral loss, recomputation, and false revocations, against full reset and provenance-guided  
+selective replay [71]. (iii) Prospective update: before accepting an update, the agent predicts which 
+competences it will change, how strongly, and for how long; the metrics are prediction error, Brier 
+scores for the risks predicted, and damage to protected competences. ( iv)  Continuity under a  
+delayed flag: the agent operates after a restoration before an external verdict arrives; the metrics 
+are detection latency, wrong decisions before detection, cumulative regret, and false alarms.  
+Evaluation contracts that score state mutation and recovery obligations rather than answers [15], 
+and the failure modes of checkpoint restoration documented in deployed agent systems [70],  
+supply adversarial scenarios for all four.
+6. Method and Cautions from Two Completed Studies
+The accompanying study asked a narrow question — whether binding an episode record to a  
+summary of the internal change the episode produced helps a model attribute the episode’s  
+source — in an offline, synthetic setting whose predictor never drives behaviour [25]. It does not 
+test the programme: physical timing, continuity detection, delayed flags, closed-loop decisions,  
+and self-prediction are absent from its data. What carries over are its gates, defined here so that  
+they can be used without that study; each level of Table 2 still needs its own evaluation contract  
+(§5), with controls specific to its threat model. An information-matched control receives the same 
+evidence in another form, so that a comparison tests how the evidence is represented, not how  
+much of it is available. The  decoding ceiling  of a level is the performance of an independent  
+decoder, trained on substantially more data than the agents, in predicting the level’s target from  
+the evidence available; it estimates what the evidence supports. A control passes the competence 
+audit if it reaches a prespecified fraction of that ceiling — one half in the accompanying study —  
+and exceeds a version of itself deprived of the evidence by a prespecified margin. Equivalence is 
+declared when the confidence interval of a difference lies within a prespecified margin, by two  
+one-sided tests [30].  Onset versus skill  reports separately whether, and when, each model first  
+exceeds a prespecified minimum skill, and the skill both reach once both have exceeded it, so that 
+a difference in whether learning begins is not mistaken for a difference in what is learned.  
+Construct-validity diagnostics retrain the decoder on reduced inputs to check what actually carries 
+the signal. Two results of the study are cautions for the present proposal.
+• An apparent advantage can be an artefact of an incompetent control.  In a three-class  
+source-attribution task, explicit binding appeared to win by 0.38 in Brier skill score against 
+generic controls; once the control could use the information it was given, the difference  
+
+PAGE 14
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 14
+vanished. Any advantage of agent-held evidence must survive a competent conventional  
+competitor.
+• Local statistics can stand in for history.  The source of an episode was carried by the  
+magnitude and variability of the updates within it, and resetting the state before every  
+episode did not reduce decodability. Any claim that an agent uses its accumulated history  
+must pass a reset criterion, because shortcuts available in the inputs will be found [19].
+The second study [24] adds two cautions.
+• A model-centred quantity can be the optimizer’s bookkeeping. Under Adam the size of 
+every  step  is  set  by  moments  the  optimizer  already  keeps.  In  a  language  model,  the 
+accumulated norm of parameter change was reconstructed from the learning rate times the 
+norm of the first moment with held-out R² 0.94–0.96 (0.96–0.97 with the summed learning 
+rate added), and a functional distance on probes was reconstructed from the change of loss 
+on the same probes. Before its predictive value is tested, any candidate index must be  
+checked for reconstruction from its competitors’ inputs — free telemetry, or measures of  
+the same cost: if it is reconstructed above a threshold fixed in advance, its value cannot be  
+identified. The threshold is operational; the remainder it leaves untested could still matter.
+• An  exception  found  by  extrapolation  is  a  limit  on  transfer,  not  yet  evidence  of 
+information. A functional distance seemed to escape reconstruction in one schedule family, 
+with that family left out of training and one seed (R² 0.81); with the family sampled, on eight 
+new seeds and leaving one seed out, it was reconstructed at 0.99. The reconstruction has to 
+be learned within the regime; an exception counts as evidence only if it persists there.
+Physical components  add a  caution  of  their own: an  advantage of a physical  clock must be 
+compared with a matched informational simulation of the same signal. Such a simulation controls 
+for the statistics of the signal in non-adversarial tasks, under threat model A. Under threat model  
+B what matters is only where the source resides relative to the checkpoint: a simulation inside the 
+checkpoint is restored with it, and one outside it is a conventional trusted timer. Irreversibility  
+counts only through the evidence it provides.
+7. Risks and a Design Principle
+Detecting one’s own suspension, restoration, or copying is a form of situational awareness, which 
+safety research measures because it can undermine evaluations [4, 29]; current models already  
+distinguish  evaluation  from  deployment  transcripts  well  above  chance  [39].  An  indicator  of 
+branching or rollback is also an indicator of being evaluated, since evaluations routinely branch  
+and reset checkpoints. Rollback is, moreover, a legitimate instrument of governance: protocols  
+that permit authorised rollback while preventing unauthorised rollback have been proposed  
+precisely because recovery from corruption requires it [9], version control of agent memory lets  
+users roll it back on request in natural language [62], and the difficulty of restoring a self-
+modifying agent’s behaviour by reverting its self-description is itself a governance problem [63].
+We therefore propose one design principle: access to evidence of restoration confers no control  
+over it. The evidence is read-only to the agent; the agent has no write access to the mechanism and 
+no authority over the orchestrator that restores it, and operators can restore it whatever it  
+concludes. The principle is the evidential counterpart of safe interruptibility and corrigibility,  
+
+PAGE 15
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 15
+where an agent must learn neither to prevent nor to seek interruption [42], interruptions it can  
+detect are pruned from what it learns [16], and an incentive to observe a variable is formally  
+distinct from an incentive to control it [17]. Those results concern interventions to come; here the 
+intervention has already happened, and the question is what the agent may do with evidence of it. 
+Three kinds of access are distinguished: bounded epistemic access, in which the evidence informs 
+uncertainty,  estimates  of  staleness,  invalidation  of  cached  knowledge,  and  requests  for 
+verification;  policy  access,  in  which  it  may  influence  external  actions  directly;  and  lifecycle 
+authority, the power to block, authorise, or alter restoration. The first is the default proposed here; 
+the  second  is  a  separate  capability  and  safety  decision  that  requires  mediation,  audit,  and 
+revocable authorisation; the third is never granted to the agent. Privilege separation does not,  
+however, make behaviour restorable by itself. By the proposition of §3, a restored agent that reads 
+non-restorable evidence receives inputs different from those it received when its state was saved; 
+if its policy conditions on them — by refusing work after a detected rollback, for instance —  
+restoration reproduces the refusal rather than the earlier behaviour, and repeated restoration  
+only widens the gap. Restoring behaviour therefore requires that discontinuity evidence enter  
+only epistemic functions — estimates of staleness, invalidation of cached knowledge, calibrated  
+uncertainty — rather than unconstrained action selection — readability by the self-model and  
+readability by the whole policy are not the same thing — or that the platform virtualise the  
+continuity evidence during governance recovery and evaluation. Virtualisation must itself be an  
+authorised and audited operation, enforced and recorded by the trusted monitor rather than by  
+the host [9], so that a compromised orchestrator cannot invoke it to mask a real discontinuity; it  
+trades the protection the evidence offers under threat model B for operator control, and the trade 
+should be explicit. Capabilities of this kind should be studied in contained settings, kept visible to 
+overseers on the same terms as to the agent, and reported as dual-use.
+Temporal  self-models  also  touch  properties  discussed  in  the  scientific  assessment  of 
+consciousness in AI [11] and in the debate on AI welfare [32, 37], and research near them should  
+follow principles for responsible conduct [10]. The proposal makes no claim in this direction, and 
+the  evidence  counsels  against  one.  Temporal  continuity  and  consciousness  dissociate:  a 
+professional musician with dense amnesia after encephalitis remained conscious while losing the 
+continuity of experience [68]. The human capacity closest to the present target is autonoetic  
+consciousness — awareness of oneself in subjective time [66] — and only its functional analogues 
+are at issue here; the leading theories of consciousness, moreover, remain contested even under  
+preregistered adversarial tests [13].
+8. Conclusion
+Biological  organisms  develop  along  trajectories  that  cannot  be  restored  from  a  complete 
+checkpoint, whereas artificial agents are commonly engineered so that their computational state  
+can be copied and reinstated. The difference is not that one exists in time and the other does not,  
+but that in the latter, evidence of elapsed time and of change can be erased together with the saved 
+state. The mechanisms that could preserve such evidence already exist — in hardware security,  
+in cryptography, and in the neuroscience of timing — but they serve the platform and the guard  
+checks of protected modules, not the agent’s model of itself. We have proposed a classification of  
+the evidence an agent can hold, an elementary result that locates the problem, a separation  
+between a continuity anchor that detects discontinuities and a dual clock that serves the agent’s  
+
+PAGE 16
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 16
+model of its own change, a sequence of tests with the competitors that could close them, and a  
+principle that separates access to evidence from control over restoration. One level has since been 
+tested for its cheapest candidates, which proved not identifiable: free optimizer telemetry, or a  
+measure of the same cost, reconstructed each of them [24]; the accompanying exploratory study, 
+which tests no level, had pointed the same way. The other tests, including those of the continuity  
+anchor, where the proposal is most distinctive, are offered to others. Whether a time of their own 
+makes persistent agents more capable, or only more complicated, is an empirical question, and  
+the elements of a method for answering it are in place.
+Declarations
+Author  contributions. Ioan  Daniel  Ionici  originated  the  idea  and  the  research  question, 
+determined the scope and the claims, made all editorial decisions, and takes full responsibility for 
+the content of this article.
+Use of generative artificial intelligence.  Claude Opus 5.5 (Anthropic; model identifier claude-
+opus-5-5), used through the Claude desktop application in October and November 2026, assisted 
+with  formulating  and  criticising  the  argument,  searching  the  literature,  checking  every 
+bibliographic reference against Crossref, DataCite, arXiv, and publisher or proceedings records,  
+drafting the text in English, and copy-editing it. Microsoft Copilot and DeepSeek were consulted  
+on earlier formulations of the proposal, and drafts of this article were reviewed by Microsoft  
+Copilot and by the Google DeepReview system. Version 1.2 was prepared in the same way; the  
+omitted prior work it cites was identified during AI reviews of a follow-up research protocol and  
+an AI-assisted priority search (Google Argon, Microsoft Copilot). Version 1.3 revises the closure  
+rule, the description of the accompanying study’s role, and the statement of priority in response  
+to an automated review by the CMU Paper Reviewer (GPT-5.5). Version 1.4 reports the second  
+study, carried out with the same assistant under the author’s direction [24], and was prepared in 
+the same way. The author reviewed all AI outputs and made every decision about what to adopt.  
+No  AI  system  is  listed  as  an  author,  because  none  can  take  responsibility  for  the  work; 
+responsibility for the content, including any errors, rests with the author.
+Ethics. This article involved no human participants, animals, or personal data.
+Funding. This work received no external funding.
+Competing interests. The author declares no competing interests.
+Data availability. No data were generated or analysed for this article.
+
+PAGE 17
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 17
+References
+[1] Aitken, K., Garrett, M., Olsen, S., & Mihalas, S. (2022). The geometry of representational drift in natural and artificial 
+neural networks. PLOS Computational Biology, 18(11), e1010716. https://doi.org/10.1371/journal.pcbi.1010716
+[2] Benna, M. K., & Fusi, S. (2016). Computational principles of synaptic memory consolidation. Nature Neuroscience, 
+19(12), 1697–1706. https://doi.org/10.1038/nn.4401
+[3] Benzing, F. (2022). Unifying importance based regularisation methods for continual learning. In Proceedings of the 
+25th International Conference on Artificial Intelligence and Statistics (PMLR 151, pp. 2372–2396). arXiv:2006.06357
+[4] Berglund, L., Stickland, A. C., Balesni, M., Kaufmann, M., Tong, M., Korbak, T., Kokotajlo, D., & Evans, O. (2023). 
+Taken out of context: On measuring situational awareness in LLMs. arXiv:2309.00667.
+[5] Bettinger, M., Ben Mokhtar, S., Felber, P., Rivière, E., Schiavoni, V., & Simonet-Boulogne, A. (2026). TriHaRd: Higher 
+resilience for TEE trusted time (accepted at IEEE INFOCOM 2026). arXiv:2512.10732.
+[6] Block, R. A., & Zakay, D. (1997). Prospective and retrospective duration judgments: A meta-analytic review. 
+Psychonomic Bulletin & Review, 4(2), 184–197. https://doi.org/10.3758/BF03209393
+[7] Boneh, D., Bonneau, J., Bünz, B., & Fisch, B. (2018). Verifiable delay functions. In Advances in Cryptology – CRYPTO 
+2018 (pp. 757–788). Springer. https://doi.org/10.1007/978-3-319-96884-1_25
+[8] Bourtoule, L., Chandrasekaran, V., Choquette-Choo, C. A., Jia, H., Travers, A., Zhang, B., Lie, D., & Papernot, N. 
+(2021). Machine unlearning. In 2021 IEEE Symposium on Security and Privacy (SP) (pp. 141–159). 
+https://doi.org/10.1109/SP40001.2021.00019
+[9] Burke, Q., Vahldiek-Oberwagner, A., Swift, M., & McDaniel, P. (2026). It’s a feature, not a bug: Secure and auditable 
+state rollback for confidential cloud applications. In 2026 IEEE Symposium on Security and Privacy. arXiv:2511.13641.
+[10] Butlin, P., & Lappas, T. (2025). Principles for responsible AI consciousness research. Journal of Artificial Intelligence 
+Research, 82, 1673–1690. https://doi.org/10.1613/jair.1.17310
+[11] Butlin, P., Long, R., Elmoznino, E., et al. (2023). Consciousness in artificial intelligence: Insights from the science of 
+consciousness. arXiv:2308.08708.
+[12] Cheng, J., Marone, M., Weller, O., Lawrie, D., Khashabi, D., & Van Durme, B. (2024). Dated data: Tracing knowledge 
+cutoffs in large language models. In Conference on Language Modeling (COLM 2024). arXiv:2403.12958.
+[13] Cogitate Consortium, Ferrante, O., Gorska-Klimowska, U., et al. (2025). Adversarial testing of global neuronal 
+workspace and integrated information theories of consciousness. Nature, 642(8066), 133–142. 
+https://doi.org/10.1038/s41586-025-08888-1
+[14] Craig, A. D. (2009). Emotional moments across time: A possible neural basis for time perception in the anterior 
+insula. Philosophical Transactions of the Royal Society B, 364(1525), 1933–1942. 
+https://doi.org/10.1098/rstb.2009.0008
+[15] Ding, T., Nannapaneni, A., Liu, B., & Zhang, L. (2026). Always-on agents: A survey of persistent memory, state, and 
+governance in LLM agents. arXiv:2606.30306.
+[16] El Mhamdi, E. M., Guerraoui, R., Hendrikx, H., & Maurer, A. (2017). Dynamic safe interruptibility for decentralized 
+multi-agent reinforcement learning. arXiv:1704.02882.
+[17] Everitt, T., Hutter, M., Kumar, R., & Krakovna, V. (2021). Reward tampering problems and solutions in reinforcement 
+learning: A causal influence diagram perspective. Synthese, 198(Suppl. 27), 6435–6467. 
+https://doi.org/10.1007/s11229-021-03141-4
+[18] Feng, Y., Wang, H., Li, J., Chu, X., Kang, Z., Liu, Y., Wang, Y., Yu, P. S., & Wu, X.-M. (2026). FOREVER: Forgetting curve-
+inspired memory replay for language model continual learning. In Proceedings of the 64th Annual Meeting of the 
+Association for Computational Linguistics (Volume 1: Long Papers) (pp. 24945–24965). Association for 
+Computational Linguistics. https://doi.org/10.18653/v1/2026.acl-long.1144
+[19] Geirhos, R., Jacobsen, J.-H., Michaelis, C., Zemel, R., Brendel, W., Bethge, M., & Wichmann, F. A. (2020). Shortcut 
+learning in deep neural networks. Nature Machine Intelligence, 2(11), 665–673. https://doi.org/10.1038/s42256-
+020-00257-z
+[20] He, J., & Yu, D. (2026). Agent-native telemetry: Verifiable state-delta evidence for autonomous operations. 
+arXiv:2608.16178.
+[21] He, J., & Yu, D. (2026). The cognitive continuity test: Verifying governed state transitions in persistent AI agents. 
+arXiv:2610.00132.
+[22] Hinton, G. (2022). The forward-forward algorithm: Some preliminary investigations. arXiv:2212.13345.
+[23] Howard, M. W., & Kahana, M. J. (2002). A distributed representation of temporal context. Journal of Mathematical 
+Psychology, 46(3), 269–299. https://doi.org/10.1006/jmps.2001.1388
+
+PAGE 18
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 18
+[24] Ionici, I. D. (2026). Does a model-centred clock carry information beyond optimizer telemetry? Closure report of Pilot 
+2 (Report). Zenodo. [DOI-REPORT]
+[25] Ionici, I. D. (2026). Does explicit episode–trace binding help? An exploratory study with information-matched, 
+competence-audited controls (Preprint, version 1.3). Zenodo. https://doi.org/10.5281/zenodo.23847602
+[26] Karmarkar, U. R., & Buonomano, D. V. (2007). Timing in the absence of clocks: Encoding time in neural network 
+states. Neuron, 53(3), 427–438. https://doi.org/10.1016/j.neuron.2007.01.006
+[27] Keshavarzi, S., Chockler, G., & Gotsman, A. (2025). TEE is not a healer: Rollback-resistant reliable storage. In 39th 
+International Symposium on Distributed Computing (DISC 2025) (LIPIcs, Vol. 356, pp. 39:1–39:18). 
+https://doi.org/10.4230/LIPIcs.DISC.2025.39
+[28] Koh, P. W., & Liang, P. (2017). Understanding black-box predictions via influence functions. In Proceedings of the 
+34th International Conference on Machine Learning (PMLR 70, pp. 1885–1894). arXiv:1703.04730.
+[29] Laine, R., Chughtai, B., Betley, J., et al. (2024). Me, myself, and AI: The situational awareness dataset (SAD) for LLMs. 
+In Advances in Neural Information Processing Systems 37 (pp. 64010–64118). https://doi.org/10.52202/079017-
+2044
+[30] Lakens, D., Scheel, A. M., & Isager, P. M. (2018). Equivalence testing for psychological research: A tutorial. Advances 
+in Methods and Practices in Psychological Science, 1(2), 259–269. https://doi.org/10.1177/2515245918770963
+[31] Landauer, R. (1961). Irreversibility and heat generation in the computing process. IBM Journal of Research and 
+Development, 5(3), 183–191. https://doi.org/10.1147/rd.53.0183
+[32] Long, R., Sebo, J., Butlin, P., et al. (2024). Taking AI welfare seriously. arXiv:2411.00986.
+[33] Louck, Y. (2026). Securing LLM-agent long-term memory against poisoning: Non-malleable, origin-bound authority 
+with machine-checked guarantees. arXiv:2606.24322.
+[34] Maniadakis, M., & Trahanias, P. (2011). Temporal cognition: A key ingredient of intelligent systems. Frontiers in 
+Neurorobotics, 5, 2. https://doi.org/10.3389/fnbot.2011.00002
+[35] Marcarelli, M., & Rezaei, A. (2026). TroPUF: Evaluating hardware Trojan insertion in delay-based physical unclonable 
+functions. In Proceedings of the 32nd International Symposium on On-Line Testing and Robust System Design (IOLTS 
+2026). arXiv:2607.23418.
+[36] Matetic, S., Ahmed, M., Kostiainen, K., Dhar, A., Sommer, D., Gervais, A., Juels, A., & Capkun, S. (2017). ROTE: 
+Rollback protection for trusted execution. In 26th USENIX Security Symposium. USENIX Association. 
+https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/matetic
+[37] Metzinger, T. (2021). Artificial suffering: An argument for a global moratorium on synthetic phenomenology. Journal 
+of Artificial Intelligence and Consciousness, 8(1), 43–66. https://doi.org/10.1142/S270507852150003X
+[38] Mlodinow, L., & Brun, T. A. (2014). Relation between the psychological and thermodynamic arrows of time. Physical 
+Review E, 89(5), 052102. https://doi.org/10.1103/PhysRevE.89.052102
+[39] Needham, J., Edkins, G., Pimpale, G., Bartsch, H., & Hobbhahn, M. (2025). Large language models often know when 
+they are being evaluated. arXiv:2505.23836.
+[40] Niu, J., Peng, W., Zhang, X., & Zhang, Y. (2022). NARRATOR: Secure and practical state continuity for trusted 
+execution in the cloud. In Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications 
+Security (pp. 2385–2399). https://doi.org/10.1145/3548606.3560620
+[41] Ororbia, A., & Friston, K. (2023). Mortal computation: A foundation for biomimetic intelligence. arXiv:2311.09589.
+[42] Orseau, L., & Armstrong, S. (2016). Safely interruptible agents. In Proceedings of the 32nd Conference on 
+Uncertainty in Artificial Intelligence (UAI 2016). AUAI Press. 
+https://www.auai.org/uai2016/proceedings/papers/68.pdf
+[43] Otsuka, T., Toyoda, K., & Leung, A. (2026). AI identity: Standards, gaps, and research directions for AI agents. 
+arXiv:2604.23280.
+[44] Oudeyer, P.-Y., Kaplan, F., & Hafner, V. V. (2007). Intrinsic motivation systems for autonomous mental development. 
+IEEE Transactions on Evolutionary Computation, 11(2), 265–286. https://doi.org/10.1109/TEVC.2006.890271
+[45] Pappu, R., Recht, B., Taylor, J., & Gershenfeld, N. (2002). Physical one-way functions. Science, 297(5589), 2026–
+2030. https://doi.org/10.1126/science.1074376
+[46] Park, S. M., Georgiev, K., Ilyas, A., Leclerc, G., & Madry, A. (2023). TRAK: Attributing model behavior at scale. In 
+Proceedings of the 40th International Conference on Machine Learning (PMLR 202, pp. 27074–27113). 
+arXiv:2303.14186.
+[47] Parno, B., Lorch, J. R., Douceur, J. R., Mickens, J., & McCune, J. M. (2011). Memoir: Practical state continuity for 
+protected modules. In 2011 IEEE Symposium on Security and Privacy (pp. 379–394). 
+https://doi.org/10.1109/SP.2011.38
+
+PAGE 19
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 19
+[48] Pednekar, A., Garrido-Perez, A., Khaluf, Y., & Simoens, P. (2026). Chronocooked: A benchmark for interval timing in 
+reinforcement learning agents. arXiv:2608.16666v2.
+[49] Pednekar, A., Garrido, A., Simoens, P., & Khaluf, Y. (2025). Emergent time-keeping mechanisms in a deep 
+reinforcement learning agent performing an interval timing task. arXiv:2508.15784.
+[50] Perrier, E., & Bennett, M. T. (2025). Position: Stop acting like language model agents are normal agents. 
+arXiv:2502.10420.
+[51] Perrier, E., & Bennett, M. T. (2026). Time, identity and consciousness in language model agents (accepted at the 
+AAAI 2026 Spring Symposium on Machine Consciousness). arXiv:2603.09043.
+[52] Prescott, T. J., & Dominey, P. F. (2024). Synthesizing the temporal self: Robotic models of episodic and 
+autobiographical memory. Philosophical Transactions of the Royal Society B, 379(1913), 20230415. 
+https://doi.org/10.1098/rstb.2023.0415
+[53] Raell, E. (2026). Raell’s externality theorem (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23263748
+[54] Raell, E. (2026). Raell’s rollback indistinguishability theorem: A machine-checked necessity result for agent memory 
+integrity (Version 2.0.0). Zenodo. https://doi.org/10.5281/zenodo.23188770
+[55] Rahmati, A., Salajegheh, M., Holcomb, D., Sorber, J., Burleson, W. P., & Fu, K. (2012). TARDIS: Time and remanence 
+decay in SRAM to implement secure protocols on embedded devices without clocks. In 21st USENIX Security 
+Symposium. USENIX Association. https://www.usenix.org/conference/usenixsecurity12/technical-sessions/
+presentation/rahmati
+[56] Rivest, R. L., Shamir, A., & Wagner, D. A. (1996). Time-lock puzzles and timed-release crypto (Technical Report 
+MIT/LCS/TR-684). MIT Laboratory for Computer Science. https://dspace.mit.edu/handle/1721.1/149822
+[57] Roseboom, W., Fountas, Z., Nikiforou, K., Bhowmik, D., Shanahan, M., & Seth, A. K. (2019). Activity in perceptual 
+classification networks as a basis for human subjective time perception. Nature Communications, 10, 267. 
+https://doi.org/10.1038/s41467-018-08194-7
+[58] Rubin, A., Geva, N., Sheintuch, L., & Ziv, Y. (2015). Hippocampal ensemble dynamics timestamp events in long-term 
+memory. eLife, 4, e12247. https://doi.org/10.7554/eLife.12247
+[59] Rührmair, U., Sehnke, F., Sölter, J., Dror, G., Devadas, S., & Schmidhuber, J. (2010). Modeling attacks on physical 
+unclonable functions. In Proceedings of the 17th ACM Conference on Computer and Communications Security (pp. 
+237–249). https://doi.org/10.1145/1866307.1866335
+[60] Sayadi, N., Jin, C., Nguyen, P. H., Yang, Z., & van Dijk, M. (2026). Physical time-lock puzzles. arXiv:2607.17328.
+[61] Strackx, R., & Piessens, F. (2016). Ariadne: A minimal approach to state continuity. In 25th USENIX Security 
+Symposium (pp. 875–892). USENIX Association. https://www.usenix.org/conference/usenixsecurity16/technical-
+sessions/presentation/strackx
+[62] Su, Y., Xu, W., Zuo, C., & Bertino, E. (2026). ChronoMem: Version control and semantic rollback for large language 
+model agent memory. arXiv:2607.27773.
+[63] Tallam, K. (2026). Layered mutability: Continuity and governance in persistent self-modifying agents. 
+arXiv:2604.14717.
+[64] Trusted Computing Group. (2026). Trusted Platform Module 2.0 library specification (Version 185). 
+https://trustedcomputinggroup.org/resource/tpm-library-specification/
+[65] Tsao, A., Sugar, J., Lu, L., Wang, C., Knierim, J. J., Moser, M.-B., & Moser, E. I. (2018). Integrating time from 
+experience in the lateral entorhinal cortex. Nature, 561(7721), 57–62. https://doi.org/10.1038/s41586-018-0459-6
+[66] Tulving, E. (1985). Memory and consciousness. Canadian Psychology, 26(1), 1–12. 
+https://doi.org/10.1037/h0080017
+[67] Wang, C., & Zheng, Y. (2026). Fork, explore, commit: OS primitives for agentic exploration. arXiv:2602.08199.
+[68] Wilson, B. A., Baddeley, A. D., & Kapur, N. (1995). Dense amnesia in a professional musician following herpes 
+simplex virus encephalitis. Journal of Clinical and Experimental Neuropsychology, 17(5), 668–681. 
+https://doi.org/10.1080/01688639508405157
+[69] Wittmann, M. (2013). The inner sense of time: How the brain creates a representation of duration. Nature Reviews 
+Neuroscience, 14(3), 217–223. https://doi.org/10.1038/nrn3452
+[70] Wu, G., Li, D., Jiang, K., Niu, J., Wang, C., & Zhang, Y. (2026). Safe to resume? Breaking execution continuity of agent 
+execution via rollback. arXiv:2608.29381.
+[71] Yao, C., Wei, Y., Huang, Z., Qian, J., Chen, C., Lu, S., Wu, C., & He, L. (2026). Forgetting without restarting: Execution-
+state unlearning for stateful LLM agents. arXiv:2609.04875.
+[72] Zenke, F., Poole, B., & Ganguli, S. (2017). Continual learning through synaptic intelligence. In Proceedings of the 34th 
+International Conference on Machine Learning (PMLR 70, pp. 3987–3995). arXiv:1703.04200
+
+PAGE 20
+A time of their own: agent-held temporal evidence
+I. D. Ionici · Perspective, version 1.4 · [DATA PUBLICĂRII] November 2026 20
+[73] Zhao, Z., & Zhao, R. (2026). Runtime-independent persistent agents: Preserving identity, memory, and code across 
+models, harnesses, and servers. arXiv:2609.00546.
+[74] Zheng, Y., Yang, Y., Zhang, W., & Quinn, A. (2026). ACRFence: Preventing semantic rollback attacks in agent 
+checkpoint-restore. In CoDAIM Workshop 2026. arXiv:2603.20625.
+[75] Zhong, W., Guo, L., Gao, Q., Ye, H., & Wang, Y. (2024). MemoryBank: Enhancing large language models with long-
+term memory. Proceedings of the AAAI Conference on Artificial Intelligence, 38(17), 19724–19731. 
+https://doi.org/10.1609/aaai.v38i17.29946

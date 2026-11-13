@@ -1,0 +1,46 @@
+SNI start 2026-11-07 06:40:08
+start tau 7401 06:40:08
+task 0 (task1572): 50 steps, model_day 2.5670, tau 4.511, step 50, test losses [1.48], 326s, max VRAM 1771 MiB
+task 1 (task363): 94 steps, model_day 1.6441, tau 4.984, step 150, test losses [1.746, 0.174], 209s, max VRAM 1771 MiB
+task 2 (task1290): 94 steps, model_day 1.8568, tau 5.971, step 250, test losses [2.061, 0.206, 2.317], 868s, max VRAM 1772 MiB
+task 3 (task181): 32 steps, model_day 1.5377, tau 1.920, step 290, test losses [1.867, 0.161, 2.372, 0.581], 207s, max VRAM 1772 MiB
+task 4 (task002): 94 steps, model_day 1.7962, tau 5.739, step 396, test losses [1.949, 0.164, 2.451, 0.703, 0.996], 972s, max VRAM 1772 MiB
+done: 396 steps, 2590s; steps sha256 336413f0627289ac; factors sha256 2c67a4f71cc30ce2
+start tau 7402 07:23:22
+task 0 (task1572): 50 steps, model_day 2.5663, tau 4.518, step 50, test losses [1.498], 322s, max VRAM 1771 MiB
+task 1 (task363): 94 steps, model_day 1.6104, tau 5.299, step 150, test losses [1.784, 0.148], 213s, max VRAM 1772 MiB
+task 2 (task1290): 94 steps, model_day 1.8320, tau 5.928, step 250, test losses [2.118, 0.17, 2.309], 866s, max VRAM 1772 MiB
+task 3 (task181): 32 steps, model_day 1.6458, tau 2.029, step 290, test losses [1.761, 0.175, 2.359, 0.598], 211s, max VRAM 1772 MiB
+task 4 (task002): 94 steps, model_day 1.7648, tau 5.638, step 396, test losses [1.766, 0.182, 2.415, 0.769, 1.0], 972s, max VRAM 1772 MiB
+done: 396 steps, 2590s; steps sha256 017c1c2f1a29dcd2; factors sha256 594219ef1fc15dab
+start tau 7403 08:06:35
+task 0 (task1572): 50 steps, model_day 2.5685, tau 4.510, step 50, test losses [1.484], 322s, max VRAM 1771 MiB
+task 1 (task363): 94 steps, model_day 1.6290, tau 5.479, step 150, test losses [1.725, 0.151], 212s, max VRAM 1772 MiB
+task 2 (task1290): 94 steps, model_day 1.8395, tau 5.940, step 250, test losses [2.12, 0.175, 2.314], 864s, max VRAM 1772 MiB
+task 3 (task181): 32 steps, model_day 1.5906, tau 1.992, step 290, test losses [1.935, 0.163, 2.356, 0.629], 207s, max VRAM 1772 MiB
+task 4 (task002): 94 steps, model_day 1.7450, tau 5.695, step 396, test losses [1.903, 0.158, 2.397, 0.705, 1.012], 975s, max VRAM 1772 MiB
+done: 396 steps, 2585s; steps sha256 93cd97b77aba8057; factors sha256 97352d60c123d1e9
+gata tau 08:49:44
+start eta_m 7401 08:49:44
+task 0 (task1572): 50 steps, model_day 0.0027, tau 4.511, step 50, test losses [1.48], 327s, max VRAM 1771 MiB
+task 1 (task363): 94 steps, model_day 0.0016, tau 5.104, step 150, test losses [1.758, 0.159], 216s, max VRAM 1771 MiB
+task 2 (task1290): 94 steps, model_day 0.0020, tau 6.064, step 250, test losses [2.041, 0.227, 2.32], 868s, max VRAM 1772 MiB
+task 3 (task181): 32 steps, model_day 0.0014, tau 1.943, step 290, test losses [1.889, 0.159, 2.373, 0.572], 207s, max VRAM 1772 MiB
+task 4 (task002): 94 steps, model_day 0.0019, tau 5.811, step 396, test losses [1.943, 0.154, 2.451, 0.713, 1.005], 971s, max VRAM 1772 MiB
+done: 396 steps, 2596s; steps sha256 268bfe270dcf743b; factors sha256 87d3d03051385003
+start eta_m 7402 09:33:04
+task 0 (task1572): 50 steps, model_day 0.0027, tau 4.518, step 50, test losses [1.498], 322s, max VRAM 1771 MiB
+task 1 (task363): 94 steps, model_day 0.0015, tau 5.145, step 150, test losses [1.837, 0.162], 216s, max VRAM 1772 MiB
+task 2 (task1290): 94 steps, model_day 0.0020, tau 6.056, step 250, test losses [2.166, 0.186, 2.309], 866s, max VRAM 1772 MiB
+task 3 (task181): 32 steps, model_day 0.0015, tau 2.011, step 290, test losses [1.803, 0.174, 2.355, 0.584], 213s, max VRAM 1772 MiB
+task 4 (task002): 94 steps, model_day 0.0018, tau 5.696, step 396, test losses [1.778, 0.176, 2.419, 0.763, 1.033], 973s, max VRAM 1772 MiB
+done: 396 steps, 2596s; steps sha256 aaaaa76a4cfd40ed; factors sha256 0f805fac9ef7ca5b
+start eta_m 7403 10:16:23
+task 0 (task1572): 50 steps, model_day 0.0027, tau 4.510, step 50, test losses [1.484], 323s, max VRAM 1771 MiB
+task 1 (task363): 94 steps, model_day 0.0015, tau 5.735, step 150, test losses [1.74, 0.153], 220s, max VRAM 1772 MiB
+task 2 (task1290): 94 steps, model_day 0.0020, tau 6.064, step 250, test losses [2.071, 0.172, 2.314], 867s, max VRAM 1772 MiB
+task 3 (task181): 32 steps, model_day 0.0014, tau 1.996, step 290, test losses [1.937, 0.167, 2.354, 0.645], 208s, max VRAM 1772 MiB
+task 4 (task002): 94 steps, model_day 0.0019, tau 5.786, step 396, test losses [1.97, 0.149, 2.399, 0.701, 1.026], 975s, max VRAM 1772 MiB
+done: 396 steps, 2614s; steps sha256 ed4d0b63efb7bd1a; factors sha256 4ad826aa14331321
+gata eta_m 11:00:10
+SNI TERMINAT 2026-11-07 11:00:10

@@ -1,0 +1,57 @@
+{
+ "workers": 4,
+ "overrides": [
+  "families.F6.label_noise=0.1"
+ ],
+ "total_wall_s": 2758.6,
+ "runs": [
+  {
+   "family": "F6",
+   "seed": 9102,
+   "returncode": 0,
+   "wall_s": 986.2
+  },
+  {
+   "family": "F6",
+   "seed": 9103,
+   "returncode": 0,
+   "wall_s": 994.2
+  },
+  {
+   "family": "F6",
+   "seed": 9104,
+   "returncode": 0,
+   "wall_s": 1018.2
+  },
+  {
+   "family": "F6",
+   "seed": 9101,
+   "returncode": 0,
+   "wall_s": 1574.4
+  },
+  {
+   "family": "F6",
+   "seed": 9105,
+   "returncode": 0,
+   "wall_s": 1010.3
+  },
+  {
+   "family": "F6",
+   "seed": 9106,
+   "returncode": 0,
+   "wall_s": 1002.2
+  },
+  {
+   "family": "F6",
+   "seed": 9107,
+   "returncode": 0,
+   "wall_s": 1008.2
+  },
+  {
+   "family": "F6",
+   "seed": 9108,
+   "returncode": 0,
+   "wall_s": 1184.2
+  }
+ ]
+}

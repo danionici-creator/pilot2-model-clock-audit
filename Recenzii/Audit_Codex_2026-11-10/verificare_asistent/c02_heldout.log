@@ -1,0 +1,13 @@
+eta_m (4 tasks)
+  0-dbpedia: in-sample 0.937, held-out-task 0.724, slope in/out 1206.281/967.675
+  1-amazon: in-sample 0.986, held-out-task 0.950, slope in/out 1150.110/1161.594
+  2-yahoo: in-sample 0.934, held-out-task 0.892, slope in/out 1039.138/1172.738
+  3-agnews: in-sample 0.578, held-out-task 0.373, slope in/out 894.370/1125.672
+eta_m (3 tasks)
+  1-amazon: in-sample 0.986, held-out-task 0.878, slope in/out 1150.110/923.307
+  2-yahoo: in-sample 0.934, held-out-task 0.885, slope in/out 1039.138/944.301
+  3-agnews: in-sample 0.578, held-out-task 0.361, slope in/out 894.370/1083.368
+eta_m_A1 (3 tasks)
+  1-amazon: in-sample 0.986, held-out-task 0.981, slope in/out 1146.343/1091.023
+  2-yahoo: in-sample 0.975, held-out-task 0.966, slope in/out 1064.971/1123.998
+  3-agnews: in-sample 0.963, held-out-task 0.955, slope in/out 1136.596/1096.677

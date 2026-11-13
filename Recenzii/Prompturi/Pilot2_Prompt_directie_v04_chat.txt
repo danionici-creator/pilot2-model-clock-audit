@@ -1,0 +1,59 @@
+ROLE: You are a senior researcher in machine learning (continual learning, forgetting, training dynamics of Transformers, language-model continual learning) acting as a candid adviser on research direction. You judge whether a study is worth doing and in what form, as a demanding programme committee member or thesis adviser would. Be direct and concrete, without praise. Do not invent facts or references: give a DOI or arXiv ID for any citation, or mark it unverified, or say that you cannot name the work reliably. If you search the web, cite only what you actually opened, with its identifier.
+
+I ask for an evaluation of the RESEARCH DIRECTION of a planned study, not of its statistical details. The methodology has already been reviewed three times by other AI systems; do not re-review formulas, gates, or bootstrap mechanics. I want a senior researcher's judgement: is this study worth running, in what form, and what would make its result matter.
+
+=== BRIEF OF THE STUDY ===
+
+1. Context and author
+- Independent researcher, no funding, no institution; compute is one laptop CPU (Intel Core i5-12500H, 16 GB RAM). Outputs: a preregistration and a preprint on Zenodo (DOI), code under MIT licence.
+- Earlier published work by the same author (Zenodo, 2026): (a) a closed exploratory study showing that an apparent advantage of "binding an episode to a summary of internal change" disappeared once the control model was made competent; the signal was carried by local update statistics; (b) a Perspective paper, "A Time of Their Own", arguing that a persistent AI agent whose state can be saved and restored holds no unforgeable evidence of elapsed time or of its own change, and proposing a test programme. Its "Level 2" proposes an experiential index: c_e(t) = sum over steps of D(S(t), S(t+1)), the accumulated change of the agent's own persistent state under a distance D, read against an external clock.
+
+2. Prior work the study must position against (all verified)
+- FOREVER (Feng et al., ACL 2026, arXiv:2601.03938): defines "model-centric time" as the cumulative L2 norm of LoRA parameter updates (this is c_e with D = update norm) and schedules replay on forgetting-curve intervals in that time, on LLMs of 0.6B to 13B parameters. Its only ablation of the time signal is against step counts.
+- Forgetting prediction and importance measures: Toneva et al. 2019 (example forgetting, arXiv:1812.05159); Jin & Ren 2024 (forecasting forgotten examples, arXiv:2402.01865); Kalajdzievski 2024 (scaling laws for forgetting, arXiv:2401.05605); EWC (Kirkpatrick et al. 2017, doi:10.1073/pnas.1611835114); Synaptic Intelligence (Zenke et al. 2017, arXiv:1703.04200); Su & Zhang 2026 (first-order models of forgetting, arXiv:2609.32818).
+- The study claims no novelty for the index itself; priority belongs to FOREVER.
+
+3. The question
+Stage A (confirmatory): does Delta c_e over an interval predict the forgetting of a task last trained at the start of the interval better than the union of cheap online telemetry that any training loop already has: elapsed time, step/token/event counts, sum of learning rates, sum of losses, gradient norms (raw, clipped, learning-rate weighted), Adam momentum norms, weight-decay path, parameter and second-moment norms, local update statistics, and loss changes on a fixed reference battery ("B_strong")? Statistic: held-out increase in within-run R^2 when c_e is added to B_strong, with a prespecified smallest effect of interest and three outcomes (supported / equivalent / inconclusive), plus placebo and positive-control gates.
+Stage B (conditional on a supported Stage A): does a rehearsal scheduler that uses c_e beat budget-matched schedulers that use the competitors, and does it depend on the real c_e stream rather than a time-permuted placebo?
+Optional exploratory module: order (path) effects.
+Stage C (outside this preregistration): transfer to small pretrained language models (Pythia, LoRA).
+
+4. Design of Stage A
+- Agent: decoder-only Transformer, 4 layers, d_model 128, 0.93 M parameters, AdamW, CPU, bit-identical reruns.
+- World: synthetic "fact" tasks, each 256 key->value pairs ([TASK_k] [K1] [K2] -> [VALUE]); about 40 tasks per life of 20,480 optimizer steps; six stream families that decouple steps from parameter change (variable re-exposure and batch size; cosine warm restarts; idle intervals; a held-out mixture; an adversarial stream with large parameter change and little interference).
+- Target: increase of the mean cross-entropy on half A of each task's items between the end of its exposure and later evaluations; triplets (task, t0, t1); unit of inference: the run; gradient-boosted trees, equal tuning budgets, locked hyperparameters.
+- Size: about 315 runs for Stage A (24 calibration, 60 training, 15 validation, up to 200 test), about 33-55 hours of laptop time; Stage B about 600-1,000 runs.
+
+5. What Stage 0 (technical runs, no c_e incremental value computed yet) found
+- Algorithmic "rule" tasks (held-out generalisation) did not generalise in this model (held-out accuracy 0.02-0.30, overfitting); they were withdrawn. The study now measures only in-sample retention of memorised associations.
+- Forgetting is fast and saturates: accuracy on a task is essentially lost after about 1,280 steps; after that the loss keeps rising (to about 9 nats) because of a shared, task-independent shift of the output distribution, not further forgetting. Intervals were therefore capped at 1,280 steps.
+- The fixed reference battery used by one candidate distance is itself forgotten within a few hundred steps.
+- Learning rate lowered to 3e-4; at 2e-4 and 3e-4 the forgetting curves were indistinguishable per step.
+- A crude preview without c_e (untuned models, three earlier runs, cap of 2,048 steps): telemetry baselines reached held-out within-run R^2 of about 0.66-0.85, against a split-half reliability ceiling of about 0.98-0.99, so there appears to be room for an effect; this estimate is rough.
+
+6. Current state
+- The protocol (v0.4) has 32 pages and 21 sections, including revision logs. Each AI review has added gates, sensitivity analyses and specifications. The latest review (very detailed) found about six design problems it called fatal; on checking, all were real and all are fixable, but several concern Stage B and the calibration procedure.
+- The author's own prior: the most likely outcome of Stage A is "equivalent" (c_e reconstructible from cheap telemetry).
+- Options under consideration: (A) continue with Stages A and B as preregistered; (B) preregister Stage A only and give Stage B its own later protocol; (C) change the design to something smaller or different; (D) stop.
+
+=== QUESTIONS ===
+
+Q1. Relevance. Given FOREVER and the forgetting-prediction literature, does the result of this audit matter, whatever it is? To whom (which community, which kind of venue or reader), and what would make it cited rather than ignored?
+
+Q2. The likely "equivalent" outcome. Is "a model-centric clock is reconstructible from elementary optimizer statistics" a sufficient contribution, or a predictable confirmation? What, if anything, should be added so that an equivalent result is informative (for example, a direct comparison inside the FOREVER setting, or a cost/benefit analysis)?
+
+Q3. Narrow world. Memorised facts, a 0.93 M-parameter model, short intervals, fast saturating forgetting. Can such a result say anything about agents or LLMs? Would it be better to run the audit directly on a small pretrained language model with LoRA (closer to FOREVER), even if on CPU this restricts the number of runs? Weigh statistical power against external validity explicitly.
+
+Q4. Scope of the preregistration. Is it sound to preregister Stage A only and defer Stage B (closed-loop use) to a separate protocol written after Stage A, given that Stage B runs only if Stage A is supported?
+
+Q5. Over-engineering. Is the protocol disproportionately complex for the question? Name concretely what an experienced researcher would cut or merge without weakening the inference, and what must stay.
+
+Q6. A better study. Is there a smaller, faster or more decisive study that answers the same underlying question (does an agent's accumulated self-change carry information that cheap telemetry does not)? Describe it concretely enough to be compared with the current design.
+
+Final. Recommend one of A, B, C (specify) or D, with the two or three reasons that decide it, the main risk of your recommendation, and what result or observation would make you change it.
+
+=== FORMAT AND RULES ===
+- For each question: a one-line verdict, then the argument, then the concrete change you would make. Be direct; no praise, no summary of the brief back to me. At most about 2,500 words in total.
+- Do not invent facts or references. Cite only works you can identify with a DOI or arXiv ID, and mark any citation you are not sure exists as "unverified". If you think relevant prior work exists but cannot name it reliably, say so instead of guessing.
+- Separate what you know from what you are estimating. If the brief lacks information you need, say what is missing.

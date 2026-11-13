@@ -1,0 +1,12 @@
+seed 7303; trainable 1146880; words 31; config {"seed": 7303, "tasks": 10, "per_task": 512, "epochs": 10, "first_epochs": 60, "batch": 32, "lr": 0.0003, "r": 8, "alpha": 16.0, "dropout": 0.05, "mem_per_task": 16, "n_probe": 128, "probe_every": 8, "attn": "sdpa", "precision": "bf16", "diag_pre_final": true, "diag_pre_final_all": true, "clock": "steps"}
+task 0: 960 steps, model_day 24.0000, tau 27.035, phases 2, step 960, acc_new 1.000, 293s, max VRAM 1718 MiB
+task 1: 160 steps, model_day 24.0000, tau 8.967, phases 8, step 1128, acc_new 1.000, 58s, max VRAM 1718 MiB
+task 2: 160 steps, model_day 24.0000, tau 8.932, phases 8, step 1296, acc_new 1.000, 61s, max VRAM 1722 MiB
+task 3: 160 steps, model_day 24.0000, tau 8.951, phases 8, step 1472, acc_new 1.000, 66s, max VRAM 1722 MiB
+task 4: 160 steps, model_day 24.0000, tau 8.852, phases 8, step 1648, acc_new 1.000, 70s, max VRAM 1722 MiB
+task 5: 160 steps, model_day 24.0000, tau 8.860, phases 8, step 1832, acc_new 0.988, 74s, max VRAM 1722 MiB
+task 6: 160 steps, model_day 24.0000, tau 8.913, phases 8, step 2016, acc_new 0.986, 78s, max VRAM 1722 MiB
+task 7: 160 steps, model_day 24.0000, tau 8.880, phases 8, step 2208, acc_new 0.971, 81s, max VRAM 1722 MiB
+task 8: 160 steps, model_day 24.0000, tau 8.893, phases 8, step 2400, acc_new 0.990, 85s, max VRAM 1722 MiB
+task 9: 160 steps, model_day 24.0000, tau 8.917, phases 8, step 2600, acc_new 0.947, 90s, max VRAM 1722 MiB
+done: 2600 steps, 960s; steps sha256 315047106dd3ed4f; factors sha256 5c0822909681dd9f

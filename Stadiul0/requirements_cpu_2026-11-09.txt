@@ -1,0 +1,26 @@
+# Python packages of the synthetic world and of all CPU analyses (system Python 3.14.6, Windows 11), recorded on
+# 9 Nov 2026 with importlib.metadata, after the runs: the packages the study's scripts import and their required
+# dependencies. The versions stored in the runs' meta.json (python, numpy, torch) agree with these.
+# pip install -r this file; torch from the PyTorch CPU index (the runs used 2.13.0+cpu).
+filelock==3.29.7
+fsspec==2026.6.0
+Jinja2==3.1.6
+joblib==1.5.3
+MarkupSafe==3.0.3
+mpmath==1.3.0
+narwhals==2.23.0
+networkx==3.6.1
+numpy==2.5.1
+pandas==3.0.3
+pyarrow==25.0.0
+python-dateutil==2.9.0.post0
+PyYAML==6.0.3
+scikit-learn==1.9.0
+scipy==1.18.0
+setuptools==83.0.0
+six==1.17.0
+sympy==1.14.0
+threadpoolctl==3.6.0
+torch==2.13.0
+typing_extensions==4.16.0
+tzdata==2026.3

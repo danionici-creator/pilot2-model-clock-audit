@@ -1,0 +1,9 @@
+Comparator finite versus NaN: (True, 'identical')
+Comparator missing empty container: (True, 'identical')
+Hash list files 9 recognized lines 87
+Release manifest 755 entries; mismatches []
+Malformed-only list exit 0 output: malformed_sha256.txt: 
+
+all lists: 
+no mismatch
+

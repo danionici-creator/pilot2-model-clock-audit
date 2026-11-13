@@ -1,0 +1,19 @@
+SUPERNI epoch accounting: stored current/calibration rows versus per-epoch batches
+s7401 {0.0: 50, 1.0: 94, 2.0: 94, 3.0: 32, 4.0: 94}
+s7402 {0.0: 50, 1.0: 94, 2.0: 94, 3.0: 32, 4.0: 94}
+s7403 {0.0: 50, 1.0: 94, 2.0: 94, 3.0: 32, 4.0: 94}
+Example n=1000, batch=32, epochs=3: code 94 generator 96
+C6 correlation in original preview (not an independent predictor):
+tech3_lr3e-4/F2_s9004 {'rate_ce_D1': {'rate_ce_D1': 1.0, 'C6_post_m_first': -0.03758202807992466, 'C6_post_m_last': 0.23807759611300736}, 'C6_post_m_first': {'rate_ce_D1': -0.03758202807992466, 'C6_post_m_first': 1.0, 'C6_post_m_last': -0.05673822072567907}, 'C6_post_m_last': {'rate_ce_D1': 0.23807759611300736, 'C6_post_m_first': -0.05673822072567907, 'C6_post_m_last': 1.0}}
+tech3_lr3e-4/F3_s9004 {'rate_ce_D1': {'rate_ce_D1': 1.0, 'C6_post_m_first': 0.04014277615512481, 'C6_post_m_last': 0.04961549328886984}, 'C6_post_m_first': {'rate_ce_D1': 0.04014277615512481, 'C6_post_m_first': 1.0, 'C6_post_m_last': -0.03551598132231303}, 'C6_post_m_last': {'rate_ce_D1': 0.04961549328886984, 'C6_post_m_first': -0.03551598132231303, 'C6_post_m_last': 1.0}}
+FOREVER in-sample versus independently held-out task prediction
+eta_m 0 held-out-task R2 0.7242402102215025
+eta_m 1 held-out-task R2 0.9504158434305242
+eta_m 2 held-out-task R2 0.8919246204717057
+eta_m 3 held-out-task R2 0.3726996554344484
+eta_m_A1 0 held-out-task R2 0.9811140946916048
+eta_m_A1 1 held-out-task R2 0.9664016288937968
+eta_m_A1 2 held-out-task R2 0.9546562619319284
+Tie diagnostic records:
+items 46 reproduced 46 ties 46
+Clock swap omitted skip check: True

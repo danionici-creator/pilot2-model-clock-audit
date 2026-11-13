@@ -1,0 +1,57 @@
+{
+ "seeds": [
+  "s7301",
+  "s7302",
+  "s7303",
+  "s7304",
+  "s7305"
+ ],
+ "eta_m": {
+  "mean_diff": -0.0036718750000000024,
+  "ci": [
+   -0.014728689820048102,
+   0.007384939820048096
+  ],
+  "separation": {
+   "d_index_0": 0.0,
+   "d_index_1": 0.0,
+   "d_index_2": 1.0
+  },
+  "schedule_equivalent": true,
+  "verdict": "ECHIVALEN\u021a\u0102 PRACTIC\u0102",
+  "dE2": -0.001388888888888884,
+  "dE3": 0.007439752810846578
+ },
+ "eta": {
+  "mean_diff": 0.0022656250000000046,
+  "ci": [
+   -0.004059722119667578,
+   0.008590972119667587
+  ],
+  "separation": {
+   "d_index_0": 0.0,
+   "d_index_1": 1.0,
+   "d_index_2": 9.0
+  },
+  "schedule_equivalent": false,
+  "verdict": "ECHIVALEN\u021a\u0102 PRACTIC\u0102",
+  "dE2": -0.00464409722222221,
+  "dE3": 0.008940403852513218
+ },
+ "steps": {
+  "mean_diff": -0.0018359375000000012,
+  "ci": [
+   -0.010631154075670791,
+   0.00695927907567079
+  ],
+  "separation": {
+   "d_index_0": 0.0,
+   "d_index_1": 5.0,
+   "d_index_2": 13.0
+  },
+  "schedule_equivalent": false,
+  "verdict": "ECHIVALEN\u021a\u0102 PRACTIC\u0102",
+  "dE2": -0.0008680555555555358,
+  "dE3": 0.006220461998456795
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "family": "F1",
+ "seed": 9001,
+ "n_params": 925952,
+ "childhood": {
+  "steps": 3072,
+  "acc_reference": 0.5244140625,
+  "acc_R": 0.5,
+  "acc_B_beh": 0.546875,
+  "acc_reference_fact": 0.67578125,
+  "acc_reference_rule": 0.373046875,
+  "gate_passed": false,
+  "final_loss": 1.822029346600175
+ },
+ "n_evals": 121,
+ "n_episodes": 120,
+ "timing_s": {
+  "childhood": 261.45,
+  "eval": 206.61,
+  "disp": 141.35,
+  "chunks": 205.62,
+  "train": 1815.09,
+  "wall": 2634.68
+ },
+ "peak_rss_mb": 0.0
+}

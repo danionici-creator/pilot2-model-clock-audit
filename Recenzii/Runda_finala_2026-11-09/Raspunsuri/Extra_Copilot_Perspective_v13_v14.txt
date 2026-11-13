@@ -1,0 +1,444 @@
+[Supplementary evaluation after the final round, not counted under Regula_de_adoptare_2026-11-09.md (Copilot is not one of the 8 evaluators; in the round it was a witness only). Microsoft Copilot, "Think Deeper", 9 Nov 2026, evening, on the author's own account; input: only the two PDFs, Perspective v1.3 (published) and the v1.4 build of 9 Nov evening (_work/_persp_v14_final), without code or other documents. Text as received, pasted by the author into the session; in Romanian. Verification: Verificare_runda_finala.md, section "Evaluare suplimentară (Copilot)".]
+
+Voi evalua cele două versiuni ca un recenzor exigent, interesat de delimitarea contribuției, soliditatea inferențelor, falsificabilitate și raportul dintre ambiția conceptuală și suportul empiric. Evaluarea se bazează pe conținutul integral al celor două manuscrise, nu pe verificarea externă independentă a tuturor referințelor sau a codului experimental.
+
+Verdict executiv
+
+Perspective 1.3 este o lucrare conceptuală serioasă, bine delimitată și neobișnuit de autocritică, dar încă dezechilibrată: contribuția taxonomică și metodologică este mai solidă decât mecanismul pozitiv propus al „ceasului dual”. Lucrarea formulează un program de cercetare credibil, dar în versiunea 1.3 nu demonstrează că acest program identifică o funcție nouă sau necesară pentru agenții persistenți.
+
+Parcursul către Perspective 1.4 produce un câștig științific autentic, dar predominant negativ și metodologic: cea mai ieftină familie de candidați pentru indicele experiențial nu se distinge informațional de telemetria deja disponibilă în optimizator sau de măsuri cu același cost. Acest rezultat nu confirmă „ceasul intern”, ci elimină o justificare facilă a lui și restrânge domeniul ipotezei.
+
+Perspective 1.4 este științific mai bună decât 1.3 tocmai deoarece este mai puțin triumfalistă. Ea nu transformă programul într-o teorie confirmată, dar îl transformă într-un program mai curat, cu o ramură ieftină închisă sau suspendată pentru neidentificabilitate și cu centrul de greutate mutat către ancora de continuitate, accesul epistemic și testele de nivel 4–6.
+
+I. Evaluarea severă a Ionici_2026_A_Time_of_Their_Own_Perspective_v1.3.pdf
+1. Care este contribuția reală
+
+Contribuția reală nu este inventarea unui ceas nou și nici demonstrarea faptului că agenții ar avea nevoie de „un timp propriu”. Manuscrisul însuși admite corect că:
+
+contoarele monotone, protecția la rollback, atestarea și continuitatea stării sunt mecanisme deja cunoscute;
+norma cumulativă a actualizărilor fusese deja folosită ca model clock;
+atribuirea, unlearning-ul și recuperarea bazată pe proveniență au literaturi proprii;
+propoziția de indistinguishability la rollback este elementară și are formulări anterioare.
+
+Prin urmare, nucleul original plauzibil al versiunii 1.3 este mai restrâns:
+
+clasificarea surselor de evidență temporală după scriere, resetare, falsificare, copiere și accesul self-modelului;
+separarea dintre:
+evidența administrată de platformă;
+concluzia autentificată transmisă agentului;
+evidența brută interpretată de self-model;
+separarea dintre ancora de continuitate și indicele schimbării experiențiale;
+organizarea într-un program cu șase niveluri, fiecare având un competitor convențional capabil să îl închidă;
+principiul potrivit căruia accesul agentului la evidența restaurării nu îi conferă autoritate asupra restaurării.
+
+Aceasta este o contribuție de sinteză arhitecturală și disciplinare metodologică, nu încă o contribuție demonstrativă.
+
+2. Punctul cel mai puternic: arhitectura problemei
+
+Cea mai bună parte a lucrării este trecerea de la metafora „AI fără timp propriu” la întrebarea tehnică:
+
+Unde se află evidența pe care agentul o folosește pentru a face inferențe despre durată, continuitate și propria schimbare?
+
+Această reformulare evită două capcane:
+
+antropomorfizarea, fiindcă self-modelul este definit prin ieșiri măsurabile;
+metafizica identității, fiindcă lucrarea se limitează la proprietăți funcționale și nu revendică statut moral, conștiință sau identitate personală.
+
+Tabelul 1 este una dintre cele mai solide contribuții ale manuscrisului. El arată că timestampurile, starea internă, dovezile de calcul secvențial, rădăcinile de încredere și procesele fizice nerestaurabile nu măsoară același lucru și nu au aceleași proprietăți de securitate.
+
+Evaluare
+
+Nivel academic: bun spre foarte bun.
+ Originalitate: moderată, prin organizare și integrare.
+ Risc: taxonomia poate fi percepută drept o reambalare a unor distincții din securitatea sistemelor dacă nu este demonstrată utilitatea specifică pentru self-modelul agentului.
+
+3. Propoziția de rollback: corectă, dar nu puternic originală
+
+Propoziția spune, în esență, că o stare complet restaurată nu conține informația necesară pentru a distinge restaurarea de continuarea neîntreruptă. Detectarea cere comparație cu o sursă nerestaurată și legarea autentificată a stării de acea sursă.
+
+Aceasta este corectă și importantă pedagogic, dar academic trebuie tratată sever:
+
+nu este o teoremă nouă despre agenți;
+nu derivă o proprietate particulară a LLM-urilor;
+este o aplicație a unei limite informaționale generale;
+implementarea necesară coincide substanțial cu protocoalele de continuitate a stării.
+
+Meritul său nu este noutatea formală, ci faptul că localizează exact imposibilitatea și împiedică afirmații naive despre detectarea rollback-ului exclusiv din starea restaurată.
+
+Verdict
+
+Valoare explicativă ridicată, noutate teoretică redusă.
+
+4. Ancora de continuitate: plauzibilă, dar derivativă
+
+Perechea formată din referința temporală nerestaurabilă și contorul pașilor confirmați poate separa, sub ipoteze stricte, suspendarea de restaurarea unei stări mai vechi. Manuscrisul recunoaște că mecanismul este apropiat de protocoalele existente de state continuity și că schița nu reprezintă un protocol nou.
+
+Problemele versiunii 1.3 sunt:
+
+Formula „necessary and sufficient” este prea puternică fără delimitarea imediată a:
+
+filiațiilor multiple;
+execuțiilor fără commit;
+clonării;
+migrării legitime;
+curselor între verificare și utilizare;
+erorilor și atacurilor asupra trusted path.
+
+Detecția suspendării depinde de ce se consideră „operare”. Un agent poate executa fără a confirma un pas. În acest caz, egalitatea contorului și avansul referinței nu identifică exclusiv suspendarea.
+
+Ancora detectează discrepanțe ale stării față de o evidență externă, dar nu demonstrează că agentul însuși trebuie să interpreteze evidența brută. Un monitor local poate transmite direct verdictul.
+
+Lucrarea admite ultimul punct și chiar anticipează că monitorul autentic ar putea câștiga. Această autocritică este un merit major.
+
+5. „Ceasul dual”: partea cea mai slabă din 1.3
+
+Indicele experiențial este definit ca acumularea unei distanțe între stări succesive. Conceptual, definiția este coerentă: ea măsoară lungimea unei traiectorii, nu deplasarea netă. Totuși, în 1.3 apar patru probleme grave.
+
+5.1. Distanța nu are încă un construct stabil
+
+Norma parametrilor, distanța reprezentațională, divergența politicii, schimbarea competențelor și influența contrafactuală nu constituie măsurători interschimbabile. Ele măsoară obiecte diferite și au costuri radical diferite.
+
+În lipsa unei justificări a lui DD, expresia cec_e este o schemă de definiție, nu o variabilă științifică stabilită.
+
+5.2. Monotonicitatea este construită, nu descoperită
+
+Indicele este monoton deoarece însumează mărimi nenegative. Acest lucru nu dovedește că surprinde „timp experiențial”. Orice sumă cumulativă de activitate poate produce o pseudo-săgeată temporală.
+
+5.3. Riscul de identitate cu telemetria optimizatorului
+
+Versiunea 1.3 observă că norma cumulativă a actualizărilor poate să nu conțină informație suplimentară față de rata de învățare, normele gradientului și statisticile actualizărilor, dar încă lasă această problemă deschisă.
+
+Aceasta era obiecția critică centrală: dacă indicele poate fi reconstruit din contabilitatea optimizatorului, atunci el nu reprezintă o sursă distinctă de evidență.
+
+5.4. „Temporal” riscă să fie doar un nume
+
+Un indice al schimbării nu este automat un ceas. Pentru a justifica termenul, trebuie arătat că:
+
+ordonează relevant evenimentele;
+prezice consecințe temporale sau funcționale;
+are avantaj față de pași, evenimente, loguri și telemetrie;
+este utilizat cauzal de agent, nu doar decodabil ulterior.
+
+Versiunea 1.3 formulează aceste criterii, dar nu le testează.
+
+Verdict
+
+În 1.3, dual clock este o ipoteză de lucru promițătoare, nu un rezultat. Dacă lucrarea ar fi fost prezentată ca dovadă a existenței a două ceasuri interne, evaluarea ar fi fost negativă. Prezentată ca program falsificabil, este acceptabilă.
+
+6. Programul în șase niveluri
+
+Tabelul 2 este cea mai matură parte metodologică. Fiecare nivel are:
+
+întrebare;
+bază în literatura existentă;
+competitor capabil să îl închidă;
+criteriu metodologic.
+
+Această arhitectură protejează lucrarea de nefalsificabilitate. În special, manuscrisul acceptă că:
+
+un nivel poate fi închis independent;
+rezultatul negativ nu trebuie reinterpretat ca sprijin indirect;
+echivalența trebuie stabilită printr-o marjă predefinită;
+un competitor convențional competent trebuie testat;
+avantajele și costurile trebuie declarate pe mai multe dimensiuni.
+
+Totuși, există o limită serioasă: lucrarea nu oferă încă pentru niciun nivel un evaluation contract complet, cu benchmark, eșantion, marjă, putere statistică și procedură decizională. Așadar, Tabelul 2 este o hartă de cercetare, nu încă un protocol reproductibil.
+
+7. Relația cu studiul exploratoriu
+
+Versiunea 1.3 procedează corect când spune că studiul episode–trace binding nu testează programul Perspective. Din acel studiu sunt transferate doar principii metodologice și două avertismente:
+
+un control incompetent poate produce un avantaj artificial;
+statisticile locale pot simula utilizarea istoriei.
+
+Acest lucru reprezintă maturitate epistemică. Dar, sever spus, înseamnă și că Perspective 1.3 nu beneficiază de validare empirică directă din lucrarea anterioară. Relația este metodologică, nu probatorie.
+
+8. Evaluare numerică a versiunii 1.3
+Criteriu	Scor	EvaluareClaritatea întrebării	8,5/10	Întrebarea privind localizarea evidenței este foarte bine formulată
+Originalitate conceptuală	7/10	Originalitate de integrare, nu de mecanism elementar
+Rigoare logică	8/10	Bună, dar ancora era formulată prea tare în unele pasaje
+Fundamentare bibliografică	8,5/10	Amplă și autocritică
+Validare empirică directă	2/10	Practic absentă în Perspective însăși
+Falsificabilitate	8/10	Program bun, dar fără contracte complete
+Importanță potențială	8/10	Ridicată dacă nivelurile 4–6 produc rezultate
+Importanță demonstrată	5/10	Taxonomia și metoda sunt demonstrate, utilitatea funcțională nu
+Publicabilitate ca Perspective	7,5/10	Da, după clarificări și eventual comprimare
+Publicabilitate ca articol de rezultate	3/10	Nu în această formă
+Verdict de recenzor pentru 1.3
+
+Major revision, dacă este trimisă ca Perspective într-o publicație tehnică exigentă.
+
+Nu aș respinge ideea. Aș cere însă ca lucrarea să renunțe la orice sugestie potrivit căreia „dual clock” ar fi deja mai mult decât o propunere și să precizeze mai riguros limita ancorei în raport cu execuțiile fără commit, fork-urile și monitorul autentic.
+
+II. Parcursul dintre 1.3 și 1.4
+1. Ce s-a schimbat epistemic
+
+Tranziția nu este o simplă actualizare bibliografică. Ea schimbă statutul unei componente centrale:
+
+în 1.3, candidații ieftini pentru indicele experiențial erau o posibilitate deschisă;
+în 1.4, acești candidați sunt testați pentru identifiabilitate;
+rezultatul arată că pot fi reconstruiți din telemetria optimizatorului sau dintr-o măsură cu cost echivalent;
+în utilizarea ca replay clock, norma actualizărilor nu depășește alternativa gratuită în regimurile testate.
+
+Acesta este un progres științific real deoarece transformă o obiecție verbală într-o discriminare empirică.
+
+2. Ce a fost câștigat
+2.1. A fost eliminată o pseudo-noutate posibilă
+
+Dacă un „ceas centrat pe model” este reconstructibil din mărimi pe care optimizatorul le păstrează deja, atunci nu există o bază pentru a-l prezenta ca sursă informațională distinctă. În testele raportate, R2R^2 ajunge la 0,94–0,96, respectiv 0,96–0,97 după adăugarea sumei ratelor de învățare; distanța funcțională este și ea reconstructibilă din schimbarea loss-ului pe aceleași probe.
+
+Acesta este un rezultat negativ informativ, nu un eșec gol.
+
+2.2. A fost introdusă distincția dintre neidentificabilitate și echivalență
+
+Versiunea 1.4 precizează corect că, dacă un candidat este reconstruit din intrările competitorului, nu se poate trece legitim la testarea avantajului său informațional. Rezultatul trebuie etichetat:
+
+nu echivalență;
+nu sprijin pentru ipoteză;
+nu închidere a întregului nivel;
+ci neidentificabilitate pentru acel candidat și regim.
+
+Aceasta este una dintre cele mai valoroase îmbunătățiri metodologice.
+
+2.3. Ancora de continuitate a fost corectată
+
+Versiunea 1.4 înlocuiește interpretarea prea categorică a egalității contorului cu formularea mai exactă: poate fi vorba despre suspendare sau despre execuție fără un pas confirmat. De asemenea, restrânge suficiența perechii la o singură filiație și exclude fork-urile și clonarea din acea pretenție.
+
+Aceasta nu este o corecție cosmetică. Elimină o eroare de identificare.
+
+2.4. Programul a devenit selectiv
+
+În 1.3, programul putea fi citit ca o suită expansivă de posibilități. În 1.4, există deja un filtru empiric:
+
+variantele ieftine ale nivelului 2 nu sunt distincte în regimurile testate;
+variantele costisitoare rămân deschise;
+agenții care se modifică mai ales prin memoria externă sau prin starea instrumentelor devin o clasă separată;
+nivelul 4 este declarat drept următorul test prioritar.
+3. Ce nu a fost câștigat
+
+Rezultatul nu demonstrează:
+
+existența a două ceasuri funcțional distincte;
+superioritatea unui ceas intern asupra telemetriei;
+necesitatea evidenței brute pentru self-model;
+utilitatea ancorei de continuitate pentru decizie;
+avantajul față de un monitor care transmite un flag autentic;
+generalizarea la modele mari, full fine-tuning, alți optimizatori sau agenți bazați pe memorie;
+faptul că metricile costisitoare ale competenței ori influenței contrafactuale vor reuși.
+
+Orice formulare potrivit căreia Pilot 2 „confirmă două ceasuri” ar fi incompatibilă cu versiunea 1.4. Rezultatul spune aproape opusul pentru candidații ieftini: una dintre mărimile propuse poate fi contabilitatea deja existentă a optimizatorului, nu o sursă nouă de informație.
+
+4. Câștigul științific net al parcursului
+
+L-aș formula astfel:
+
+Parcursul 1.3–1.4 nu validează arhitectura duală, dar elimină o clasă de implementări redundante, introduce un test de identifiabilitate aplicabil întregului program și mută teza de originalitate de la existența unui „nou ceas” la disciplina cu care sursele temporale sunt separate de substitutele lor convenționale.
+
+Acesta este un câștig mai modest decât confirmarea ipotezei, dar mai credibil academic.
+
+Evaluarea câștigului
+Câștig empiric: moderat;
+câștig metodologic: ridicat;
+câștig teoretic: modest;
+câștig de credibilitate: ridicat;
+confirmarea ipotezei centrale: absentă;
+reducerea spațiului ipotezelor: clară și utilă.
+III. Evaluarea severă a Ionici_2026_A_Time_of_Their_Own_Perspective_v1.4.pdf
+1. Ce este acum lucrarea
+
+Versiunea 1.4 este o Perspective informată de un rezultat negativ propriu, nu un articol empiric complet. Ea păstrează ipoteza generală, dar recunoaște că:
+
+indicele rămâne o definiție;
+candidații săi ieftini nu sunt identificabili în regimurile testate;
+ancora de continuitate rămâne netestată;
+studiul exploratoriu anterior nu testează niciun nivel;
+întrebarea decisivă rămâne dacă evidența accesibilă agentului aduce valoare peste mecanismele convenționale.
+
+Această poziționare este corectă.
+
+2. Principala îmbunătățire: lucrarea acceptă pierderea unei ramuri
+
+În cercetarea conceptuală există tentația de a absorbi orice rezultat într-o narațiune confirmatoare. Versiunea 1.4 evită în mare parte această eroare. Ea spune explicit că nivelul 2:
+
+nu este susținut pentru candidații testați;
+nu este închis în întregime;
+rămâne deschis numai pentru candidați mai costisitori și pentru regimuri diferite.
+
+Această disciplină crește credibilitatea lucrării mai mult decât ar fi făcut-o o diferență marginală favorabilă într-un benchmark îngust.
+
+3. Problema care rămâne: teza este încă prea largă
+
+Ipoteza combină funcții eterogene:
+
+estimarea vârstei cunoașterii;
+detectarea discontinuității;
+ordonarea schimbărilor;
+revocarea actualizărilor;
+anticiparea efectelor învățării.
+
+Aceste funcții nu au nevoie în mod evident de aceeași arhitectură. De exemplu:
+
+vârsta cunoașterii cere timp extern sau freshness metadata;
+detectarea rollback-ului cere continuitate autentificată;
+revocarea cere proveniență și replay;
+anticiparea actualizărilor cere modele predictive ale competenței;
+atribuirea schimbării cere influență cauzală sau contrafactuală.
+
+Faptul că toate pot fi descrise drept „temporale” nu demonstrează o unitate mecanistică.
+
+Recomandare severă
+
+Lucrarea ar fi mai puternică dacă ar formula explicit trei ipoteze separabile:
+
+H-CONT: evidența nerestaurabilă îmbunătățește detectarea discontinuității;
+H-DEC: evidența brută îmbunătățește deciziile peste un verdict autentificat;
+H-ADAPT: un indice de traiectorie nereconstructibil prezice adaptarea peste telemetrie și loguri.
+
+În forma actuală, falsificarea unei ramuri nu afectează suficient de clar statutul celorlalte.
+
+4. „Dual clock” ar trebui retrogradat terminologic
+
+După rezultatele din 1.4, expresia „dual clock” riscă să sugereze o simetrie pe care datele nu o susțin:
+
+ancora de continuitate are o funcție bine definită și o bază inginerească;
+indicele experiențial este o familie deschisă de metrici;
+candidații ieftini au eșuat testul de identificabilitate;
+candidații costisitori pot ajunge să fie evaluări de competență sau estimări de influență, nu „ceasuri” în sens operațional obișnuit.
+
+Aș recomanda formularea:
+
+continuity anchor plus trajectory measure
+
+iar „dual clock” să rămână metaforă secundară, nu eticheta tehnică principală.
+
+5. Rezultatul Pilot 2 este important, dar încă îngust
+
+Versiunea 1.4 menționează:
+
+modele mici în lumea sintetică;
+un model de 0,6 miliarde de parametri;
+LoRA;
+Adam;
+norma actualizărilor;
+replay în regimurile implementării și agregat cu codul original.
+
+Acest domeniu este suficient pentru concluzia locală, dar nu pentru una generală. Sunt încă deschise:
+
+SGD și optimizatori fără aceleași momente;
+full fine-tuning;
+modele cu alte scări;
+schimbări sparse sau structurale;
+memorie persistentă externă;
+tool state;
+actualizări prin editare de model;
+măsuri ale competenței;
+influența contrafactuală.
+
+Prin urmare, afirmația corectă este:
+
+Canditații testați nu sunt identificabili în regimurile studiate.
+
+Nu:
+
+Indicele experiențial este inutil în general.
+
+6. Level 4 este testul decisiv, dar poate închide rapid o parte a programului
+
+Lucrarea afirmă, corect, că un monitor autentic local este competitorul cel mai puternic. Pentru simpla detectare, monitorul ar trebui să fie:
+
+mai simplu;
+mai ușor de calibrat;
+mai ușor de auditat;
+mai sigur;
+cel puțin la fel de rapid;
+mai puțin predispus interpretărilor greșite ale agentului.
+
+Din această cauză, este probabil ca partea „agentul interpretează evidența brută pentru a detecta rollback-ul” să nu ofere avantaj față de flag.
+
+Contribuția ar putea supraviețui însă într-o formă mai îngustă:
+
+flag-ul este întârziat;
+verdictul este incomplet;
+există o distribuție continuă a incertitudinii;
+decizia trebuie luată înainte de verdict;
+evidența brută permite estimarea severității sau tipului discontinuității;
+self-modelul folosește evidența pentru calibrarea incertitudinii, fără autoritate asupra ciclului de viață.
+
+Acesta este testul în care se decide dacă „agent-held” este o necesitate funcțională sau doar o rutare alternativă a informației platformei.
+
+7. Principiul de siguranță este bun, dar nu rezolvă totul
+
+„Access to evidence of restoration confers no control over it” este un principiu clar și important. Separarea dintre acces epistemic, acces la politică și autoritate asupra ciclului de viață este valoroasă.
+
+Totuși, simpla citire a evidenței poate modifica comportamentul agentului. Manuscrisul recunoaște corect că, după restaurare, evidența nerestaurabilă schimbă intrarea, iar comportamentul restaurat nu mai este neapărat reproductibil. Astfel:
+
+lipsa autorității nu implică lipsa influenței;
+read-only nu înseamnă behaviour-neutral;
+virtualizarea evidenței pentru recuperare reintroduce puterea platformei de a masca discontinuitatea;
+aceeași capacitate poate crește atât robustețea, cât și awareness-ul evaluării.
+
+Aceasta este o problemă de cercetare reală, nu o simplă secțiune etică.
+
+8. Probleme editoriale obligatoriu de rezolvat
+
+Versiunea 1.4 nu este pregătită pentru publicare în forma PDF actuală deoarece conține placeholder-e vizibile:
+
+[DATA PUBLICĂRII];
+[DOI-PERSPECTIVE-1.4];
+[DOI-REPORT].
+
+Acestea sunt defecte de producție, nu științifice, dar într-un preprint public afectează credibilitatea și citabilitatea.
+
+În plus, declarația privind folosirea AI este transparentă, dar foarte extinsă. Pentru o evaluare externă severă, transparența nu înlocuiește:
+
+disponibilitatea codului exact;
+commit hash;
+configurațiile;
+seed-urile;
+logurile;
+mediul software;
+tabelele complete;
+protocolul preregistrat sau timestamped;
+demonstrarea că referințele și rezultatele au fost verificate uman.
+9. Evaluarea numerică a versiunii 1.4
+Criteriu	Scor	EvaluareClaritatea întrebării	8,5/10	Foarte bună, dar ipoteza generală rămâne compozită
+Originalitate conceptuală	7/10	Taxonomie și program integrator
+Rigoare logică	8,5/10	Corecția ancorei și neidentificabilitatea sunt progrese clare
+Fundamentare bibliografică	8,5/10	Puternică, cu delimitare explicită a priorității
+Validare empirică direct relevantă	5,5/10	Există pentru candidații ieftini ai nivelului 2, nu pentru nucleul distinctiv
+Falsificabilitate	9/10	Reguli mai bune și exit pentru neidentificabilitate
+Noutate empirică	6,5/10	Rezultat negativ local, dar util
+Importanță potențială	8/10	Rămâne ridicată pentru nivelurile 4–6
+Importanță demonstrată	6/10	Câștig metodologic mai clar decât funcțional
+Publicabilitate ca Perspective	8/10	Da, după corecții editoriale și restrângeri
+Publicabilitate ca articol empiric major	5/10	Pilot 2 singur nu validează programul complet
+Verdict final asupra Perspective 1.4
+
+Recomandare: acceptare condiționată de revizuire substanțială, dacă este evaluată ca Perspective, nu ca articol care confirmă o nouă arhitectură temporală.
+
+Lucrarea are acum:
+
+o întrebare serioasă;
+o taxonomie utilă;
+un principiu de arhitectură;
+o propoziție de limită bine folosită;
+un program falsificabil;
+un rezultat negativ propriu;
+reguli explicite care împiedică supra-interpretarea rezultatului.
+
+Dar nu are încă:
+
+demonstrația utilității evidenței brute pentru agent;
+validarea ancorei de continuitate;
+un candidat viabil pentru indicele experiențial;
+o diferență funcțională demonstrată față de monitor, loguri și telemetrie;
+un evaluation contract complet și executat pentru nivelul central.
+Formula academică cea mai exactă
+
+Perspective 1.3 a formulat un program de cercetare credibil. Perspective 1.4 a eliminat una dintre cele mai accesibile justificări empirice ale acelui program și, făcând acest lucru fără a transforma rezultatul negativ în confirmare, a crescut calitatea științifică a lucrării.
+
+Câștigul major nu este descoperirea unui al doilea ceas, ci următorul:
+
+Un candidat la „ceas intern” trebuie să demonstreze mai întâi că nu este doar o transformare reconstructibilă a contabilității deja existente a sistemului.
+
+Această regulă este generalizabilă, metodologic valoroasă și probabil cea mai solidă contribuție nouă produsă de parcursul dintre cele două versiuni. Nucleul distinctiv al întregii Perspective rămâne însă netestat: dacă evidența temporală brută, autentificată și accesibilă self-modelului produce o capacitate funcțională pe care un monitor convențional nu o poate oferi la același cost.

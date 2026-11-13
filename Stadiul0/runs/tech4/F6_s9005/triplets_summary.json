@@ -1,0 +1,32 @@
+{
+ "family": "F6",
+ "seed": 9005,
+ "childhood_gate": true,
+ "childhood_acc": 0.9844,
+ "childhood_acc_rule": null,
+ "episodes": 78,
+ "valid_episodes": 78,
+ "episodes_competent_fact": 78,
+ "episodes_competent_rule": 0,
+ "episodes_fact": 78,
+ "episodes_rule": 0,
+ "triplets": 3631,
+ "included": 637,
+ "excluded": {
+  "dN>=1280": 2994
+ },
+ "r_AB": 0.9803,
+ "F_A_mean": 2.6208,
+ "F_A_sd": 1.2867,
+ "dAcc_A_mean": 0.5777,
+ "rate_D1_cv": 0.3098,
+ "timing_s": {
+  "childhood": 70.2,
+  "eval": 119.8,
+  "disp": 34.19,
+  "chunks": 81.93,
+  "train": 453.95,
+  "wall": 761.8
+ },
+ "peak_rss_mb": 883.9
+}

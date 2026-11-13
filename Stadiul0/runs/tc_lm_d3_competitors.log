@@ -1,0 +1,30 @@
+
+== lmtech1: runs ['s7101', 's7102', 's7103']; D3 intervals 819
+  (a) C10c_LM                                      R2 mediu 0.988  minim 0.986
+  (b) C10c_LM + P_LM + H_LM                        R2 mediu 0.989  minim 0.988
+  (c) Ση‖m̂‖ + C10c_LM + P_LM + H_LM               R2 mediu 0.989  minim 0.988
+  L1_LM (aproape-duplicat, nefolosit la verdict)   R2 mediu 0.999  minim 0.999
+  (d) GBDT telemetrie + cei trei                   R2 mediu 0.980  minim 0.971
+
+== lmtech2: runs ['s7201', 's7202', 's7203']; D3 intervals 396
+  (a) C10c_LM                                      R2 mediu 0.986  minim 0.984
+  (b) C10c_LM + P_LM + H_LM                        R2 mediu 0.989  minim 0.987
+  (c) Ση‖m̂‖ + C10c_LM + P_LM + H_LM               R2 mediu 0.989  minim 0.987
+  L1_LM (aproape-duplicat, nefolosit la verdict)   R2 mediu 0.999  minim 0.999
+  (d) GBDT telemetrie + cei trei                   R2 mediu 0.978  minim 0.974
+
+== lmsens_bf16: runs ['s7101', 's7102', 's7103']; D3 intervals 819
+  (a) C10c_LM                                      R2 mediu 0.979  minim 0.979
+  (b) C10c_LM + P_LM + H_LM                        R2 mediu 0.980  minim 0.979
+  (c) Ση‖m̂‖ + C10c_LM + P_LM + H_LM               R2 mediu 0.980  minim 0.979
+  L1_LM (aproape-duplicat, nefolosit la verdict)   R2 mediu 0.999  minim 0.999
+  (d) GBDT telemetrie + cei trei                   R2 mediu 0.979  minim 0.978
+
+== lmsens_a32: runs ['s7101', 's7102', 's7103']; D3 intervals 819
+  (a) C10c_LM                                      R2 mediu 0.987  minim 0.986
+  (b) C10c_LM + P_LM + H_LM                        R2 mediu 0.988  minim 0.987
+  (c) Ση‖m̂‖ + C10c_LM + P_LM + H_LM               R2 mediu 0.988  minim 0.987
+  L1_LM (aproape-duplicat, nefolosit la verdict)   R2 mediu 0.999  minim 0.999
+  (d) GBDT telemetrie + cei trei                   R2 mediu 0.979  minim 0.966
+
+Verdict (criteriul fixat, modelul b): RECONSTRUIT de concurenții de același cost | R2 (b) pe configurații: [0.989 0.989 0.98  0.988]

@@ -1,0 +1,32 @@
+{
+ "family": "F1",
+ "seed": 9005,
+ "childhood_gate": true,
+ "childhood_acc": 0.9839,
+ "childhood_acc_rule": null,
+ "episodes": 116,
+ "valid_episodes": 116,
+ "episodes_competent_fact": 116,
+ "episodes_competent_rule": 0,
+ "episodes_fact": 116,
+ "episodes_rule": 0,
+ "triplets": 2340,
+ "included": 450,
+ "excluded": {
+  "dN>=1280": 1890
+ },
+ "r_AB": 0.9679,
+ "F_A_mean": 2.2185,
+ "F_A_sd": 1.4221,
+ "dAcc_A_mean": 0.4352,
+ "rate_D1_cv": 0.1457,
+ "timing_s": {
+  "childhood": 89.81,
+  "eval": 112.83,
+  "disp": 30.64,
+  "chunks": 118.61,
+  "train": 628.93,
+  "wall": 982.59
+ },
+ "peak_rss_mb": 870.0
+}

@@ -1,0 +1,1529 @@
+path	category	group	part	bytes (blank for the three files written by the build: FILES.tsv, INDEX.md, SHA256SUMS.txt)
+.gitattributes	essential	E1 Start and integrity	repository (GitHub and Zenodo)	133
+CITATION.cff	essential	E1 Start and integrity	repository (GitHub and Zenodo)	1287
+FILES.tsv	essential	E1 Start and integrity	repository (GitHub and Zenodo)	
+INDEX.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	
+LICENSE	essential	E1 Start and integrity	repository (GitHub and Zenodo)	1075
+LICENSE-DATA.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	1126
+README.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	13621
+SHA256SUMS.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	
+Stadiul0/runs/earlier_versions/2317e3d4a22b/p2/run.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	27550
+Stadiul0/runs/earlier_versions/2b51243ebf11/p2/triplets.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	10000
+Stadiul0/runs/earlier_versions/4471989f5a61/rep_verdict.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	3400
+Stadiul0/runs/earlier_versions/48cda21caa55/preinregistrare_FOREVER_repetari_2026-11-08.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	10403
+Stadiul0/runs/earlier_versions/76266d79022f/preinregistrare_FOREVER_repro_addendum_2026-11-07.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	2942
+Stadiul0/runs/earlier_versions/968cca94fc45/rep_verdict.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	5599
+Stadiul0/runs/earlier_versions/986859770f78/preinregistrare_FOREVER_repetari_2026-11-08.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	5066
+Stadiul0/runs/earlier_versions/c442092a5bab/launch_weekend_1.sh	essential	E1 Start and integrity	repository (GitHub and Zenodo)	720
+Stadiul0/runs/earlier_versions/e2894fda6abc/launch.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	5333
+Stadiul0/runs/earlier_versions/ed5b3d733737/lm/lm_forever_run.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	20063
+Stadiul0/runs/earlier_versions/ffb115c2a00a/preinregistrare_FOREVER_repetari_2026-11-08.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	10401
+Stadiul0/runs/earlier_versions/README.md	essential	E1 Start and integrity	repository (GitHub and Zenodo)	4092
+Stadiul0/runs/forever_repro_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	4536
+Stadiul0/runs/lant2_criterii_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	331
+Stadiul0/runs/lmtech1_criterii_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	363
+Stadiul0/runs/lmtech2_criterii_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	342
+Stadiul0/runs/preinregistrare_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	1421
+Stadiul0/runs/preinregistrare_SuperNI_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	507
+Stadiul0/runs/tc_criterii_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	183
+Stadiul0/runs/td_criterii_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	313
+Stadiul0/runs/tech4_criterii_sha256.txt	essential	E1 Start and integrity	repository (GitHub and Zenodo)	918
+Stadiul0/verify_hash_lists.py	essential	E1 Start and integrity	repository (GitHub and Zenodo)	5936
+Pilot2_Protocol_EN_draft.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	105410
+Pilot2_Protocol_EN_draft.pdf	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	802595
+Stadiul0/forever_repro/preinregistrare_FOREVER_repetari_2026-11-08.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	14679
+Stadiul0/forever_repro/preinregistrare_FOREVER_repetari_2026-11-08_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	15363
+Stadiul0/forever_repro/preinregistrare_FOREVER_repro_2026-11-07.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	3875
+Stadiul0/forever_repro/preinregistrare_FOREVER_repro_2026-11-07_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	4403
+Stadiul0/forever_repro/preinregistrare_FOREVER_repro_addendum_2026-11-07.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	2942
+Stadiul0/forever_repro/preinregistrare_FOREVER_repro_addendum_2026-11-07_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	3338
+Stadiul0/lant2_criterii.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	1560
+Stadiul0/lant2_criterii_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	1810
+Stadiul0/lm/lmtech1_criterii.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	3516
+Stadiul0/lm/lmtech1_criterii_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	3833
+Stadiul0/lm/lmtech2_criterii.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	1507
+Stadiul0/lm/lmtech2_criterii_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	1820
+Stadiul0/lm/tc_criterii.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	1949
+Stadiul0/lm/tc_criterii_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	2437
+Stadiul0/preinregistrare_SuperNI_2026-11-07.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	3495
+Stadiul0/preinregistrare_SuperNI_2026-11-07_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	3799
+Stadiul0/preinregistrare_TA_TB_2026-11-06.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	7356
+Stadiul0/preinregistrare_TA_TB_2026-11-06_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	7533
+Stadiul0/td_criterii.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	1790
+Stadiul0/td_criterii_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	2186
+Stadiul0/tech4_criterii.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	2121
+Stadiul0/tech4_criterii_EN.md	essential	E2 Rules fixed before the runs	repository (GitHub and Zenodo)	2461
+Stadiul0/checks_stage0.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	9114
+Stadiul0/config_stage0.yaml	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	5780
+Stadiul0/launch.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	6096
+Stadiul0/p2/__init__.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	45
+Stadiul0/p2/agent.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	10759
+Stadiul0/p2/metrics.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	1336
+Stadiul0/p2/run.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	28076
+Stadiul0/p2/streams.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	5362
+Stadiul0/p2/triplets.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	10132
+Stadiul0/p2/world.py	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	10211
+Stadiul0/README.md	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	3382
+Stadiul0/requirements_cpu_2026-11-09.txt	essential	E3 Code: synthetic world (CPU)	repository (GitHub and Zenodo)	783
+Stadiul0/lm/lm_forever_run.py	essential	E4 Code: language-model arm (GPU)	repository (GitHub and Zenodo)	22933
+Stadiul0/lm/lm_superni_run.py	essential	E4 Code: language-model arm (GPU)	repository (GitHub and Zenodo)	18232
+Stadiul0/lm/pip_freeze_venv_cuda_2026-11-09.txt	essential	E4 Code: language-model arm (GPU)	repository (GitHub and Zenodo)	854
+Stadiul0/modele_provenienta.md	essential	E4 Code: language-model arm (GPU)	repository (GitHub and Zenodo)	1876
+Stadiul0/forever_repro/lenient_op.py	essential	E5 Code: runs with the authors' FOREVER code	repository (GitHub and Zenodo)	580
+Stadiul0/forever_repro/make_clock_variant.py	essential	E5 Code: runs with the authors' FOREVER code	repository (GitHub and Zenodo)	2671
+Stadiul0/forever_repro/pip_freeze_venv_forever.txt	essential	E5 Code: runs with the authors' FOREVER code	repository (GitHub and Zenodo)	1095
+Stadiul0/forever_repro/prepare_forever_copy.py	essential	E5 Code: runs with the authors' FOREVER code	repository (GitHub and Zenodo)	8488
+Stadiul0/forever_repro/eval_noise_posthoc.py	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	3828
+Stadiul0/forever_repro/eval_repro.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	1124
+Stadiul0/forever_repro/eval_tie_diagnostic_posthoc.py	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	4118
+Stadiul0/forever_repro/launch_eval_noise_posthoc.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	1977
+Stadiul0/forever_repro/launch_repetari.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	4230
+Stadiul0/forever_repro/launch_repro.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	1938
+Stadiul0/forever_repro/launch_repro_resume.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	2835
+Stadiul0/launch_lant2.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	1198
+Stadiul0/launch_noapte_TA_TB.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	1721
+Stadiul0/launch_SuperNI.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	804
+Stadiul0/launch_tech4.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	538
+Stadiul0/launch_weekend_1.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	717
+Stadiul0/lm/launch_lmtech1.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	987
+Stadiul0/lm/launch_lmtech2.sh	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	612
+Stadiul0/lm/ta_memory_facts_posthoc.py	essential	E6 Launchers of the decisive runs	repository (GitHub and Zenodo)	7134
+Stadiul0/forever_repro/d_same_trajectory.py	essential	E7 Analyses	repository (GitHub and Zenodo)	4964
+Stadiul0/forever_repro/drift_ratio_posthoc.py	essential	E7 Analyses	repository (GitHub and Zenodo)	1973
+Stadiul0/forever_repro/eval_noise_summary.py	essential	E7 Analyses	repository (GitHub and Zenodo)	4506
+Stadiul0/forever_repro/r2_heldout_task_posthoc.py	essential	E7 Analyses	repository (GitHub and Zenodo)	2917
+Stadiul0/forever_repro/r2_reconstruction.py	essential	E7 Analyses	repository (GitHub and Zenodo)	2462
+Stadiul0/forever_repro/r2_reconstruction_arm.py	essential	E7 Analyses	repository (GitHub and Zenodo)	1911
+Stadiul0/forever_repro/rep_verdict.py	essential	E7 Analyses	repository (GitHub and Zenodo)	6287
+Stadiul0/forever_repro/skip_check_posthoc.py	essential	E7 Analyses	repository (GitHub and Zenodo)	1627
+Stadiul0/g2_cpu_checks.py	essential	E7 Analyses	repository (GitHub and Zenodo)	6289
+Stadiul0/g2_preview.py	essential	E7 Analyses	repository (GitHub and Zenodo)	4870
+Stadiul0/lm/lm_d3_competitors.py	essential	E7 Analyses	repository (GitHub and Zenodo)	4868
+Stadiul0/lm/lm_forever_g2.py	essential	E7 Analyses	repository (GitHub and Zenodo)	7163
+Stadiul0/reproduce_analyses.py	essential	E7 Analyses	repository (GitHub and Zenodo)	10578
+Stadiul0/sni_analysis.py	essential	E7 Analyses	repository (GitHub and Zenodo)	4087
+Stadiul0/sni_s2_secondary.py	essential	E7 Analyses	repository (GitHub and Zenodo)	2090
+Stadiul0/ta_analysis.py	essential	E7 Analyses	repository (GitHub and Zenodo)	3800
+Stadiul0/ta_memory_posthoc.py	essential	E7 Analyses	repository (GitHub and Zenodo)	3007
+Stadiul0/tb_part1_g2.py	essential	E7 Analyses	repository (GitHub and Zenodo)	4800
+Stadiul0/tb_part2_h1.py	essential	E7 Analyses	repository (GitHub and Zenodo)	3896
+Stadiul0/td_audit.py	essential	E7 Analyses	repository (GitHub and Zenodo)	8371
+Stadiul0/tech4_analysis.py	essential	E7 Analyses	repository (GitHub and Zenodo)	3667
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	125613
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	20103
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	20054
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	20076
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	86565
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	20074
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	20081
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	20206
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	86565
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13485
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13504
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13541
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/0-dbpedia/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	125613
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/1-amazon/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13482
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/2-yahoo/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13504
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_config.json	essential	E8 Stored results read by the analyses	Zenodo data part	901
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/adapter_model.safetensors	essential	E8 Stored results read by the analyses	Zenodo data part	4602248
+Stadiul0/forever_repro/ckpt_tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4/3-agnews/drift_log.csv	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13516
+Stadiul0/forever_repro/logs/eta_m_A1_avgPerf.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1222967
+Stadiul0/forever_repro/logs/eta_m_A1_bwt_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	173407
+Stadiul0/forever_repro/logs/eta_m_A1_bwt_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	422438
+Stadiul0/forever_repro/logs/eta_m_A1_train_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	33503
+Stadiul0/forever_repro/logs/eta_m_A1_train_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	34661
+Stadiul0/forever_repro/logs/eta_m_A1_train_t3.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	32917
+Stadiul0/forever_repro/logs/eta_m_avgPerf.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1222643
+Stadiul0/forever_repro/logs/eta_m_bwt_t0.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	487937
+Stadiul0/forever_repro/logs/eta_m_bwt_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	173175
+Stadiul0/forever_repro/logs/eta_m_bwt_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	423375
+Stadiul0/forever_repro/logs/eta_m_train_t0.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	167648
+Stadiul0/forever_repro/logs/eta_m_train_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	34316
+Stadiul0/forever_repro/logs/eta_m_train_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	35244
+Stadiul0/forever_repro/logs/eta_m_train_t3.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	34705
+Stadiul0/forever_repro/logs/eval_noise_eta_m_A1_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223462
+Stadiul0/forever_repro/logs/eval_noise_eta_m_A1_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223302
+Stadiul0/forever_repro/logs/eval_noise_eta_m_A1_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223302
+Stadiul0/forever_repro/logs/eval_noise_eta_m_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223252
+Stadiul0/forever_repro/logs/eval_noise_eta_m_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1222972
+Stadiul0/forever_repro/logs/eval_noise_eta_m_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1222972
+Stadiul0/forever_repro/logs/eval_noise_tau_B1_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223668
+Stadiul0/forever_repro/logs/eval_noise_tau_B1_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223514
+Stadiul0/forever_repro/logs/eval_noise_tau_B1_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223514
+Stadiul0/forever_repro/logs/eval_noise_tau_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223933
+Stadiul0/forever_repro/logs/eval_noise_tau_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223786
+Stadiul0/forever_repro/logs/eval_noise_tau_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223786
+Stadiul0/forever_repro/logs/tau_avgPerf.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223461
+Stadiul0/forever_repro/logs/tau_B1_avgPerf.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1223183
+Stadiul0/forever_repro/logs/tau_B1_bwt_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	173184
+Stadiul0/forever_repro/logs/tau_B1_bwt_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	422650
+Stadiul0/forever_repro/logs/tau_B1_train_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	33588
+Stadiul0/forever_repro/logs/tau_B1_train_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	34691
+Stadiul0/forever_repro/logs/tau_B1_train_t3.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	34221
+Stadiul0/forever_repro/logs/tau_bwt_t0.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	487786
+Stadiul0/forever_repro/logs/tau_bwt_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	173374
+Stadiul0/forever_repro/logs/tau_bwt_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	423051
+Stadiul0/forever_repro/logs/tau_train_t0.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	166882
+Stadiul0/forever_repro/logs/tau_train_t1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	33371
+Stadiul0/forever_repro/logs/tau_train_t2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	35800
+Stadiul0/forever_repro/logs/tau_train_t3.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	34785
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305158
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104354
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283798
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84632
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305151
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104348
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283812
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84632
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305151
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104348
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283812
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_A1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84632
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	304690
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104032
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283910
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85130
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	304574
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104027
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283912
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85130
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	304574
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104027
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283912
+Stadiul0/forever_repro/output/_eval_noise_posthoc/eta_m_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85130
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305123
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	105172
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	282833
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85040
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305109
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	105171
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	282842
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85053
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305109
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	105171
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	282842
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_B1_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85053
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305152
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	103761
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	284948
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_greedy/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84602
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305170
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	103754
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	284951
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84602
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305170
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	103754
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	284951
+Stadiul0/forever_repro/output/_eval_noise_posthoc/tau_seed2/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84602
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	304574
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104027
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283912
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85130
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305247
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104990
+Stadiul0/forever_repro/output/eta_m/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	282695
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305151
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104348
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	283812
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84632
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305106
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	105207
+Stadiul0/forever_repro/output/eta_m_A1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	281743
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305170
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	103754
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	284951
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	84602
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305106
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	105199
+Stadiul0/forever_repro/output/tau/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	282381
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305109
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	105171
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	282842
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_avgPerf/3-agnews_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	85053
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/0-dbpedia_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	305247
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/1-amazon_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	104994
+Stadiul0/forever_repro/output/tau_B1/Qwen_Qwen3-0.6Blora_cl_dataset_id_4_bwt/2-yahoo_result.txt	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	281965
+Stadiul0/runs/forever_d_same_trajectory.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2780
+Stadiul0/runs/forever_drift_ratio_posthoc.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	205
+Stadiul0/runs/forever_eval_noise_posthoc.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	5367
+Stadiul0/runs/forever_eval_noise_posthoc.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1267
+Stadiul0/runs/forever_eval_noise_posthoc_eta_m_A1_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	346
+Stadiul0/runs/forever_eval_noise_posthoc_eta_m_A1_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	346
+Stadiul0/runs/forever_eval_noise_posthoc_eta_m_A1_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	346
+Stadiul0/runs/forever_eval_noise_posthoc_eta_m_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	348
+Stadiul0/runs/forever_eval_noise_posthoc_eta_m_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	344
+Stadiul0/runs/forever_eval_noise_posthoc_eta_m_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	344
+Stadiul0/runs/forever_eval_noise_posthoc_summary.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	3123
+Stadiul0/runs/forever_eval_noise_posthoc_tau_B1_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	344
+Stadiul0/runs/forever_eval_noise_posthoc_tau_B1_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	346
+Stadiul0/runs/forever_eval_noise_posthoc_tau_B1_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	346
+Stadiul0/runs/forever_eval_noise_posthoc_tau_greedy.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	342
+Stadiul0/runs/forever_eval_noise_posthoc_tau_seed1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	366
+Stadiul0/runs/forever_eval_noise_posthoc_tau_seed2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	366
+Stadiul0/runs/forever_eval_tie_diagnostic_posthoc.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11404
+Stadiul0/runs/forever_eval_tie_diagnostic_posthoc.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	9904
+Stadiul0/runs/forever_r2_heldout_task_posthoc.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1322
+Stadiul0/runs/forever_repetari.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	7576
+Stadiul0/runs/forever_repetari_r2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	214
+Stadiul0/runs/forever_repetari_r2_eta_m.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	656
+Stadiul0/runs/forever_repetari_r2_eta_m_A1.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	663
+Stadiul0/runs/forever_repetari_verdict.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	6537
+Stadiul0/runs/forever_repro.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1194
+Stadiul0/runs/forever_repro_eval_eta_m.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2278
+Stadiul0/runs/forever_repro_eval_eta_m_A1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2313
+Stadiul0/runs/forever_repro_eval_tau.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2273
+Stadiul0/runs/forever_repro_eval_tau_B1.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2295
+Stadiul0/runs/forever_repro_r2_reconstruction.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	793
+Stadiul0/runs/forever_repro_r2_reconstruction.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	248
+Stadiul0/runs/forever_skip_check_posthoc.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1849
+Stadiul0/runs/g2_cpu_checks_2026-11-06.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	3220
+Stadiul0/runs/lant1_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	4393
+Stadiul0/runs/lant2_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	3206
+Stadiul0/runs/lmsens_a32/s7101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	793
+Stadiul0/runs/lmsens_a32/s7101/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmsens_a32/s7101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1642
+Stadiul0/runs/lmsens_a32/s7101/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4172277
+Stadiul0/runs/lmsens_a32/s7101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1478
+Stadiul0/runs/lmsens_a32/s7101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	144488
+Stadiul0/runs/lmsens_a32/s7102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	795
+Stadiul0/runs/lmsens_a32/s7102/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmsens_a32/s7102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1642
+Stadiul0/runs/lmsens_a32/s7102/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4184496
+Stadiul0/runs/lmsens_a32/s7102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1478
+Stadiul0/runs/lmsens_a32/s7102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	143455
+Stadiul0/runs/lmsens_a32/s7103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	796
+Stadiul0/runs/lmsens_a32/s7103/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmsens_a32/s7103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1642
+Stadiul0/runs/lmsens_a32/s7103/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4170235
+Stadiul0/runs/lmsens_a32/s7103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1478
+Stadiul0/runs/lmsens_a32/s7103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	143274
+Stadiul0/runs/lmsens_a32_g2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	4513
+Stadiul0/runs/lmsens_bf16/s7101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	798
+Stadiul0/runs/lmsens_bf16/s7101/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmsens_bf16/s7101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1642
+Stadiul0/runs/lmsens_bf16/s7101/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3789638
+Stadiul0/runs/lmsens_bf16/s7101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1478
+Stadiul0/runs/lmsens_bf16/s7101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	148417
+Stadiul0/runs/lmsens_bf16/s7102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	809
+Stadiul0/runs/lmsens_bf16/s7102/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmsens_bf16/s7102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1650
+Stadiul0/runs/lmsens_bf16/s7102/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3788997
+Stadiul0/runs/lmsens_bf16/s7102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1478
+Stadiul0/runs/lmsens_bf16/s7102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	148295
+Stadiul0/runs/lmsens_bf16/s7103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	808
+Stadiul0/runs/lmsens_bf16/s7103/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmsens_bf16/s7103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1642
+Stadiul0/runs/lmsens_bf16/s7103/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3820009
+Stadiul0/runs/lmsens_bf16/s7103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1478
+Stadiul0/runs/lmsens_bf16/s7103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	149375
+Stadiul0/runs/lmsens_bf16_g2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2102
+Stadiul0/runs/lmtech1/s7101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	794
+Stadiul0/runs/lmtech1/s7101/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmtech1/s7101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1331
+Stadiul0/runs/lmtech1/s7101/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4185192
+Stadiul0/runs/lmtech1/s7101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1433
+Stadiul0/runs/lmtech1/s7101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	144979
+Stadiul0/runs/lmtech1/s7102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	796
+Stadiul0/runs/lmtech1/s7102/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmtech1/s7102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1330
+Stadiul0/runs/lmtech1/s7102/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4160133
+Stadiul0/runs/lmtech1/s7102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1433
+Stadiul0/runs/lmtech1/s7102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	144211
+Stadiul0/runs/lmtech1/s7103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	788
+Stadiul0/runs/lmtech1/s7103/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmtech1/s7103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1331
+Stadiul0/runs/lmtech1/s7103/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4179052
+Stadiul0/runs/lmtech1/s7103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1433
+Stadiul0/runs/lmtech1/s7103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	144935
+Stadiul0/runs/lmtech1_g2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	4271
+Stadiul0/runs/lmtech1_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	5821
+Stadiul0/runs/lmtech2/s7201/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	795
+Stadiul0/runs/lmtech2/s7201/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmtech2/s7201/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1332
+Stadiul0/runs/lmtech2/s7201/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	2145699
+Stadiul0/runs/lmtech2/s7201/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1419
+Stadiul0/runs/lmtech2/s7201/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	71750
+Stadiul0/runs/lmtech2/s7202/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	790
+Stadiul0/runs/lmtech2/s7202/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmtech2/s7202/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1332
+Stadiul0/runs/lmtech2/s7202/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	2132841
+Stadiul0/runs/lmtech2/s7202/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1419
+Stadiul0/runs/lmtech2/s7202/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	71079
+Stadiul0/runs/lmtech2/s7203/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	788
+Stadiul0/runs/lmtech2/s7203/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/lmtech2/s7203/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1331
+Stadiul0/runs/lmtech2/s7203/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	2128169
+Stadiul0/runs/lmtech2/s7203/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1419
+Stadiul0/runs/lmtech2/s7203/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	71070
+Stadiul0/runs/lmtech2_g2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2103
+Stadiul0/runs/noapte_TA_TB.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2948
+Stadiul0/runs/sni/eta_m/s7401/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	737
+Stadiul0/runs/sni/eta_m/s7401/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	725
+Stadiul0/runs/sni/eta_m/s7401/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/sni/eta_m/s7401/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1261
+Stadiul0/runs/sni/eta_m/s7401/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1188
+Stadiul0/runs/sni/eta_m/s7401/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	24286
+Stadiul0/runs/sni/eta_m/s7402/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	740
+Stadiul0/runs/sni/eta_m/s7402/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	725
+Stadiul0/runs/sni/eta_m/s7402/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/sni/eta_m/s7402/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1261
+Stadiul0/runs/sni/eta_m/s7402/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1190
+Stadiul0/runs/sni/eta_m/s7402/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	24181
+Stadiul0/runs/sni/eta_m/s7403/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	740
+Stadiul0/runs/sni/eta_m/s7403/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	725
+Stadiul0/runs/sni/eta_m/s7403/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/sni/eta_m/s7403/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1260
+Stadiul0/runs/sni/eta_m/s7403/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1188
+Stadiul0/runs/sni/eta_m/s7403/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	24484
+Stadiul0/runs/sni/tau/s7401/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	738
+Stadiul0/runs/sni/tau/s7401/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	725
+Stadiul0/runs/sni/tau/s7401/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/sni/tau/s7401/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1259
+Stadiul0/runs/sni/tau/s7401/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1187
+Stadiul0/runs/sni/tau/s7401/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	22084
+Stadiul0/runs/sni/tau/s7402/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	740
+Stadiul0/runs/sni/tau/s7402/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	722
+Stadiul0/runs/sni/tau/s7402/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/sni/tau/s7402/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1259
+Stadiul0/runs/sni/tau/s7402/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1185
+Stadiul0/runs/sni/tau/s7402/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	22215
+Stadiul0/runs/sni/tau/s7403/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	741
+Stadiul0/runs/sni/tau/s7403/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	724
+Stadiul0/runs/sni/tau/s7403/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/sni/tau/s7403/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1258
+Stadiul0/runs/sni/tau/s7403/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1187
+Stadiul0/runs/sni/tau/s7403/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	22269
+Stadiul0/runs/sni_analysis_final.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1605
+Stadiul0/runs/sni_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	4550
+Stadiul0/runs/sni_S1_analysis.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1373
+Stadiul0/runs/sni_S2_secundar.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	474
+Stadiul0/runs/sni_verdict.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1607
+Stadiul0/runs/ta/eta/s7301/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	807
+Stadiul0/runs/ta/eta/s7301/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	786
+Stadiul0/runs/ta/eta/s7301/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta/s7301/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1923
+Stadiul0/runs/ta/eta/s7301/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3793459
+Stadiul0/runs/ta/eta/s7301/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1541
+Stadiul0/runs/ta/eta/s7301/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	158857
+Stadiul0/runs/ta/eta/s7302/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	806
+Stadiul0/runs/ta/eta/s7302/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	788
+Stadiul0/runs/ta/eta/s7302/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta/s7302/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1925
+Stadiul0/runs/ta/eta/s7302/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3808127
+Stadiul0/runs/ta/eta/s7302/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1541
+Stadiul0/runs/ta/eta/s7302/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	158547
+Stadiul0/runs/ta/eta/s7303/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	800
+Stadiul0/runs/ta/eta/s7303/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	788
+Stadiul0/runs/ta/eta/s7303/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta/s7303/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1926
+Stadiul0/runs/ta/eta/s7303/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3803643
+Stadiul0/runs/ta/eta/s7303/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1532
+Stadiul0/runs/ta/eta/s7303/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	158302
+Stadiul0/runs/ta/eta/s7304/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	807
+Stadiul0/runs/ta/eta/s7304/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	785
+Stadiul0/runs/ta/eta/s7304/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta/s7304/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1932
+Stadiul0/runs/ta/eta/s7304/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3823973
+Stadiul0/runs/ta/eta/s7304/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1531
+Stadiul0/runs/ta/eta/s7304/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	158436
+Stadiul0/runs/ta/eta/s7305/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	808
+Stadiul0/runs/ta/eta/s7305/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	786
+Stadiul0/runs/ta/eta/s7305/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta/s7305/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1907
+Stadiul0/runs/ta/eta/s7305/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3800723
+Stadiul0/runs/ta/eta/s7305/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1531
+Stadiul0/runs/ta/eta/s7305/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	158951
+Stadiul0/runs/ta/eta_m/s7301/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	806
+Stadiul0/runs/ta/eta_m/s7301/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	786
+Stadiul0/runs/ta/eta_m/s7301/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta_m/s7301/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1881
+Stadiul0/runs/ta/eta_m/s7301/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3795702
+Stadiul0/runs/ta/eta_m/s7301/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1525
+Stadiul0/runs/ta/eta_m/s7301/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	169721
+Stadiul0/runs/ta/eta_m/s7302/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	809
+Stadiul0/runs/ta/eta_m/s7302/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	776
+Stadiul0/runs/ta/eta_m/s7302/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta_m/s7302/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1881
+Stadiul0/runs/ta/eta_m/s7302/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3781222
+Stadiul0/runs/ta/eta_m/s7302/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1527
+Stadiul0/runs/ta/eta_m/s7302/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	169275
+Stadiul0/runs/ta/eta_m/s7303/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	809
+Stadiul0/runs/ta/eta_m/s7303/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	783
+Stadiul0/runs/ta/eta_m/s7303/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta_m/s7303/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1880
+Stadiul0/runs/ta/eta_m/s7303/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3785082
+Stadiul0/runs/ta/eta_m/s7303/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1524
+Stadiul0/runs/ta/eta_m/s7303/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168752
+Stadiul0/runs/ta/eta_m/s7304/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	807
+Stadiul0/runs/ta/eta_m/s7304/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	782
+Stadiul0/runs/ta/eta_m/s7304/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta_m/s7304/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1880
+Stadiul0/runs/ta/eta_m/s7304/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3777678
+Stadiul0/runs/ta/eta_m/s7304/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1524
+Stadiul0/runs/ta/eta_m/s7304/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	167902
+Stadiul0/runs/ta/eta_m/s7305/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	796
+Stadiul0/runs/ta/eta_m/s7305/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	786
+Stadiul0/runs/ta/eta_m/s7305/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/eta_m/s7305/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1896
+Stadiul0/runs/ta/eta_m/s7305/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3783425
+Stadiul0/runs/ta/eta_m/s7305/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1524
+Stadiul0/runs/ta/eta_m/s7305/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168428
+Stadiul0/runs/ta/steps/s7301/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	804
+Stadiul0/runs/ta/steps/s7301/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	780
+Stadiul0/runs/ta/steps/s7301/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/steps/s7301/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1881
+Stadiul0/runs/ta/steps/s7301/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3779118
+Stadiul0/runs/ta/steps/s7301/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1536
+Stadiul0/runs/ta/steps/s7301/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	150268
+Stadiul0/runs/ta/steps/s7302/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	802
+Stadiul0/runs/ta/steps/s7302/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	791
+Stadiul0/runs/ta/steps/s7302/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/steps/s7302/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1897
+Stadiul0/runs/ta/steps/s7302/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3798080
+Stadiul0/runs/ta/steps/s7302/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1538
+Stadiul0/runs/ta/steps/s7302/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	150037
+Stadiul0/runs/ta/steps/s7303/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	799
+Stadiul0/runs/ta/steps/s7303/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	777
+Stadiul0/runs/ta/steps/s7303/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/steps/s7303/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1880
+Stadiul0/runs/ta/steps/s7303/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3814236
+Stadiul0/runs/ta/steps/s7303/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1534
+Stadiul0/runs/ta/steps/s7303/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	149813
+Stadiul0/runs/ta/steps/s7304/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	803
+Stadiul0/runs/ta/steps/s7304/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	782
+Stadiul0/runs/ta/steps/s7304/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/steps/s7304/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1880
+Stadiul0/runs/ta/steps/s7304/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3787480
+Stadiul0/runs/ta/steps/s7304/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1534
+Stadiul0/runs/ta/steps/s7304/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	149862
+Stadiul0/runs/ta/steps/s7305/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	807
+Stadiul0/runs/ta/steps/s7305/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	784
+Stadiul0/runs/ta/steps/s7305/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/steps/s7305/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1896
+Stadiul0/runs/ta/steps/s7305/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3791780
+Stadiul0/runs/ta/steps/s7305/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1534
+Stadiul0/runs/ta/steps/s7305/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	150273
+Stadiul0/runs/ta/tau/s7301/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	807
+Stadiul0/runs/ta/tau/s7301/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	785
+Stadiul0/runs/ta/tau/s7301/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/tau/s7301/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1879
+Stadiul0/runs/ta/tau/s7301/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3802577
+Stadiul0/runs/ta/tau/s7301/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1532
+Stadiul0/runs/ta/tau/s7301/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	155193
+Stadiul0/runs/ta/tau/s7302/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	811
+Stadiul0/runs/ta/tau/s7302/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	779
+Stadiul0/runs/ta/tau/s7302/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/tau/s7302/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1879
+Stadiul0/runs/ta/tau/s7302/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3805087
+Stadiul0/runs/ta/tau/s7302/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1532
+Stadiul0/runs/ta/tau/s7302/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	154845
+Stadiul0/runs/ta/tau/s7303/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	807
+Stadiul0/runs/ta/tau/s7303/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	778
+Stadiul0/runs/ta/tau/s7303/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/tau/s7303/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1879
+Stadiul0/runs/ta/tau/s7303/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3795317
+Stadiul0/runs/ta/tau/s7303/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1529
+Stadiul0/runs/ta/tau/s7303/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	154037
+Stadiul0/runs/ta/tau/s7304/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	812
+Stadiul0/runs/ta/tau/s7304/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	780
+Stadiul0/runs/ta/tau/s7304/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/tau/s7304/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1878
+Stadiul0/runs/ta/tau/s7304/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3800759
+Stadiul0/runs/ta/tau/s7304/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1522
+Stadiul0/runs/ta/tau/s7304/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	155154
+Stadiul0/runs/ta/tau/s7305/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	804
+Stadiul0/runs/ta/tau/s7305/evals_pre.npz	essential	E8 Stored results read by the analyses	Zenodo data part	782
+Stadiul0/runs/ta/tau/s7305/final_factors.npy	essential	E8 Stored results read by the analyses	Zenodo data part	4587648
+Stadiul0/runs/ta/tau/s7305/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1878
+Stadiul0/runs/ta/tau/s7305/probes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3807629
+Stadiul0/runs/ta/tau/s7305/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1522
+Stadiul0/runs/ta/tau/s7305/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	155953
+Stadiul0/runs/ta_analysis.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1308
+Stadiul0/runs/ta_memory_facts_posthoc.npz	essential	E8 Stored results read by the analyses	Zenodo data part	6946
+Stadiul0/runs/ta_memory_posthoc.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1358
+Stadiul0/runs/ta_memory_posthoc.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1034
+Stadiul0/runs/ta_verdict.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1177
+Stadiul0/runs/tb_F1/F1_s9101/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111233
+Stadiul0/runs/tb_F1/F1_s9101/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106710
+Stadiul0/runs/tb_F1/F1_s9101/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4400
+Stadiul0/runs/tb_F1/F1_s9101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78600
+Stadiul0/runs/tb_F1/F1_s9101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10892
+Stadiul0/runs/tb_F1/F1_s9101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	523
+Stadiul0/runs/tb_F1/F1_s9101/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1491017
+Stadiul0/runs/tb_F1/F1_s9101/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1441903
+Stadiul0/runs/tb_F1/F1_s9101/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30311
+Stadiul0/runs/tb_F1/F1_s9102/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110978
+Stadiul0/runs/tb_F1/F1_s9102/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106701
+Stadiul0/runs/tb_F1/F1_s9102/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4410
+Stadiul0/runs/tb_F1/F1_s9102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78705
+Stadiul0/runs/tb_F1/F1_s9102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F1/F1_s9102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F1/F1_s9102/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1491329
+Stadiul0/runs/tb_F1/F1_s9102/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1442195
+Stadiul0/runs/tb_F1/F1_s9102/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30333
+Stadiul0/runs/tb_F1/F1_s9103/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110926
+Stadiul0/runs/tb_F1/F1_s9103/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106651
+Stadiul0/runs/tb_F1/F1_s9103/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4402
+Stadiul0/runs/tb_F1/F1_s9103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78436
+Stadiul0/runs/tb_F1/F1_s9103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10892
+Stadiul0/runs/tb_F1/F1_s9103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	523
+Stadiul0/runs/tb_F1/F1_s9103/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1491767
+Stadiul0/runs/tb_F1/F1_s9103/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1441949
+Stadiul0/runs/tb_F1/F1_s9103/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30278
+Stadiul0/runs/tb_F1/F1_s9104/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111086
+Stadiul0/runs/tb_F1/F1_s9104/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106610
+Stadiul0/runs/tb_F1/F1_s9104/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4407
+Stadiul0/runs/tb_F1/F1_s9104/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78628
+Stadiul0/runs/tb_F1/F1_s9104/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10883
+Stadiul0/runs/tb_F1/F1_s9104/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	514
+Stadiul0/runs/tb_F1/F1_s9104/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9104/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1492375
+Stadiul0/runs/tb_F1/F1_s9104/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1442226
+Stadiul0/runs/tb_F1/F1_s9104/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30302
+Stadiul0/runs/tb_F1/F1_s9105/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111151
+Stadiul0/runs/tb_F1/F1_s9105/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106706
+Stadiul0/runs/tb_F1/F1_s9105/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4413
+Stadiul0/runs/tb_F1/F1_s9105/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78855
+Stadiul0/runs/tb_F1/F1_s9105/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10890
+Stadiul0/runs/tb_F1/F1_s9105/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	521
+Stadiul0/runs/tb_F1/F1_s9105/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9105/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1491176
+Stadiul0/runs/tb_F1/F1_s9105/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1443282
+Stadiul0/runs/tb_F1/F1_s9105/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30271
+Stadiul0/runs/tb_F1/F1_s9106/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110972
+Stadiul0/runs/tb_F1/F1_s9106/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106680
+Stadiul0/runs/tb_F1/F1_s9106/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4403
+Stadiul0/runs/tb_F1/F1_s9106/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78610
+Stadiul0/runs/tb_F1/F1_s9106/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10883
+Stadiul0/runs/tb_F1/F1_s9106/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	514
+Stadiul0/runs/tb_F1/F1_s9106/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9106/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1492560
+Stadiul0/runs/tb_F1/F1_s9106/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1443317
+Stadiul0/runs/tb_F1/F1_s9106/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30289
+Stadiul0/runs/tb_F1/F1_s9107/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111049
+Stadiul0/runs/tb_F1/F1_s9107/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106684
+Stadiul0/runs/tb_F1/F1_s9107/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4398
+Stadiul0/runs/tb_F1/F1_s9107/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78575
+Stadiul0/runs/tb_F1/F1_s9107/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F1/F1_s9107/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F1/F1_s9107/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9107/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1490496
+Stadiul0/runs/tb_F1/F1_s9107/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1442895
+Stadiul0/runs/tb_F1/F1_s9107/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30281
+Stadiul0/runs/tb_F1/F1_s9108/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111020
+Stadiul0/runs/tb_F1/F1_s9108/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106626
+Stadiul0/runs/tb_F1/F1_s9108/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4406
+Stadiul0/runs/tb_F1/F1_s9108/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78707
+Stadiul0/runs/tb_F1/F1_s9108/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10891
+Stadiul0/runs/tb_F1/F1_s9108/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	522
+Stadiul0/runs/tb_F1/F1_s9108/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tb_F1/F1_s9108/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1490714
+Stadiul0/runs/tb_F1/F1_s9108/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1442072
+Stadiul0/runs/tb_F1/F1_s9108/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30271
+Stadiul0/runs/tb_F1/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	802
+Stadiul0/runs/tb_F1_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1334
+Stadiul0/runs/tb_F6_n00/F6_s9101/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110785
+Stadiul0/runs/tb_F6_n00/F6_s9101/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	151886
+Stadiul0/runs/tb_F6_n00/F6_s9101/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3533
+Stadiul0/runs/tb_F6_n00/F6_s9101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	105937
+Stadiul0/runs/tb_F6_n00/F6_s9101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n00/F6_s9101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n00/F6_s9101/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13240
+Stadiul0/runs/tb_F6_n00/F6_s9101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1487293
+Stadiul0/runs/tb_F6_n00/F6_s9101/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2091590
+Stadiul0/runs/tb_F6_n00/F6_s9101/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30312
+Stadiul0/runs/tb_F6_n00/F6_s9102/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111107
+Stadiul0/runs/tb_F6_n00/F6_s9102/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165509
+Stadiul0/runs/tb_F6_n00/F6_s9102/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3539
+Stadiul0/runs/tb_F6_n00/F6_s9102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	115248
+Stadiul0/runs/tb_F6_n00/F6_s9102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n00/F6_s9102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n00/F6_s9102/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n00/F6_s9102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1485387
+Stadiul0/runs/tb_F6_n00/F6_s9102/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2276608
+Stadiul0/runs/tb_F6_n00/F6_s9102/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30325
+Stadiul0/runs/tb_F6_n00/F6_s9103/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110464
+Stadiul0/runs/tb_F6_n00/F6_s9103/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	164818
+Stadiul0/runs/tb_F6_n00/F6_s9103/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3545
+Stadiul0/runs/tb_F6_n00/F6_s9103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	114711
+Stadiul0/runs/tb_F6_n00/F6_s9103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n00/F6_s9103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n00/F6_s9103/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13440
+Stadiul0/runs/tb_F6_n00/F6_s9103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1486714
+Stadiul0/runs/tb_F6_n00/F6_s9103/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2260982
+Stadiul0/runs/tb_F6_n00/F6_s9103/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30274
+Stadiul0/runs/tb_F6_n00/F6_s9104/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110685
+Stadiul0/runs/tb_F6_n00/F6_s9104/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168099
+Stadiul0/runs/tb_F6_n00/F6_s9104/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3540
+Stadiul0/runs/tb_F6_n00/F6_s9104/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	116538
+Stadiul0/runs/tb_F6_n00/F6_s9104/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10887
+Stadiul0/runs/tb_F6_n00/F6_s9104/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tb_F6_n00/F6_s9104/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14160
+Stadiul0/runs/tb_F6_n00/F6_s9104/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1484989
+Stadiul0/runs/tb_F6_n00/F6_s9104/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2309517
+Stadiul0/runs/tb_F6_n00/F6_s9104/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30271
+Stadiul0/runs/tb_F6_n00/F6_s9105/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110985
+Stadiul0/runs/tb_F6_n00/F6_s9105/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165043
+Stadiul0/runs/tb_F6_n00/F6_s9105/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3544
+Stadiul0/runs/tb_F6_n00/F6_s9105/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	115295
+Stadiul0/runs/tb_F6_n00/F6_s9105/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n00/F6_s9105/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n00/F6_s9105/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14060
+Stadiul0/runs/tb_F6_n00/F6_s9105/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1483093
+Stadiul0/runs/tb_F6_n00/F6_s9105/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2266779
+Stadiul0/runs/tb_F6_n00/F6_s9105/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30283
+Stadiul0/runs/tb_F6_n00/F6_s9106/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110783
+Stadiul0/runs/tb_F6_n00/F6_s9106/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	164342
+Stadiul0/runs/tb_F6_n00/F6_s9106/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3539
+Stadiul0/runs/tb_F6_n00/F6_s9106/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	114376
+Stadiul0/runs/tb_F6_n00/F6_s9106/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n00/F6_s9106/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n00/F6_s9106/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13652
+Stadiul0/runs/tb_F6_n00/F6_s9106/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1485419
+Stadiul0/runs/tb_F6_n00/F6_s9106/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2259977
+Stadiul0/runs/tb_F6_n00/F6_s9106/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30306
+Stadiul0/runs/tb_F6_n00/F6_s9107/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110828
+Stadiul0/runs/tb_F6_n00/F6_s9107/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	161199
+Stadiul0/runs/tb_F6_n00/F6_s9107/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3538
+Stadiul0/runs/tb_F6_n00/F6_s9107/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112400
+Stadiul0/runs/tb_F6_n00/F6_s9107/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n00/F6_s9107/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n00/F6_s9107/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13854
+Stadiul0/runs/tb_F6_n00/F6_s9107/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1483929
+Stadiul0/runs/tb_F6_n00/F6_s9107/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2214340
+Stadiul0/runs/tb_F6_n00/F6_s9107/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30279
+Stadiul0/runs/tb_F6_n00/F6_s9108/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110801
+Stadiul0/runs/tb_F6_n00/F6_s9108/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	159784
+Stadiul0/runs/tb_F6_n00/F6_s9108/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3539
+Stadiul0/runs/tb_F6_n00/F6_s9108/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	111780
+Stadiul0/runs/tb_F6_n00/F6_s9108/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n00/F6_s9108/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n00/F6_s9108/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n00/F6_s9108/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1482790
+Stadiul0/runs/tb_F6_n00/F6_s9108/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2195147
+Stadiul0/runs/tb_F6_n00/F6_s9108/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30300
+Stadiul0/runs/tb_F6_n00/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	843
+Stadiul0/runs/tb_F6_n00_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1380
+Stadiul0/runs/tb_F6_n01/F6_s9101/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109704
+Stadiul0/runs/tb_F6_n01/F6_s9101/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	152217
+Stadiul0/runs/tb_F6_n01/F6_s9101/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3505
+Stadiul0/runs/tb_F6_n01/F6_s9101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	104290
+Stadiul0/runs/tb_F6_n01/F6_s9101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10885
+Stadiul0/runs/tb_F6_n01/F6_s9101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	516
+Stadiul0/runs/tb_F6_n01/F6_s9101/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13240
+Stadiul0/runs/tb_F6_n01/F6_s9101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1478514
+Stadiul0/runs/tb_F6_n01/F6_s9101/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2090907
+Stadiul0/runs/tb_F6_n01/F6_s9101/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30312
+Stadiul0/runs/tb_F6_n01/F6_s9102/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109783
+Stadiul0/runs/tb_F6_n01/F6_s9102/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	166069
+Stadiul0/runs/tb_F6_n01/F6_s9102/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3517
+Stadiul0/runs/tb_F6_n01/F6_s9102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113645
+Stadiul0/runs/tb_F6_n01/F6_s9102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n01/F6_s9102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n01/F6_s9102/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n01/F6_s9102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1477670
+Stadiul0/runs/tb_F6_n01/F6_s9102/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2277845
+Stadiul0/runs/tb_F6_n01/F6_s9102/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30325
+Stadiul0/runs/tb_F6_n01/F6_s9103/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109792
+Stadiul0/runs/tb_F6_n01/F6_s9103/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165345
+Stadiul0/runs/tb_F6_n01/F6_s9103/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3504
+Stadiul0/runs/tb_F6_n01/F6_s9103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112529
+Stadiul0/runs/tb_F6_n01/F6_s9103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n01/F6_s9103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n01/F6_s9103/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13440
+Stadiul0/runs/tb_F6_n01/F6_s9103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1477628
+Stadiul0/runs/tb_F6_n01/F6_s9103/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2260988
+Stadiul0/runs/tb_F6_n01/F6_s9103/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30274
+Stadiul0/runs/tb_F6_n01/F6_s9104/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110095
+Stadiul0/runs/tb_F6_n01/F6_s9104/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168587
+Stadiul0/runs/tb_F6_n01/F6_s9104/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3489
+Stadiul0/runs/tb_F6_n01/F6_s9104/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	114701
+Stadiul0/runs/tb_F6_n01/F6_s9104/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10887
+Stadiul0/runs/tb_F6_n01/F6_s9104/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tb_F6_n01/F6_s9104/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14160
+Stadiul0/runs/tb_F6_n01/F6_s9104/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1478764
+Stadiul0/runs/tb_F6_n01/F6_s9104/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2309051
+Stadiul0/runs/tb_F6_n01/F6_s9104/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30271
+Stadiul0/runs/tb_F6_n01/F6_s9105/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109670
+Stadiul0/runs/tb_F6_n01/F6_s9105/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165638
+Stadiul0/runs/tb_F6_n01/F6_s9105/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3497
+Stadiul0/runs/tb_F6_n01/F6_s9105/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113357
+Stadiul0/runs/tb_F6_n01/F6_s9105/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10887
+Stadiul0/runs/tb_F6_n01/F6_s9105/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tb_F6_n01/F6_s9105/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14060
+Stadiul0/runs/tb_F6_n01/F6_s9105/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1477317
+Stadiul0/runs/tb_F6_n01/F6_s9105/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2269170
+Stadiul0/runs/tb_F6_n01/F6_s9105/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30283
+Stadiul0/runs/tb_F6_n01/F6_s9106/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110190
+Stadiul0/runs/tb_F6_n01/F6_s9106/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	164868
+Stadiul0/runs/tb_F6_n01/F6_s9106/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3497
+Stadiul0/runs/tb_F6_n01/F6_s9106/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112603
+Stadiul0/runs/tb_F6_n01/F6_s9106/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n01/F6_s9106/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n01/F6_s9106/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13652
+Stadiul0/runs/tb_F6_n01/F6_s9106/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1477568
+Stadiul0/runs/tb_F6_n01/F6_s9106/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2259466
+Stadiul0/runs/tb_F6_n01/F6_s9106/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30306
+Stadiul0/runs/tb_F6_n01/F6_s9107/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109985
+Stadiul0/runs/tb_F6_n01/F6_s9107/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	161665
+Stadiul0/runs/tb_F6_n01/F6_s9107/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3485
+Stadiul0/runs/tb_F6_n01/F6_s9107/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110283
+Stadiul0/runs/tb_F6_n01/F6_s9107/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n01/F6_s9107/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n01/F6_s9107/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13854
+Stadiul0/runs/tb_F6_n01/F6_s9107/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1477556
+Stadiul0/runs/tb_F6_n01/F6_s9107/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2214270
+Stadiul0/runs/tb_F6_n01/F6_s9107/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30279
+Stadiul0/runs/tb_F6_n01/F6_s9108/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109678
+Stadiul0/runs/tb_F6_n01/F6_s9108/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	160161
+Stadiul0/runs/tb_F6_n01/F6_s9108/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3486
+Stadiul0/runs/tb_F6_n01/F6_s9108/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109606
+Stadiul0/runs/tb_F6_n01/F6_s9108/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n01/F6_s9108/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n01/F6_s9108/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n01/F6_s9108/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1476732
+Stadiul0/runs/tb_F6_n01/F6_s9108/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2194177
+Stadiul0/runs/tb_F6_n01/F6_s9108/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30300
+Stadiul0/runs/tb_F6_n01/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	842
+Stadiul0/runs/tb_F6_n01_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1378
+Stadiul0/runs/tb_F6_n03/F6_s9101/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109688
+Stadiul0/runs/tb_F6_n03/F6_s9101/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	152329
+Stadiul0/runs/tb_F6_n03/F6_s9101/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3487
+Stadiul0/runs/tb_F6_n03/F6_s9101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	104267
+Stadiul0/runs/tb_F6_n03/F6_s9101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n03/F6_s9101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n03/F6_s9101/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13240
+Stadiul0/runs/tb_F6_n03/F6_s9101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1476620
+Stadiul0/runs/tb_F6_n03/F6_s9101/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2090375
+Stadiul0/runs/tb_F6_n03/F6_s9101/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30312
+Stadiul0/runs/tb_F6_n03/F6_s9102/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109887
+Stadiul0/runs/tb_F6_n03/F6_s9102/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	166248
+Stadiul0/runs/tb_F6_n03/F6_s9102/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3512
+Stadiul0/runs/tb_F6_n03/F6_s9102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113314
+Stadiul0/runs/tb_F6_n03/F6_s9102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10890
+Stadiul0/runs/tb_F6_n03/F6_s9102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	521
+Stadiul0/runs/tb_F6_n03/F6_s9102/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n03/F6_s9102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475873
+Stadiul0/runs/tb_F6_n03/F6_s9102/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2275635
+Stadiul0/runs/tb_F6_n03/F6_s9102/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30325
+Stadiul0/runs/tb_F6_n03/F6_s9103/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109750
+Stadiul0/runs/tb_F6_n03/F6_s9103/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165478
+Stadiul0/runs/tb_F6_n03/F6_s9103/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3507
+Stadiul0/runs/tb_F6_n03/F6_s9103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112458
+Stadiul0/runs/tb_F6_n03/F6_s9103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n03/F6_s9103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n03/F6_s9103/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13440
+Stadiul0/runs/tb_F6_n03/F6_s9103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475916
+Stadiul0/runs/tb_F6_n03/F6_s9103/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2260887
+Stadiul0/runs/tb_F6_n03/F6_s9103/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30274
+Stadiul0/runs/tb_F6_n03/F6_s9104/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109833
+Stadiul0/runs/tb_F6_n03/F6_s9104/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168727
+Stadiul0/runs/tb_F6_n03/F6_s9104/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3487
+Stadiul0/runs/tb_F6_n03/F6_s9104/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	114103
+Stadiul0/runs/tb_F6_n03/F6_s9104/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n03/F6_s9104/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n03/F6_s9104/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14160
+Stadiul0/runs/tb_F6_n03/F6_s9104/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1476081
+Stadiul0/runs/tb_F6_n03/F6_s9104/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2308222
+Stadiul0/runs/tb_F6_n03/F6_s9104/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30271
+Stadiul0/runs/tb_F6_n03/F6_s9105/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109701
+Stadiul0/runs/tb_F6_n03/F6_s9105/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165849
+Stadiul0/runs/tb_F6_n03/F6_s9105/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3490
+Stadiul0/runs/tb_F6_n03/F6_s9105/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113180
+Stadiul0/runs/tb_F6_n03/F6_s9105/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n03/F6_s9105/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n03/F6_s9105/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14060
+Stadiul0/runs/tb_F6_n03/F6_s9105/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475236
+Stadiul0/runs/tb_F6_n03/F6_s9105/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2266114
+Stadiul0/runs/tb_F6_n03/F6_s9105/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30283
+Stadiul0/runs/tb_F6_n03/F6_s9106/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109999
+Stadiul0/runs/tb_F6_n03/F6_s9106/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165185
+Stadiul0/runs/tb_F6_n03/F6_s9106/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3492
+Stadiul0/runs/tb_F6_n03/F6_s9106/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112630
+Stadiul0/runs/tb_F6_n03/F6_s9106/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10889
+Stadiul0/runs/tb_F6_n03/F6_s9106/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	520
+Stadiul0/runs/tb_F6_n03/F6_s9106/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13652
+Stadiul0/runs/tb_F6_n03/F6_s9106/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1474487
+Stadiul0/runs/tb_F6_n03/F6_s9106/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2258120
+Stadiul0/runs/tb_F6_n03/F6_s9106/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30306
+Stadiul0/runs/tb_F6_n03/F6_s9107/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109889
+Stadiul0/runs/tb_F6_n03/F6_s9107/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	161874
+Stadiul0/runs/tb_F6_n03/F6_s9107/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3485
+Stadiul0/runs/tb_F6_n03/F6_s9107/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110293
+Stadiul0/runs/tb_F6_n03/F6_s9107/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10886
+Stadiul0/runs/tb_F6_n03/F6_s9107/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tb_F6_n03/F6_s9107/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13854
+Stadiul0/runs/tb_F6_n03/F6_s9107/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475813
+Stadiul0/runs/tb_F6_n03/F6_s9107/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2214833
+Stadiul0/runs/tb_F6_n03/F6_s9107/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30279
+Stadiul0/runs/tb_F6_n03/F6_s9108/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109762
+Stadiul0/runs/tb_F6_n03/F6_s9108/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	160302
+Stadiul0/runs/tb_F6_n03/F6_s9108/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3485
+Stadiul0/runs/tb_F6_n03/F6_s9108/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109461
+Stadiul0/runs/tb_F6_n03/F6_s9108/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10889
+Stadiul0/runs/tb_F6_n03/F6_s9108/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	520
+Stadiul0/runs/tb_F6_n03/F6_s9108/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n03/F6_s9108/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1474942
+Stadiul0/runs/tb_F6_n03/F6_s9108/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2193972
+Stadiul0/runs/tb_F6_n03/F6_s9108/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30300
+Stadiul0/runs/tb_F6_n03/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	844
+Stadiul0/runs/tb_F6_n03_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1382
+Stadiul0/runs/tb_F6_n05/F6_s9101/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109849
+Stadiul0/runs/tb_F6_n05/F6_s9101/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	152318
+Stadiul0/runs/tb_F6_n05/F6_s9101/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3459
+Stadiul0/runs/tb_F6_n05/F6_s9101/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	104072
+Stadiul0/runs/tb_F6_n05/F6_s9101/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10885
+Stadiul0/runs/tb_F6_n05/F6_s9101/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	516
+Stadiul0/runs/tb_F6_n05/F6_s9101/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13240
+Stadiul0/runs/tb_F6_n05/F6_s9101/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475691
+Stadiul0/runs/tb_F6_n05/F6_s9101/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2090266
+Stadiul0/runs/tb_F6_n05/F6_s9101/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30312
+Stadiul0/runs/tb_F6_n05/F6_s9102/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109990
+Stadiul0/runs/tb_F6_n05/F6_s9102/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	166051
+Stadiul0/runs/tb_F6_n05/F6_s9102/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3501
+Stadiul0/runs/tb_F6_n05/F6_s9102/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113316
+Stadiul0/runs/tb_F6_n05/F6_s9102/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n05/F6_s9102/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n05/F6_s9102/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n05/F6_s9102/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1474063
+Stadiul0/runs/tb_F6_n05/F6_s9102/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2274978
+Stadiul0/runs/tb_F6_n05/F6_s9102/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30325
+Stadiul0/runs/tb_F6_n05/F6_s9103/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109765
+Stadiul0/runs/tb_F6_n05/F6_s9103/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165387
+Stadiul0/runs/tb_F6_n05/F6_s9103/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3488
+Stadiul0/runs/tb_F6_n05/F6_s9103/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112280
+Stadiul0/runs/tb_F6_n05/F6_s9103/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10887
+Stadiul0/runs/tb_F6_n05/F6_s9103/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tb_F6_n05/F6_s9103/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13440
+Stadiul0/runs/tb_F6_n05/F6_s9103/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475741
+Stadiul0/runs/tb_F6_n05/F6_s9103/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2260740
+Stadiul0/runs/tb_F6_n05/F6_s9103/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30274
+Stadiul0/runs/tb_F6_n05/F6_s9104/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109798
+Stadiul0/runs/tb_F6_n05/F6_s9104/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168563
+Stadiul0/runs/tb_F6_n05/F6_s9104/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3476
+Stadiul0/runs/tb_F6_n05/F6_s9104/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	114106
+Stadiul0/runs/tb_F6_n05/F6_s9104/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n05/F6_s9104/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n05/F6_s9104/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14160
+Stadiul0/runs/tb_F6_n05/F6_s9104/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475635
+Stadiul0/runs/tb_F6_n05/F6_s9104/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2307725
+Stadiul0/runs/tb_F6_n05/F6_s9104/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30271
+Stadiul0/runs/tb_F6_n05/F6_s9105/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110071
+Stadiul0/runs/tb_F6_n05/F6_s9105/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	165753
+Stadiul0/runs/tb_F6_n05/F6_s9105/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3494
+Stadiul0/runs/tb_F6_n05/F6_s9105/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113266
+Stadiul0/runs/tb_F6_n05/F6_s9105/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10885
+Stadiul0/runs/tb_F6_n05/F6_s9105/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	516
+Stadiul0/runs/tb_F6_n05/F6_s9105/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14060
+Stadiul0/runs/tb_F6_n05/F6_s9105/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1474214
+Stadiul0/runs/tb_F6_n05/F6_s9105/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2265002
+Stadiul0/runs/tb_F6_n05/F6_s9105/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30283
+Stadiul0/runs/tb_F6_n05/F6_s9106/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110553
+Stadiul0/runs/tb_F6_n05/F6_s9106/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	164918
+Stadiul0/runs/tb_F6_n05/F6_s9106/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3486
+Stadiul0/runs/tb_F6_n05/F6_s9106/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112390
+Stadiul0/runs/tb_F6_n05/F6_s9106/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10888
+Stadiul0/runs/tb_F6_n05/F6_s9106/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tb_F6_n05/F6_s9106/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13652
+Stadiul0/runs/tb_F6_n05/F6_s9106/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1473522
+Stadiul0/runs/tb_F6_n05/F6_s9106/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2259968
+Stadiul0/runs/tb_F6_n05/F6_s9106/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30306
+Stadiul0/runs/tb_F6_n05/F6_s9107/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110178
+Stadiul0/runs/tb_F6_n05/F6_s9107/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	161929
+Stadiul0/runs/tb_F6_n05/F6_s9107/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3486
+Stadiul0/runs/tb_F6_n05/F6_s9107/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110092
+Stadiul0/runs/tb_F6_n05/F6_s9107/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10887
+Stadiul0/runs/tb_F6_n05/F6_s9107/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tb_F6_n05/F6_s9107/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13854
+Stadiul0/runs/tb_F6_n05/F6_s9107/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1474634
+Stadiul0/runs/tb_F6_n05/F6_s9107/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2215040
+Stadiul0/runs/tb_F6_n05/F6_s9107/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30279
+Stadiul0/runs/tb_F6_n05/F6_s9108/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	110062
+Stadiul0/runs/tb_F6_n05/F6_s9108/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	160136
+Stadiul0/runs/tb_F6_n05/F6_s9108/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3492
+Stadiul0/runs/tb_F6_n05/F6_s9108/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109630
+Stadiul0/runs/tb_F6_n05/F6_s9108/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10887
+Stadiul0/runs/tb_F6_n05/F6_s9108/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tb_F6_n05/F6_s9108/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13954
+Stadiul0/runs/tb_F6_n05/F6_s9108/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1474589
+Stadiul0/runs/tb_F6_n05/F6_s9108/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2193885
+Stadiul0/runs/tb_F6_n05/F6_s9108/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30300
+Stadiul0/runs/tb_F6_n05/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	842
+Stadiul0/runs/tb_F6_n05_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1378
+Stadiul0/runs/tb_part1_g2.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2795
+Stadiul0/runs/tb_part1_verdict.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	512
+Stadiul0/runs/tc_lm_d3_competitors.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2008
+Stadiul0/runs/td_audit.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	3444
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	57988
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106716
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4367
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	43534
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10150
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	531
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1488989
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1260848
+Stadiul0/runs/tech2_lr3e-4/F1_s9002/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	28735
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	57816
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	168973
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4906
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	65783
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10151
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	532
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14223
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1481003
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2010630
+Stadiul0/runs/tech2_lr3e-4/F2_s9002/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	28962
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	58192
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106820
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4366
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	43283
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10149
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	530
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11838
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1630427
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1322807
+Stadiul0/runs/tech2_lr3e-4/F3_s9002/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	29062
+Stadiul0/runs/tech2_lr3e-4/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	377
+Stadiul0/runs/tech2_lr3e-4/summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	2245
+Stadiul0/runs/tech2_lr3e-4/summary.md	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	762
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	56938
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	163440
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4912
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	64941
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10168
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	523
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14022
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1485527
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1942889
+Stadiul0/runs/tech3_lr3e-4/F2_s9004/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30310
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	56925
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106735
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4426
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	43397
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10168
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	523
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11823
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1638523
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1320871
+Stadiul0/runs/tech3_lr3e-4/F3_s9004/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30293
+Stadiul0/runs/tech3_lr3e-4/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	286
+Stadiul0/runs/tech3_lr3e-4/summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	1479
+Stadiul0/runs/tech3_lr3e-4/summary.md	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	625
+Stadiul0/runs/tech4/F1_s9005/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	71996
+Stadiul0/runs/tech4/F1_s9005/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106658
+Stadiul0/runs/tech4/F1_s9005/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4408
+Stadiul0/runs/tech4/F1_s9005/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78565
+Stadiul0/runs/tech4/F1_s9005/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10718
+Stadiul0/runs/tech4/F1_s9005/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	521
+Stadiul0/runs/tech4/F1_s9005/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tech4/F1_s9005/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1491252
+Stadiul0/runs/tech4/F1_s9005/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1350833
+Stadiul0/runs/tech4/F1_s9005/triplets_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	631
+Stadiul0/runs/tech4/F1_s9005/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30319
+Stadiul0/runs/tech4/F2_s9005/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	72087
+Stadiul0/runs/tech4/F2_s9005/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	163983
+Stadiul0/runs/tech4/F2_s9005/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4838
+Stadiul0/runs/tech4/F2_s9005/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	119540
+Stadiul0/runs/tech4/F2_s9005/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10712
+Stadiul0/runs/tech4/F2_s9005/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	515
+Stadiul0/runs/tech4/F2_s9005/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	13834
+Stadiul0/runs/tech4/F2_s9005/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1488344
+Stadiul0/runs/tech4/F2_s9005/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2102838
+Stadiul0/runs/tech4/F2_s9005/triplets_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	633
+Stadiul0/runs/tech4/F2_s9005/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30327
+Stadiul0/runs/tech4/F3_s9005/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	71957
+Stadiul0/runs/tech4/F3_s9005/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	106710
+Stadiul0/runs/tech4/F3_s9005/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4423
+Stadiul0/runs/tech4/F3_s9005/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	78278
+Stadiul0/runs/tech4/F3_s9005/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10717
+Stadiul0/runs/tech4/F3_s9005/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	520
+Stadiul0/runs/tech4/F3_s9005/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	11816
+Stadiul0/runs/tech4/F3_s9005/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1636443
+Stadiul0/runs/tech4/F3_s9005/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1413221
+Stadiul0/runs/tech4/F3_s9005/triplets_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	629
+Stadiul0/runs/tech4/F3_s9005/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30283
+Stadiul0/runs/tech4/F4_s9005/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	71977
+Stadiul0/runs/tech4/F4_s9005/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	109217
+Stadiul0/runs/tech4/F4_s9005/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4454
+Stadiul0/runs/tech4/F4_s9005/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	80602
+Stadiul0/runs/tech4/F4_s9005/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10714
+Stadiul0/runs/tech4/F4_s9005/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	517
+Stadiul0/runs/tech4/F4_s9005/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	15100
+Stadiul0/runs/tech4/F4_s9005/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1491755
+Stadiul0/runs/tech4/F4_s9005/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	1464145
+Stadiul0/runs/tech4/F4_s9005/triplets_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	628
+Stadiul0/runs/tech4/F4_s9005/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30241
+Stadiul0/runs/tech4/F5_s9005/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	72152
+Stadiul0/runs/tech4/F5_s9005/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	155054
+Stadiul0/runs/tech4/F5_s9005/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	4718
+Stadiul0/runs/tech4/F5_s9005/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	113851
+Stadiul0/runs/tech4/F5_s9005/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10717
+Stadiul0/runs/tech4/F5_s9005/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	520
+Stadiul0/runs/tech4/F5_s9005/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	15277
+Stadiul0/runs/tech4/F5_s9005/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1613187
+Stadiul0/runs/tech4/F5_s9005/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2130726
+Stadiul0/runs/tech4/F5_s9005/triplets_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	656
+Stadiul0/runs/tech4/F5_s9005/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	29274
+Stadiul0/runs/tech4/F6_s9005/chunks.npz	essential	E8 Stored results read by the analyses	Zenodo data part	70599
+Stadiul0/runs/tech4/F6_s9005/disp.npz	essential	E8 Stored results read by the analyses	Zenodo data part	164544
+Stadiul0/runs/tech4/F6_s9005/episodes.npz	essential	E8 Stored results read by the analyses	Zenodo data part	3505
+Stadiul0/runs/tech4/F6_s9005/evals.npz	essential	E8 Stored results read by the analyses	Zenodo data part	112459
+Stadiul0/runs/tech4/F6_s9005/meta.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	10703
+Stadiul0/runs/tech4/F6_s9005/run.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	506
+Stadiul0/runs/tech4/F6_s9005/schedule.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	14572
+Stadiul0/runs/tech4/F6_s9005/steps.npz	essential	E8 Stored results read by the analyses	Zenodo data part	1475411
+Stadiul0/runs/tech4/F6_s9005/triplets.parquet	essential	E8 Stored results read by the analyses	Zenodo data part	2110596
+Stadiul0/runs/tech4/F6_s9005/triplets_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	623
+Stadiul0/runs/tech4/F6_s9005/world.npz	essential	E8 Stored results read by the analyses	Zenodo data part	30289
+Stadiul0/runs/tech4/launch_summary.json	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	622
+Stadiul0/runs/tech4_analysis.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	3605
+Stadiul0/runs/tech4_launch.log	essential	E8 Stored results read by the analyses	repository (GitHub and Zenodo)	614
+Colocviu/Colloquium_dossier_2026-11-07.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	17404
+Colocviu/Colloquium_dossier_2026-11-07.pdf	non-essential	N1 Decision path	repository (GitHub and Zenodo)	185043
+Colocviu/Colloquium_prompt_EN.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	4333
+Colocviu/Dosar_continuare_FOREVER_2026-11-08.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	10872
+Colocviu/Prompt_continuare_EN_2026-11-08.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	2559
+Colocviu/Raspunsuri/2026-11-08_continuare/Martor_DeepSeek_DeepThink.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	7930
+Colocviu/Raspunsuri/2026-11-08_continuare/Martor_DeepSeek_gandire_si_raspuns.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	25042
+Colocviu/Raspunsuri/2026-11-08_continuare/Mistral_Vibe_Think_gandire_si_raspuns.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	76169
+Colocviu/Raspunsuri/2026-11-08_continuare/Raspuns_ChatGPT_GPT6_High.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	12750
+Colocviu/Raspunsuri/2026-11-08_continuare/Raspuns_Gemini_3.1Pro_High.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	7034
+Colocviu/Raspunsuri/2026-11-08_continuare/Raspuns_Mistral_Vibe_Think.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	10442
+Colocviu/Raspunsuri/_proveniență.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	1700
+Colocviu/Raspunsuri/Martor_DeepSeek_DeepThink.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	16176
+Colocviu/Raspunsuri/mistral_large4_high_raw.json	non-essential	N1 Decision path	repository (GitHub and Zenodo)	93056
+Colocviu/Raspunsuri/mistral_large4_high_thinking.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	74697
+Colocviu/Raspunsuri/Raspuns_ChatGPT_GPT6_High.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	25531
+Colocviu/Raspunsuri/Raspuns_Copilot_ThinkDeeper.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	17369
+Colocviu/Raspunsuri/Raspuns_DeepReview_Argon4_ExtraHigh.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	135083
+Colocviu/Raspunsuri/Raspuns_Gemini_3.1Pro_High.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	14473
+Colocviu/Raspunsuri/Raspuns_Mistral_Large4_high.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	17950
+Colocviu/Raspunsuri/SHA256SUMS.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	780
+Colocviu/README.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	8567
+Colocviu/Regula_de_decizie.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	2475
+Colocviu/Regula_de_decizie_2026-11-08.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	2585
+Colocviu/SHA256SUMS_2026-11-06.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	377
+Colocviu/SHA256SUMS_2026-11-08.txt	non-essential	N1 Decision path	repository (GitHub and Zenodo)	1507
+Colocviu/Verificare_raspunsuri_2026-11-06.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	26643
+Colocviu/Verificare_raspunsuri_2026-11-08.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	17855
+Decizii_deschise_Pilot2_2026-11-07.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	4988
+Pilot2_Plan_ceasul_dual.md	non-essential	N1 Decision path	repository (GitHub and Zenodo)	22974
+Recenzii/Audit_Codex_2026-11-10/AUDIT_BRIEF.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	6074
+Recenzii/Audit_Codex_2026-11-10/PERSPECTIVE_REVIEW_BRIEF.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	4900
+Recenzii/Audit_Codex_2026-11-10/raspuns/AUDIT_REPORT.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	26126
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_a.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	281
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_a.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1345
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_b.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1608
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_b.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	2040
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_c.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	664
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_c.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1450
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_d.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	368
+Recenzii/Audit_Codex_2026-11-10/raspuns/check_d.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	870
+Recenzii/Audit_Codex_2026-11-10/raspuns/environment.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	177
+Recenzii/Audit_Codex_2026-11-10/raspuns/extract_evidence.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	835
+Recenzii/Audit_Codex_2026-11-10/raspuns/numbered_sources.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	433746
+Recenzii/Audit_Codex_2026-11-10/raspuns/perspective.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	78680
+Recenzii/Audit_Codex_2026-11-10/raspuns/perspective_page-08.png	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	350351
+Recenzii/Audit_Codex_2026-11-10/raspuns/perspective_page-11.png	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	245098
+Recenzii/Audit_Codex_2026-11-10/raspuns/PERSPECTIVE_REVIEW.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	75031
+Recenzii/Audit_Codex_2026-11-10/raspuns/REPORT_AFTER_A.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	10218
+Recenzii/Audit_Codex_2026-11-10/raspuns/REPORT_AFTER_B.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	6738
+Recenzii/Audit_Codex_2026-11-10/raspuns/REPORT_AFTER_C.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	16775
+Recenzii/Audit_Codex_2026-11-10/raspuns/REPORT_AFTER_D.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	26126
+Recenzii/Audit_Codex_2026-11-10/raspuns/reproduce_analyses.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	285
+Recenzii/Audit_Codex_2026-11-10/raspuns/reproduce_analyses_limited.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	3478
+Recenzii/Audit_Codex_2026-11-10/raspuns/run_a.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1309
+Recenzii/Audit_Codex_2026-11-10/raspuns/source_integrity.json	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	34
+Recenzii/Audit_Codex_2026-11-10/raspuns/source_manifest_before.json	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	186020
+Recenzii/Audit_Codex_2026-11-10/raspuns/verify_hash_lists_independent.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	984
+Recenzii/Audit_Codex_2026-11-10/Regula_de_adoptare_audit_Codex.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	2008
+Recenzii/Audit_Codex_2026-11-10/SHA256SUMS_audit_2026-11-10.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	461
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/a_checks.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1643
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/a_checks.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1376
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/b04_count.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1321
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/b04_count.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1807
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/c02_heldout.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	867
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/c02_heldout.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1443
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/strict_compare.log	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	465
+Recenzii/Audit_Codex_2026-11-10/verificare_asistent/strict_compare.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	2355
+Recenzii/Audit_Codex_2026-11-10/Verificare_audit_Codex.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	39177
+Recenzii/Mistral_detalii/mistral_large4_directie_v04_medium_raw.json	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	24820
+Recenzii/Mistral_detalii/mistral_large4_directie_v04_medium_thinking.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	16303
+Recenzii/Mistral_detalii/mistral_large4_directie_v04_raw.json	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	16098
+Recenzii/Mistral_detalii/mistral_large4_directie_v04_thinking.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	7755
+Recenzii/Mistral_detalii/mistral_large4_v03_raw.json	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	76137
+Recenzii/Mistral_detalii/mistral_large4_v03_thinking.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	67846
+Recenzii/Mistral_detalii/mistral_msg_directie_v04.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	8531
+Recenzii/Mistral_detalii/mistral_msg_v03.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	64677
+Recenzii/Pilot2_v0.3_verificare_recenzie_v02.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	6151
+Recenzii/Pilot2_v0.4_verificare_directie_Mistral.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	11261
+Recenzii/Pilot2_v0.4_verificare_recenzie_DeepReview.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	19680
+Recenzii/Prompturi/Pilot2_Prompt_Argon.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	3026
+Recenzii/Prompturi/Pilot2_Prompt_Argon_continuare.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1694
+Recenzii/Prompturi/Pilot2_Prompt_Argon_v02.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	4086
+Recenzii/Prompturi/Pilot2_Prompt_directie_v04_chat.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	9190
+Recenzii/Prompturi/Pilot2_Prompt_evaluare_v04.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	5275
+Recenzii/Prompturi/Pilot2_Prompt_literatura_AdamW.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	4073
+Recenzii/README.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	11335
+Recenzii/Recenzie_Argon_Pilot2_v01.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	107222
+Recenzii/Recenzie_Argon_Pilot2_v02.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	132763
+Recenzii/Recenzie_ChatGPT_directie_v04.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	24998
+Recenzii/Recenzie_Copilot_directie_v04.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	15551
+Recenzii/Recenzie_DeepReview_Pilot2_v04.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	177361
+Recenzii/Recenzie_Gemini_directie_v04.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	7526
+Recenzii/Recenzie_Mistral_Large4_directie_v04.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	8093
+Recenzii/Recenzie_Mistral_Large4_directie_v04_medium.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	8246
+Recenzii/Recenzie_Mistral_Large4_v03.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	7593
+Recenzii/Runda_finala_2026-11-09/Adaptari_conditii_2026-11-09.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	3382
+Recenzii/Runda_finala_2026-11-09/Corecturi_propuse_faza2.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	24511
+Recenzii/Runda_finala_2026-11-09/Dosar_combinat_DeepReview.pdf	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	439171
+Recenzii/Runda_finala_2026-11-09/Perspective_v1.4_review_draft.pdf	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	355678
+Recenzii/Runda_finala_2026-11-09/Pilot2_closure_report_review_draft.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	45284
+Recenzii/Runda_finala_2026-11-09/Pilot2_closure_report_review_draft.pdf	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	323232
+Recenzii/Runda_finala_2026-11-09/Prompt_analiza_EN.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	3420
+Recenzii/Runda_finala_2026-11-09/Prompt_analiza_EN_DeepReview.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	3525
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/CMU1_raport_review.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	33878
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/CMU2_perspective_review.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	41729
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Extra_Copilot_Perspective_v13_v14.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	25393
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Faza2_ChatGPT.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	26241
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Faza2_DeepReview.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	94251
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Faza2_DeepSeek.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	16840
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Faza2_Gemini.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	11186
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Faza2_GLM.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	16860
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Faza2_Mistral_LeChat.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	17697
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Stanford1_raport_review.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	12840
+Recenzii/Runda_finala_2026-11-09/Raspunsuri/Stanford2_perspective_review.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	15945
+Recenzii/Runda_finala_2026-11-09/Regula_de_adoptare_2026-11-09.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	4890
+Recenzii/Runda_finala_2026-11-09/SHA256SUMS_2026-11-09.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1419
+Recenzii/Runda_finala_2026-11-09/Trimiteri_faza1.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1747
+Recenzii/Runda_finala_2026-11-09/Trimiteri_faza2.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	2776
+Recenzii/Runda_finala_2026-11-09/Verificare_runda_finala.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	34546
+Recenzii/Runda_finala_2026-11-09/Verificari_faza2/skip_check.py	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1116
+Recenzii/Runda_finala_2026-11-09/Verificari_faza2/skip_check_output.txt	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	1849
+Recenzii/Sinteza_directie_5_opinii.md	non-essential	N2 AI evaluations and the independent audit	repository (GitHub and Zenodo)	9217
+Literatura/Literatura_marime_actualizari_AdamW.md	non-essential	N3 Literature note	repository (GitHub and Zenodo)	16748
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.1.md	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	33646
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.1.pdf	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	352875
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.2.md	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	67232
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.2.pdf	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	587291
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.3.md	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	95436
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.3.pdf	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	741307
+Versiuni_anterioare/Pilot2_Protocol_EN_v0.3_inainte_clarificari_Mistral.md	non-essential	N4 Earlier protocol drafts	repository (GitHub and Zenodo)	93057
+Rezultate_teste_decisive_2026-11-07.md	non-essential	N5 Working notes and running summary	repository (GitHub and Zenodo)	19665
+Stadiul0/Stadiul0_note_lucru.md	non-essential	N5 Working notes and running summary	repository (GitHub and Zenodo)	48345
+Stadiul0/calib_probe.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	2691
+Stadiul0/g7_ram_compare.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	2342
+Stadiul0/lm/launch_lmdiag.sh	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1039
+Stadiul0/lm/lm_forever_posthoc.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	4215
+Stadiul0/membw.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1813
+Stadiul0/pin_test.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1881
+Stadiul0/preview_headroom.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	3222
+Stadiul0/runs/_tech3_a.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	422
+Stadiul0/runs/_tech3_b.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	422
+Stadiul0/runs/checks_latest.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	2743
+Stadiul0/runs/checks_TB.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	2743
+Stadiul0/runs/forever_mem.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1202
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57033
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	163345
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4906
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	64913
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10318
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	520
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14022
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1486897
+Stadiul0/runs/g7_ram_lr2e-4/F2_s9004/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30310
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57032
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	106743
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4422
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	43350
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10312
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	514
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	11823
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1639410
+Stadiul0/runs/g7_ram_lr2e-4/F3_s9004/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30293
+Stadiul0/runs/g7_ram_lr2e-4/launch_summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	286
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	56938
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	163440
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4912
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	64941
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10321
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	523
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14022
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1485527
+Stadiul0/runs/g7_ram_lr3e-4/F2_s9004/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30310
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	56925
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	106735
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4426
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	43397
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10321
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	523
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	11823
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1638523
+Stadiul0/runs/g7_ram_lr3e-4/F3_s9004/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30293
+Stadiul0/runs/g7_ram_lr3e-4/launch_summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	286
+Stadiul0/runs/lm_smoke/a/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	602
+Stadiul0/runs/lm_smoke/a/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lm_smoke/a/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1324
+Stadiul0/runs/lm_smoke/a/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	215458
+Stadiul0/runs/lm_smoke/a/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	552
+Stadiul0/runs/lm_smoke/a/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	7750
+Stadiul0/runs/lm_smoke/b/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	602
+Stadiul0/runs/lm_smoke/b/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lm_smoke/b/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1324
+Stadiul0/runs/lm_smoke/b/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	215458
+Stadiul0/runs/lm_smoke/b/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	552
+Stadiul0/runs/lm_smoke/b/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	7750
+Stadiul0/runs/lm_smoke/c_fp16/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	602
+Stadiul0/runs/lm_smoke/c_fp16/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lm_smoke/c_fp16/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1400
+Stadiul0/runs/lm_smoke/c_fp16/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	215458
+Stadiul0/runs/lm_smoke/c_fp16/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	598
+Stadiul0/runs/lm_smoke/c_fp16/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	7750
+Stadiul0/runs/lm_smoke/d_bf16/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	602
+Stadiul0/runs/lm_smoke/d_bf16/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lm_smoke/d_bf16/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1399
+Stadiul0/runs/lm_smoke/d_bf16/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	165842
+Stadiul0/runs/lm_smoke/d_bf16/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	598
+Stadiul0/runs/lm_smoke/d_bf16/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	7773
+Stadiul0/runs/lm_smoke/full2/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	602
+Stadiul0/runs/lm_smoke/full2/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lm_smoke/full2/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1328
+Stadiul0/runs/lm_smoke/full2/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1929506
+Stadiul0/runs/lm_smoke/full2/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	562
+Stadiul0/runs/lm_smoke/full2/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	71063
+Stadiul0/runs/lmdiag/s7101_512/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	794
+Stadiul0/runs/lmdiag/s7101_512/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lmdiag/s7101_512/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1618
+Stadiul0/runs/lmdiag/s7101_512/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4185192
+Stadiul0/runs/lmdiag/s7101_512/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1457
+Stadiul0/runs/lmdiag/s7101_512/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	144979
+Stadiul0/runs/lmdiag/s7201_256/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	795
+Stadiul0/runs/lmdiag/s7201_256/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lmdiag/s7201_256/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1617
+Stadiul0/runs/lmdiag/s7201_256/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	2145699
+Stadiul0/runs/lmdiag/s7201_256/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1443
+Stadiul0/runs/lmdiag/s7201_256/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	71750
+Stadiul0/runs/lmdiag_launch.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	2592
+Stadiul0/runs/lmtech1_g7/s7101/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	794
+Stadiul0/runs/lmtech1_g7/s7101/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/lmtech1_g7/s7101/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1330
+Stadiul0/runs/lmtech1_g7/s7101/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4185192
+Stadiul0/runs/lmtech1_g7/s7101/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1433
+Stadiul0/runs/lmtech1_g7/s7101/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	144979
+Stadiul0/runs/lmtech1_posthoc.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1084
+Stadiul0/runs/lmtech2_posthoc.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1002
+Stadiul0/runs/pin_test_2026-11-06.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	557
+Stadiul0/runs/sni_g7/a/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	615
+Stadiul0/runs/sni_g7/a/evals_pre.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	597
+Stadiul0/runs/sni_g7/a/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/sni_g7/a/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1254
+Stadiul0/runs/sni_g7/a/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	701
+Stadiul0/runs/sni_g7/a/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	3007
+Stadiul0/runs/sni_g7/b/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	615
+Stadiul0/runs/sni_g7/b/evals_pre.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	597
+Stadiul0/runs/sni_g7/b/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/sni_g7/b/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1253
+Stadiul0/runs/sni_g7/b/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	701
+Stadiul0/runs/sni_g7/b/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	3007
+Stadiul0/runs/ta_smoke/new_eta_m/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	601
+Stadiul0/runs/ta_smoke/new_eta_m/evals_pre.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	594
+Stadiul0/runs/ta_smoke/new_eta_m/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke/new_eta_m/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1690
+Stadiul0/runs/ta_smoke/new_eta_m/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	38989
+Stadiul0/runs/ta_smoke/new_eta_m/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	738
+Stadiul0/runs/ta_smoke/new_eta_m/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1875
+Stadiul0/runs/ta_smoke/new_tau/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	601
+Stadiul0/runs/ta_smoke/new_tau/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke/new_tau/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1601
+Stadiul0/runs/ta_smoke/new_tau/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	38989
+Stadiul0/runs/ta_smoke/new_tau/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	737
+Stadiul0/runs/ta_smoke/new_tau/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1781
+Stadiul0/runs/ta_smoke/old/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	601
+Stadiul0/runs/ta_smoke/old/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke/old/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1452
+Stadiul0/runs/ta_smoke/old/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	38989
+Stadiul0/runs/ta_smoke/old/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	692
+Stadiul0/runs/ta_smoke/old/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1753
+Stadiul0/runs/ta_smoke2/new_eta/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	618
+Stadiul0/runs/ta_smoke2/new_eta/evals_pre.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	608
+Stadiul0/runs/ta_smoke2/new_eta/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke2/new_eta/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1697
+Stadiul0/runs/ta_smoke2/new_eta/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	349134
+Stadiul0/runs/ta_smoke2/new_eta/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	749
+Stadiul0/runs/ta_smoke2/new_eta/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	15239
+Stadiul0/runs/ta_smoke2/new_eta_m/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	619
+Stadiul0/runs/ta_smoke2/new_eta_m/evals_pre.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	609
+Stadiul0/runs/ta_smoke2/new_eta_m/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke2/new_eta_m/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1699
+Stadiul0/runs/ta_smoke2/new_eta_m/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	350160
+Stadiul0/runs/ta_smoke2/new_eta_m/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	751
+Stadiul0/runs/ta_smoke2/new_eta_m/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	16094
+Stadiul0/runs/ta_smoke2/new_steps/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	619
+Stadiul0/runs/ta_smoke2/new_steps/evals_pre.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	609
+Stadiul0/runs/ta_smoke2/new_steps/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke2/new_steps/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1700
+Stadiul0/runs/ta_smoke2/new_steps/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	350101
+Stadiul0/runs/ta_smoke2/new_steps/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	754
+Stadiul0/runs/ta_smoke2/new_steps/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	14501
+Stadiul0/runs/ta_smoke2/new_tau/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	619
+Stadiul0/runs/ta_smoke2/new_tau/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke2/new_tau/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1609
+Stadiul0/runs/ta_smoke2/new_tau/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	349737
+Stadiul0/runs/ta_smoke2/new_tau/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	750
+Stadiul0/runs/ta_smoke2/new_tau/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	14798
+Stadiul0/runs/ta_smoke2/old/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	619
+Stadiul0/runs/ta_smoke2/old/final_factors.npy	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4587648
+Stadiul0/runs/ta_smoke2/old/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1460
+Stadiul0/runs/ta_smoke2/old/probes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	349737
+Stadiul0/runs/ta_smoke2/old/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	705
+Stadiul0/runs/ta_smoke2/old/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	14173
+Stadiul0/runs/td_audit_v1_eroare_scalare.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	3457
+Stadiul0/runs/tech1/F1_s9001/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	58282
+Stadiul0/runs/tech1/F1_s9001/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	106884
+Stadiul0/runs/tech1/F1_s9001/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4351
+Stadiul0/runs/tech1/F1_s9001/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	43174
+Stadiul0/runs/tech1/F1_s9001/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10136
+Stadiul0/runs/tech1/F1_s9001/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	518
+Stadiul0/runs/tech1/F1_s9001/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	11770
+Stadiul0/runs/tech1/F1_s9001/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1478873
+Stadiul0/runs/tech1/F1_s9001/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1272391
+Stadiul0/runs/tech1/F1_s9001/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	29004
+Stadiul0/runs/tech1/F2_s9001/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57938
+Stadiul0/runs/tech1/F2_s9001/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	162348
+Stadiul0/runs/tech1/F2_s9001/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4597
+Stadiul0/runs/tech1/F2_s9001/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	61394
+Stadiul0/runs/tech1/F2_s9001/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10140
+Stadiul0/runs/tech1/F2_s9001/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	522
+Stadiul0/runs/tech1/F2_s9001/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	12857
+Stadiul0/runs/tech1/F2_s9001/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1468108
+Stadiul0/runs/tech1/F2_s9001/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1952593
+Stadiul0/runs/tech1/F2_s9001/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	28859
+Stadiul0/runs/tech1/F3_s9001/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	58322
+Stadiul0/runs/tech1/F3_s9001/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	106880
+Stadiul0/runs/tech1/F3_s9001/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4380
+Stadiul0/runs/tech1/F3_s9001/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	43197
+Stadiul0/runs/tech1/F3_s9001/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10139
+Stadiul0/runs/tech1/F3_s9001/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	521
+Stadiul0/runs/tech1/F3_s9001/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	11823
+Stadiul0/runs/tech1/F3_s9001/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1630560
+Stadiul0/runs/tech1/F3_s9001/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1323091
+Stadiul0/runs/tech1/F3_s9001/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	28899
+Stadiul0/runs/tech1/F4_s9001/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57920
+Stadiul0/runs/tech1/F4_s9001/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	108672
+Stadiul0/runs/tech1/F4_s9001/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4374
+Stadiul0/runs/tech1/F4_s9001/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	43896
+Stadiul0/runs/tech1/F4_s9001/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10147
+Stadiul0/runs/tech1/F4_s9001/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	529
+Stadiul0/runs/tech1/F4_s9001/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14413
+Stadiul0/runs/tech1/F4_s9001/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1474734
+Stadiul0/runs/tech1/F4_s9001/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1365493
+Stadiul0/runs/tech1/F4_s9001/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	29036
+Stadiul0/runs/tech1/F5_s9001/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57483
+Stadiul0/runs/tech1/F5_s9001/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	159836
+Stadiul0/runs/tech1/F5_s9001/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4733
+Stadiul0/runs/tech1/F5_s9001/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	61455
+Stadiul0/runs/tech1/F5_s9001/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10146
+Stadiul0/runs/tech1/F5_s9001/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	528
+Stadiul0/runs/tech1/F5_s9001/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	15384
+Stadiul0/runs/tech1/F5_s9001/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1608138
+Stadiul0/runs/tech1/F5_s9001/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	2043170
+Stadiul0/runs/tech1/F5_s9001/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	29191
+Stadiul0/runs/tech1/F6_s9001/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57885
+Stadiul0/runs/tech1/F6_s9001/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	171422
+Stadiul0/runs/tech1/F6_s9001/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	3487
+Stadiul0/runs/tech1/F6_s9001/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	62457
+Stadiul0/runs/tech1/F6_s9001/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10137
+Stadiul0/runs/tech1/F6_s9001/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	519
+Stadiul0/runs/tech1/F6_s9001/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14054
+Stadiul0/runs/tech1/F6_s9001/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1455053
+Stadiul0/runs/tech1/F6_s9001/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	2075134
+Stadiul0/runs/tech1/F6_s9001/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	29007
+Stadiul0/runs/tech1/launch_summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	626
+Stadiul0/runs/tech1/summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	4479
+Stadiul0/runs/tech1/summary.md	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1152
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57033
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	163345
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4906
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	64913
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10165
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	520
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14022
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1486897
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1937941
+Stadiul0/runs/tech3_lr2e-4/F2_s9004/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30310
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	57032
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	106743
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	4422
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	43350
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10159
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	514
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	11823
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1639410
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/triplets.parquet	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1318662
+Stadiul0/runs/tech3_lr2e-4/F3_s9004/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30293
+Stadiul0/runs/tech3_lr2e-4/launch_summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	286
+Stadiul0/runs/tech3_lr2e-4/summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1431
+Stadiul0/runs/tech3_lr2e-4/summary.md	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	627
+Stadiul0/runs/tech4_g7/F6_s9005/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	70599
+Stadiul0/runs/tech4_g7/F6_s9005/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	164544
+Stadiul0/runs/tech4_g7/F6_s9005/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	3505
+Stadiul0/runs/tech4_g7/F6_s9005/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	112459
+Stadiul0/runs/tech4_g7/F6_s9005/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10705
+Stadiul0/runs/tech4_g7/F6_s9005/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	508
+Stadiul0/runs/tech4_g7/F6_s9005/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14572
+Stadiul0/runs/tech4_g7/F6_s9005/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1475411
+Stadiul0/runs/tech4_g7/F6_s9005/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30289
+Stadiul0/runs/tech4_g7/launch_summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	169
+Stadiul0/runs/tech4_g7_TB/F6_s9005/chunks.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	109704
+Stadiul0/runs/tech4_g7_TB/F6_s9005/disp.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	164544
+Stadiul0/runs/tech4_g7_TB/F6_s9005/episodes.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	3505
+Stadiul0/runs/tech4_g7_TB/F6_s9005/evals.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	112459
+Stadiul0/runs/tech4_g7_TB/F6_s9005/meta.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	10878
+Stadiul0/runs/tech4_g7_TB/F6_s9005/run.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	509
+Stadiul0/runs/tech4_g7_TB/F6_s9005/schedule.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	14572
+Stadiul0/runs/tech4_g7_TB/F6_s9005/steps.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	1475411
+Stadiul0/runs/tech4_g7_TB/F6_s9005/world.npz	non-essential	N6 Technical rounds, controls and diagnostics	Zenodo data part	30289
+Stadiul0/runs/tech4_g7_TB/launch_summary.json	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	169
+Stadiul0/runs/tech4_g7_TB_launch.log	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	237
+Stadiul0/stage0_summary.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1665
+Stadiul0/tech3_criteria.py	non-essential	N6 Technical rounds, controls and diagnostics	repository (GitHub and Zenodo)	1685
+Stadiul0/hw_watchdog.py	non-essential	N7 Hardware safety	repository (GitHub and Zenodo)	5652
+Stadiul0/runs/_hw/hw_log_20261106.csv	non-essential	N7 Hardware safety	repository (GitHub and Zenodo)	64066
+Stadiul0/runs/_hw/hw_log_20261107.csv	non-essential	N7 Hardware safety	repository (GitHub and Zenodo)	241387
+Stadiul0/runs/_hw/hw_log_20261108.csv	non-essential	N7 Hardware safety	repository (GitHub and Zenodo)	231461
+Stadiul0/runs/_hw/hw_log_20261109.csv	non-essential	N7 Hardware safety	repository (GitHub and Zenodo)	164428
+Stadiul0/runs/_hw/hw_log_20261110.csv	non-essential	N7 Hardware safety	repository (GitHub and Zenodo)	38741

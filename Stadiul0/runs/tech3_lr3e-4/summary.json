@@ -1,0 +1,72 @@
+[
+ {
+  "family": "F2",
+  "seed": 9004,
+  "childhood_gate": true,
+  "childhood_acc": 0.9878,
+  "childhood_acc_rule": null,
+  "episodes": 132,
+  "valid_episodes": 132,
+  "episodes_competent_fact": 132,
+  "episodes_competent_rule": 0,
+  "episodes_fact": 132,
+  "episodes_rule": 0,
+  "triplets": 3616,
+  "included": 1135,
+  "excluded": {
+   "dN>=1280": 2481
+  },
+  "r_AB": 0.9813,
+  "F_A_mean": 3.6284,
+  "F_A_sd": 2.0021,
+  "dAcc_A_mean": 0.6387,
+  "rate_D1_cv": 0.343,
+  "timing_s": {
+   "childhood": 149.21,
+   "eval": 211.19,
+   "disp": 58.37,
+   "chunks": 132.0,
+   "train": 955.09,
+   "wall": 1509.43
+  },
+  "peak_rss_mb": 810.0,
+  "life_steps": 20480,
+  "ms_per_train_step": 46.6,
+  "n_evals": 185
+ },
+ {
+  "family": "F3",
+  "seed": 9004,
+  "childhood_gate": true,
+  "childhood_acc": 0.9819,
+  "childhood_acc_rule": null,
+  "episodes": 116,
+  "valid_episodes": 116,
+  "episodes_competent_fact": 116,
+  "episodes_competent_rule": 0,
+  "episodes_fact": 116,
+  "episodes_rule": 0,
+  "triplets": 2340,
+  "included": 450,
+  "excluded": {
+   "dN>=1280": 1890
+  },
+  "r_AB": 0.9867,
+  "F_A_mean": 2.2721,
+  "F_A_sd": 2.1197,
+  "dAcc_A_mean": 0.403,
+  "rate_D1_cv": 0.6481,
+  "timing_s": {
+   "childhood": 149.36,
+   "eval": 145.37,
+   "disp": 40.75,
+   "chunks": 137.43,
+   "train": 941.55,
+   "wall": 1417.86
+  },
+  "peak_rss_mb": 821.2,
+  "life_steps": 20480,
+  "ms_per_train_step": 46.0,
+  "n_evals": 121
+ }
+]

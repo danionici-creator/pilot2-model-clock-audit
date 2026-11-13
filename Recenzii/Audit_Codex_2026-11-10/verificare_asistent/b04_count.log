@@ -1,0 +1,10 @@
+task1572 train: n=160, response cut=0 (0.0%), resp tokens lost=0/4315 (0.00%), max resp+eos=73, input cut=5, instruction head cut=0
+task1572 test: n=20, response cut=0 (0.0%), resp tokens lost=0/654 (0.00%), max resp+eos=59, input cut=1, instruction head cut=0
+task363 train: n=1000, response cut=0 (0.0%), resp tokens lost=0/2000 (0.00%), max resp+eos=2, input cut=0, instruction head cut=0
+task363 test: n=100, response cut=0 (0.0%), resp tokens lost=0/200 (0.00%), max resp+eos=2, input cut=0, instruction head cut=0
+task1290 train: n=1000, response cut=0 (0.0%), resp tokens lost=0/27243 (0.00%), max resp+eos=72, input cut=426, instruction head cut=0
+task1290 test: n=100, response cut=0 (0.0%), resp tokens lost=0/2726 (0.00%), max resp+eos=48, input cut=40, instruction head cut=0
+task181 train: n=338, response cut=0 (0.0%), resp tokens lost=0/1687 (0.00%), max resp+eos=47, input cut=0, instruction head cut=0
+task181 test: n=43, response cut=0 (0.0%), resp tokens lost=0/292 (0.00%), max resp+eos=51, input cut=0, instruction head cut=0
+task002 train: n=1000, response cut=0 (0.0%), resp tokens lost=0/5068 (0.00%), max resp+eos=15, input cut=595, instruction head cut=0
+task002 test: n=100, response cut=0 (0.0%), resp tokens lost=0/516 (0.00%), max resp+eos=14, input cut=58, instruction head cut=0

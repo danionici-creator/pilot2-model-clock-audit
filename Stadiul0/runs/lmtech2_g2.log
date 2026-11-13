@@ -1,0 +1,45 @@
+runs: ['s7201', 's7202', 's7203']; windows: 423; D3 intervals: 396; phases: 87
+
+Rata lui τ pe ferestre de 8 pași (factori), R² în afara rulării:
+                          R2 mediu  R2 minim
+Ση (C3)                      0.576     0.548
+Ση‖g̃‖ (C5b)                 0.842     0.841
+Ση‖m̂‖ (C5d)                 0.952     0.949
+câmp mediu C5d/√v̄           0.952     0.949
+Ση + Ση‖m̂‖                  0.971     0.967
+GBDT telemetrie completă     0.976     0.958
+
+Rata lui τ pe ΔW = 2·B·A (secundar):
+                          R2 mediu  R2 minim
+Ση (C3)                      0.579     0.552
+Ση‖g̃‖ (C5b)                 0.874     0.873
+Ση‖m̂‖ (C5d)                 0.881     0.875
+câmp mediu C5d/√v̄           0.880     0.874
+Ση + Ση‖m̂‖                  0.911     0.910
+GBDT telemetrie completă     0.989     0.983
+
+D3 (schimbarea funcțională pe sonde), R² în afara rulării:
+                          R2 mediu  R2 minim
+Ση (C3)                      0.363     0.342
+Ση‖g̃‖ (C5b)                 0.644     0.629
+Ση‖m̂‖ (C5d)                 0.533     0.510
+câmp mediu C5d/√v̄           0.533     0.509
+Ση + Ση‖m̂‖                  0.553     0.527
+GBDT telemetrie completă     0.931     0.913
+
+Reziduul lui 'y ~ Ση' (relativ la rata medie), după fereastra din fază și tipul fazei:
+                           n  eroare_abs   bias
+faza      fereastra                            
+calibrare 1 (pașii 1-8)   30       0.438  0.438
+          2               30       0.713  0.713
+          3-4             30       0.202  0.202
+curentă   1 (pașii 1-8)   57       0.425  0.425
+          2               57       0.235  0.216
+          3-4             60       0.053 -0.044
+          >=5            159       0.485 -0.469
+
+La nivel de fază: R² (în afara rulării) al lui τ_fază din Ση_fază și din Ση‖m̂‖_fază:
+  S_eta: mediu 0.975, minim 0.970
+  S_eta_m: mediu 0.991, minim 0.990
+
+Pași săriți de GradScaler: 200 din 3384 pași în ferestre

@@ -1,0 +1,21 @@
+{
+ "workers": 2,
+ "overrides": [
+  "optim.lr=2.0e-4"
+ ],
+ "total_wall_s": 1514.4,
+ "runs": [
+  {
+   "family": "F3",
+   "seed": 9004,
+   "returncode": 0,
+   "wall_s": 1420.4
+  },
+  {
+   "family": "F2",
+   "seed": 9004,
+   "returncode": 0,
+   "wall_s": 1514.4
+  }
+ ]
+}

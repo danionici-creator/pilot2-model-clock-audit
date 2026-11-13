@@ -1,0 +1,7 @@
+cb503ee8b001d19ada64a56e2e7506e87e7e3d1847ab3f7f7776cc87ecc5e7f0 *td_criterii.md
+61d740185b23c76ed9c05c6efa3831d4a0583e513745489ffeb3439689f8859b *td_audit.py
+start 22:36:57
+
+# v2, după corectura scalării (6 nov.):
+a16015a88e0f75991557967a40bf0e8765696a0504afbbd508c9c04534d22310 *td_audit.py
+start v2 22:37:54

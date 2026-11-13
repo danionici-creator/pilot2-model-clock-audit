@@ -1,0 +1,39 @@
+EVAL NOISE (post hoc) start 2026-11-09 16:50:48
+tau seed1 gen start 16:50:48
+tau seed1 gen rc=0 17:50:59
+tau seed1 score rc=0 17:51:01
+eta_m seed1 gen start 17:51:01
+eta_m seed1 gen rc=0 18:49:19
+eta_m seed1 score rc=0 18:49:29
+eta_m_A1 seed1 gen start 18:49:29
+eta_m_A1 seed1 gen rc=0 19:51:50
+eta_m_A1 seed1 score rc=0 19:51:52
+tau_B1 seed1 gen start 19:51:52
+tau_B1 seed1 gen rc=0 20:51:02
+tau_B1 seed1 score rc=0 20:51:04
+tau greedy gen start 20:51:04
+tau greedy gen rc=0 21:39:35
+tau greedy score rc=0 21:39:37
+eta_m greedy gen start 21:39:37
+eta_m greedy gen rc=0 22:27:58
+eta_m greedy score rc=0 22:27:59
+eta_m_A1 greedy gen start 22:27:59
+eta_m_A1 greedy gen rc=0 23:15:55
+eta_m_A1 greedy score rc=0 23:15:57
+tau_B1 greedy gen start 23:15:57
+tau_B1 greedy gen rc=0 00:04:45
+tau_B1 greedy score rc=0 00:04:47
+tau seed2 gen start 00:04:47
+tau seed2 gen rc=0 00:53:46
+tau seed2 score rc=0 00:53:47
+eta_m seed2 gen start 00:53:47
+eta_m seed2 gen rc=0 01:43:05
+eta_m seed2 score rc=0 01:43:06
+eta_m_A1 seed2 gen start 01:43:06
+eta_m_A1 seed2 gen rc=0 02:31:57
+eta_m_A1 seed2 score rc=0 02:31:59
+tau_B1 seed2 gen start 02:31:59
+tau_B1 seed2 gen rc=0 03:21:14
+tau_B1 seed2 score rc=0 03:21:16
+summary rc=0 03:21:16
+EVAL NOISE (post hoc) TERMINAT 2026-11-10 03:21:16

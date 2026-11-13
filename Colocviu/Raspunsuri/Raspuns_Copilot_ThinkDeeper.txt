@@ -1,0 +1,187 @@
+I treat the dossier’s numerical results as technical-round evidence, not as confirmatory findings. My recommendation is to stop treating parameter-path length as a promising independent predictor, preserve the reconstruction result as the main negative finding, and run only narrowly targeted tests on D3/F6 and on whether FOREVER’s τ\tau has any scheduler-level utility beyond matched controls.
+
+Executive assessment
+
+Fact. Under the protocol’s own identifiability rule, G2 fails whenever the rate of a candidate clock is reconstructible from BstrongB_{\text{strong}} with held-out R2≥0.90R^2\geq0.90. R1 crosses that threshold for D1, D1_rel, D2 and D3; R3 makes the case particularly strong for D1 and D2, while leaving a narrower unresolved case for D3 in F6.
+
+Opinion. D1, D1_rel, D2 and FOREVER’s τ\tau should no longer be presented as candidates expected to provide independent predictive information beyond optimizer telemetry. The burden of proof has reversed. Any further H1 test on them would be a low-information exercise unless it first demonstrates a reconstruction failure under genuinely out-of-distribution conditions.
+
+Confidence: high for D1, D2 and τ\tau; medium for D1_rel; low-to-medium for D3/F6 because there is only one seed for each synthetic family and F6 changes several aspects of the data-generating process simultaneously.
+
+Q1. Reconstruction: substantive result or artefact?
+1. What R1–R3 and R5–R6 actually establish
+
+R1 shows that, across the initial synthetic runs, BstrongB_{\text{strong}} reconstructs all four clock rates with R2=0.91R^2=0.91 to 0.990.99. More importantly, the single scalar ∑η∥m^∥\sum\eta\|\hat m\|, together with interval length, reconstructs D1 at 0.94, D1_rel at 0.92 and D2 at 0.99.
+
+R3, after code corrections, shows:
+
+D2 is almost exactly reconstructed by ΔN+∑η∥m^∥\Delta N+\sum\eta\|\hat m\|, including F6: R2=0.98R^2=0.98.
+D1 is reconstructed at 0.92–0.95 on F3, F5 and F6, although only 0.86 on F2.
+D1_rel is less completely reconstructed by the simple scalar, but flexible telemetry reaches 0.94–0.99 except for F6, where it reaches 0.79.
+D3 is reconstructed almost perfectly by same-cost C10c in F2, F3 and F5, but not in F6: 0.59; all telemetry reaches only 0.81 in F6.
+
+On the language-model arm, ∑η∥m^∥\sum\eta\|\hat m\| reconstructs the FOREVER factor-space τ\tau rate at 0.94 in lmtech1 and 0.95 in lmtech2; adding ∑η\sum\eta gives 0.96–0.97. The result survives bf16 and changing LoRA α\alpha from 16 to 32.
+
+This is not evidence that the clocks contain literally no information absent from telemetry. R2=0.94R^2=0.94 leaves residual variance. It is evidence that most clock variation is a predictable transformation of quantities already produced by the optimization process. Under the study’s declared gate, that is sufficient to make the intended incremental-prediction claim unidentifiable.
+
+2. Near-duplicate competitor
+
+This is a plausible criticism, but not a fatal one.
+
+For AdamW, a parameter increment is directly determined by the learning rate, moments, denominator, weight decay, clipping and optimizer state. Therefore, ∑η∥m^∥\sum\eta\|\hat m\| is structurally close to a path-length clock such as D1 or τ\tau. The relation is expected, not accidental. The dossier cites the Adam-step analyses of Kosson, Messmer and Jaggi, arXiv:2305.17212, and Liu et al., arXiv:2502.16982. I have not independently opened those papers here, so details beyond the dossier’s description are unverified.
+
+Calling this a “near-duplicate” does not rescue D1. If a cheap statistic available from the same optimizer reconstructs an expensive parameter-distance statistic, that is precisely the redundancy G2 was designed to detect.
+
+Ruling check: repeat reconstruction using a cost ladder fixed before analysis:
+
+schedule-only: ΔN,∑η\Delta N,\sum\eta;
+ordinary logged telemetry: losses, gradient norm, clipping, moment norms;
+local-update summaries;
+full BstrongB_{\text{strong}}.
+
+Report marginal held-out R2R^2 at every rung. Do not let Δθ\Delta\theta, per-parameter update norms or algebraically exact transformations of D1 enter rungs 1–3.
+
+3. Leakage between training and test data
+
+R1’s leave-one-run-out construction and R3’s leave-one-family-out construction reduce direct window leakage because the test run or family is excluded from fitting. Nevertheless, three risks remain:
+
+preprocessing could have been calculated globally;
+overlapping windows within a held-out run can make uncertainty estimates too optimistic;
+analyst iteration across technical rounds can indirectly tune predictor choice to all observed families.
+
+Ruling check: implement an untouched audit set generated only after the reconstruction specification is frozen. Fit scalers, transformations, feature selection and hyperparameters exclusively on development runs. Test once on new seeds, with confidence intervals clustered by complete run, not by window.
+
+4. Window length and rate versus cumulative value
+
+The current results are not invariant to temporal aggregation. R2 reports relative reconstruction errors of 23% for 64–127-step intervals versus 8% for longer intervals, and a D3 bias of −21% after learning-rate restarts. R5–R7 also show that phase-level cumulative reconstruction can become a duration artefact: phase-level ∑η\sum\eta produces R2=0.975R^2=0.975–0.991, but its rate explains only 0.09–0.18.
+
+Therefore a single R2R^2 over pooled window lengths is inadequate.
+
+Ruling check: preregister separate analyses at 8, 16, 32, 64, 128, 256, 512 and 1,024 steps, plus windows aligned to optimizer resets and learning-rate restarts. Evaluate:
+
+increment Δce\Delta c_e;
+rate Δce/ΔN\Delta c_e/\Delta N;
+endpoint cumulative cec_e;
+residuals conditional on interval length.
+
+G2 should fail only if reconstruction exceeds 0.90 in the temporal scale relevant to the forgetting test. A pooled result must not conceal failure at short intervals.
+
+5. Synthetic-task artefact
+
+The synthetic world consists of arbitrary key-to-value facts, and the LM arm also uses synthetic facts. Neither establishes generality to natural-language continual learning or heterogeneous tasks.
+
+But synthetic simplicity does not explain away the D1 and D2 results. The reconstruction follows optimizer mechanics and replicates in Qwen3-0.6B LoRA. The synthetic-design objection is stronger for D3, because functional distance depends on the composition of the reference battery and the output support being measured.
+
+Ruling check: for parameter clocks, one small natural-language replication is enough, provided it uses an untouched task stream and grouped holdout. For D3, vary the probe battery independently of the training distribution and distinguish:
+
+trained-domain probes;
+semantically related but never-trained probes;
+unrelated probes;
+random-answer probes comparable to the current LM arm.
+
+A “functional clock” that changes its scientific conclusion when the arbitrary probe battery changes is not a general experiential index. It is a probe-relative drift measure.
+
+Q2. Is confirmatory H1 still worthwhile?
+
+For D1, D1_rel, D2 and FOREVER’s τ\tau, no. The protocol states that H1 is not identifiable after G2 failure. Running the clock-forgetting regression anyway would invite a predictable interpretive error: a clock can correlate with forgetting because both are driven by training intensity, accumulated optimizer activity or task exposure.
+
+Even if adding D1 produced a small held-out ΔR2\Delta R^2, the study could not cleanly distinguish:
+
+unique information in parameter geometry;
+imperfect modelling of telemetry;
+nonlinear transformations omitted from the baseline;
+measurement noise in telemetry;
+overfitting to the observed task families.
+
+What remains scientifically useful is:
+
+a negative reconstruction result showing that several plausible intrinsic clocks are largely compressions of optimizer dynamics;
+a methodological result that clock candidates need an identifiability gate before predictive evaluation;
+a narrow exception: functional drift in the F6 noisy-distractor regime;
+a scheduler-equivalence question for FOREVER.
+
+This should be reported as a technical closure report, not as a failed attempt to prove H1. The central claim should be descriptive: “Under these optimizers, architectures and task streams, parameter-path clocks were highly reconstructible from cheaper telemetry.” Do not write “parameter clocks carry no information” or “experiential time is impossible.”
+
+Q3. The D3/F6 case
+
+D3/F6 is a real testable question, but the present result is not yet persuasive evidence of a special phenomenon. F6 combines distractor segments, variable duration and 30% label noise. Thus “F6” is not one intervention. It is a bundle.
+
+C10c and D3 use the same forward passes but summarize different aspects of the predictive distribution. C10c measures absolute changes in per-item loss; D3 measures Jensen-Shannon divergence over outputs. Under label noise, movements among wrong outputs may increase D3 without producing comparable movement in loss relative to the designated answer. That would make the result mathematically understandable but not necessarily scientifically important.
+
+Decisive factorial test
+
+Use identical task order, optimizer state, segment lengths and distractor inputs across paired runs. Manipulate only label noise: 0%, 10%, 30% and 50%. Use eight paired seeds per level, 32 runs total.
+
+Primary target: forgetting on target-task half A for intervals 64≤ΔN<1,28064\leq\Delta N<1,280.
+
+Primary models:
+
+baseline: telemetry plus C10c;
+augmented: telemetry plus C10c plus D3.
+
+All transformations and hyperparameters must be frozen in Stage 0a. Evaluation must leave out complete seeds and complete target tasks. Windows from one run must never be divided across training and test folds.
+
+Pass: at 30% noise, the lower bound of a run-clustered 95% bootstrap interval for held-out ΔR2\Delta R^2 from D3 exceeds 0, the point estimate is at least 0.02, and the effect replicates at either 10% or 50%.
+
+Fail: the upper bound is at most 0.02, or the effect occurs only at exactly 30%, or it disappears under a second independently sampled reference battery.
+
+At 12.3 runs per hour, 32 runs cost about 2.6 laptop hours. Allowing reruns and audit overhead, budget 3.5 hours.
+
+If this fails, close D3/F6. If it passes, the defensible conclusion is limited: distributional output drift can add predictive information beyond loss-change summaries under noisy interference. It does not validate a general experiential index.
+
+Q4. FOREVER
+
+The fair claim is narrow.
+
+Supported by R5–R9: in this Qwen3-0.6B synthetic-fact implementation of the FOREVER schedule, the factor path-length clock τ\tau is reconstructed with held-out R2≈0.94R^2\approx0.94–0.96 by ∑η∥m^∥\sum\eta\|\hat m\|, and with approximately 0.976–0.988 by all telemetry. This is stable across two fact-set sizes, bf16 versus fp16, and LoRA α=16\alpha=16 versus 32. Schedule-only ∑η\sum\eta does not meet the prefixed window-level threshold; it gives only 0.58–0.69.
+
+Not supported: that FOREVER’s published benchmark gains are trivial, that τ\tau can be replaced without affecting replay performance, or that the published method fails. The study did not reproduce SuperNI, larger models or FOREVER’s evaluation, and several implementation differences remain.
+
+The incontestable experiment is a budget-matched scheduler ablation:
+
+replay driven by original τ\tau;
+replay driven by cumulative ∑η∥m^∥\sum\eta\|\hat m\|;
+replay driven by schedule-only cumulative ∑η\sum\eta;
+fixed replay at the median trigger steps from condition 1.
+
+Use identical seeds and memory buffers. Equalize replay examples or replay gradient steps across conditions; otherwise the clock comparison is confounded by compute.
+
+With eight seeds per condition, 32 LM runs cost about 8 GPU hours at 15 minutes per run. The primary endpoint should be mean old-task answer accuracy immediately before the final replay of each task, with total replay examples fixed.
+
+A short note is justified now only if labelled “descriptive technical audit” and if it explicitly separates reconstruction from scheduler efficacy. It should not imply priority over FOREVER’s authors or claim that telemetry replacement preserves performance. FOREVER is identified in the dossier as Feng et al., arXiv:2601.03938. I have not independently opened the paper, so paper-specific details are unverified beyond the dossier.
+
+Q5. Consequences for Level 2 cec_e
+
+The results weaken the current presentation of Level 2 if it implicitly treats accumulated state distance as a distinct internal record rather than a derived statistic of optimization.
+
+Three revisions are necessary:
+
+Withdraw D1-like path length as a strong candidate. Retain it only as a cheap operational baseline.
+Make reference dependence explicit. D3 is not an observer-independent internal time. It is a functional-drift integral relative to a chosen probe distribution.
+Replace “cheap and weak to costly and valid.” Cost does not imply validity. Use separate axes: computational cost, reconstructibility, probe dependence, invariance, predictive increment and intervention utility.
+
+Do not withdraw the abstract definition ce(t)=∑D(St,St+1)c_e(t)=\sum D(S_t,S_{t+1}). It is mathematically coherent. Withdraw any suggestion that accumulation alone provides epistemically privileged experience, intrinsic temporal identity or information unavailable from logged training dynamics. The present evidence does not support such claims.
+
+Q6. Red-team case
+
+The strongest hostile interpretation is:
+
+The study constructed path-length statistics that are algebraic consequences of AdamW updates, then “discovered” that AdamW telemetry predicts them. The synthetic tasks are narrow, the sample is tiny, several analyses are post hoc, flexible regressors are unstable under family shift, and the only surviving result arises in a family deliberately engineered with noisy labels. Nothing yet establishes a connection to forgetting or to useful replay scheduling.
+
+That case is substantially correct.
+
+The single most important missing control is a new, untouched, run-level test set generated after the full reconstruction pipeline is frozen, including preprocessing, feature ladder, windowing, model selection and thresholds. More seeds on the current adaptively analysed data would not provide the same protection.
+
+Q7. Direction, within 200 words
+
+Choose C.
+
+Close the parameter-clock line because D1, D2 and FOREVER’s τ\tau repeatedly fail the declared identifiability gate, and D1_rel has no sufficiently strong residual case to justify a full forgetting study. Report reconstruction as the substantive negative result, with explicit limits: technical rounds, narrow tasks and no direct test of forgetting.
+
+Retain one small D3/F6 confirmatory experiment, but replace the bundled F6 comparison with a paired factorial manipulation of label-noise rate and an independently sampled reference battery. Require incremental held-out prediction over telemetry plus same-cost C10c, not merely failure of scalar reconstruction.
+
+Publish a short FOREVER note now only as a descriptive audit of the clock. Scheduler efficacy remains untested. The later replay ablation should be budget matched across τ\tau, ∑η∥m^∥\sum\eta\|\hat m\|, schedule-only and fixed-trigger controls. Postpone the broader Stage B until that comparison is justified.
+
+This direction is cheaper and more falsifiable than Stage A “R”. It avoids spending confirmatory power on candidates that the protocol already classifies as unidentifiable.
+
+DIRECTION: C - Close the parameter-clock line, publish the reconstruction closure and FOREVER audit, and retain only a paired D3/F6 confirmatory test. DECISIONS: 1: C; 2: yes; 3: postpone; 4: fully; 5: before; 6: bf16; 7: yes; 8: now DECISIVE TESTS: 1. Hypothesis: D3 predicts forgetting beyond telemetry plus C10c under noisy interference; pass/fail criterion fixed in advance: pass only if run-clustered 95% CI lower bound for held-out ΔR² is >0, point estimate ≥0.02 at 30% noise, replication occurs at 10% or 50%, and the effect survives an independent reference battery; otherwise fail; cost 3.5 laptop hours. 2. Hypothesis: FOREVER τ provides scheduler utility beyond telemetry and schedule controls; pass/fail criterion fixed in advance: pass only if budget-matched τ replay improves paired mean old-task accuracy by ≥0.02 over both Ση‖m_hat‖ and schedule-only controls with a 95% paired CI excluding 0; otherwise fail; cost 8 laptop hours. 3. Hypothesis: parameter-clock reconstruction generalises after analysis lock; pass/fail criterion fixed in advance: pass reconstruction if untouched run-level held-out R² is ≥0.90 at every preregistered H1-relevant window scale, otherwise reopen only the failing scale; cost 2 laptop hours. MISSING CONTROL: A completely untouched, run-level audit set generated only after freezing preprocessing, feature ladder, windowing, model selection and thresholds. CONFIDENCE: high - the main uncertainty is whether D3’s F6 residual reflects genuine functional information or only the interaction between label noise and the chosen probe/loss summaries.

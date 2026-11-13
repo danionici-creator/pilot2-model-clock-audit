@@ -1,0 +1,65 @@
+{"family": "F6", "seed": 9103, "returncode": 0, "wall_s": 994.2}
+{"family": "F6", "seed": 9104, "returncode": 0, "wall_s": 1016.2}
+{"family": "F6", "seed": 9102, "returncode": 0, "wall_s": 1030.2}
+{"family": "F6", "seed": 9101, "returncode": 0, "wall_s": 1570.4}
+{"family": "F6", "seed": 9105, "returncode": 0, "wall_s": 1014.2}
+{"family": "F6", "seed": 9106, "returncode": 0, "wall_s": 1002.2}
+{"family": "F6", "seed": 9107, "returncode": 0, "wall_s": 1022.2}
+{"family": "F6", "seed": 9108, "returncode": 0, "wall_s": 1186.2}
+{
+ "workers": 4,
+ "overrides": [
+  "families.F6.label_noise=0.0"
+ ],
+ "total_wall_s": 2756.6,
+ "runs": [
+  {
+   "family": "F6",
+   "seed": 9103,
+   "returncode": 0,
+   "wall_s": 994.2
+  },
+  {
+   "family": "F6",
+   "seed": 9104,
+   "returncode": 0,
+   "wall_s": 1016.2
+  },
+  {
+   "family": "F6",
+   "seed": 9102,
+   "returncode": 0,
+   "wall_s": 1030.2
+  },
+  {
+   "family": "F6",
+   "seed": 9101,
+   "returncode": 0,
+   "wall_s": 1570.4
+  },
+  {
+   "family": "F6",
+   "seed": 9105,
+   "returncode": 0,
+   "wall_s": 1014.2
+  },
+  {
+   "family": "F6",
+   "seed": 9106,
+   "returncode": 0,
+   "wall_s": 1002.2
+  },
+  {
+   "family": "F6",
+   "seed": 9107,
+   "returncode": 0,
+   "wall_s": 1022.2
+  },
+  {
+   "family": "F6",
+   "seed": 9108,
+   "returncode": 0,
+   "wall_s": 1186.2
+  }
+ ]
+}

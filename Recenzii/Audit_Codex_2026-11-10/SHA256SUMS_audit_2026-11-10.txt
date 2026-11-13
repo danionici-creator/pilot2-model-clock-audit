@@ -1,0 +1,5 @@
+085efea6050c7fb80fba90992c2dcb999e6afa38367630b4b8283490f5735f10 *Regula_de_adoptare_audit_Codex.md
+7e5889fe1960e8e53d67f00286564e49042cd40acb21baeaa6593d8d26f96373 *AUDIT_BRIEF.md
+# fixate 2026-11-10 23:23:31, inainte de trimitere
+0921854f8b0c7f71235b90faf498836e5829011296f585c8b7a2f685778d1650 *PERSPECTIVE_REVIEW_BRIEF.md
+# addendum 2026-11-11 13:37:04: a doua sarcina (recenzia Perspective v1.4), inainte de trimitere; se aplica aceeasi regula de adoptare

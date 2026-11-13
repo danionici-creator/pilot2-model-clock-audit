@@ -1,0 +1,86 @@
+[Stanford Agentic Reviewer (paperreview.ai), review of Pilot2_closure_report_review_draft.pdf, target venue NeurIPS. Text copied from the "View Review" page on 9 Nov 2026 (get_page_text), from the title to the end of "Overall Assessment"; the feedback form below it is omitted. Unchanged.]
+
+Does a model-centred clock carry information beyond optimizer telemetry? Closure report of Pilot 2
+NeurIPS
+Submitted: November 9, 2026
+CONTENTS
+Summary
+Strengths
+Weaknesses
+Detailed Comments
+Questions
+Overall Assessment
+Summary
+
+This paper presents a careful empirical audit of model-centric “time” clocks that accumulate internal change (e.g., τ = Σ||Δθ||) to schedule replay or characterize learning progress. Using a synthetic continual-learning setup, a small LM with a FOREVER-style schedule, and the original FOREVER code, the author shows that multiple candidate clocks (three parameter distances, a functional distance D3, and τ itself) can be reconstructed with high held-out R² from cheap optimizer telemetry (notably Ση||m̂||), rendering the preregistered confirmatory hypothesis (that experiential indices predict forgetting beyond telemetry) unidentifiable. As a scheduler, τ performed equivalently to Ση||m̂||, the schedule-only Ση, and even step counts in the tested regimes; a one-off difference on a single task with the authors’ code did not reproduce consistently when runs were repeated from shared starting points.
+
+Strengths
+Technical novelty and innovation
+The paper formulates and executes an “identifiability gate” (G2) that asks whether model-centric clocks carry signal beyond readily available optimizer telemetry, turning a conceptual debate into a concrete measurable question.
+It systematically reconstructs multiple clock candidates (including τ and a functional change D3) from Ση||m̂|| and related telemetry, highlighting a mechanistic link under Adam-family optimizers.
+The work contributes a documented, negative result that closes an appealing but under-audited line (“own time = accumulated internal change”) within the tested scope.
+Experimental rigor and validation
+Multiple settings are used: a synthetic Transformer world with diverse schedule families, a Qwen3-0.6B LoRA port, SuperNI subsets, and runs with the authors’ FOREVER code, including replay-trigger timing analyses.
+Held-out evaluations, leave-seed-out and leave-task-out reconstructions, and cross-configuration transfer of simple regressors are reported, with R² typically ≥0.94 for τ.
+Scheduling comparisons use preregistered margins and paired CIs, and the paper includes integrity checks and detailed logs.
+Clarity of presentation
+The paper states up front that confirmatory tests were not run due to failing identifiability, and carefully distinguishes preregistered vs post hoc analyses.
+Methodological decisions (e.g., schedule families, telemetry features, candidate clocks, cost comparisons) are explained, and limitations are explicit.
+Significance of contributions
+The findings bear directly on a recently proposed replay schedule (FOREVER) and, more broadly, on path-length clocks and importance accumulators under Adam, encouraging stronger baselines (Ση||m̂||, schedule-only, steps) in future work.
+The cost-benefit takeaway is actionable: telemetry already kept by Adam can substitute for parameter-difference path lengths in the tested regimes.
+Weaknesses
+Technical limitations or concerns
+The confirmatory hypothesis (c_e predicts forgetting beyond telemetry) was not tested because identifiability failed; conclusions rest on reconstruction and equivalence-style comparisons rather than a full causal attribution of forgetting differences.
+The scope is narrow: small models, LoRA finetuning, AdamW-like optimizers, short task sequences, and relatively small memory settings; generalization to large-scale full finetuning or non-Adam optimizers is not established.
+The observed systematic trigger delay for Ση||m̂|| in the authors’ fp16 code is intriguing but left mechanistically unresolved.
+Experimental gaps or methodological issues
+Small sample sizes: 5 seeds in T-A, 3 seeds in SuperNI, and one run per cell for the key crossed check with the authors’ code, limit statistical power to detect subtle effects.
+Only one task order per benchmark was explored in author-code runs; stochastic decoding without a fixed seed introduces evaluation noise.
+The scheduling equivalence margins are descriptive (±2 pts OP; ±5% loss), and no formal TOST equivalence tests are reported.
+Clarity or presentation issues
+The narrative includes nonstandard governance/process elements (AI colloquia) that, while transparent, distract from the scientific core and will be unfamiliar in a NeurIPS paper format.
+The paper is dense and occasionally difficult to navigate; some core outcomes are embedded in long process logs and timelines.
+Missing related work or comparisons
+While several adjacent areas are discussed, empirical contrasts with stronger replay/scheduling frameworks (e.g., learned replay schedulers, alternative optimizer families like Adafactor/SGD) are not attempted.
+Additional context from recent optimizer-state-aware CL methods (e.g., variants that reuse second moments across tasks) could sharpen the interpretation of “telemetry suffices.”
+Detailed Comments
+Technical soundness evaluation
+The identifiability framing is sound and well-motivated: if τ (or D3) can be predicted from Ση||m̂|| (or same-cost signals) with high held-out R², then excess information is plausibly negligible under Adam-style updates. The reconstruction results are consistent with known Adam step structure ||Δθ|| ≈ η||m̂||/√v.
+The leave-task-out transfer (SuperNI) and leave-seed-out procedures strengthen the claim that τ is largely determined by telemetry. The few weaker reconstructions under extrapolation to untrained schedule families are transparently reported and then re-tested (T-B) to rule out artefacts.
+The systematic replay-trigger delay for Ση||m̂|| in fp16 author code suggests a calibration mismatch (e.g., drift in Σ||Δθ||/Ση||m̂|| ratios post-warmup). The post hoc drift analysis is careful but remains a hypothesis without direct control ablations (e.g., logging both clocks in τ runs).
+Experimental evaluation assessment
+Scheduling comparisons are well-chosen: τ vs Ση||m̂|| vs Ση vs steps. The consistent equivalence under multiple setups (including the authors’ code, where OP/BWT differences stayed within ±2 points across pairs) is persuasive within the tested regimes.
+The small memory and strong-forgetting regime in T-A could mask modest benefits of more precise timing; demonstrating equivalence at higher retention levels would strengthen the conclusion.
+The single large per-task discrepancy (+5.3 pts on dbpedia) did not reproduce from shared adapters in a crossed design, which the paper interprets correctly as run-to-run variability rather than a clock effect.
+Comparison with related work
+Relative to FOREVER (2601.03938), this paper probes the unexamined assumption that τ provides unique scheduling information. The ablations in FOREVER largely contrasted against step-based baselines; adding Ση||m̂|| is a natural and strong control.
+The results resonate with findings that trajectory-integrated statistics often reduce to optimizer moments (e.g., SI ≈ √Fisher; Benzing 2022), providing a broader pattern that “fancy” path accumulators reflect telemetry already kept by Adam.
+Path-based LR adaptation (e.g., CLARA) underscores that Adam’s preconditioning complicates raw path-length interpretations—consistent with this paper’s reconstruction results. Optimizer-state CL (e.g., maintaining second moments across tasks) further supports that optimizer telemetry is a rich control signal.
+Discussion of broader impact and significance
+Practically, the paper encourages simpler, cheaper baselines for schedule/clock design: Ση||m̂||, Ση, and step counts—especially valuable in resource-constrained CL settings.
+Conceptually, it tempers enthusiasm for model-centric “own time” as a distinct source of control in Adam-trained models, pushing future work toward either non-Adam regimes, richer functional clocks that cannot be recovered from moments, or decisions that condition on optimizer state explicitly.
+The work also exemplifies the value of preregistration and identifiability gates for negative results in ML.
+Reproducibility and transparency
+Extensive logs, hashes, and a reproduction script are provided; 19 analyses reportedly re-run identically from the archive. However, preregistrations were not publicly timestamped and some early code versions were not preserved, which weakens external auditability.
+Hardware/environment differences vs the original authors are documented; caution in interpreting fp16 nondeterminism and stochastic decoding is appropriate.
+Clarity and organization
+The paper is thorough but lengthy; separating the main empirical claims from governance/process narrative would improve readability for NeurIPS reviewers.
+Summarizing reconstruction and scheduling findings in a compact table early in the paper would help anchor the reader.
+Suggestions for improvement
+Run larger-scale, higher-retention regimes and more seeds/orders to test whether subtle timing advantages of τ can emerge when forgetting is moderate.
+Concurrently log τ and Ση||m̂|| in the same runs (fp16 and bf16), and ablate β computation from ||Δθ|| vs Ση||m̂|| to isolate which use of τ, if any, matters.
+Extend to other optimizers (Adafactor, SGD with/without momentum) where the step structure differs; explicitly test whether reconstruction breaks and whether clocks diverge.
+Include formal equivalence tests (e.g., TOST) and power analyses for scheduling comparisons; predefine per-task margins where OP masks task-level heterogeneity.
+Evaluate on full finetuning at larger scales (where τ’s memory cost is nontrivial) and across multiple task orders with fixed-seed decoding to reduce evaluation noise.
+Public preregistration (e.g., OSF/Zenodo timestamp) would strengthen credibility.
+Questions for Authors
+In the fp16 author-code runs where Ση||m̂|| triggers systematically later, did you confirm whether the difference persists if τ’s β scaling is also replaced by a Ση||m̂||-based scaling, or if both clocks are logged concurrently in the same run?
+How sensitive are the reconstruction results to Adam β1/β2 and weight decay settings? Do you have evidence that lower/higher β2 (different √v dynamics) materially changes τ’s predictability from Ση||m̂||?
+Can you provide results in a moderate-forgetting regime (larger memory, or gentler task shifts) where retention is higher, to test whether replay timing differences translate into measurable accuracy/BWT changes?
+Did you attempt Adafactor or SGD (with momentum) in the synthetic setup to probe whether reconstruction (and scheduling equivalence) holds outside AdamW-like optimizers?
+In SuperNI S1/S2, could you report per-task trigger differences and per-task performance deltas to check for task-level sensitivity masked by OP?
+Would you consider a public preregistration plus a minimal replication package (scripts + fixed seeds) so others can exercise the identifiability gate and scheduling tests on their hardware?
+Overall Assessment
+
+This paper delivers a careful, well-documented negative result: under Adam-family optimization and the tested regimes, model-centric path-length clocks—including FOREVER’s τ and a functional distance D3—are highly predictable from optimizer telemetry (especially Ση||m̂||), and using τ for replay timing does not reliably outperform much cheaper alternatives. The reconstruction evidence is strong, and the scheduling comparisons, while limited in scale and scope, are consistently null within preregistered margins. The work is timely and relevant given recent interest in model-centric clocks, and it provides actionable guidance for future ablations and baselines. However, the empirical scope is narrow (small models, LoRA-only finetuning, few seeds/orders), confirmatory tests were not run due to identifiability failure, and some process aspects (local preregistration, missing early code) weaken absolute strength. Overall, I view this as a useful, rigorously argued contribution that would benefit the community by encouraging stronger baselines and more mechanistic audits, though it stops short of a definitive verdict beyond Adam-like settings and the tested regimes. I lean toward a borderline accept if positioned as a concise, empirically grounded audit/negative result; otherwise a weak reject with encouragement to expand experiments (more seeds/orders, optimizers, scales) and tighten preregistration/public replication.

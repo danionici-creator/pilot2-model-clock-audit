@@ -1,0 +1,31 @@
+You are reviewing a draft research protocol (attached PDF: "Pilot 2 — Technical Protocol", draft v0.4, 4 November 2026). Act as a rigorous, adversarial methodological reviewer in machine learning (continual learning, forgetting, Transformer training dynamics) and in statistics (prediction evaluation, equivalence testing, multiplicity, hierarchical data). Your aim is to find what would make the results uninterpretable, biased, or non-transferable, before the 24 calibration runs are made and before the protocol is frozen and preregistered.
+
+CONTEXT
+- v0.1–v0.3 were reviewed by AI systems; §19 and §20 record how each point was handled. Do not raise again a point that those logs already settle, unless the v0.4 changes reopen it.
+- v0.4 is the first version written after measurements. Stage 0 technical runs (13 full runs and short probes on the author's laptop) showed: rule tasks do not generalise (withdrawn; fact tasks only); the childhood gate fails at the provisional learning rate (η₀ lowered to 3e-4); the loss target keeps rising after functional forgetting is complete (cap ΔN < 1,280 on T1 triplets); the reference battery R is forgotten within the first few hundred life steps (the stationarity check and its remedy withdrawn); the v0.3 cost criteria fail (rewritten in wall-clock hours). §21 lists every change, the v0.3 criteria that failed, and the alternatives that were rejected.
+- No incremental value of c_e over any predictor set has been computed so far. The 24 calibration runs have not been made.
+- Section 0 summarises two published works by the same author for context; they are not under review. Do not evaluate the broader research programme, and do not suggest changing the research question.
+- Stages 0, A and B run on a single laptop CPU (§14 declares the machine). The software versions in §3 are installed and were used for the measurements. Do not question their existence.
+
+WHAT TO DO
+1. Revision check (§21). For each accepted change, verify that the sections it cites implement it correctly and completely and that it does not conflict with any other section (look for leftovers of rule tasks, of the stationarity check, of eight workers, of the old cost limits). For each rejected alternative, say whether the stated reason holds. Report only problems.
+2. The T1 cap (§6). The cap ΔN < 1,280 removes intervals in which F_A tracks a level shared by all untrained inputs rather than the forgetting of task k. c_e is monotone in ΔN within a run, and the cap truncates the range of ΔN. (a) Can the cap by itself favour or disfavour c_e against B_strong, and in which direction? (b) Is a cap fixed on technical runs, by a rule written before those runs, an adequate safeguard against a data-dependent target definition? (c) Is the uncapped sensitivity analysis sufficient, or should a second prespecified cap be reported? (d) Does the cap change what G1, G3, G4b and the sample-size formulas of §12 need?
+3. The reference battery (§5.1). R is forgotten early, so D3, D4, C10 and C10b read untrained inputs for almost all of life. Is D3 still a meaningful candidate D, and is C10 / C10b still a fair competitor? Is withdrawing the stationarity check justified, or should another check replace it?
+4. Scope (§1, §4.1). With fact tasks only, does the identification audit of §0.3 remain informative? What exactly can a supported, an equivalent and an inconclusive H1 now be claimed to show, and does §15 need to change?
+5. Use of c_e on calibration runs. §12a computes, out of fold on the 24 calibration runs, quantities that involve the incremental value of c_e (the choice of D*, G4b, σ̂_up of the per-run ΔR² for the sample size, G2b, G5). The calibration runs are discarded afterwards. Is this enough to keep the test statistic of H1 uncontaminated? What additional safeguards, if any, are needed (seed disjointness, who looks at which numbers, what is written down before the calibration runs)?
+6. Cost and feasibility (§12a, §14). Is the rewritten cost criterion appropriate and checkable? Is anything about feasibility still assumed rather than measured (model fitting, bootstrap, G3b, G4, G6, Stage B)?
+7. Stage 0 go/no-go (§12a). Given v0.4, is any criterion missing that would let a design proceed that cannot deliver an interpretable H1?
+8. End with a prioritised list: the five changes you would make first, before the calibration runs.
+
+For every problem, classify it as:
+- FATAL: a positive or negative H1 would be uninterpretable;
+- MAJOR: a bias or validity threat that changes conclusions;
+- MINOR: clarity, efficiency, or reporting.
+For each, give the section number, the problem, why it matters, and the fix as a concrete replacement: a value, a formula, a design, or a test.
+
+RULES
+- Be specific and technical. No general praise, no summary of the protocol back to the author.
+- Do not invent facts or references. If you cite a paper, give a verifiable identifier (DOI or arXiv ID). If you are unsure whether a claim is established, say so.
+- If something in the protocol is ambiguous, state the two readings and which one you assume.
+- If you need information that the PDF does not contain, say so instead of assuming it.
+- Check numerical claims you dispute by an explicit calculation.

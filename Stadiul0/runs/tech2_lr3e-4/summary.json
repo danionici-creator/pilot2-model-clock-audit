@@ -1,0 +1,107 @@
+[
+ {
+  "family": "F1",
+  "seed": 9002,
+  "childhood_gate": true,
+  "childhood_acc": 0.9536,
+  "childhood_acc_rule": 0.916,
+  "episodes": 116,
+  "valid_episodes": 60,
+  "episodes_competent_fact": 58,
+  "episodes_competent_rule": 2,
+  "episodes_fact": 58,
+  "episodes_rule": 58,
+  "triplets": 2340,
+  "included": 1024,
+  "excluded": {
+   "competence<0.90": 1316
+  },
+  "r_AB": 0.9936,
+  "F_A_mean": 3.3733,
+  "F_A_sd": 3.0028,
+  "dAcc_A_mean": 0.5215,
+  "rate_D1_cv": 0.1059,
+  "timing_s": {
+   "childhood": 243.89,
+   "eval": 158.27,
+   "disp": 41.84,
+   "chunks": 192.83,
+   "train": 1160.69,
+   "wall": 1801.39
+  },
+  "peak_rss_mb": 821.1,
+  "life_steps": 20480,
+  "ms_per_train_step": 56.7,
+  "n_evals": 121
+ },
+ {
+  "family": "F2",
+  "seed": 9002,
+  "childhood_gate": false,
+  "childhood_acc": 0.9482,
+  "childhood_acc_rule": 0.9072,
+  "episodes": 132,
+  "valid_episodes": 68,
+  "episodes_competent_fact": 68,
+  "episodes_competent_rule": 0,
+  "episodes_fact": 68,
+  "episodes_rule": 64,
+  "triplets": 3736,
+  "included": 1774,
+  "excluded": {
+   "competence<0.90": 1962
+  },
+  "r_AB": 0.9894,
+  "F_A_mean": 4.8902,
+  "F_A_sd": 2.6799,
+  "dAcc_A_mean": 0.7291,
+  "rate_D1_cv": 0.2349,
+  "timing_s": {
+   "childhood": 243.47,
+   "eval": 240.63,
+   "disp": 65.02,
+   "chunks": 186.56,
+   "train": 1128.36,
+   "wall": 1868.16
+  },
+  "peak_rss_mb": 818.6,
+  "life_steps": 20480,
+  "ms_per_train_step": 55.1,
+  "n_evals": 192
+ },
+ {
+  "family": "F3",
+  "seed": 9002,
+  "childhood_gate": true,
+  "childhood_acc": 0.9712,
+  "childhood_acc_rule": 0.9473,
+  "episodes": 116,
+  "valid_episodes": 60,
+  "episodes_competent_fact": 58,
+  "episodes_competent_rule": 2,
+  "episodes_fact": 58,
+  "episodes_rule": 58,
+  "triplets": 2340,
+  "included": 1188,
+  "excluded": {
+   "competence<0.90": 1152
+  },
+  "r_AB": 0.9958,
+  "F_A_mean": 3.7735,
+  "F_A_sd": 3.4586,
+  "dAcc_A_mean": 0.531,
+  "rate_D1_cv": 0.3351,
+  "timing_s": {
+   "childhood": 243.25,
+   "eval": 158.55,
+   "disp": 42.4,
+   "chunks": 195.34,
+   "train": 1160.03,
+   "wall": 1803.49
+  },
+  "peak_rss_mb": 813.9,
+  "life_steps": 20480,
+  "ms_per_train_step": 56.6,
+  "n_evals": 121
+ }
+]

@@ -1,0 +1,43 @@
+{
+ "workers": 6,
+ "overrides": [],
+ "total_wall_s": 2896.8,
+ "runs": [
+  {
+   "family": "F1",
+   "seed": 9001,
+   "returncode": 0,
+   "wall_s": 2640.7
+  },
+  {
+   "family": "F3",
+   "seed": 9001,
+   "returncode": 0,
+   "wall_s": 2664.7
+  },
+  {
+   "family": "F4",
+   "seed": 9001,
+   "returncode": 0,
+   "wall_s": 2688.7
+  },
+  {
+   "family": "F6",
+   "seed": 9001,
+   "returncode": 0,
+   "wall_s": 2766.7
+  },
+  {
+   "family": "F2",
+   "seed": 9001,
+   "returncode": 0,
+   "wall_s": 2826.7
+  },
+  {
+   "family": "F5",
+   "seed": 9001,
+   "returncode": 0,
+   "wall_s": 2896.7
+  }
+ ]
+}

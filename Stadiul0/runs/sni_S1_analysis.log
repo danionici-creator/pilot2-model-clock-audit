@@ -1,0 +1,15 @@
+S1: rulări τ ['s7401', 's7402', 's7403']; ferestre 128; pe sarcini {0: 18, 1: 32, 2: 33, 3: 12, 4: 33}
+
+  o sămânță lăsată deoparte:
+    Ση                 R² mediu 0.513  minim 0.486  pe pliuri [np.float64(0.486), np.float64(0.508), np.float64(0.546)]
+    Ση‖m̂‖             R² mediu 0.963  minim 0.961  pe pliuri [np.float64(0.968), np.float64(0.961), np.float64(0.961)]
+    Ση + Ση‖m̂‖        R² mediu 0.986  minim 0.985  pe pliuri [np.float64(0.987), np.float64(0.985), np.float64(0.985)]
+    GBDT telemetrie    R² mediu 0.941  minim 0.936  pe pliuri [np.float64(0.945), np.float64(0.936), np.float64(0.942)]
+
+  o sarcină lăsată deoparte:
+    Ση                 R² mediu 0.436  minim -0.031  pe pliuri [np.float64(-0.031), np.float64(0.205), np.float64(0.677), np.float64(0.778), np.float64(0.552)]
+    Ση‖m̂‖             R² mediu 0.956  minim 0.933  pe pliuri [np.float64(0.963), np.float64(0.945), np.float64(0.933), np.float64(0.963), np.float64(0.974)]
+    Ση + Ση‖m̂‖        R² mediu 0.980  minim 0.969  pe pliuri [np.float64(0.976), np.float64(0.985), np.float64(0.969), np.float64(0.982), np.float64(0.987)]
+    GBDT telemetrie    R² mediu 0.716  minim 0.280  pe pliuri [np.float64(0.577), np.float64(0.848), np.float64(0.28), np.float64(0.953), np.float64(0.923)]
+
+S1: RECONSTRUCȚIA SE EXTINDE la SuperNI

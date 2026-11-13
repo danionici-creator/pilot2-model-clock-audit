@@ -1,0 +1,27 @@
+ROLE
+You are doing an independent prior-art search for a small empirical study. Be strict. Cite only papers, preprints, code or posts that you actually opened during this search. Give each one's arXiv ID or DOI (or URL for code and blogs). For each, say whether it STATES the claim, IMPLIES it (derivable in a few lines), or is only RELATED. If you cannot find anything for a question, say so plainly; an empty answer is useful.
+
+CONTEXT
+FOREVER (Feng et al., ACL 2026, arXiv:2601.03938) schedules replay in LLM continual learning on "model-centric time": tau = sum_t ||Theta_t - Theta_{t-1}||_2 over the trainable LoRA factors. Its only alternative clock in the paper is the step count. In its public code (github.com/WoodScene/FOREVER), every training phase builds a new Hugging Face Trainer: AdamW with weight decay 0, a linear learning-rate schedule with 10 warmup steps that restarts each phase, and optimizer moments reset each phase.
+
+Our preliminary finding (synthetic continual-learning runs, AdamW, small Transformer, 5 technical runs, untuned models, blind to any forgetting outcome): the interval rate of tau is reconstructed from cheap optimizer telemetry with out-of-run R^2 = 0.98-0.99. A single scalar, the learning-rate-weighted first-moment norm sum_t eta_t ||m_hat_t||, plus duration, gives R^2 = 0.94. Learning-rate-weighted steps alone (sum_t eta_t) do not: the update size varies with gradient signal-to-noise ratio. A functional distance (change of outputs on a fixed probe set) is less reconstructible (R^2 0.91-0.96; 0.85 from the single scalar).
+
+ALREADY KNOWN TO US (do not repeat unless you add something):
+- Kosson, Messmer & Jaggi, arXiv:2305.17212 (rotational equilibrium; AdamW update RMS = eta*sqrt(C(1-beta1)/(1+beta1)) when noise dominates) and arXiv:2410.23922 (warmup and update size).
+- Wang & Aitchison, arXiv:2405.13698 (AdamW weights as an EMA of updates).
+- Balles & Hennig, arXiv:1705.07774; Kunstner et al., arXiv:2304.13960.
+- Liu et al., arXiv:2502.16982 (AdamW update RMS about 0.2-0.4).
+- Su Jianlin, blog kexue.fm/archives/11267 (mean-field formula for Adam update RMS as a function of gradient SNR).
+- Atamna et al., arXiv:2508.05408 (cumulative path-length learning-rate adaptation for Adam).
+- Dao & Block, "Pathwise EMA: An Intrinsic Clock for Weight Averaging" (ICML 2026 workshop poster).
+- He, Bai & Yang, arXiv:2602.20796; Wang et al. "Geometry Conflict", arXiv:2605.09608; Farajtabar et al. OGD, arXiv:1910.07104; Kang & Lee, arXiv:2404.02754; Sahu et al., arXiv:2605.04269.
+
+QUESTIONS
+1. Has any work shown or measured that the cumulative parameter path length sum_t ||Delta theta_t|| under Adam/AdamW is approximately a function of sum_t eta_t ||m_hat_t||, of learning-rate-weighted steps, or of other optimizer statistics? Peer-reviewed papers, preprints, theses and well-known technical blog posts all count.
+2. Is there any audit, critique, replication or ablation of FOREVER's model-centric time, of Pathwise EMA's path-length clock, or of any other "parameter-change clock", against cheap optimizer statistics or against the learning-rate schedule?
+3. Which works (2023-2026) use update norm or path length as a clock, a trigger, or a proxy for forgetting in continual learning or fine-tuning, beyond those listed above?
+4. Is there theory for the per-step norm of the Adam update as a function of gradient signal-to-noise ratio, beyond the noise-dominated limit (Kosson et al.) and the blog above?
+5. Where is such an approximation known to fail: task switches, optimizer-state resets, learning-rate restarts or warmup, sparse or inactive parameters, LoRA's product parametrization (Delta W = B A versus the factors)?
+
+OUTPUT
+A table: reference | ID or DOI | the exact claim, with section, page or equation | STATES / IMPLIES / RELATED | your confidence. Then three sentences: would an expert reviewer consider our finding (a) already published, (b) an expected consequence of known results, or (c) new; and what, if anything, would remain new about an audit of FOREVER's clock in its exact training setup.

@@ -1,0 +1,14 @@
+aa202f645df52abcb2f0b464b4349f21af24f68cde5926c254502420f7ace44e *Pilot2_closure_report_review_draft.pdf
+9932f2aff1b4f8c71ac96035c60bc2c9ddfde9a5ae59fe1d6e88804df6eca641 *Pilot2_closure_report_review_draft.md
+790f37280390c5f199b7947f632ddf9bea410e8185ef574378a0b4211f37757c *Perspective_v1.4_review_draft.pdf
+5c5d7d466291b902c053c6a4527313ec7b86a6bc6957bbc7731828f88e2455a4 *Prompt_analiza_EN.txt
+388ad139b2a200067b3f03949eb88141ca8e9b0b51135fcfa8e3557325541640 *Regula_de_adoptare_2026-11-09.md
+# fixate inainte de orice trimitere: 2026-11-09 11:53:25
+e82b29946121a49ffc1cf25f043bc7241731e1fef70b2e1cee605556a777df4d *Adaptari_conditii_2026-11-09.md
+e5fee11a8c6639c64c2bcdccb84d6c602e7891c85254e06c0f252a62f2e83624 *../../../_work/zenodo_pilot2/pilot2_code_for_review_2026-11-09.zip
+# addendum logistic, inainte de orice trimitere: 2026-11-09 12:01:48
+# ora din addendum corectata (11:55-12:00), amprenta refacuta: 2026-11-09 12:01:57; nimic trimis
+54b60c641d0d1490866024c299833eaf8b0dc7de8da2c3bd9d7e7ce3142c93d4 *Dosar_combinat_DeepReview.pdf
+6c6a1410aa95d5d483d07f8b90eef1a7794ef294dbf748b6ac14cc57e2ddfc2e *Prompt_analiza_EN_DeepReview.txt
+# Regula_de_adoptare_2026-11-09.md completata cu addendum Deep Review (amprenta noua mai jos); faza 1 trimisa deja cu regula fara addendum: 2026-11-09 13:12:00
+adde1719de7b914b6962a9a4a2b769c6cf65ae93062083e9f1bdbd1add73f63a *Regula_de_adoptare_2026-11-09.md  (cu addendum)

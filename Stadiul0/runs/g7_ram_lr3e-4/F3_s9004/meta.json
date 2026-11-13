@@ -1,0 +1,440 @@
+{
+ "family": "F3",
+ "seed": 9004,
+ "config": {
+  "meta": {
+   "protocol": "Pilot 2 technical protocol v0.4 draft, 4 November 2026 (not frozen)",
+   "stage": 0
+  },
+  "agent": {
+   "n_layer": 4,
+   "d_model": 128,
+   "n_head": 4,
+   "d_ff": 512,
+   "max_ctx": 8,
+   "vocab": 512,
+   "init_std": 0.02
+  },
+  "optim": {
+   "kind": "adamw",
+   "lr": 0.0003,
+   "betas": [
+    0.9,
+    0.999
+   ],
+   "eps": 1e-08,
+   "weight_decay": 0.01,
+   "clip": 1.0,
+   "sgd_momentum": 0.9,
+   "passive_v_beta": 0.999
+  },
+  "world": {
+   "n_target": 40,
+   "items_per_task": 256,
+   "rule_inputs": 1024,
+   "rule_form": "affine",
+   "key_pool_size": 1024,
+   "target_moduli": [
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64
+   ],
+   "ref_moduli": [
+    11,
+    13,
+    15,
+    17
+   ],
+   "n_ref_fact": 8,
+   "n_ref_rule": 0,
+   "n_distractor": 8,
+   "battery_per_ref_task": 32
+  },
+  "run": {
+   "q0": 64,
+   "childhood_steps": 3072,
+   "childhood_batch": 32,
+   "childhood_gate": 0.95,
+   "life_steps_per_task": 512,
+   "eval_grid": 256,
+   "probe_chunk": 2048,
+   "d2_lag": 256,
+   "d2_lag_mode": "blocked",
+   "d3_strides": [
+    [
+     8,
+     0,
+     null
+    ]
+   ],
+   "chunked_param_D": false,
+   "snapshot_D": [
+    "D1",
+    "D1_rel",
+    "D2",
+    "D3",
+    "D4",
+    "T2"
+   ]
+  },
+  "families": {
+   "F1": {
+    "structure": "cycle",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 2,
+    "batch": [
+     32
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    }
+   },
+   "F2": {
+    "structure": "novelty",
+    "new_steps": 256,
+    "reexp_units": [
+     1,
+     2,
+     4
+    ],
+    "batch": [
+     16,
+     32,
+     64
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    }
+   },
+   "F3": {
+    "structure": "cycle",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 2,
+    "batch": [
+     32
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "cosine_restarts",
+     "max_mult": 2.0,
+     "min_mult": 0.05,
+     "period": [
+      512,
+      4096
+     ]
+    }
+   },
+   "F4": {
+    "structure": "cycle",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 2,
+    "batch": [
+     32
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    },
+    "idle": {
+     "p": 0.25,
+     "units": [
+      1,
+      8
+     ]
+    }
+   },
+   "F5": {
+    "structure": "novelty",
+    "new_steps": 256,
+    "reexp_units": [
+     1,
+     2,
+     4
+    ],
+    "batch": [
+     16,
+     32,
+     64
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.5,
+    "lr": {
+     "kind": "cosine_restarts",
+     "max_mult": 2.0,
+     "min_mult": 0.05,
+     "period": [
+      512,
+      4096
+     ]
+    },
+    "idle": {
+     "p": 0.15,
+     "units": [
+      1,
+      8
+     ]
+    }
+   },
+   "F6": {
+    "structure": "distractor",
+    "new_steps": 256,
+    "reh_steps": 128,
+    "reh_per_cycle": 1,
+    "distractor_units": [
+     1,
+     2,
+     4
+    ],
+    "label_noise": 0.3,
+    "batch": [
+     16,
+     32,
+     64
+    ],
+    "rule_frac": 0.0,
+    "pi_overlap": 0.25,
+    "lr": {
+     "kind": "constant"
+    }
+   }
+  },
+  "analysis": {
+   "t1_max_dN": 1280
+  }
+ },
+ "config_sha256": "1034f42a14c0f6958537a90ac1fe8c92a79e2985d8aedac26ccbee7f4a5ee94d",
+ "config_resolved_sha256": "f2a7218cad557309c8690bd4fafd8cf7449e0a4315bb4aeaa162ebb09ee6bcd6",
+ "protocol": "Pilot 2 technical protocol v0.4 draft, 4 November 2026 (not frozen)",
+ "versions": {
+  "python": "3.14.6",
+  "torch": "2.13.0+cpu",
+  "numpy": "2.5.1",
+  "platform": "Windows-11-10.0.26300-SP0"
+ },
+ "n_params": 925952,
+ "n_params_decayed": 918528,
+ "layers": [
+  [
+   "tok.weight",
+   65536
+  ],
+  [
+   "pos.weight",
+   1024
+  ],
+  [
+   "blocks.0.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.0.proj.weight",
+   16384
+  ],
+  [
+   "blocks.0.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.0.fc2.weight",
+   65536
+  ],
+  [
+   "blocks.1.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.1.proj.weight",
+   16384
+  ],
+  [
+   "blocks.1.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.1.fc2.weight",
+   65536
+  ],
+  [
+   "blocks.2.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.2.proj.weight",
+   16384
+  ],
+  [
+   "blocks.2.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.2.fc2.weight",
+   65536
+  ],
+  [
+   "blocks.3.qkv.weight",
+   49152
+  ],
+  [
+   "blocks.3.proj.weight",
+   16384
+  ],
+  [
+   "blocks.3.fc1.weight",
+   65536
+  ],
+  [
+   "blocks.3.fc2.weight",
+   65536
+  ],
+  [
+   "head.weight",
+   65536
+  ]
+ ],
+ "childhood": {
+  "steps": 3072,
+  "acc_reference": 0.98193359375,
+  "acc_R": 0.98046875,
+  "acc_B_beh": 0.98046875,
+  "acc_reference_fact": 0.98193359375,
+  "acc_reference_rule": null,
+  "gate_passed": true,
+  "final_loss": 0.139481199439615
+ },
+ "life_steps": 20480,
+ "ticks_total": 20480,
+ "n_evals": 121,
+ "n_episodes": 120,
+ "n_segments": 120,
+ "eval_kinds": [
+  "life_start",
+  "grid",
+  "seg_end",
+  "seg_end+grid",
+  "idle_grid",
+  "idle_end"
+ ],
+ "seg_kinds": [
+  "new",
+  "reexp",
+  "reh",
+  "distractor",
+  "idle"
+ ],
+ "disp_fields": [
+  "D1",
+  "D1_rel",
+  "D2",
+  "D3",
+  "D4",
+  "T2"
+ ],
+ "timing_s": {
+  "childhood": 193.19,
+  "eval": 143.32,
+  "disp": 40.29,
+  "chunks": 135.88,
+  "train": 726.82,
+  "wall": 1242.25
+ },
+ "peak_rss_mb": 819.3,
+ "sha256_arrays": {
+  "steps": {
+   "D1": "4759d474e98497051a31b4bab4b84fca16bece48250aaf9ae1030949640ae046",
+   "D1_rel": "0ea65234083d48195de041431bbcc57966a136009ab39a7d3b52bdbef5d98b78",
+   "D2": "631d336e6fad75ee4efd62aa93dad4baf9f1421331b84e0383c9aea7c78e7200",
+   "batch": "e0d0cfe41b437026cb81618c1be908fe92a748baa19dd15843d452aa31027554",
+   "boundary": "121d2371b7562eb45d916f5095159fecdd29c4a3410e37bbdf6d8ed6806b0533",
+   "childhood_loss": "88e8704105415744a93c18051de021f6384b048a12c5497f35346d95e09bdc19",
+   "dpre_norm": "da73d8ef8f59b3648e492e01bf76355265c3049ed976de7a56e420a009a2d361",
+   "gdot": "4e6a8c471b0b0900ed5fead1fe9aea6a4f07ebecff9641e17a92fe0ba050d50b",
+   "gnorm_clip": "cb0cc5cf1496f3adec5ef2fa4528df36e6341a6e8d44d73be4708f5d0b59390a",
+   "gnorm_raw": "c3f447f90df051ee20af4a9774052fe0c3b76c29b420d2209564f197857db5b1",
+   "loss": "2c5e1857f544ac1ebcbc2e2b1cd02a785129af275d6121f0c8c6b7d2d8268a52",
+   "lr": "fda05d75951473f7687272e1ef3965db434e56cb6b49000867d18a434eb3524a",
+   "mhat_norm": "bc9948ca479e592aab41498b76886f45114df2f5ce913f140c32e84b20190795",
+   "seg": "f877ede9d79752ae2611f65079ceaadc89ddc356a8246f9f4ee924093a60a0f2",
+   "theta_dec_norm": "ed35955a154f4ff6b837eaf80b61cda3a539ccdcf4536f031329aafa4bceb340",
+   "theta_norm": "15f2ade4103da2bbbe59ae88e69400594ec5717854080023d3e1e1a91f1055c0",
+   "tokens": "7fd61cc0842dc5d1d06bd9b37f58d255f4164e5e637c38f47f48419e4af560eb",
+   "trace_vhat": "c058c59be60eef9eeb98b56347beedb7c73fe9b95244b7006294c2bbce4ea79f"
+  },
+  "evals": {
+   "AA": "a91c120d4bc68489b48cea1f7c023b4f2927632a428a02bbd4c0fc172058319f",
+   "AB": "299886782c80ebe498300934a446bafe4a28d230934e4dd2faf0095288de5898",
+   "LA": "770ce2875d38a16e6f9a0f717ddac45abe4db4850c4bd7e3ddc03fe1a27bdbef",
+   "LB": "2ff6b6da1f35bc8f81a4183965165fb87cbd5258c542e24f683c5244160ca051",
+   "L_R": "6a16a52cd2cfc414b91df2b05fe7434e03ec08cd0332e94ba1a54e2f6b39bfee",
+   "N": "aadb6909be1121779c9c73c1abb559be26de8ad786f7d950c51b2ff6028a13af",
+   "ca": "aadb6909be1121779c9c73c1abb559be26de8ad786f7d950c51b2ff6028a13af",
+   "kind": "85bb0c75b5b62aaf33dda5290bf0794fc362d05d13d2ad24947bc394f308b827",
+   "seg": "be1ea9641f59abf910fed370dbf4447ce1ea800c312c0df0fa2bfc9c930f9354",
+   "sqrt_trv": "15b7d84450cdac089ad2772f8092284271343a0ba04d4703f1e12106a0d3ed6d",
+   "theta_norm": "44e432b84a9186831d2be0d40d40578f307b9308ea32fb14933d274bc98bfb2f"
+  },
+  "episodes": {
+   "kind": "c1a58360ca2abf94211466d6def93959a564ad2c863709e90038f6d37bb64416",
+   "overlap": "c4cacb75cac47f22b928df4944aa0a5fe04f00d11c3691f056b8c1144950f068",
+   "prior_AB": "39207f760806428a1fe0c0c7cb549de0e67d931e3d48b76e6338503e1ac35fc2",
+   "prior_LB": "3da658635df4b22338beae5a635608f7b425b916252139855fd3f47c59a6c595",
+   "s0": "47930de28c10266a8c741cc1c0ec6735bcad9693fb2a76047b8f7518620e47cc",
+   "seg": "5eb8e946a7227552d52166fb6c990f8dd3bbdf1abd3b73fee5c067d5819f48f3",
+   "t0": "1345724aae9334590c89300d4e3dd479b9a6ced32710694552cedc6d80bf42e7",
+   "task": "6438468c637256b11541359eb509f0bbdb2987cdb17ae1d0dad46aec9d8646fd"
+  },
+  "disp": {
+   "D1": "eb8351c099d3e4f89a0548584739072f8007cece972bf40270816394f0e52be2",
+   "D1_rel": "a7522a75cc3cc990adf0757bd68383b448e543117b5a685ce991f76132ed72c5",
+   "D2": "35fb71d5b3d777c56e60aac85c908957d59112b3036b5193dc4e740124a2d68c",
+   "D3": "ef94ccde2f6f7a26c830c37ac6f12fd8c97764d31da03e356f6e706be2bb8d3c",
+   "D4": "320bb69c4e31c5c7d0e1018558455975294d0d0f1e5081884876246ac8cfed25",
+   "T2": "c5a5de77a60d77694cd99f9f8cb9010a7193c3e01e8c38a246b690065e62c5b2",
+   "e": "1f5021d03da4904ccf23b12825164ae560e51c6dd6c3dc5fab82a45097f0dc6d",
+   "ep": "2dff7a1a51e72a4501f39791a04c200a39c43be01d88cc6f928d908a8051dc6f"
+  },
+  "chunks": {
+   "m8_s0_C10b": "9fcecbd9492fb176d0aa43bddf1634c9eaa91396c9dea41abdef98b10a666bba",
+   "m8_s0_D3": "53e12aa653724627463cdffeb0c17430f75c45c38eff6d9f892c0f91412fd52d",
+   "m8_s0_D4": "7fd027040e5aa2938da297b5f49e05c71048ac7c08aff0a4e828c09607aef351",
+   "m8_s0_N": "0b7cd1c5662ccd179658c9d7a1f581bec4ccbf19f1845e5f235c0b0e3a180a64"
+  },
+  "world": {
+   "key_overlap": "783060a87f212fca59949a9bcdeba37e56ce4f2947fc19259b5525a0ab73eac9",
+   "kinds": "2c34ce1df23b838c5abf2a7f6437cca3d3067ed509ff25f11df6b11b582b51eb",
+   "moduli": "7b6436b0c98f62380866d9432c2af0ee08ce16a171bda6951aecd95ee1307d61",
+   "n_values": "d7a0019aa668b25a2ab9248cb75be25778a50527d685c3089ac38e337dbe10fe",
+   "train_pairs": "84fde8c890f7684d9012d170752e0eb937ea7e98fae5658e169e01fb7045b927"
+  }
+ }
+}

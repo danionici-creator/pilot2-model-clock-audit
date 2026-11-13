@@ -1,0 +1,81 @@
+{
+ "config": {
+  "seed": 7305,
+  "tasks": 10,
+  "per_task": 512,
+  "epochs": 10,
+  "first_epochs": 60,
+  "batch": 32,
+  "lr": 0.0003,
+  "r": 8,
+  "alpha": 16.0,
+  "dropout": 0.05,
+  "mem_per_task": 16,
+  "n_probe": 128,
+  "probe_every": 8,
+  "attn": "sdpa",
+  "precision": "bf16",
+  "diag_pre_final": true,
+  "diag_pre_final_all": true,
+  "clock": "eta"
+ },
+ "config_sha256": "1242b422fc29ea88c755336ed9a48327db4d433fd5a30d65ea9503d31c9b40e2",
+ "model_dir": "D:\\Time\\_modele\\Qwen_Qwen3-0.6B",
+ "model_sha256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+ "torch": "2.13.0+cu130",
+ "cuda": "13.0",
+ "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+ "python": "3.14.6",
+ "transformers": "5.13.1",
+ "wall_s": 984.3034608364105,
+ "steps": 2650,
+ "sha256_steps_data": "1ebdbdb6bad04a5ab6e8af06ccc80c5e6f9e107576a04eaa953741ddd49a34b9",
+ "sha256_steps_data_18cols": "b942d000772a75de7b34df487c925df3558ef004bc793e98f06f0bf2351de18a",
+ "sha256_final_factors": "d69a95718e6597bf525c45e50eb7de9d9af672fffaec3eb2f3c60ad91a824881",
+ "files": {
+  "steps.npz": "d5692252657249a22882743d022d63c2848feb6333753e6862f2e4e60365c6cb",
+  "probes.npz": "21fdde041e68560f4e07738e9dcaa566d05bdfbf9b7649a49f0752bb47890df7",
+  "evals.npz": "d4a84209f8bbfd40e415a66a8d6d2efb9a9175cf1d64d16cc7ed3c251e71e8fe",
+  "final_factors.npy": "706699814aff22c3b2fc7ed29ef82f1f29e08e6c2069e457e83c0e188e423811",
+  "evals_pre.npz": "ddf5c2e60e1a07edef83487ae3883ff9b3d240bfc23fd029f62848ca9edaa8b1"
+ },
+ "script_sha256": "daf9c326d4152c1495dd045128a31d5f43166fefbb4e85285ac6280da93aa82e",
+ "diag_pre_final": [
+  [
+   1,
+   1.0
+  ],
+  [
+   2,
+   0.99609375
+  ],
+  [
+   3,
+   0.99609375
+  ],
+  [
+   4,
+   1.0
+  ],
+  [
+   5,
+   1.0
+  ],
+  [
+   6,
+   0.99609375
+  ],
+  [
+   7,
+   1.0
+  ],
+  [
+   8,
+   1.0
+  ],
+  [
+   9,
+   0.998046875
+  ]
+ ]
+}

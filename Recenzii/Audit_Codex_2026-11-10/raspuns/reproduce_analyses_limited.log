@@ -1,0 +1,47 @@
+Python 3.14.6, numpy 2.5.1, pandas 3.0.3, scikit-learn 1.9.0, scipy 1.18.0, torch 2.13.0+cpu
+
+[OK] T-A: rc 0, 2 s; output = runs/ta_analysis.log (17 lines); ta_verdict.json: identical
+[OK] T-B: rc 0, 59 s; output = runs/tb_part1_g2.log (41 lines); tb_part1_verdict.json: identical
+[OK] T-D: rc 0, 23 s; output = runs/td_audit.log (55 lines)
+[OK] T-C: rc 0, 11 s; output = runs/tc_lm_d3_competitors.log (30 lines)
+[OK] SuperNI: rc 0, 4 s; output = runs/sni_analysis_final.log (20 lines); sni_verdict.json: identical
+[OK] SuperNI-S2-secondary: rc 0, 0 s; output = runs/sni_S2_secundar.log (3 lines)
+[OK] LM-tau-lmtech1: rc 0, 7 s; output = runs/lmtech1_g2.log (45 lines)
+[OK] LM-tau-lmtech2: rc 0, 5 s; output = runs/lmtech2_g2.log (45 lines)
+[OK] LM-tau-bf16: rc 0, 7 s; output = runs/lmsens_bf16_g2.log (45 lines)
+[OK] LM-tau-a32: rc 0, 7 s; output = runs/lmsens_a32_g2.log (45 lines)
+[OK] tech-G2: rc 0, 12 s; no stored output; printed below
+    triplets: 2639; runs: 5; features: 58
+         D     test  R2_OLS  R2_GBDT  CV_rate  R2_dN_only
+        D1 tech3_F2   0.984    0.981    0.374       0.331
+        D1 tech3_F3   0.992    0.991    0.663      -0.057
+    D1_rel tech3_F2   0.956    0.974    0.438       0.296
+    D1_rel tech3_F3   0.981    0.972    0.725      -0.106
+        D2 tech3_F2   0.987    0.989    0.400       0.265
+        D2 tech3_F3   0.993    0.989    0.734      -0.060
+        D3 tech3_F2   0.919    0.907    0.402       0.219
+        D3 tech3_F3   0.960    0.950    0.634      -0.127
+    
+    --- scara: R2 (OLS) al ratei din seturi minime de telemetrie, medie pe cele doua rulari test ---
+    D                                   D1  D1_rel     D2     D3
+    ΔN                               0.113   0.069  0.089 -0.039
+    ΔN + rata Ση (C3)                0.467   0.368  0.406  0.295
+    ΔN + rata Σ‖g̃‖ (C5a)            0.504   0.519  0.539  0.440
+    ΔN + rata Ση‖g̃‖ (C5b)           0.892   0.898  0.964  0.824
+    ΔN + rata Ση‖m̂‖ (C5d)           0.935   0.919  0.987  0.846
+    ΔN + rata Σ‖m̂‖ (C5e)            0.342   0.317  0.345  0.160
+    ΔN + C3 + C5d + C5e (rate)       0.930   0.905  0.985  0.786
+    ΔN + rata pierderii pe R (C10b)  0.569   0.590  0.627  0.474
+[OK] G2-CPU-checks: rc 0, 10 s; output = runs/g2_cpu_checks_2026-11-06.log (58 lines)
+[OK] tech4: rc 0, 14 s; output = runs/tech4_analysis.log (60 lines)
+[OK] FOREVER-R2-reconstruction: rc 0, 0 s; output = runs/forever_repro_r2_reconstruction.log (5 lines); forever_repro_r2_reconstruction.json: equal within 5.1e-16
+[OK] FOREVER-R2-arm-eta_m: rc 0, 0 s; forever_repetari_r2_eta_m.json: equal within 5.1e-16
+[OK] FOREVER-R2-arm-eta_m_A1: rc 0, 0 s; output = runs/forever_repetari_r2.log (4 lines); forever_repetari_r2_eta_m_A1.json: equal within 4.3e-16
+[OK] FOREVER-d: rc 0, 0 s; forever_d_same_trajectory.json: identical
+[OK] FOREVER-stage1: rc 0, 0 s; forever_repetari_verdict.json: identical
+[OK] FOREVER-drift-ratio: rc 0, 0 s; output = runs/forever_drift_ratio_posthoc.log (3 lines)
+[OK] POSTHOC-a-eval-noise: rc 0, 1 s; output = runs/forever_eval_noise_posthoc_summary.log (29 lines); forever_eval_noise_posthoc.json: identical
+[OK] POSTHOC-b-TA-memory: rc 0, 2 s; output = runs/ta_memory_posthoc.log (10 lines); ta_memory_posthoc.json: identical
+[OK] POSTHOC-c-skipped-steps: rc 0, 0 s; output = runs/forever_skip_check_posthoc.log (6 lines)
+
+22 of 22 checks reproduce the stored results.
